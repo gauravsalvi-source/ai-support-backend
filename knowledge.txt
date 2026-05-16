@@ -15,3 +15,13 @@ How can I get Amazon Affiliate ID?
 
 Documentation:
 https://spreadr.freshdesk.com/support/solutions/articles/6000155088-how-can-i-get-amazon-affiliate-id-
+
+
+--------------------------------------------------
+
+Uninstall
+
+How do I uninstall Spreadr?
+
+Documentation:
+https://spreadr.freshdesk.com/support/solutions/articles/24000004115-how-do-i-uninstall-spreadr-
