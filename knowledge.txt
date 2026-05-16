@@ -35,11 +35,18 @@ https://help.shopify.com/en/manual/apps/uninstalling-apps#uninstall-app
 
 --------------------------------------------------
 
-Terminate subscription
+Trigger Words:
+- terminate
+- cancel subscription
+- close account
+- uninstall app
+- delete app
+
+Required Response:
 
 We appreciate your business.
 
-To terminate your subscription, simply uninstall the app from your Shopify admin. For detailed instructions, please refer to the Shopify guide on uninstalling apps.
+To terminate your subscription, simply uninstall the app from your Shopify admin. For detailed instructions, please refer to the Shopify guide on uninstalling apps:
 
 https://help.shopify.com/en/manual/apps/uninstalling-apps#uninstall-app
 
