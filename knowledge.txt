@@ -30,6 +30,6 @@ Go to Apps. Click on the Apps and sales channel settings.
 A pop-up window will appear displaying a list of all installed apps—locate the app you want to remove, click the three dots (···) next to it, and select Uninstall from the dropdown menu.
 That's it! The app is now uninstalled. 
 
+For detailed instructions, please refer to the Shopify guide on uninstalling apps.
 
-Link:
 https://help.shopify.com/en/manual/apps/uninstalling-apps#uninstall-app
