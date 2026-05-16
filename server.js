@@ -3,8 +3,13 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
-
 const app = express();
+const fs = require("fs");
+const knowledge =
+  fs.readFileSync(
+    "./knowledge.txt",
+    "utf8"
+  );
 
 app.use(cors());
 
@@ -27,18 +32,23 @@ app.post("/rewrite", async (req, res) => {
       tone
     } = req.body;
 
-    const prompt = `
+const prompt = `
 
-Rewrite this customer support reply in a ${tone} tone.
+You are an AI support assistant.
 
-Make it:
-- professional
-- clear
-- polite
-- easy to understand
+Knowledge Base:
+${knowledge}
 
-Return ONLY the rewritten message.
-Do not add introductions, titles, explanations, or quotation marks.
+If the user's query matches any documentation topic:
+- answer professionally
+- include relevant documentation link naturally
+
+Otherwise simply rewrite the reply professionally.
+
+Tone:
+${tone}
+
+Return ONLY the final response.
 
 Reply:
 ${text}

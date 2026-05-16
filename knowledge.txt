@@ -1,0 +1,17 @@
+========================
+SPREADR
+========================
+
+Spreadr App with Amazon Affiliate Program - How it works?
+
+Documentation:
+https://spreadr.freshdesk.com/support/solutions/articles/6000162862-spreadr-app-with-amazon-affiliate-program-how-it-works-
+
+--------------------------------------------------
+
+Amazon - Affiliates
+
+How can I get Amazon Affiliate ID?
+
+Documentation:
+https://spreadr.freshdesk.com/support/solutions/articles/6000155088-how-can-i-get-amazon-affiliate-id-
