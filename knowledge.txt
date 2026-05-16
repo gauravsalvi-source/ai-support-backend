@@ -21,7 +21,7 @@ https://spreadr.freshdesk.com/support/solutions/articles/6000155088-how-can-i-ge
 
 Uninstall
 
-How do I uninstall Spreadr?
+How do I uninstall App?
 
 Go to your Shopify admin.
 Go to Apps. Click on the Apps and sales channel settings.
@@ -29,5 +29,5 @@ A pop-up window will appear displaying a list of all installed apps—locate the
 That's it! The app is now uninstalled. 
 
 
-Documentation:
-https://spreadr.freshdesk.com/support/solutions/articles/24000004115-how-do-i-uninstall-spreadr-
+Link:
+https://help.shopify.com/en/manual/apps/uninstalling-apps#uninstall-app
