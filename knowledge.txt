@@ -39,7 +39,6 @@ Trigger Words:
 - terminate
 - cancel subscription
 - close account
-- uninstall app
 - delete app
 
 Required Response:
