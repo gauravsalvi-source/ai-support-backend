@@ -17,7 +17,6 @@ Documentation:
 https://spreadr.freshdesk.com/support/solutions/articles/6000155088-how-can-i-get-amazon-affiliate-id-
 
 
---------------------------------------------------
 ========================
 Uninstall
 ========================
@@ -33,3 +32,20 @@ That's it! The app is now uninstalled.
 For detailed instructions, please refer to the Shopify guide on uninstalling apps.
 
 https://help.shopify.com/en/manual/apps/uninstalling-apps#uninstall-app
+
+--------------------------------------------------
+
+Terminate subscription
+
+How to terminate the subscription plan?
+
+We appreciate your business.
+
+To terminate your subscription, uninstall the app from your Shopify admin. For detailed instructions, please refer to the Shopify guide on uninstalling apps.
+
+https://help.shopify.com/en/manual/apps/uninstalling-apps#uninstall-app
+
+If you could take a moment to share the reasons for your decision to delete the app, it would greatly help us improve our service.
+
+Thank you, and have a wonderful day!
+
