@@ -37,11 +37,9 @@ https://help.shopify.com/en/manual/apps/uninstalling-apps#uninstall-app
 
 Terminate subscription
 
-How to terminate the subscription plan?
-
 We appreciate your business.
 
-To terminate your subscription, uninstall the app from your Shopify admin. For detailed instructions, please refer to the Shopify guide on uninstalling apps.
+To terminate your subscription, simply uninstall the app from your Shopify admin. For detailed instructions, please refer to the Shopify guide on uninstalling apps.
 
 https://help.shopify.com/en/manual/apps/uninstalling-apps#uninstall-app
 
