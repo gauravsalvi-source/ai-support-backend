@@ -45,21 +45,33 @@ app.post("/rewrite", async (req, res) => {
 
     for (let block of blocks) {
       if (block === "SPREADR" || block === "Uninstall Steps") continue;
-      
-      if (block.includes("Trigger Words:") && block.includes("Required Response:")) {
+
+      const keywords = [];
+      let responsePart = block;
+
+      if (block.includes("TERMINOLOGY:") && block.includes("REQUIRED RESPONSE:")) {
+        const termPart = block.split("REQUIRED RESPONSE:")[0].split("TERMINOLOGY:")[1].trim();
+        responsePart = block.split("REQUIRED RESPONSE:")[1].trim();
+        termPart.split('\n').forEach(line => {
+          const kw = line.trim().toLowerCase();
+          if (kw) keywords.push(kw);
+        });
+      } else if (block.includes("Trigger Words:") && block.includes("Required Response:")) {
         const parts = block.split("Required Response:");
         const triggerWordsPart = parts[0].replace("Trigger Words:", "").trim();
-        const responsePart = parts[1].trim();
-        const keywords = triggerWordsPart.split('\n')
-          .map(line => line.replace('-', '').trim().toLowerCase())
-          .filter(k => k.length > 0);
-        kbEntries.push({ keywords, response: responsePart });
+        responsePart = parts[1].trim();
+        triggerWordsPart.split('\n').forEach(line => {
+          const kw = line.replace('-', '').trim().toLowerCase();
+          if (kw) keywords.push(kw);
+        });
       } else {
         const lines = block.split('\n').map(l => l.trim()).filter(l => l.length > 0);
-        const keywords = [];
         if (lines[0]) keywords.push(lines[0].toLowerCase());
         if (lines[1]) keywords.push(lines[1].toLowerCase());
-        kbEntries.push({ keywords, response: block });
+      }
+
+      if (keywords.length > 0) {
+        kbEntries.push({ keywords, response: responsePart });
       }
     }
 
