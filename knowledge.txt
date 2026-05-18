@@ -8,17 +8,12 @@ Spreadr App with Amazon Affiliate Program - How it works?
 TERMINOLOGY:
 spreadr
 affiliate
-amazon affiliate
 amazon associates
-affiliate products
-amazon products
-external products
 amazon commission
 affiliate links
 amazon affiliate program
 how affiliate works
-affiliate app
-amazon integration
+
 
 REQUIRED RESPONSE:
 
@@ -31,12 +26,15 @@ https://spreadr.freshdesk.com/support/solutions/articles/6000162862-spreadr-app-
 
 --------------------------------------------------
 
-Amazon - Affiliates
+Amazon - Affiliates ID
 
 How can I get Amazon Affiliate ID?
 
 Documentation:
 https://spreadr.freshdesk.com/support/solutions/articles/6000155088-how-can-i-get-amazon-affiliate-id-
+
+TERMINOLOGY:
+Amazon - Affiliates ID
 
 
 ========================
