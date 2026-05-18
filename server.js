@@ -29,37 +29,69 @@ app.post("/rewrite", async (req, res) => {
 
     const {
       text,
-      tone
+      tone,
+      mode
     } = req.body;
 
-const lowerText =
-  text.toLowerCase();
+    console.log(`\n[DEBUG] --- New Request ---`);
+    console.log(`[DEBUG] Mode: ${mode}, Tone: ${tone}`);
+    console.log(`[DEBUG] Query: "${text}"`);
 
-let useKnowledge = false;
+    const lowerText = text.toLowerCase();
 
-const triggerWords = [
-  "terminate",
-  "aws",
-  "uninstall",
-  "sync",
-  "csv",
-  "fulfillment"
-];
+    // Parse knowledge base into entries
+    const blocks = knowledge.split(/(?:={10,}|-{10,})/g).map(b => b.trim()).filter(b => b.length > 0);
+    const kbEntries = [];
 
-triggerWords.forEach(word => {
+    for (let block of blocks) {
+      if (block === "SPREADR" || block === "Uninstall Steps") continue;
+      
+      if (block.includes("Trigger Words:") && block.includes("Required Response:")) {
+        const parts = block.split("Required Response:");
+        const triggerWordsPart = parts[0].replace("Trigger Words:", "").trim();
+        const responsePart = parts[1].trim();
+        const keywords = triggerWordsPart.split('\n')
+          .map(line => line.replace('-', '').trim().toLowerCase())
+          .filter(k => k.length > 0);
+        kbEntries.push({ keywords, response: responsePart });
+      } else {
+        const lines = block.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+        const keywords = [];
+        if (lines[0]) keywords.push(lines[0].toLowerCase());
+        if (lines[1]) keywords.push(lines[1].toLowerCase());
+        kbEntries.push({ keywords, response: block });
+      }
+    }
 
-  if (
-    lowerText.includes(word)
-  ) {
+    let matchedResponse = null;
+    let useKnowledge = false;
 
-    useKnowledge = true;
+    if (mode === "kb") {
+      useKnowledge = true;
+      for (const entry of kbEntries) {
+        for (const keyword of entry.keywords) {
+          if (keyword && lowerText.includes(keyword)) {
+            matchedResponse = entry.response;
+            console.log(`[DEBUG] KB Match Found! Matched keyword: "${keyword}"`);
+            break;
+          }
+        }
+        if (matchedResponse) break;
+      }
+    }
 
-  }
+    if (matchedResponse) {
+      console.log(`[DEBUG] Bypassing AI. Returning exact KB response.`);
+      return res.json({ reply: matchedResponse });
+    }
 
-});
+    if (mode === "kb") {
+      console.log(`[DEBUG] No exact KB match found. Falling back to AI rewrite with KB context.`);
+    } else {
+      console.log(`[DEBUG] AI mode selected. Proceeding to normal rewrite without KB.`);
+    }
 
-
-const prompt = useKnowledge
+    const prompt = useKnowledge
   ? `
 
 You are a Shopify app support specialist.
