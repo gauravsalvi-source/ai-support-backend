@@ -86,15 +86,15 @@ app.post("/rewrite", async (req, res) => {
       // Check cache for this exact query
       if (querySessionCache.has(cacheKey)) {
         const session = querySessionCache.get(cacheKey);
-        session.index++;
         
-        if (session.index < session.matches.length) {
+        if (session.index < session.matches.length - 1) {
+          session.index++;
           console.log(`[DEBUG] Cache Hit! Showing match ${session.index + 1} of ${session.matches.length}`);
-          return res.json({ reply: session.matches[session.index].response });
         } else {
-          console.log(`[DEBUG] Cache Hit! But no more responses.`);
-          return res.json({ reply: "No more related KB responses found for this query." });
+          console.log(`[DEBUG] Cache Hit! Reached end of matches. Showing last match again.`);
         }
+        
+        return res.json({ reply: session.matches[session.index].response });
       }
 
       // Compute matches if not cached
