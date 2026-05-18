@@ -28,13 +28,20 @@ https://spreadr.freshdesk.com/support/solutions/articles/6000162862-spreadr-app-
 
 Amazon - Affiliates ID
 
+TITLE: 
 How can I get Amazon Affiliate ID?
+
+TERMINOLOGY:
+Amazon - Affiliates ID
+
+EQUIRED RESPONSE:
+
+You need Amazon Affiliate ID to track and get a sales commission from Amazon. To get Amazon Affiliate ID you need to join the Amazon Affiliate Program - it's free.
 
 Documentation:
 https://spreadr.freshdesk.com/support/solutions/articles/6000155088-how-can-i-get-amazon-affiliate-id-
 
-TERMINOLOGY:
-Amazon - Affiliates ID
+
 
 
 ========================
