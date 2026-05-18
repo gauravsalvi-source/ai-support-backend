@@ -8,11 +8,18 @@ Spreadr App with Amazon Affiliate Program - How it works?
 TERMINOLOGY:
 spreadr
 amazon associates
-amazon commission
-affiliate links
 amazon affiliate program
-how affiliate works
-
+affiliate marketing
+amazon affiliate links
+amazon commission
+earn amazon commission
+how spreadr works
+amazon affiliate integration
+amazon affiliate products
+shopify amazon affiliate
+amazon associates commission
+affiliate earnings
+amazon referral commission
 
 REQUIRED RESPONSE:
 
@@ -23,18 +30,31 @@ Merchants can earn commission through the Amazon Associates Program when custome
 For detailed instructions, please refer to:
 https://spreadr.freshdesk.com/support/solutions/articles/6000162862-spreadr-app-with-amazon-affiliate-program-how-it-works-
 
---------------------------------------------------
+---
 
-
-TITLE: 
+TITLE:
 How can I get Amazon Affiliate ID?
 
 TERMINOLOGY:
-Affiliates ID
+amazon affiliate id
+affiliate id
+amazon associates id
+tracking id
+affiliate tracking id
+amazon affiliate account
+amazon associates account
+how to get amazon affiliate id
+create amazon affiliate account
+amazon referral id
+amazon tracking id
+amazon associates program
+affiliate registration
 
 REQUIRED RESPONSE:
 
-You need Amazon Affiliate ID to track and get a sales commission from Amazon. To get Amazon Affiliate ID you need to join the Amazon Affiliate Program - it's free.
+You need an Amazon Affiliate ID to track sales and earn commission from Amazon purchases made through your affiliate links.
+
+To get an Amazon Affiliate ID, you need to join the Amazon Associates Program, which is free to sign up for.
 
 Documentation:
 https://spreadr.freshdesk.com/support/solutions/articles/6000155088-how-can-i-get-amazon-affiliate-id-
