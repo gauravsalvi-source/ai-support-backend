@@ -170,7 +170,7 @@ ${tone}
 User Query:
 ${text}
 
-Return ONLY the final response.
+Return ONLY the final response. Do NOT wrap the response in quotation marks or inverted commas.
 `
   : `
 
@@ -200,6 +200,7 @@ Make it:
 - clear
 - polite
 - easy to understand
+- Do NOT wrap the response in quotation marks or inverted commas.
 
 Return ONLY the rewritten message.
 
@@ -257,6 +258,7 @@ ${text}
         /Here’s a rewritten customer support reply in a .* tone:\s*/gi,
         ""
       )
+      .replace(/^["']|["']$/g, "")
       .trim();
 
     res.json({
