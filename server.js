@@ -32,28 +32,46 @@ app.post("/rewrite", async (req, res) => {
       tone
     } = req.body;
 
-const prompt = `
+const lowerText =
+  text.toLowerCase();
+
+let useKnowledge = false;
+
+const triggerWords = [
+  "terminate",
+  "aws",
+  "uninstall",
+  "sync",
+  "csv",
+  "fulfillment"
+];
+
+triggerWords.forEach(word => {
+
+  if (
+    lowerText.includes(word)
+  ) {
+
+    useKnowledge = true;
+
+  }
+
+});
+
+
+const prompt = useKnowledge
+  ? `
 
 You are an AI support assistant.
 
 Knowledge Base:
 ${knowledge}
 
-IMPORTANT RULES:
+IMPORTANT:
 
-- If the user's query matches any topic in the knowledge base,
-  STRICTLY follow the provided documentation steps and wording.
-
-- Do NOT invent your own process.
-
-- Do NOT change technical steps.
-
-- Keep the response professional and easy to understand.
-
-- Include the documentation link if available.
-
-- If no relevant topic exists,
-  simply rewrite the user's message professionally.
+- Follow documentation steps carefully.
+- Keep response professional.
+- Include documentation links if relevant.
 
 Tone:
 ${tone}
@@ -62,6 +80,21 @@ User Query:
 ${text}
 
 Return ONLY the final response.
+`
+  : `
+
+Rewrite this customer support reply in a ${tone} tone.
+
+Make it:
+- professional
+- clear
+- polite
+- easy to understand
+
+Return ONLY the rewritten message.
+
+Reply:
+${text}
 `;
 
     const response =
