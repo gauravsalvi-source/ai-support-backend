@@ -86,7 +86,8 @@ app.post("/rewrite", async (req, res) => {
     }
 
     if (mode === "kb") {
-      console.log(`[DEBUG] No exact KB match found. Falling back to AI rewrite with KB context.`);
+      console.log(`[DEBUG] No exact KB match found. Returning "No relevant info" to user.`);
+      return res.json({ reply: "No relevant info found in the Knowledge Base for this query." });
     } else {
       console.log(`[DEBUG] AI mode selected. Proceeding to normal rewrite without KB.`);
     }
