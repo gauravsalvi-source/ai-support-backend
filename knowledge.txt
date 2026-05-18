@@ -2,9 +2,31 @@
 SPREADR
 ========================
 
+TITLE:
 Spreadr App with Amazon Affiliate Program - How it works?
 
-Documentation:
+TERMINOLOGY:
+spreadr
+affiliate
+amazon affiliate
+amazon associates
+affiliate products
+amazon products
+external products
+amazon commission
+affiliate links
+amazon affiliate program
+how affiliate works
+affiliate app
+amazon integration
+
+REQUIRED RESPONSE:
+
+Spreadr is an affiliate marketing app that allows merchants to import Amazon products into Shopify and redirect customers to Amazon using affiliate links.
+
+Merchants can earn commission through the Amazon Associates Program when customers purchase products through their affiliate links.
+
+For detailed instructions, please refer to:
 https://spreadr.freshdesk.com/support/solutions/articles/6000162862-spreadr-app-with-amazon-affiliate-program-how-it-works-
 
 --------------------------------------------------
