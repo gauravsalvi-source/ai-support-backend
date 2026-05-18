@@ -23,6 +23,8 @@ app.get("/", (req, res) => {
 
 });
 
+const querySessionCache = new Map();
+
 app.post("/rewrite", async (req, res) => {
 
   try {
@@ -75,29 +77,59 @@ app.post("/rewrite", async (req, res) => {
       }
     }
 
-    let matchedResponse = null;
     let useKnowledge = false;
 
     if (mode === "kb") {
       useKnowledge = true;
+      const cacheKey = lowerText.trim();
+      
+      // Check cache for this exact query
+      if (querySessionCache.has(cacheKey)) {
+        const session = querySessionCache.get(cacheKey);
+        session.index++;
+        
+        if (session.index < session.matches.length) {
+          console.log(`[DEBUG] Cache Hit! Showing match ${session.index + 1} of ${session.matches.length}`);
+          return res.json({ reply: session.matches[session.index].response });
+        } else {
+          console.log(`[DEBUG] Cache Hit! But no more responses.`);
+          return res.json({ reply: "No more related KB responses found for this query." });
+        }
+      }
+
+      // Compute matches if not cached
+      const matches = [];
+      const seenResponses = new Set();
+
       for (const entry of kbEntries) {
+        let matchScore = 0;
+        
         for (const keyword of entry.keywords) {
           if (keyword && lowerText.includes(keyword)) {
-            matchedResponse = entry.response;
-            console.log(`[DEBUG] KB Match Found! Matched keyword: "${keyword}"`);
-            break;
+            matchScore++;
           }
         }
-        if (matchedResponse) break;
+
+        if (matchScore > 0 && !seenResponses.has(entry.response)) {
+          matches.push({ ...entry, score: matchScore });
+          seenResponses.add(entry.response);
+        }
       }
-    }
 
-    if (matchedResponse) {
-      console.log(`[DEBUG] Bypassing AI. Returning exact KB response.`);
-      return res.json({ reply: matchedResponse });
-    }
+      if (matches.length > 0) {
+        // Rank matches by score (highest first)
+        matches.sort((a, b) => b.score - a.score);
 
-    if (mode === "kb") {
+        // Store in cache
+        querySessionCache.set(cacheKey, { matches, index: 0, timestamp: Date.now() });
+        
+        console.log(`[DEBUG] New Query! Found ${matches.length} distinct KB matches.`);
+        console.log(`[DEBUG] Showing top ranked match (Score: ${matches[0].score}).`);
+        
+        return res.json({ reply: matches[0].response });
+      }
+
+      // Zero matches
       console.log(`[DEBUG] No exact KB match found. Returning "No relevant info" to user.`);
       return res.json({ reply: "No relevant info found in the Knowledge Base for this query." });
     } else {
