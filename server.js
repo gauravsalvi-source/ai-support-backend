@@ -105,7 +105,7 @@ app.post("/rewrite", async (req, res) => {
         let matchScore = 0;
         
         for (const keyword of entry.keywords) {
-          if (keyword && lowerText.includes(keyword)) {
+          if (keyword && (lowerText.includes(keyword) || (lowerText.length > 3 && keyword.includes(lowerText)))) {
             matchScore++;
           }
         }
