@@ -42,7 +42,7 @@ app.post("/rewrite", async (req, res) => {
     const lowerText = text.toLowerCase();
 
     // Parse knowledge base into entries
-    const blocks = knowledge.split(/(?:={10,}|-{10,})/g).map(b => b.trim()).filter(b => b.length > 0);
+    const blocks = knowledge.split(/(?:={3,}|-{3,})/g).map(b => b.trim()).filter(b => b.length > 0);
     const kbEntries = [];
 
     for (let block of blocks) {
