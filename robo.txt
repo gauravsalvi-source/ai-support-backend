@@ -18,10 +18,11 @@ REQUIRED RESPONSE:
 Robo Product Importer allows merchants to import products into Shopify using product URLs or the browser extension.
 
 The app can import various product details including:
-- Product title
-- Description
-- Images
-- Pricing
+
+* Product title
+* Description
+* Images
+* Pricing
 
 Merchants can review and edit product details before importing them into their Shopify store.
 
@@ -54,7 +55,6 @@ To access your Robo app:
 For detailed instructions, please refer to:
 https://robo-product-importer.tawk.help/article/login-to-robo-dashboard
 
-
 --------------------------------------------------
 
 TITLE:
@@ -72,11 +72,95 @@ REQUIRED RESPONSE:
 Robo Product Importer offers a simple monthly subscription plan.
 
 Current Plan:
-- Basic Plan: $6/month
-- Unlimited product imports
-- 3-day free trial available
+
+* Basic Plan: $6/month
+* Unlimited product imports
+* 3-day free trial available
 
 All charges are billed in USD through Shopify’s billing system on a recurring basis.
 
 For detailed information, please refer to:
 https://robo-product-importer.tawk.help/article/app-charges
+
+--------------------------------------------------
+
+TITLE:
+Who Is This App For?
+
+TERMINOLOGY:
+robo app users
+robo merchants
+robo dropshipping
+robo ecommerce
+robo product import
+
+REQUIRED RESPONSE:
+
+Robo Product Importer is designed for Shopify merchants who want to quickly import products into their store.
+
+The app is useful for:
+
+* Dropshipping businesses
+* Ecommerce store owners
+* Product resellers
+* Merchants managing large product catalogs
+
+Robo helps merchants save time by simplifying the product importing process using URLs or the browser extension.
+
+For detailed information, please refer to:
+https://robo-product-importer.tawk.help/article/who-is-this-app-for
+
+--------------------------------------------------
+
+TITLE:
+Installation Steps
+
+TERMINOLOGY:
+robo installation
+robo install
+robo setup
+robo extension install
+robo app installation
+
+REQUIRED RESPONSE:
+
+To start using Robo Product Importer, install the app from the Shopify App Store and complete the basic setup process.
+
+Installation Steps:
+
+1. Install the Robo Product Importer app.
+2. Open the app from your Shopify admin.
+3. Complete the initial setup instructions.
+4. Install the Robo browser extension if required.
+5. Start importing products using product URLs or the extension.
+
+For detailed installation instructions, please refer to:
+https://robo-product-importer.tawk.help/article/installation-steps
+
+--------------------------------------------------
+
+TITLE:
+What Is Markup Pricing?
+
+TERMINOLOGY:
+robo markup pricing
+robo markup
+robo pricing rule
+robo price increase
+robo product pricing
+
+REQUIRED RESPONSE:
+
+Markup pricing allows merchants to automatically increase the product price during the import process.
+
+Using markup rules, merchants can:
+
+* Increase product prices by a fixed amount
+* Increase prices by a percentage
+* Set custom pricing strategies for imported products
+
+This helps merchants maintain profit margins without manually editing product prices after import.
+
+For detailed information, please refer to:
+https://robo-product-importer.tawk.help/article/what-is-markup-pricing
+
