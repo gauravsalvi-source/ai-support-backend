@@ -8,9 +8,10 @@ How It Works?
 TERMINOLOGY:
 robo
 robo importer
-product import
-shopify import
-extension
+robo product import
+robo shopify import
+robo extension
+robo how it works
 
 REQUIRED RESPONSE:
 
@@ -38,9 +39,8 @@ Login to Robo Dashboard
 
 TERMINOLOGY:
 robo dashboard
-dashboard login
-login
-account access
+robo login
+robo account access
 
 REQUIRED RESPONSE:
 
@@ -61,12 +61,11 @@ TITLE:
 App Charges
 
 TERMINOLOGY:
-charges
-pricing
-subscription
-billing
-plan
-monthly charge
+robo charges
+robo pricing
+robo subscription
+robo billing
+robo plan
 
 REQUIRED RESPONSE:
 
