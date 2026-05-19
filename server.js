@@ -5,11 +5,6 @@ const cors = require("cors");
 const axios = require("axios");
 const app = express();
 const fs = require("fs");
-const knowledge =
-  fs.readFileSync(
-    "./knowledge.txt",
-    "utf8"
-  );
 
 app.use(cors());
 
@@ -40,6 +35,28 @@ app.post("/rewrite", async (req, res) => {
     console.log(`[DEBUG] Query: "${text}"`);
 
     const lowerText = text.toLowerCase();
+
+    const apps = ['spreadr', 'outlink', 'pro', 'connectr', 'shipr', 'prime', 'smart', 'clever', 'robo', 'sleek', 'bolt', 'exporter'];
+    let detectedApp = null;
+    for (const app of apps) {
+      if (lowerText.includes(app)) {
+        detectedApp = app;
+        break;
+      }
+    }
+
+    let knowledge = "";
+    if (detectedApp) {
+      const kbPath = `./${detectedApp}.txt`;
+      if (fs.existsSync(kbPath)) {
+        knowledge = fs.readFileSync(kbPath, 'utf8');
+        console.log(`[DEBUG] Detected app: ${detectedApp}, loaded knowledge base.`);
+      } else {
+        console.log(`[DEBUG] Detected app: ${detectedApp}, but ${kbPath} does not exist.`);
+      }
+    } else {
+      console.log(`[DEBUG] No specific app detected in query.`);
+    }
 
     // Parse knowledge base into entries
     const blocks = knowledge.split(/(?:={3,}|-{3,})/g).map(b => b.trim()).filter(b => b.length > 0);
