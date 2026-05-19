@@ -104,12 +104,8 @@ app.post("/rewrite", async (req, res) => {
       if (querySessionCache.has(cacheKey)) {
         const session = querySessionCache.get(cacheKey);
         
-        if (session.index < session.matches.length - 1) {
-          session.index++;
-          console.log(`[DEBUG] Cache Hit! Showing match ${session.index + 1} of ${session.matches.length}`);
-        } else {
-          console.log(`[DEBUG] Cache Hit! Reached end of matches. Showing last match again.`);
-        }
+        session.index = (session.index + 1) % session.matches.length;
+        console.log(`[DEBUG] Cache Hit! Showing match ${session.index + 1} of ${session.matches.length}`);
         
         return res.json({ reply: session.matches[session.index].response });
       }
