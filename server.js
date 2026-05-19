@@ -34,7 +34,7 @@ app.post("/rewrite", async (req, res) => {
     console.log(`[DEBUG] Mode: ${mode}, Tone: ${tone}`);
     console.log(`[DEBUG] Query: "${text}"`);
 
-    const lowerText = text.toLowerCase();
+    const lowerText = text.trim().toLowerCase();
 
     const apps = ['spreadr', 'outlink', 'pro', 'connectr', 'shipr', 'prime', 'smart', 'clever', 'robo', 'sleek', 'bolt', 'exporter'];
     let detectedApp = null;
@@ -122,8 +122,14 @@ app.post("/rewrite", async (req, res) => {
         let matchScore = 0;
         
         for (const keyword of entry.keywords) {
-          if (keyword && (lowerText.includes(keyword) || (lowerText.length > 3 && keyword.includes(lowerText)))) {
-            matchScore++;
+          if (!keyword) continue;
+          
+          if (lowerText === keyword) {
+            matchScore += 100 + keyword.length;
+          } else if (lowerText.includes(keyword)) {
+            matchScore += keyword.length;
+          } else if (lowerText.length > 3 && keyword.includes(lowerText)) {
+            matchScore += lowerText.length;
           }
         }
 
