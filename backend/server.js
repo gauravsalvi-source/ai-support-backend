@@ -221,9 +221,21 @@ Rules:
 
 Formatting Rules:
 
-- If the documentation contains directly numbered items (e.g., 1., 2., 3., 1.1, 1.2), preserve them as numbered steps even if the word "steps" is not explicitly mentioned.
+-If the documentation contains directly numbered items (e.g., 1., 2., 3., 1.1, 1.2), preserve them as numbered steps even if the word "steps" is not explicitly mentioned.
 
 Example:
+
+Open Shopify Admin
+Click Themes
+Click Customize
+Detect and preserve numbered patterns even when they appear directly after text (e.g., Steps:1. Open Shopify Admin). Insert line breaks before each numbered item when needed.
+
+Example:
+Input:
+Steps:1. Open Shopify Admin2. Click Themes3. Click Customize
+
+Output:
+Steps:
 
 Open Shopify Admin
 Click Themes
@@ -237,7 +249,6 @@ Example:
 Never combine numbered steps into a single sentence.
 Keep the original structure from the documentation.
 Preserve line breaks when numbered steps or bullets exist.
-Detect and preserve numbered patterns even when they appear directly after text (e.g., Steps:1. Open Shopify Admin).
 
 If the answer does not exist in the documentation, respond with:
 
