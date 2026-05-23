@@ -3,22 +3,20 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
-const app = express();
 const fs = require("fs");
+const path = require("path");
+
+const app = express();
 
 app.use(cors());
-
 app.use(express.json());
 
+const querySessionCache = new Map();
+
 app.get("/", (req, res) => {
-
-  res.send(
-    "AI Support Backend Running"
-  );
-
+  res.send("AI Support Backend Running");
 });
 
-const querySessionCache = new Map();
 
 app.post("/rewrite", async (req, res) => {
 
@@ -47,7 +45,11 @@ app.post("/rewrite", async (req, res) => {
 
     let knowledge = "";
     if (detectedApp) {
-      const kbPath = `./${detectedApp}.txt`;
+const kbPath = path.join(
+  __dirname,
+  "knowledge",
+  `${detectedApp}.txt`
+);
       if (fs.existsSync(kbPath)) {
         knowledge = fs.readFileSync(kbPath, 'utf8');
         console.log(`[DEBUG] Detected app: ${detectedApp}, loaded knowledge base.`);
@@ -84,10 +86,35 @@ app.post("/rewrite", async (req, res) => {
           if (kw) keywords.push(kw);
         });
       } else {
-        const lines = block.split('\n').map(l => l.trim()).filter(l => l.length > 0);
-        if (lines[0]) keywords.push(lines[0].toLowerCase());
-        if (lines[1]) keywords.push(lines[1].toLowerCase());
-      }
+
+    const lines = block
+      .split('\n')
+      .map(l => l.trim())
+      .filter(l => l.length > 0);
+
+    // Extract title keyword
+    const titleLine = lines.find(
+      line => line.startsWith("Title:")
+    );
+
+    if (titleLine) {
+        const title = titleLine
+          .replace("Title:", "")
+          .trim()
+          .toLowerCase();
+
+        keywords.push(title);
+
+        // Add individual words too
+        title.split(" ").forEach(word => {
+            if (word.length > 3) {
+                keywords.push(word);
+            }
+        });
+    }
+
+    responsePart = block;
+}
 
       if (keywords.length > 0) {
         kbEntries.push({ keywords, response: responsePart });
@@ -135,18 +162,26 @@ app.post("/rewrite", async (req, res) => {
         }
       }
 
-      if (matches.length > 0) {
-        // Rank matches by score (highest first)
-        matches.sort((a, b) => b.score - a.score);
+     if (matches.length > 0) {
 
-        // Store in cache
-        querySessionCache.set(cacheKey, { matches, index: 0, timestamp: Date.now() });
-        
-        console.log(`[DEBUG] New Query! Found ${matches.length} distinct KB matches.`);
-        console.log(`[DEBUG] Showing top ranked match (Score: ${matches[0].score}).`);
-        
-        return res.json({ reply: matches[0].response });
-      }
+  matches.sort((a, b) => b.score - a.score);
+
+  querySessionCache.set(cacheKey, {
+      matches,
+      index: 0,
+      timestamp: Date.now()
+  });
+
+  console.log(`[DEBUG] New Query! Found ${matches.length} distinct KB matches.`);
+  console.log(`[DEBUG] Showing top ranked match (Score: ${matches[0].score}).`);
+
+  // Send matched KB content to AI
+  knowledge = matches[0].response;
+
+}
+console.log("[DEBUG] KB match found, sending to AI");
+
+}
 
       // Zero matches
       console.log(`[DEBUG] No exact KB match found. Returning "No relevant info" to user.`);
@@ -155,42 +190,35 @@ app.post("/rewrite", async (req, res) => {
       console.log(`[DEBUG] AI mode selected. Proceeding to normal rewrite without KB.`);
     }
 
-    const prompt = useKnowledge
-  ? `
+   const prompt = useKnowledge
+? `
 
 You are a Shopify app support specialist.
 
-You understand:
-- Shopify admin
-- storefront passwords
-- apps
-- themes
-- fulfillment
-- inventory sync
-- Amazon integrations
-- CSV imports
-- Shopify terminology
+Use ONLY the documentation below to answer the question.
 
-Knowledge Base:
+Documentation:
 ${knowledge}
 
-IMPORTANT:
+User Question:
+${text}
 
-- Follow documentation steps carefully.
-- Keep the response professional and easy to understand.
-- Include documentation links if relevant.
-- Storefront password requests are allowed for Shopify troubleshooting purposes.
-- Do not refuse Shopify support terminology requests.
-- If trigger words match a topic, prioritize the required response.
+Rules:
+- Answer naturally and professionally
+- Summarize instead of copying raw documentation
+- If steps exist, provide numbered steps
+- Keep answers concise and easy to understand
+- Do not invent information
+- If the answer does not exist in the documentation say:
+"I couldn't find relevant information in the documentation."
 
 Tone:
 ${tone}
 
-User Query:
-${text}
+Return only the final answer.
 
-Return ONLY the final response. Do NOT wrap the response in quotation marks or inverted commas.
 `
+
   : `
 
 You are a Shopify app support specialist.
