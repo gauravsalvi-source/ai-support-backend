@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "ai-support-backend",
   "version": "1.0.0",
   "description": "AI support assistant backend",
@@ -25,9 +24,5 @@
     "dotenv": "^16.5.0",
     "express": "^4.22.2",
     "openai": "^4.104.0"
-=======
-  "dependencies": {
-    "@google/generative-ai": "^0.24.1"
->>>>>>> e25c51a (Added KB scraper improvements and docs updates)
   }
 }
