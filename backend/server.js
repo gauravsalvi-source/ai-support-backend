@@ -221,24 +221,27 @@ Rules:
 
 Formatting Rules:
 
-- If the documentation contains directly numbered items (e.g., 1., 2., 3.), preserve them as numbered steps even if the word "steps" is not explicitly mentioned.:
+- If the documentation contains directly numbered items (e.g., 1., 2., 3., 1.1, 1.2), preserve them as numbered steps even if the word "steps" is not explicitly mentioned.
 
 Example:
-1. Open Shopify Admin
-2. Click Themes
-3. Click Customize
 
-- If the documentation contains bullet points, preserve them as bullets:
+Open Shopify Admin
+Click Themes
+Click Customize
+If the documentation contains bullet points, preserve them as bullet points.
+
+Example:
 • Item 1
 • Item 2
 
-- Never combine numbered steps into one sentence
-- Keep original structure from documentation
-- Preserve line breaks when steps exist
+Never combine numbered steps into a single sentence.
+Keep the original structure from the documentation.
+Preserve line breaks when numbered steps or bullets exist.
+Detect and preserve numbered patterns even when they appear directly after text (e.g., Steps:1. Open Shopify Admin).
 
-If the answer does not exist in the documentation say:
+If the answer does not exist in the documentation, respond with:
+
 "I couldn't find relevant information in the documentation."
-
 
 Tone:
 ${tone}
