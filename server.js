@@ -202,23 +202,26 @@ const kbPath = path.join(
 // Normalize KB content before sending to AI
 knowledge = knowledge
 
-  // Add newline before numbered items: 1. 2. 3.
+  // Add newline before numbered steps
   .replace(/(\d+\.)/g, '\n$1')
 
-  // Add newline after section labels
+  // Add newline after labels/headings
   .replace(
-    /(Steps:|Setting Parameters:|Go to:|Example:|Input:|Output:)/g,
-    '$1\n'
+    /(Steps|Notes|NOTE|Setting Parameters|Go to|Input|Output)\s*:?/gi,
+    '\n$&\n'
   )
 
-  // Split merged words only when lowercase joins uppercase
+  // Split merged sentences where lowercase is followed by uppercase
   .replace(/([a-z])([A-Z])/g, '$1\n$2')
 
-  // Remove excessive line breaks
-  .replace(/\n{2,}/g, '\n\n')
+  // Add newline after sentence endings if next text starts with a capital
+  .replace(/([.!?])([A-Z])/g, '$1\n$2')
+
+  // Clean repeated line breaks
+  .replace(/\n{3,}/g, '\n\n')
 
   .trim();
-  
+
  const prompt = useKnowledge
 ? `
 
