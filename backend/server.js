@@ -221,7 +221,7 @@ Rules:
 
 Formatting Rules:
 
-- If the documentation contains steps, preserve them as numbered steps:
+- If the documentation contains directly numbered items (e.g., 1., 2., 3.), preserve them as numbered steps even if the word "steps" is not explicitly mentioned.:
 
 Example:
 1. Open Shopify Admin
