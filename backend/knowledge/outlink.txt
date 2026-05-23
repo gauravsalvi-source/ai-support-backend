@@ -1,0 +1,1146 @@
+Title: Who Is This App For 
+
+The Outlink App is designed for Shopify store owners who want to sell external or affiliate products on their site. It helps merchants seamlessly integrate external product links by replacing the standard "Add to Cart" button with a custom link that redirects customers to the affiliate product page. This makes it an ideal solution for various types of online businesses.
+Why Use Outlink?• Easy Setup – Quickly replace the "Add to Cart" buttons with external links.
+• Flexible Customization – Adjust button text and design to match your store’s branding.
+• Monetization Opportunities – Earn commissions through affiliate programs with seamless product listings.
+• No Inventory Management – Sell products without worrying about stocking, shipping, or fulfillment.
+
+-----------------------------------
+
+Title: Installation Steps
+
+Installing the Outlink External Links Button is quick and straightforward. Follow these simple steps to get started:&nbsp;
+Visit the Shopify App Store: Go to the Shopify App Store and search for the ‘Outlink External Links Button’.
+Click Install: Once you’ve found the app, click Install to begin the process.
+Log In and Approve: You’ll be prompted to log in to your Shopify store. After logging in, review the permissions and approve the installation, along with any associated charges.
+Once installed, this Guide&nbsp;will walk you through the simple process of integrating the Outlink with your Shopify site.
+
+-----------------------------------
+
+Title: How Outlink Works 
+
+Outlink makes it easy to turn your Shopify store into a powerful affiliate storefront by linking products directly to external websites. Here's how it works:
+1. Install the Outlink AppBegin by installing the Outlink app from the Shopify App Store.
+2. Add the Outlink App BlockFollow the steps mentioned in the installation guide&nbsp;to add the required app block to your theme.(Skip this step if the code is already added.)
+3. Attach External Links to ProductsUse the Outlink app to add external or affiliate links to the specific products in your store that you want to redirect.You can find more info in the&nbsp;app documentation or help center.
+4. Automatic Button ReplacementThe standard “Add to Cart” button on your Shopify product page will be automatically replaced by an Outlink button.
+5. Redirect to Affiliate SiteWhen visitors click the Outlink button, they are redirected to the external or affiliate website associated with that product.
+6. Earn CommissionsYou earn commissions based on the terms of your agreement with the respective affiliate network.
+
+-----------------------------------
+
+Title: Integrating Outlink App With Online Store 2 0 Themes
+
+The Outlink app can easily be integrated with the themes compatible with Online Store 2.0. This guide will walk you through the process of how to add the integration code to the Dawn Theme.&nbsp;
+For integrating older themes refer to the integration guide here.
+External links can be added to Product pages as well as pages with repeating product blocks (for example collection pages).&nbsp;The guide below is for integration with Product pages. For repeating product block pages follow the guide here.
+Steps
+1. Open your Shopify admin.
+
+2. Click Online Store.
+
+3. Click Themes.
+
+4. Click Actions&nbsp;for your published theme.
+5. Click Edit code.
+6. Click the file buy-buttons.liquid&nbsp;under the Snippets folder.
+7. &nbsp;The buy-buttons.liquid file will open in the online code editor. In the online code editor window, locate the HTML for your add_to_cart button (you can do this by searching with CTRL-f OR COMMAND-f). The HTML for your add to cart button will look something like this:
+&lt;button
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; id="ProductSubmitButton-{{ section_id }}"
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; type="submit"
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; name="add"
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; class="product-form__submit button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {% if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; disabled
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {% endif %}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &gt;
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span&gt;
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{ 'products.product.sold_out' | t }}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {%- else -%}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{ 'products.product.add_to_cart' | t }}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {%- endif -%}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/span&gt;
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {%- render 'loading-spinner' -%}
+
+&nbsp; &lt;/button&gt;
+The trick is to find a&nbsp;&lt;button&gt;&nbsp;tag that includes the text 'products.product.add_to_cart'.&nbsp;
+(If you need assistance please contact support@outlinkapp.freshdesk.com.)
+
+8. Above the button code line, add the following code.
+{% render 'outlink-custom', product:product, o_showOutlink:1, o_hideCart:1 , o_classes: 'button button--full-width button--primary', o_style: '' %}
+&lt;div class="o_original_{{ product.id }}"&gt;
+//&lt;button&gt; code
+&lt;/div&gt;
+The boxes in&nbsp;blue&nbsp;represent the&nbsp;Outlink integration code. The box in&nbsp;red&nbsp;is the existing &lt;button&gt; code.&nbsp;
+
+It will look as shown in the image below.&nbsp;
+Similarly, the Outlink button code can be placed for the Featured Product Card on the Home page, and also on the product grid on the Search page.
+(If you are having problems please contact support@outlinkapp.freshdesk.com. We will do the integration for you.)
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29033745607/original/l4RKCN-KNAxCJvJ8wcZKSXkrYWK4pz7InQ.png?1630324573
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29033745609/original/T4_LsU970ts5-EGHjQZfj-wBsALVWx0RuA.png?1630324593
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29054320606/original/te671vRZLOozPvkXpvuaE-BdQJHG2xXKag.png?1710917850
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29054320690/original/WpA2LyLAIjls-yqi7V6f2LdNaw6hxppLBg.png?1710918205
+
+-----------------------------------
+
+Title: Integrating Outlink App Vintage Themes Like Supply Simple Minimal 
+
+This guide will walk you through the simple process of integrating the Outlink App into your Shopify site.&nbsp;
+Notes:
+If you are using Online Store 2.0 themes (Dawn Theme, etc.) then follow the integration guide available here.&nbsp;
+External links can be added to Product pages as well as pages with repeating product blocks (for example collection pages).&nbsp;The guide below is for integration with Product pages. For repeating product block pages follow the guide here.
+If you want us to do the integration for you please raise a support ticket here. We will do the integration for you.
+Steps
+
+1. Open your Shopify admin.
+
+2. Click Online Store.
+
+3. Click Themes.
+
+4. Click 'Actions' for your published theme.
+
+5. Click Edit code.
+6. Click the file product-template.liquid which appears under Sections.
+7. The product-template.liquid file will open in the online code editor. In the online code editor window, locate the HTML for your add-to-cart button&nbsp;(you can do this by searching with CTRL-f or COMMAND-f). The HTML for your add to cart button will look something like this:
+
+&nbsp;
+
+&nbsp;&lt;button type="submit" name="add" id="AddToCart" class="btn"&gt;&nbsp; &nbsp;&lt;span id="AddToCartText"&gt;{{ 'products.product.add_to_cart' | t }}&lt;/span&gt;&nbsp;&lt;/button&gt;
+
+The actual code may appear slightly different between themes. The trick is to find an &lt;input&gt; or &lt;button&gt; tag that includes something like 'Add to Cart', 'AddToCart' or 'add-to-cart' etc.
+NOTE: If the above code is not found in the product-template.liquid file, it could be found in any one of the following files (it is theme dependent):
+
+Templates /&nbsp;product.liquid
+Snippets / product-form.liquid
+Sections / product.liquid &nbsp;
+
+(If you are having problems please contact support@outlinkapp.freshdesk.com. We will do the integration for you.)&nbsp;
+
+8. On the very next line, add the following code.&nbsp;&nbsp;
+&nbsp;&lt;!--outlink file---&gt;&nbsp;{% include 'outlink' %}
+(If you are having problems please raise a support ticket here. We will do the integration for you.)&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29006784634/original/Ipe2-hkxGuNHDnAVEbbBaxc0TARWHRMWrg?1526293653
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29006784799/original/ErbvCu3jfJoR9lNbIySPlalF22PnyTRhgQ?1526293875
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29006785126/original/bWwA_xQRJbMhMrEtJALWl-zzEdxkgHFivg?1526294411
+
+-----------------------------------
+
+Title: Product Import Chrome Extension
+
+Use Outlink free Chrome extension to effortlessly import products from virtually any site to your Shopify store in just a few clicks. &nbsp;
+Step 1: Install our Free Chrome Extension on the browser.
+Step 2:&nbsp;Visit a product details page on any online store.
+Step 3:&nbsp; Click the Outlink Extension (top right corner of the browser) and Hit 'Add to Shopify' button.
+Step 4: Outlink app will extract product data (title, description, images ...) and show it to you in a form.
+Step 5:&nbsp;Verify and edit the data. Click the 'Add product to Shopify' button to import the item to your Shopify store!
+Disclaimer
+
+This is an experimental, beta, best-effort service designed to save time and effort. With constantly changing e-commerce sites, the product data imported might be inaccurate or incomplete. Verify data before importing. You may report errors by raising a ticket here.&nbsp;
+Note:
+
+1. The Chrome extension is free.
+
+2. This feature is available for only Pro plan users and above.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29015332338/original/M6inmBKJWS6cinMsVqenJyTDjQiK9u93lg.png?1558940492
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068594135/original/s9d1HU2GMhKbOV6USfKuPM2egIl-AgrBeQ.png?1769596568
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068594197/original/rZ_SgRX0E7UBn8W4cCIl_palpJjwjbVhMw.png?1769596673
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068594269/original/QB0ocLFsE7ql0hjeTSpdpIxK4f-eDDO8Jw.png?1769596848
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068594629/original/mxUrBjskuSbON0ElxLr97QcWXOKpYe2mgQ.png?1769597473
+
+-----------------------------------
+
+Title: Bulk Import Products Via Csv
+
+The app can be used to import/update products in bulk via CSV. Outlinks can be attached when adding/updating products via CSV. This saves a lot of time in manually adding the product to Shopify and attaching Outlinks.
+How does it work?
+
+Goto Outlink Dashboard&nbsp;-&gt;&nbsp;Import -&gt; via CSV.
+Purchase product import/update credits.
+We charge USD 1 = 200 credits. With 1 credit, you can add or update 1 product.
+Upload the CSV file and map the columns.
+Select the option to&nbsp;import or update products based on SKU.
+Start Import.
+Note:
+
+Variants not supported in bulk import.
+Approximate time required to bulk add products &nbsp;= (no. of products x 3) seconds. This is because we need to work within Shopify API limits.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29069549369/original/hamJN76e8nxxd7IC86nfdvsK-o5QprqlDg.png?1773823828
+
+-----------------------------------
+
+Title: Specifications For Uploading Csv File
+
+The Outlink app will bulk import/update products to your Shopify site based on the data you provide. The file should be provided in a CSV or Excel spreadsheet format.
+The first row of the CSV can have the following headers:
+
+Title
+Price
+Compare price
+Images
+Description
+Vendor
+Product Type
+product Tags
+Status
+SKU
+Barcode
+Weight
+Outlink
+button text
+isactive
+Template
+FieldValuesStatusActive: indicates the product should be visible on the site.
+Draft: indicates the product should be hidden.
+Default: Active.OutlinkThis is the external link you want the products to link out tobuttontext
+
+The text to be displayed on the Outlink buttonisactive
+
+1: indicates the Outlink should be activated on the store.&nbsp;
+0: indicates the Outlink should be inactive.&nbsp;
+Default value: 1
+Here is a sample CSV.&nbsp;Also, the template is attached for you to download.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29043010351/original/nbQ4J3yi2gQZogETV0W5zcXKnPHrFjLAwg.png?1667296886
+
+-----------------------------------
+
+Title: How Much The Bulk Import Via Csv Cost 
+
+We charge $1 per 200 products imported. &nbsp;
+It is a pre-paid system where you need to purchase product import credits before actually importing the products. The minimum purchase amount is $1 (200 product credits.)
+For each successful product import, we deduct 1 product credit. If the product is not imported due to any reason (invalid ASIN, amazon / Shopify issue ...) product credits remain unaffected.&nbsp;
+Everyone gets 10 product credits to test-drive the system.
+
+-----------------------------------
+
+Title: Add Update Product
+
+The system provides two modes for adding or updating products:
+1. Always Add New ProductsDescription: Every product in the data feed will be treated as a new product.
+Behavior:
+
+A new product entry will be created regardless of whether a product with the same SKU already exists.
+This may result in duplicate products if SKUs are reused or already exist in the store.
+Use Case: Best suited when importing a fresh batch of entirely new products or when SKU duplication is acceptable.
+2. Add or Update Products Based on SKUDescription: Products will be added or updated by matching existing SKUs.
+Behavior:
+
+If a product with the same SKU already exists in the store, it will be updated with the latest data (price, inventory, title, etc.).
+If the SKU does not exist, a new product will be created.
+Use Case: Ideal for maintaining a clean catalog and avoiding duplicates by using SKUs as unique identifiers.
+
+-----------------------------------
+
+Title: Installing External Link Button Shopify Online Store 2 0 Themes Using App Block
+
+Shopify has announced one of its biggest updates: Online Store 2.0. With Online Store 2.0 themes, you can easily place the External Link Button on your product pages using app blocks.&nbsp;
+In this article, we'll walk you through the steps to integrate the External Link Button into your 2.0 store using the Outlink App Block.
+Steps:
+1. Open your Shopify adminGo to: Online Store → Themes → Edit Theme / Customize
+2. Select a product templateChoose the product page template where you want the button to appear.
+3. Click "Add Block"From the left sidebar, click Add Block, then select Outlink Button&nbsp;Block under Apps.
+4. Position the blockDrag and drop the block to your desired location. We recommend placing it just below the Buy Buttons.
+5. Customize the button (optional)You can style the button through the App Block settings:
+
+Class: Add classes you want to apply (example: button)
+Style: Add inline styling (example: margin: 10px;)
+6. Click Save
+
+7. Button behavior on product pagesThe External Link Button will appear on Outlink product pages, and your regular Add to Cart and Buy Now buttons will be hidden.
+⭐ Need help?If you have problems with adding the button or want to change the way the button looks, or for any other request, please raise a support ticket here.&nbsp;We will take care of it.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068869625/original/heX5KHvxcFuFxgBw3qn38tjgyB1yYptkSA.png?1770789831
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068869609/original/Pv1su_2XIu4R5Re2LXccGhO-iToicFoCEQ.png?1770789772
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068869567/original/XdaoZLbCS3DjYMQpr9ymoceUE7865NLw9A.png?1770789349
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068869579/original/nnPtVOPs42HNMto-0_HNP6tn4vGqNaMQMg.png?1770789412
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068869598/original/0sQ8nGcm6fNX1B1DxV81mey6S7cNcSy0Vg.png?1770789701
+
+-----------------------------------
+
+Title: Installing Variant Table Using App Block
+
+In this article, we'll walk you through the steps to integrate the Variant Table into your 2.0 store using the Outlink Variant Table App Block.
+Step 1. Enable Variant Table from App Settings
+Open the Outlink App from your Shopify admin and navigate to the Variant Table section under settings. Toggle Enable Variant Table
+You may find more information on enabling the variant table for outlink products&nbsp;here.
+Step 2. Open your Shopify adminGo to: Online Store → Themes → Edit Theme / Customize
+Step 3. Select a product templateFrom the top dropdown, choose the Product template where you want the sticky button to appear.&nbsp;
+Step 4. Click "Add Block"From the left sidebar, click Add Block, then select Outlink Variant Table&nbsp;Block under Apps.
+
+Position the blockDrag and drop the block to your desired location. We recommend placing it just below the Buy Buttons/External link button.
+Step 5. Customize the table (optional)You can style the table through the Custom CSS
+For example, you can use the classes :
+&nbsp;
+
+.Outbox-table&nbsp;{ width: 100%; border: 1px solid #000; }
+
+.Outbox-table td&nbsp;{ border-bottom: 1px solid #000; border-right: 1px solid #000; padding: 1em;}
+
+.Outbox-link { text-align: center ;}
+Step 6. Table settings &nbsp;
+
+Step 7. Click Save
+Sample preview screenshot&nbsp;
+Note:&nbsp;The Variant Table feature is available for Pro plan and above users only.
+⭐ Need help?If you have problems with adding the button or want to change the way the button looks, or for any other request, please raise a support ticket here.&nbsp;We will take care of it.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068869924/original/HT25usW1Cn0_WN95g6oWkSGBwj5i6nQx6g.png?1770792024
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068869755/original/IPY8f4eA4NTXGMVhOooPwaXWuU3T4z7YxQ.png?1770790709
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068869757/original/buvdN-woiifntbLQvMCp5QxhyPVZ74FGRw.png?1770790721
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068869814/original/RmtXcijeWsEu7bbO-KyZs5DCHQFWnzXZgA.png?1770791368
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068869897/original/Mcb3L8isuSQPMF23KoDlYp2YeJns_M0dmA.png?1770791887
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29069989417/original/FKbcQgz2u3feD8I0w9JRcj6hpX7KTw1BsQ.png?1775803424
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068869939/original/bd7monkAw78pNjpcbNF7rbzWGyylNbo_Bg.png?1770792217
+
+-----------------------------------
+
+Title: Installing Sticky Button Using App Block
+
+With the Sticky External Link Button, you can display a floating button at the top or bottom of the screen that remains visible as customers scroll.
+In this article, we'll walk you through the steps to integrate the Sticky External Link Button into your 2.0 store using the Outlink Sticky Button Block.&nbsp;
+How to Add the Sticky External Link Button App Block ?
+Step 1.&nbsp; Enable Sticky Button from App Settings
+Open the Outlink App from your Shopify admin and navigate to the Sticky Button section under settings. Toggle Enable Sticky Button.
+Step 2. Open your Shopify adminGo to: Online Store → Themes → Edit Theme / Customize
+Step 3. Select a product templateFrom the top dropdown, choose the Product template where you want the sticky button to appear.&nbsp;
+Step 3. Click "Add Block"From the left sidebar, click Add Block, then select Outlink Sticky Button&nbsp;Block under Apps.
+Step 4. Set Button Position and&nbsp;Customize Button Style (Optional)
+Choose where the sticky button should appear on the screen:
+
+Top of the page
+Bottom of the page
+
+You can personalize the appearance of the sticky button using CSS.
+Available Options:
+
+Button Background Colour
+Button Text Colour&nbsp;
+Bar Background Colour&nbsp;
+
+This allows you full flexibility to match the button with your store’s branding.
+Step 4. Save Changes
+Click Save to apply the sticky button to your Outlink products.
+Button Behaviour on Product Pages
+
+The Sticky External Link Button will remain visible while scrolling.
+It will only appear on Products added via Oultink App.
+Sample Preview :&nbsp;
+Note:&nbsp;The Sticky Button feature is available for Pro plan and above users only.
+⭐ Need help?If you have problems with adding the button or want to change the way the button looks, or for any other request, please raise a support ticket here.&nbsp;We will take care of it.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068869683/original/rD93uyf1_dAtsb2NkaNun-NsMeTV_Xo0cg.png?1770790161
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068869650/original/eFXKrDESo6GWfqNTc8e97lr6RuJupIZenA.png?1770789976
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068869652/original/rw_jTcUR0s_4dMKlGzUIfA3AgmR5lZ9yGQ.png?1770789987
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068869674/original/xRXmn0xP970v08s5yVIJm7NISKEbNjB0ZQ.png?1770790047
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068869750/original/HjPKdMrtoAgPsbem9H_y-kQo-dq7sp-0ag.png?1770790675
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068869710/original/RYNPHuuHhvuQgHSnR3noWDrB_mwAnKl9IQ.png?1770790342
+
+-----------------------------------
+
+Title: What Is Click Tracking 
+
+Outlink will help you track clicks on external link buttons on your website. Click tracking data will be available in your Google Analytics and/or Facebook Pixel dashboard.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+Click Tracking requires Google Analytics / Facebook Pixel to be enabled on the Shopify store.
+Note: At any stage, we do not store click data. Click tracking will not work on browsers that disable javascript. There might be small discrepancies in click tracking data recorded in Google Analytics/ Facebook Pixel and the Affiliate Network dashboards because of the way clicks (events) are counted.
+Note : &nbsp;This feature is avialable for Pro plan and above users
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29069549929/original/NQcSNxqTAzhd64Y2V1GT8UwvTB6nuBJ06g.png?1773825467
+
+-----------------------------------
+
+Title: How To See Click Tracking Data 
+
+Click Tracking in Google Analytics:&nbsp;
+Each click on the external button link is recorded as an event&nbsp;in Google Analytics with the following parameters:
+
+• event_category&nbsp;= ‘Outlink’
+• action&nbsp;= ‘Click’
+event_label&nbsp;= 'Outlink-Click'.&nbsp;
+value= External link URL
+To see Click Tracking reports:
+
+• Sign in to Google Analytics.
+• Navigate to your view.
+• Open Reports.
+Select Engagement &gt; Events.
+Select the date range from the top right corner and look up for event Name: Click.
+After clicking click, drill down / explore events having &nbsp;Event Category = 'Outlink' and Event Label= 'URL'.
+Note: Currently, the report does not give you a complete list or history of the event parameters, the top reports only show real-time reports or events within the last 30 mins. To see a complete report on Event Parameters, you need to contact the Google Analytics support team.
+Click Tracking in Facebook Pixel:
+Each click on the Amazon link is recorded as a custom event on Facebook Pixel with the following parameters:
+
+• &nbsp;event&nbsp;= ‘OutlinkClick'
+• custom parameter = 'ExternalLink'.
+To see Click Tracking reports:
+
+• Sign in with Facebook Ads Manager.
+• Navigate to Events.
+• Click on View Analytics.
+• Go to Events (on the left sidebar menu).
+• Drill down / explore events having &nbsp;Events = 'OutlinkClick'.
+
+You can also see the click activity in the Analytics Real-Time &gt; Events panel.
+* for click tracking multiple links check out the guide here.
+
+-----------------------------------
+
+Title: In App Stats
+
+Use Outlink In-app Stats to track the performance of your affiliate/external Outlinks, right inside the app dashboard.&nbsp;
+If you have In-app Stats enabled, the app dashboard will show how many times the links were viewed and how many times each link was clicked. This will help you measure the click-through rate and help in optimizing the marketing campaigns.
+To activate In-app Stats simply turn ON the Activate switch found on the Stats page:
+The app will start collecting data from that point when the switch is activated. You will then be able to see the tracking reports as shown below.
+Note:&nbsp;
+
+The app deletes the stats data logs after a period of 3 months.
+In-app Stats is available from Gold Plan accounts.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29069549572/original/G2GrSEcyrNIEGhrCk6uEvyB2avUks9U_NQ.png?1773824339
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068346217/original/RnA8YXUl-4E-ufPSh0Eof9z79VxNJ2H9Uw.png?1768457086
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068346218/original/kEP22M_ffIIOKgtctaaSziSZ7G87VthHLA.png?1768457108
+
+-----------------------------------
+
+Title: How Does Bulk Edit Via Csv Work 
+
+The app can be used to update Outlinks in bulk using a .csv file. This will save lots of time in manually editing the Outlinks.&nbsp;
+How does it work?
+
+• Goto Outlink Dashboard&nbsp;-&gt;&nbsp;Bulk Editor -&gt; via CSV
+• Upload csv file with Outlink data.
+• Click Start Edit. The app will edit the products as per the CSV file.
+• After the edit is complete you will receive an email with the updated results.
+Note:
+
+• A maximum of 2000 products can be updated in one CSV.
+• Multiple variations of the same product are counted as 1 product.
+• Approximate time required to bulk edit products &nbsp;= (no. of products x 3) seconds. This is because we need to work within Shopify API limits.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29069549628/original/X6-8JsuiYsemIVYmKyZvJBXELE-OxBMxHw.png?1773824479
+
+-----------------------------------
+
+Title: Specifications For Uploading Csv File
+
+The app will bulk edit Outlinks based on the data in the .csv file.&nbsp;
+
+• Max file size = 10MB.
+• Maximum 2000 products should be listed in the CSV. If this limit us exceeded, only the top 2000products will be edited.
+• The first row of the CSV should have the following headers:• handle
+• externallink
+• buttontext
+• isactive
+FieldValueshandleProduct handle as specified by Shopify. It uniquely identifies the product. When you&nbsp;export products from Shopify, the product handle is available in the spreadsheet.externallinkThis is the Outlink you want the products to link out tobuttontext &nbsp; &nbsp;The text to be displayed on the Outlink buttonisactive1: indicates the Outlink should be activated on the store. 0: indicates the Outlink should be inactive. Default value: 1
+• All the fields are mandatory. Missing values will result in an edit failure.
+Here is a sample CSV:
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29006848565/original/rWcSwPi2wWJFg5pwySI9TAF0GIaE1GZmNQ.png?1526470835
+
+-----------------------------------
+
+Title: Multiple Links Getting Started
+
+With Outlink you can attach multiple external links to a single product.&nbsp;
+On activating Multiple Link option for any product, when your users click the External Link Outlink button, instead of redirecting to a single external link, they will be redirected to a custom landing page having multiple external links.
+Multiple links help stores provide more options to their users, get higher payouts and diversify revenue.&nbsp;
+How it works:
+1. Go to Outlink dashboard &gt; Settings&nbsp;&gt; Multiple Links&nbsp;&gt; Activate.
+2. Go to any product and click Edit.
+3. Select Link Type as Multiple Links. Add upto 10 different external links.
+4. Activate and hit Save.
+5. Users visit your store and hit the Buy Now Outlink button on the product page.
+6. They get redirected to a landing page having multiple external links you just created.
+Note:&nbsp;
+
+• Multiple Links are available to only Pro Plan account users and above.
+• If the Outlink app is uninstalled, multiple links will not work. The system will fall back to redirecting users to a single external link.
+• Multiple Links cannot be added/updated using the bulk editor.
+• Multiple Links can be applied to variants as well.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068402320/original/PBlUGUM3c2XKBcoojVF8nnllILTNiRegww.png?1768794052
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068402323/original/ssa1r7UlxGMnuQYPC8R2ww152otg_Hkyng.png?1768794112
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068402341/original/iwuXlRRkEskqfMdtJ5fIvDTUMA5CVqIB-A.png?1768794208
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068402343/original/H5u4x_PTPHugS5q-uvMeuCA7x27lACAnIQ.png?1768794295
+
+-----------------------------------
+
+Title: Multiple Link Settings
+
+To edit Multiple Link settings, go to Outlink dashboard &gt; Settings&nbsp;&gt;&nbsp;Multiple Links.
+Setting Parameters:
+1. Multiple Links - Activate or deactivate multiple link functionality in your store.
+
+2. Logo&nbsp;- Hide or show your brand logo on the multiple link landing page.
+
+3. Logo Image URL&nbsp;- The link to your logo. The logo will have a max-height of 50 pixels.
+
+4. Action Text&nbsp;- A call-to-action message is displayed above the multiple link buttons.
+
+5. Disclaimer&nbsp;- Hide or show the disclaimer link at the bottom of the landing page. Clicking this link will open a pop-up with the disclaimer text.
+
+6. Disclaimer Text: Use this text area to state your affiliate disclosures.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068402510/original/n8n1WdcbZT_oOKB_Hj2HKnTj0nq4eyfIbg.png?1768795684
+
+-----------------------------------
+
+Title: Multiple Link Analytics
+
+Outlink will track clicks on external link buttons available on the multiple links landing page. Click tracking data will be available in your Google Analytics and/or Facebook Pixel dashboard.&nbsp;
+Note&nbsp;- to track clicks you will need to provide your Google Analytics Tracking ID /&nbsp;Facebook Pixel ID in Spreadr &gt; Settings &gt; Analytics. &nbsp; &nbsp;
+Click Tracking Multiple Links in Google Analytics:&nbsp;
+Each click on Outlink External Link button on your Shopify product page is recorded as an event&nbsp;in Google Analytics with the following parameters:
+
+• &nbsp;eventCategory&nbsp;= ‘Outlink’
+• eventAction&nbsp;= ‘View’
+• eventLabel&nbsp;= Multiple link landing page URL.&nbsp;
+Clicks on any of external link button on the multiple link landing page will be recorded  with the following parameters:
+
+• &nbsp;eventCategory&nbsp;= ‘Outlink’
+• eventAction&nbsp;= ‘Click’
+• eventLabel&nbsp;= External link URL.&nbsp;
+Click Tracking Multiple Links&nbsp;in Facebook Pixel:
+Each click on Outlink External Link button on your Shopify product page is recorded as a custom event in Facebook Pixel with the following parameters:
+
+• &nbsp;event&nbsp;= ‘OutlinkMultipleView'
+• custom parameter =&nbsp;Multiple Link Landing Page URL.
+Clicks on any of external link button on the multiple link landing page will be recorded&nbsp;with the following parameters:
+
+• event&nbsp;= ‘OutlinkClick'
+• custom parameter = External link URL.&nbsp;
+
+-----------------------------------
+
+Title: Variant Level Links
+
+The app now supports adding external links to the variants of a product. To add a variant level link, click 'Edit' Outlinks for any product:
+Here you can attach external links (and the button text) for any variant of the product.
+When shoppers select a particular variant on the product page and click the Outlink button, they will be redirected to the external link attached to that variant. In case the variant link is not found, then the app will default to the parent external link.
+
+&nbsp;
+
+Note:&nbsp;
+
+Variant links are available to&nbsp;Pro Plan users only.
+Variant links cannot be modified in the bulk editor.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068402402/original/DKH91_Hk6h-vEEzVJaXGkAFJikUgABqdAA.png?1768794946
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068402405/original/WaYFXdphN-dF5OqHath2Tp0jbQatxJMUjg.png?1768795004
+
+-----------------------------------
+
+Title: Sticky Outlink Button
+
+A floating bar becomes visible either when customers start to scroll/swipe down or when customers scroll/swipe beyond the original Outlink button. The bar contains the Outlink button so your customers can quickly click the external link without going back up to the original Outlink button.&nbsp;
+The sticky Outlink button makes it as easy as possible for your customers to make a click and thereby improve your conversions.&nbsp;
+Step 1: Enable Sticky Button
+
+&nbsp;
+Step 2: Enabling the App block for the sticky button&nbsp;
+Please follow the guide here&nbsp;to enable the Sticky Button App Block
+Product Page:
+Scroll down to see the sticky button:
+Note:&nbsp;
+
+The sticky button is available to Pro Plan users only.
+The sticky button supports multiple link buttons and variant level Outlinks as well.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29069550001/original/2R5SBG-myNcdw45BW2cKHN9YJ_GiAk9_3Q.png?1773825681
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068402645/original/40K65DDlSLyR-W-XiRWiF3JyiSKqD8Xi3A.png?1768797892
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068402655/original/wPqq3DJl2qdFVoENBP3EQd85mB9Q_kX-iQ.png?1768798074
+
+-----------------------------------
+
+Title: Variant Table
+
+Improve affiliate revenue by displaying Variant Tables (or Price Comparison Sets) for any product in your Shopify store. Convert more visitors into buyers by providing them a list of shopping options. &nbsp;
+Steps to add Variant Tables
+
+Step 1 : Adding &nbsp;Variant Table App Block&nbsp;
+Check the guide here&nbsp;to enable Variant Table App Block.
+This is a one-time activity. If you are not comfortable adding the code, then&nbsp;raise a support ticket, and our team will do it for you.
+Step 2
+Go to Outlink dashboard &gt; Settings &gt; Variant Table &gt; Activate and Save.
+Note: The Variant Table is available for Pro Plan &amp; above accounts only.
+Step 3
+Go to Shopify's edit product page for any product for which you want to display the Variant Table. Create a new variant option, say 'Stores'. Then, for each affiliate store that you want to link out for that product, create a new variant. Add the name of the store as the option value.
+
+&nbsp;
+Step 4
+Go to the Outlink Edit page for the same product. Add the external links for each variant and activate the Variant Table option.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29026979499/original/6zPu9NVEAvrPNqYK8RUHR6OIIpZ9irf3ig.png?1603367713
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29069549693/original/C7rC5U5LPj-vwh5ksNgF0ekr9k5_1QM7jg.png?1773824697
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29026980058/original/RD9ezS5exx9eHZiZt320vg7B0wRLQTBDmw.png?1603368587
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29069549825/original/tPzumEEI6S3bSdPAsSi5AflMT9BMNWyvuw.png?1773825158
+
+-----------------------------------
+
+Title: Link Masking
+
+Link masking (or link cloaking) is a method to hide the destination website's URL and replace it with a clean URL.&nbsp;
+Affiliate links usually consist of tracking codes that identify vital information about the referrer and the program. This makes the affiliate links as long URLs with a lot of parameters than most shoppers think of as nonsensical information.
+You want the shopping experience to be as smooth as possible with trust being a critical factor. Trust applies not only to the affiliate storefront but also to the destination affiliate links placed on the site. You don’t want to instill any doubt in a reader before they click on an affiliate link.
+Short, clean links inspire trust and make the visitors more likely to click them.
+As an example, consider a link from Amazon:
+https://www.amazon.com/dp/B08JCJMZS2?dchild=1&amp;keywords=gaming&amp;qid=1605604583&amp;sr=8-3&amp;tag=gamingboyyzz-20&amp;linkCode=ogi&amp;th=1&amp;psc=1
+Outlink will mask the above link as:
+https://outpage.co/shop/5930084532378
+Notice that the second link looks better and more organized. By making them look prettier, people will be more inclined to click.
+To activate Link Masking, go to Outlink dashboard &gt; Settings &gt; Link Masking &gt; Activate &gt; Save.
+Example :&nbsp;
+Note:
+
+• Link Masking is available for Gold Plan users only
+• If the app is uninstalled, the app will stop masking the links.&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29069549849/original/IOt1SR4BtB4JNWMiMsuwtLTyFYLC9ZHy8g.png?1773825233
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068353168/original/Q284kod_xSPMozjAppH_HuFkVa1eRz9aww.png?1768480211
+
+-----------------------------------
+
+Title: Outlink Url Parameters
+
+The URL parameter is a way to pass information about a click through its URL.&nbsp;
+URL parameters are made of a key and a value separated by an equals sign (=) and joined by an ampersand (&amp;). The first parameter always comes after a question mark in a URL. For example:
+
+http://example.com?product=1234&amp;utm_source=google
+The Outlink app supports adding URL parameters to the external/affiliate links added via the app.
+These parameters can be used for tracking clicks. This is especially useful for measuring campaign performance.
+To add the URL parameters, simply go to Settings &gt; URL Parameters&nbsp;in the Outlink dashboard. Here, you can add the URL parameter Keys and Values.
+You can add multiple URL parameters.
+When shoppers click the Outlink button, these parameters will be attached to the external link before redirecting the user.
+Note:
+
+1. The URL custom parameters are available to Pro Plan users only.
+
+2. On deactivating the switch, the system will fall back to redirecting users to an external link without URL custom parameters.
+
+3. If the Outlink app is uninstalled, URL custom parameters will not work.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29069549877/original/3L4stLWws7ddwjtUg1b6vdJ9hzTxAgUtxw.png?1773825299
+
+-----------------------------------
+
+Title: Pricing Plans
+
+You can try the Outlink App for free for 7 days on any of the plans below.
+BasicProGold1Price/year$25
+($2.08 / month)$35
+($2.92 / month)$50
+($4.17 / month)2OutlinksUnlimitedUnlimitedUnlimited4Click Tracking✓✓✓5Bulk Editor&nbsp;✓✓✓6Multiple Linksx✓✓7Variant Linksx✓✓8Variant Tablex✓✓9Product Importx✓✓10Sticky Buttonx✓✓11Link Maskingxx✓
+
+There are no setup fees on any of our plans.
+Cancel the account anytime by simply uninstalling the app.
+You can upgrade or downgrade your plan at any time.
+To keep it fair and transparent for everyone we do not offer discounts on any of the plans to anyone.
+The app charges appear directly on your Shopify invoice – you don't have to input your credit card information again to use our app.
+
+-----------------------------------
+
+Title: How Do I Uninstall Outlink App 
+
+You can uninstall the Outlink app through your Shopify store admin.
+Go to your Shopify admin.&nbsp;
+Go to Apps. Click on the Apps and sales channel settings.
+A pop-up window will open wherein you will find the list of all the apps. Click on the 'remove' button and then delete.
+That's it! The app is now uninstalled.&nbsp;
+For detailed instructions, check out the Shopify guide to uninstall the app.
+Note: Once the app is uninstalled, your subscription is automatically terminated.&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29041044247/original/MLjxFD_df7e-G6WG60HDUkCcGj7w-gwERQ.png?1659443115
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29041044323/original/ultY9GuhkoAJnY0w3kiMaTupA6qLUkF0KA.png?1659443271
+
+-----------------------------------
+
+Title: Can I Cancel My Subscription Any Time 
+
+Yes, you can cancel at any time by uninstalling the Outlink App from your store. Your subscription will be canceled, and no further payments will be deducted. And the best thing is, external links added via Outlink will continue to work (provided you do not manually delete the code/setup files).
+
+-----------------------------------
+
+Title: Does Outlink Support Installation On More Than One Store 
+
+Outlink App is specific to a single store. If you have another store you'd like to use Outlink, just install the app again for each additional store.&nbsp;
+
+-----------------------------------
+
+Title: Which Sales Channels Are Supported By The Outlink App 
+
+Currently, we only support the "Online store" sales channel. There is no way for users to be redirected to the outside websites when clicking on a product on the Facebook shop or any other sales channel (apart from "Online store").&nbsp;
+If you are using other sales channels such as Facebook, Pinterest you will have to disable visibility for all the Outlinked products for those sales channels.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/24001817990/original/VO1WurgXSs8NRNgdix_8eR1IxcCd75AlBA.png?1486380929
+
+-----------------------------------
+
+Title: Does Outlink Support Facebook Pinterest Store Sales Channel 
+
+Outlink App does not support Facebook / Pinterest channels. There is no way for users to be redirected to outside websites when clicking on a product on the Facebook shop or a Pinterest pin.
+You will have to disable Facebook / Pinterest visibility for all the Outlinked products.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/24001818052/original/T_nWzE703TOpIzN6A-zeipwri_GlZtRsBw.png?1486381001
+
+-----------------------------------
+
+Title: What Happens To Outlinked Products When App Is Uninstalled 
+
+If you uninstall/remove the app the Outlinked products continue to work normally (provided you do not remove the Outlink integration code manually.) Products will continue to link out to external sites and you will get affiliate commissions for generated sales.&nbsp;
+
+-----------------------------------
+
+Title: Privacy Policy
+
+Last Updated June 28, 2019
+Thalia Technologies Pvt Ltd (“we” or “us” or “our”) respects the privacy of our users (“user” or “you”). This Privacy Policy explains how we collect, use, disclose and safeguard your information when you use our Shopify app or Chrome extension (collective, “Application”). Please read this Privacy Policy carefully. IF YOU DO NOT AGREE WITH THE TERMS OF THIS PRIVACY POLICY, PLEASE DO NOT ACCESS THE APPLICATION.
+We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the “Last Updated” date of this Privacy Policy. You are encouraged to periodically review this Privacy Policy to stay informed of updates. You will be deemed to have been made aware of, will be subject to, and will be deemed to have accepted the changes in any revised Privacy Policy by your continued use of the Application after the date such revised Privacy Policy is posted. &nbsp;
+This Privacy Policy does not apply to the third-party online stores from which you install the Application or make payments, including any in-game virtual items, which may also collect and use data about you. &nbsp;We are not responsible for any of the data collected by any such third party.&nbsp;
+COLLECTION OF YOUR INFORMATION
+When you use our Application, our servers will automatically record information that your device or browser sends or transmits, including, but not limited to, user settings, location, and information about your use of the Application. We only store, track and monitor general usage and not information specific to any user. We use this information to improve the Services, develop new products and offer products and services that may be of interest to you. We may collect information about you in a variety of ways. &nbsp;The information we may collect via the Application depends on the content and materials you use and includes: &nbsp;&nbsp;
+Personal Data
+
+Demographic and other personally identifiable information (such as name and email address) that you voluntarily give to us when choosing to participate in various activities related to the Application. &nbsp;
+Derivative Data
+
+The information our servers automatically collect when you access the Application, such as your native actions that are integral to the Application, including importing products, attaching external links, as well as other interactions with the Application and other users via server log files.&nbsp;
+Website Data
+
+The web page data that you want to import into your Shopify store by clicking the Outlink Chrome extension.
+USE OF YOUR INFORMATION
+Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the Application to:&nbsp;
+
+• &nbsp;Compile anonymous statistical data and analysis for use internally or with third parties. &nbsp;
+• &nbsp;Create and manage your account. &nbsp;
+• &nbsp;Deliver targeted advertising, coupons, newsletters, and promotions, and other information regarding the Application to you. &nbsp;
+• &nbsp;Email you regarding your account or order. &nbsp;
+• &nbsp;Fulfill and manage purchases, orders, payments, and other transactions related to the Application. &nbsp;
+• &nbsp;Generate a personal profile about you to make future visits to the Application more personalized. &nbsp;
+• &nbsp;Increase the efficiency and operation of the Application. &nbsp;
+• &nbsp;Monitor and analyze usage and trends to improve your experience with the Application. &nbsp;
+• &nbsp;Notify you of updates to the Application. &nbsp;
+• &nbsp;Offer new products, services, applications, and/or recommendations to you. &nbsp;
+• &nbsp;Perform other business activities as needed. &nbsp;
+• &nbsp;Request feedback and contact you about your use of the Application. &nbsp;
+• &nbsp;Resolve disputes and troubleshoot problems. &nbsp;
+• &nbsp;Respond to product and customer service requests. &nbsp;
+• &nbsp;Send you a newsletter. &nbsp;
+DISCLOSURE OF YOUR INFORMATION
+We may share information we have collected about you in certain situations. Your information may be disclosed as follows:
+By Law or to Protect Rights
+
+If we believe the release of information about you is necessary to respond to legal process, to investigate or remedy potential violations of our policies, or to protect the rights, property, and safety of others, we may share your information as permitted or required by any applicable law, rule, or regulation. This includes exchanging information with other entities for fraud protection and credit risk reduction. &nbsp;
+Third-Party Service Providers
+
+We may share your information with third parties that perform services for us or on our behalf, including payment processing, data analysis, email delivery, hosting services, customer service, and marketing assistance. &nbsp;
+Marketing Communications
+
+With your consent, or with an opportunity for you to withdraw consent, we may share your information with third parties for marketing purposes, as permitted by law. &nbsp;
+Third-Party Advertisers
+
+We may use third-party advertising companies to serve ads when you visit the Application. These companies may use information about your visits to the Application and other websites that are contained in web cookies in order to provide advertisements about goods and services of interest to you.
+Business Partners
+
+We may share your information with our business partners to offer you certain products, services or promotions.
+Offer Wall
+
+The Application may display a third-party hosted “offer wall.” Such an offer wall allows third-party advertisers to offer virtual currency, gifts, or other items to users in return for acceptance and completion of an advertisement offer. Such an offer wall may appear in the Application and be displayed to you based on certain data, such as your geographic area or demographic information. When you click on an offer wall, you will leave the Application. A unique identifier, such as your user ID, will be shared with the offer wall provider in order to prevent fraud and properly credit your account.&nbsp;
+Other Third Parties
+
+We may share your information with advertisers and investors for the purpose of conducting the general business analysis. We may also share your information with such third parties for marketing purposes, as permitted by law.
+Sale or Bankruptcy
+
+If we reorganize or sell all or a portion of our assets, undergo a merger, or are acquired by another entity, we may transfer your information to the successor entity. &nbsp;If we go out of business or enter bankruptcy, your information would be an asset transferred or acquired by a third party. You acknowledge that such transfers may occur and that the transferee may decline honor commitments we made in this Privacy Policy. We are not responsible for the actions of third parties with whom you share personal or sensitive data, and we have no authority to manage or control third-party solicitations. If you no longer wish to receive correspondence, emails or other communications from third parties, you are responsible for contacting the third party directly.&nbsp;
+TRACKING TECHNOLOGIES&nbsp; &nbsp;
+Cookies and Web Beacons&nbsp; &nbsp;
+
+We may use cookies, web beacons, tracking pixels, and other tracking technologies on the Application to help customize the Application and improve your experience. When you access the Application, your personal information is not collected through the use of tracking technology. Most browsers are set to accept cookies by default. You can remove or reject cookies, but be aware that such action could affect the availability and functionality of the Application. You may not decline web beacons. However, they can be rendered ineffective by declining all cookies or by modifying your web browser’s settings to notify you each time a cookie is tendered, permitting you to accept or decline cookies on an individual basis. &nbsp;&nbsp;
+Internet-Based Advertising
+
+Additionally, we may use third-party software to serve ads on the Application, implement email marketing campaigns, and manage other interactive marketing initiatives. This third-party software may use cookies or similar tracking technology to help manage and optimize your online experience with us. For more information about opting-out of interest-based ads, visit the Network Advertising Initiative Opt-Out Tool or Digital Advertising Alliance Opt-Out Tool. &nbsp;
+Website Analytics
+
+We may also partner with selected third-party vendors, such as Google Analytics, to allow tracking technologies and remarketing services on the Application through the use of first-party cookies and third-party cookies, to, among other things, analyze and track users’ use of the Application, determine the popularity of certain content, and better understand online activity. By accessing the Application, you consent to the collection and use of your information by these third-party vendors. You are encouraged to review their privacy policy and contact them directly for responses to your questions. We do not transfer personal information to these third-party vendors. However, if you do not want any information to be collected and used by tracking technologies, you can visit the third-party vendor or Network Advertising Initiative Opt-Out Tool or Digital Advertising Alliance Opt-Out Tool.
+
+You should be aware that getting a new computer, installing a new browser, upgrading an existing browser, or erasing or otherwise altering your browser’s cookies files may also clear certain opt-out cookies, plug-ins, or settings.&nbsp;
+THIRD-PARTY WEBSITES
+The Application may contain links to third-party websites and applications of interest, including advertisements and external services, that are not affiliated with us. Once you have used these links to leave the Application, any information you provide to these third parties is not covered by this Privacy Policy, and we cannot guarantee the safety and privacy of your information. Before visiting and providing any information to any third-party websites, you should inform yourself of the privacy policies and practices (if any) of the third-party responsible for that website, and should take those steps necessary to, in your discretion, protect the privacy of your information. We are not responsible for the content or privacy and security practices and policies of any third parties, including other sites, services or applications that may be linked to or from the Application.&nbsp;
+SECURITY OF YOUR INFORMATION
+We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other types of misuse. Any information disclosed online is vulnerable to interception and misuse by unauthorized parties. Therefore, we cannot guarantee complete security if you provide personal information.&nbsp;
+POLICY FOR CHILDREN
+We do not knowingly solicit information from or market to children under the age of 13. If you become aware of any data we have collected from children under age 13, please contact us using the contact information provided below.&nbsp;
+CONTROLS FOR DO-NOT-TRACK FEATURES
+Most web browsers and some mobile operating systems include a Do-Not-Track (“DNT”) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. &nbsp;No uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this Privacy Policy. &nbsp;
+OPTIONS REGARDING YOUR INFORMATION
+Account Information
+
+You may at any time review or change the information in your account or terminate your account by:&nbsp;
+
+• &nbsp;Contacting us using the contact information provided. &nbsp;&nbsp;
+Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, some information may be retained in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our Terms of Use and/or comply with legal requirements.
+Emails and Communications
+
+If you no longer wish to receive correspondence, emails, or other communications from us, you may opt-out by:&nbsp;
+
+If you no longer wish to receive correspondence, emails, or other communications from third parties, you are responsible for contacting the third party directly.
+CONTACT US
+If you have questions about this Privacy Policy and for any requests for data access, portability or erasure please contact us at:
+
+support AT outlinkapp.freshdesk.com.
+
+-----------------------------------
+
+Title: Terms Of Use
+
+AGREEMENT TO TERMS
+
+&nbsp;
+
+These Terms of Use constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) and Thalia Technologies Pvt Ltd (“we,” “us” or “our”), concerning your access to and use of the https://outlink.thalia-apps.com application as well as any other website, widget, media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto (collectively, the “Application”). You agree that by accessing the Application, you have read, understood, and agree to be bound by all of these Terms of Use. IF YOU DO NOT AGREE WITH ALL OF THESE TERMS OF USE, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE APPLICATION AND YOU MUST DISCONTINUE USE IMMEDIATELY.
+
+&nbsp;
+
+Supplemental terms and conditions or documents that may be posted on the Application from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Terms of Use at any time and for any reason. We will alert you about any changes by updating the “Last Updated” date of these Terms of Use, and you waive any right to receive specific notice of each such change. It is your responsibility to periodically review these Terms of Use to stay informed of updates. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Terms of Use by your continued use of the Application after the date such revised Terms of Use are posted. &nbsp;
+
+&nbsp;
+
+The information provided on the Application is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation or which would subject us to any registration requirement within such jurisdiction or country. Accordingly, those persons who choose to access the Application from other locations do so on their own initiative and are solely responsible for compliance with local laws, if and to the extent local laws are applicable.
+
+&nbsp;
+
+The Application is intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to use or register for the Application. &nbsp;&nbsp;
+
+&nbsp;
+
+INTELLECTUAL PROPERTY RIGHTS
+
+&nbsp;
+
+Unless otherwise indicated, the Application is our proprietary property and all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics on the Application (collectively, the “Content”) and the trademarks, service marks, and logos contained therein (the “Marks”) are owned or controlled by us or licensed to us, and are protected by copyright and trademark laws and various other intellectual property rights and unfair competition laws of the United States, foreign jurisdictions, and international conventions. The Content and the Marks are provided on the Application “AS IS” for your information and personal use only. Except as expressly provided in these Terms of Use, no part of the Application and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.
+
+&nbsp;
+
+Provided that you are eligible to use the Application, you are granted a limited license to access and use the Application and to download or print a copy of any portion of the Content to which you have properly gained access solely for your personal, non-commercial use. We reserve all rights not expressly granted to you in and to the Application, the Content, and the Marks.
+
+&nbsp;
+
+USER REPRESENTATIONS
+
+&nbsp;
+
+By using the Application, you represent and warrant that: &nbsp;(1) you have the legal capacity and you agree to comply with these Terms of Use; &nbsp;(2) you are not a minor in the jurisdiction in which you reside; (3) you will not access the Application through automated or non-human means, whether through a bot, script or otherwise; (4) you will not use the Application for any illegal or unauthorized purpose; and (5) your use of the Application will not violate any applicable law or regulation.
+
+&nbsp;
+
+If you provide any information that is untrue, inaccurate, not current, or incomplete, we have the right to suspend or terminate your account and refuse any and all current or future use of the Application (or any portion thereof).&nbsp;
+
+&nbsp; &nbsp; &nbsp;
+
+FEES AND PAYMENT
+
+&nbsp;
+
+You may be required to purchase or pay a fee to access some of our services. You agree to provide current, complete, and accurate purchase and account information for all purchases made via the Application. You further agree to promptly update account and payment information, including email address, payment method, and payment card expiration date, so that we can complete your transactions and contact you as needed. &nbsp;We bill you through an online billing account for purchases made via the Application. Sales tax will be added to the price of purchases as deemed required by us. We may change prices at any time. All payments shall be in U.S. dollars.
+
+&nbsp;
+
+You agree to pay all charges or fees at the prices then in effect for your purchases, and you authorize us to charge your chosen payment provider for any such amounts upon making your purchase. If your purchase is subject to recurring charges, then you consent to our charging your payment method on a recurring basis without requiring your prior approval for each recurring charge, until you notify us of your cancellation.&nbsp;
+
+We reserve the right to correct any errors or mistakes in pricing, even if we have already requested or received payment. We also reserve the right to refuse any order placed through the Application.
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+&nbsp; &nbsp; &nbsp; &nbsp;
+
+CANCELLATION
+
+&nbsp;
+
+All purchases are non-refundable. You can cancel your subscription at any time by logging into your account. Your cancellation will take effect at the end of the current paid term.
+
+&nbsp;
+
+If you are unsatisfied with our services, please email us at support AT outlinkapp.freshdesk.com.
+
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+
+SOFTWARE
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+
+We may include software for use in connection with our services. If such software is accompanied by an end-user license agreement (“EULA”), the terms of the EULA will govern your use of the software. If such software is not accompanied by a EULA, then we grant to you a non-exclusive, revocable, personal, and non-transferable license to use such software solely in connection with our services and in accordance with these Terms of Use. Any Software and any related documentation is provided “as is” without warranty of any kind, either express or implied, including, without limitation, the implied warranties of merchantability, fitness for a particular purpose, or non-infringement. You accept any and all risk arising out of use or performance of any Software. You may not reproduce or redistribute any software except in accordance with the EULA or these Terms of Use.
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+PROHIBITED ACTIVITIES
+
+&nbsp;
+
+You may not access or use the Application for any purpose other than that for which we make the Application available. The Application may not be used in connection with any commercial endeavors except those that are specifically endorsed or approved by us. &nbsp;
+
+As a user of the Application, you agree not to:
+
+&nbsp;Systematically retrieve data or other content from the Application to create or compile, directly or indirectly, a collection, compilation, database, or directory without written permission from us.&nbsp;
+&nbsp;Make any unauthorized use of the Application, including collecting usernames and/or email addresses of users by electronic or other means for the purpose of sending unsolicited email, or creating user accounts by automated means or under false pretenses.&nbsp;
+&nbsp;Use a buying agent or purchasing agent to make purchases on the Application.&nbsp;
+&nbsp;Use the Application to advertise or offer to sell goods and services.&nbsp;
+&nbsp;Circumvent, disable, or otherwise interfere with security-related features of the Application, including features that prevent or restrict the use or copying of any Content or enforce limitations on the use of the Application and/or the Content contained therein.&nbsp;
+&nbsp;Engage in unauthorized framing of or linking to the Application.&nbsp;
+&nbsp;The trick, defraud, or mislead us and other users, especially in any attempt to learn sensitive account information such as user passwords.&nbsp;
+&nbsp;Make improper use of our support services or submit false reports of abuse or misconduct.&nbsp;
+&nbsp;Engage in any automated use of the system, such as using scripts to send comments or messages, or using any data mining, robots, or similar data gathering and extraction tools.&nbsp;
+&nbsp;Interfere with, disrupt, or create an undue burden on the Application or the networks or services connected to the Application.&nbsp;
+&nbsp;Attempt to impersonate another user or person or use the username of another user.&nbsp;
+&nbsp;Sell or otherwise transfer your profile.&nbsp;
+&nbsp;Use any information obtained from the Application in order to harass, abuse, or harm another person.&nbsp;
+&nbsp;Use the Application as part of any effort to compete with us or otherwise use the Application and/or the Content for any revenue-generating endeavor or commercial enterprise.&nbsp;
+&nbsp;Decipher, decompile, disassemble, or reverse engineer any of the software comprising or in any way making up a part of the Application.&nbsp;
+&nbsp;Attempt to bypass any measures of the Application designed to prevent or restrict access to the Application, or any portion of the Application.&nbsp;
+&nbsp;Harass, annoy, intimidate, or threaten any of our employees or agents engaged in providing any portion of the Application to you.&nbsp;
+&nbsp;Delete the copyright or other proprietary rights notice from any Content.&nbsp;
+&nbsp;Copy or adapt the Application’s software, including but not limited to Flash, PHP, HTML, JavaScript, or other code.&nbsp;
+&nbsp;Upload or transmit (or attempt to upload or to transmit) viruses, Trojan horses, or other material, including excessive use of capital letters and spamming (continuous posting of repetitive text), that interferes with any party’s uninterrupted use and enjoyment of the Application or modifies, impairs, disrupts, alters, or interferes with the use, features, functions, operation, or maintenance of the Application.&nbsp;
+&nbsp;Upload or transmit (or attempt to upload or to transmit) any material that acts as a passive or active information collection or transmission mechanism, including without limitation, clear graphics interchange formats (“gifs”), 1×1 pixels, web bugs, cookies, or other similar devices (sometimes referred to as “spyware” or “passive collection mechanisms” or “pcms”).&nbsp;
+&nbsp;Except as may be the result of the standard search engine or Internet browser usage, use, launch, develop, or distribute any automated system, including without limitation, any spider, robot, cheat utility, scraper, or offline reader that accesses the Application, or using or launching any unauthorized script or other software.&nbsp;
+&nbsp;Disparage, tarnish, or otherwise harm, in our opinion, us and/or the Application.&nbsp;
+&nbsp;Use the Application in a manner inconsistent with any applicable laws or regulations.&nbsp;
+&nbsp; &nbsp;
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+SUBMISSIONS
+
+&nbsp;
+
+You acknowledge and agree that any questions, comments, suggestions, ideas, feedback, or other information regarding the Application ("Submissions") provided by you to us are non-confidential and shall become our sole property. We shall own exclusive rights, including all intellectual property rights, and shall be entitled to the unrestricted use and dissemination of these Submissions for any lawful purpose, commercial or otherwise, without acknowledgment or compensation to you. You hereby waive all moral rights to any such Submissions, and you hereby warrant that any such Submissions are original with you or that you have the right to submit such Submissions. You agree there shall be no recourse against us for any alleged or actual infringement or misappropriation of any proprietary right in your Submissions.
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+THIRD-PARTY WEBSITES AND CONTENT
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+
+The Application may contain (or you may be sent via the Application) links to other websites ("Third-Party Websites") as well as articles, photographs, text, graphics, pictures, designs, music, sound, video, information, applications, software, and other content or items belonging to or originating from third parties ("Third-Party Content"). Such Third-Party Websites and Third-Party Content are not investigated, monitored, or checked for accuracy, appropriateness, or completeness by us, and we are not responsible for any Third-Party Websites accessed through the Application or any Third-Party Content posted on, available through, or installed from the Application, including the content, accuracy, offensiveness, opinions, reliability, privacy practices, or other policies of or contained in the Third-Party Websites or the Third-Party Content. Inclusion of, linking to, or permitting the use or installation of any Third-Party Websites or any Third-Party Content does not imply approval or endorsement thereof by us. If you decide to leave the Application and access the Third-Party Websites or to use or install any Third-Party Content, you do so at your own risk, and you should be aware these Terms of Use no longer govern. You should review the applicable terms and policies, including privacy and data gathering practices, of any website to which you navigate from the Application or relating to any applications you use or install from the Application. Any purchases you make through Third-Party Websites will be through other websites and from other companies, and we take no responsibility whatsoever in relation to such purchases which are exclusively between you and the applicable third party. You agree and acknowledge that we do not endorse the products or services offered on Third-Party Websites and you shall hold us harmless from any harm caused by your purchase of such products or services. Additionally, you shall hold us harmless from any losses sustained by you or harm caused to you relating to or resulting in any way from any Third-Party Content or any contact with Third-Party Websites.&nbsp;
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+ADVERTISERS
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+
+We allow advertisers to display their advertisements and other information in certain areas of the Application, such as sidebar advertisements or banner advertisements. If you are an advertiser, you shall take full responsibility for any advertisements you place on the Application and any services provided on the Application or products sold through those advertisements. Further, as an advertiser, you warrant and represent that you possess all rights and authority to place advertisements on the Application, including, but not limited to, intellectual property rights, publicity rights, and contractual rights. We simply provide the space to place such advertisements, and we have no other relationship with advertisers.&nbsp;
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+U.S. GOVERNMENT RIGHTS
+
+&nbsp;
+
+Our services are “commercial items” as defined in Federal Acquisition Regulation (“FAR”) 2.101. If our services are acquired by or on behalf of any agency not within the Department of Defense (“DOD”), our services are subject to the terms of these Terms of Use in accordance with FAR 12.212 (for computer software) and FAR 12.211 (for technical data). If our services are acquired by or on behalf of any agency within the Department of Defense, our services are subject to the terms of these Terms of Use in accordance with Defense Federal Acquisition Regulation (“DFARS”) 227.7202‑3. In addition, DFARS 252.227‑7015 applies to technical data acquired by the DOD. This U.S. Government Rights clause is in lieu of, and supersedes, any other FAR, DFARS, or other clause or provision that addresses government rights in computer software or technical data under these Terms of Use.
+
+&nbsp;
+
+SITE MANAGEMENT
+
+&nbsp;
+
+We reserve the right, but not the obligation, to: (1) monitor the Application for violations of these Terms of Use; (2) take appropriate legal action against anyone who, in our sole discretion, violates the law or these Terms of Use, including without limitation, reporting such user to law enforcement authorities; (3) in our sole discretion and without limitation, refuse, restrict access to, limit the availability of, or disable (to the extent technologically feasible) any of your Contributions or any portion thereof; (4) in our sole discretion and without limitation, notice, or liability, to remove from the Application or otherwise disable all files and content that are excessive in size or are in any way burdensome to our systems; and (5) otherwise manage the Application in a manner designed to protect our rights and property and to facilitate the proper functioning of the Application.
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+PRIVACY POLICY
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+We care about data privacy and security. Please review our Privacy Policy: https://outlink.thalia-apps.com/privacy. By using the Application, you agree to be bound by our Privacy Policy, which is incorporated into these Terms of Use. Please be advised the Application is hosted in the United States. If you access the Application from the European Union, Asia, or any other region of the world with laws or other requirements governing personal data collection, use, or disclosure that differ from applicable laws in the United States, then through your continued use of the Application, you are transferring your data to the United States, and you expressly consent to have your data transferred to and processed in the United States. Further, we do not knowingly accept, request, or solicit information from children or knowingly market to children. Therefore, in accordance with the U.S. Children’s Online Privacy Protection Act, if we receive actual knowledge that anyone under the age of 13 has provided personal information to us without the requisite and verifiable parental consent, we will delete that information from the Application as quickly as is reasonably practical.
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+
+TERM AND TERMINATION
+
+&nbsp;
+
+These Terms of Use shall remain in full force and effect while you use the Application. WITHOUT LIMITING ANY OTHER PROVISION OF THESE TERMS OF USE, WE RESERVE THE RIGHT TO, IN OUR SOLE DISCRETION AND WITHOUT NOTICE OR LIABILITY, DENY ACCESS TO AND USE OF THE SITE (INCLUDING BLOCKING CERTAIN IP ADDRESSES), TO ANY PERSON FOR ANY REASON OR FOR NO REASON, INCLUDING WITHOUT LIMITATION FOR BREACH OF ANY REPRESENTATION, WARRANTY, OR COVENANT CONTAINED IN THESE TERMS OF USE OR OF ANY APPLICABLE LAW OR REGULATION. WE MAY TERMINATE YOUR USE OR PARTICIPATION IN THE SITE OR DELETE ANY CONTENT OR INFORMATION THAT YOU POSTED AT ANY TIME, WITHOUT WARNING, IN OUR SOLE DISCRETION.&nbsp;
+
+&nbsp;
+
+If we terminate or suspend your account for any reason, you are prohibited from registering and creating a new account under your name, a fake or borrowed name, or the name of any third party, even if you may be acting on behalf of the third party. In addition to terminating or suspending your account, we reserve the right to take appropriate legal action, including without limitation pursuing civil, criminal, and injunctive redress.
+
+&nbsp;
+
+MODIFICATIONS AND INTERRUPTIONS
+
+&nbsp;
+
+We reserve the right to change, modify, or remove the contents of the Application at any time or for any reason at our sole discretion without notice. However, we have no obligation to update any information on our Application. We also reserve the right to modify or discontinue all or part of the Application without notice at any time. We will not be liable to you or any third party for any modification, price change, suspension, or discontinuance of the Application. &nbsp;
+
+We cannot guarantee the Application will be available at all times. We may experience hardware, software, or other problems or need to perform maintenance related to the Application, resulting in interruptions, delays, or errors. We reserve the right to change, revise, update, suspend, discontinue, or otherwise modify the Application at any time or for any reason without notice to you. You agree that we have no liability whatsoever for any loss, damage, or inconvenience caused by your inability to access or use the Application during any downtime or discontinuance of the Application. Nothing in these Terms of Use will be construed to obligate us to maintain and support the Application or to supply any corrections, updates, or releases in connection therewith.
+
+&nbsp;
+
+GOVERNING LAW
+
+&nbsp;
+
+These Terms of Use and your use of the Application are governed by and construed in accordance with the laws of India to agreements made and to be entirely performed within India without regard to its conflict of law principles. &nbsp;
+
+&nbsp;
+
+DISPUTE RESOLUTION
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+Informal Negotiations &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+To expedite resolution and control the cost of any dispute, controversy, or claim related to these Terms of Use (each a "Dispute" and collectively, the “Disputes”) brought by either you or us (individually, a “Party” and collectively, the “Parties”), the Parties agree to first attempt to negotiate any Dispute (except those Disputes expressly provided below) informally for at least thirty (30) days before initiating arbitration. Such informal negotiations commence upon written notice from one Party to the other Party.
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+
+Binding Arbitration
+
+If the Parties are unable to resolve a Dispute through informal negotiations, the Dispute (except those Disputes expressly excluded below) will be finally and exclusively resolved by binding arbitration. YOU UNDERSTAND THAT WITHOUT THIS PROVISION, YOU WOULD HAVE THE RIGHT TO SUE IN COURT AND HAVE A JURY TRIAL. The arbitration shall be commenced and conducted under the Commercial Arbitration Rules of the American Arbitration Association ("AAA") and, where appropriate, the AAA’s Supplementary Procedures for Consumer-Related Disputes ("AAA Consumer Rules"), both of which are available at the AAA website www.adr.org. Your arbitration fees and your share of arbitrator compensation shall be governed by the AAA Consumer Rules and, where appropriate, limited by the AAA Consumer Rules. The arbitration may be conducted in person, through the submission of documents, by phone, or online. The arbitrator will make a decision in writing, but need not provide a statement of reasons unless requested by either Party. The arbitrator must follow applicable law, and any award may be challenged if the arbitrator fails to do so. Except where otherwise required by the applicable AAA rules or applicable law, the arbitration will take place in India, Mumbai. Except as otherwise provided herein, the Parties may litigate in court to compel arbitration, stay proceedings pending arbitration, or to confirm, modify, vacate, or enter judgment on the award entered by the arbitrator.
+
+&nbsp;
+
+If for any reason, a Dispute proceeds in court rather than arbitration, the Dispute shall be commenced or prosecuted in the state and federal courts located in India, Mumbai and the Parties hereby consent to, and waive all defenses of lack of personal jurisdiction, and forum non conveniens with respect to venue and jurisdiction in such state and federal courts. Application of the United Nations Convention on Contracts for the International Sale of Goods and the Uniform Computer Information Transaction Act (UCITA) are excluded from these Terms of Use. &nbsp; &nbsp;
+
+In no event shall any Dispute brought by either Party related in any way to the Application be commenced more than one (1) years after the cause of action arose. If this provision is found to be illegal or unenforceable, then neither Party will elect to arbitrate any Dispute falling within that portion of this provision found to be illegal or unenforceable and such Dispute shall be decided by a court of competent jurisdiction within the courts listed for jurisdiction above, and the Parties agree to submit to the personal jurisdiction of that court.
+
+&nbsp;
+
+Restrictions
+
+The Parties agree that any arbitration shall be limited to the Dispute between the Parties individually. To the full extent permitted by law, (a) no arbitration shall be joined with any other proceeding; (b) there is no right or authority for any Dispute to be arbitrated on a class-action basis or to utilize class action procedures; and (c) there is no right or authority for any Dispute to be brought in a purported representative capacity on behalf of the general public or any other persons.
+
+&nbsp;
+
+Exceptions to Informal Negotiations and Arbitration
+
+The Parties agree that the following Disputes are not subject to the above provisions concerning informal negotiations and binding arbitration: (a) any Disputes seeking to enforce or protect, or concerning the validity of, any of the intellectual property rights of a Party; (b) any Dispute related to, or arising from, allegations of theft, piracy, invasion of privacy, or unauthorized use; and (c) any claim for injunctive relief. If this provision is found to be illegal or unenforceable, then neither Party will elect to arbitrate any Dispute falling within that portion of this provision found to be illegal or unenforceable and such Dispute shall be decided by a court of competent jurisdiction within the courts listed for jurisdiction above, and the Parties agree to submit to the personal jurisdiction of that court.
+
+&nbsp;&nbsp;
+
+CORRECTIONS
+
+&nbsp;
+
+There may be information on the Application that contains typographical errors, inaccuracies, or omissions, including descriptions, pricing, availability, and various other information. We reserve the right to correct any errors, inaccuracies, or omissions and to change or update the information on the Application at any time, without prior notice.
+
+&nbsp;
+
+DISCLAIMER
+
+&nbsp;
+
+THE SITE IS PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT YOUR USE OF THE SITE AND OUR SERVICES WILL BE AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE SITE AND YOUR USE THEREOF, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE MAKE NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY OR COMPLETENESS OF THE SITE’S CONTENT OR THE CONTENT OF ANY WEBSITES LINKED TO THE SITE AND WE WILL ASSUME NO LIABILITY OR RESPONSIBILITY FOR ANY (1) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT AND MATERIALS, (2) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO AND USE OF THE SITE, (3) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SECURE SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION AND/OR FINANCIAL INFORMATION STORED THEREIN, (4) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM THE SITE, (5) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE WHICH MAY BE TRANSMITTED TO OR THROUGH THE SITE BY ANY THIRD PARTY, AND/OR (6) ANY ERRORS OR OMISSIONS IN ANY CONTENT AND MATERIALS OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE SITE. WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE SITE, ANY HYPERLINKED WEBSITE, OR ANY WEBSITE OR MOBILE APPLICATION FEATURED IN ANY BANNER OR OTHER ADVERTISING, AND WE WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND ANY THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES. AS WITH THE PURCHASE OF A PRODUCT OR SERVICE THROUGH ANY MEDIUM OR IN ANY ENVIRONMENT, YOU SHOULD USE YOUR BEST JUDGMENT AND EXERCISE CAUTION WHERE APPROPRIATE.
+
+&nbsp;
+
+LIMITATIONS OF LIABILITY
+
+&nbsp;
+
+IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST REVENUE, LOSS OF DATA, OR OTHER DAMAGES ARISING FROM YOUR USE OF THE SITE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, OUR LIABILITY TO YOU FOR ANY CAUSE WHATSOEVER AND REGARDLESS OF THE FORM OF THE ACTION, WILL AT ALL TIMES BE LIMITED TO THE AMOUNT PAID, IF ANY, BY YOU TO US DURING THE six (6) MONTH PERIOD PRIOR TO ANY CAUSE OF ACTION ARISING. CERTAIN STATE LAWS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE DISCLAIMERS OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS.
+
+&nbsp;&nbsp;
+
+INDEMNIFICATION
+
+&nbsp;
+
+You agree to defend, indemnify, and hold us harmless, including our subsidiaries, affiliates, and all of our respective officers, agents, partners, and employees, from and against any loss, damage, liability, claim, or demand, including reasonable attorneys’ fees and expenses, made by any third party due to or arising out of: (1) use of the Application; (2) breach of these Terms of Use; (3) any breach of your representations and warranties set forth in these Terms of Use; (4) your violation of the rights of a third party, including but not limited to intellectual property rights; or (5) any overt harmful act toward any other user of the Application with whom you connected via the Application. Notwithstanding the foregoing, we reserve the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify us, and you agree to cooperate, at your expense, with our defense of such claims. We will use reasonable efforts to notify you of any such claim, action, or proceeding which is subject to this indemnification upon becoming aware of it.
+
+&nbsp;&nbsp;
+
+USER DATA
+
+&nbsp;
+
+We will maintain certain data that you transmit to the Application for the purpose of managing the performance of the Application, as well as data relating to your use of the Application. Although we perform regular routine backups of data, you are solely responsible for all data that you transmit or that relates to any activity you have undertaken using the Application. You agree that we shall have no liability to you for any loss or corruption of any such data, and you hereby waive any right of action against us arising from any such loss or corruption of such data.
+
+&nbsp;&nbsp;
+
+ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES
+
+&nbsp;
+
+Visiting the Application, sending us emails, and completing online forms constitute electronic communications. You consent to receive electronic communications, and you agree that all agreements, notices, disclosures, and other communications we provide to you electronically, via email and on the Application, satisfy any legal requirement that such communication be in writing. YOU HEREBY AGREE TO THE USE OF ELECTRONIC SIGNATURES, CONTRACTS, ORDERS, AND OTHER RECORDS, AND TO ELECTRONIC DELIVERY OF NOTICES, POLICIES, AND RECORDS OF TRANSACTIONS INITIATED OR COMPLETED BY US OR VIA THE SITE. You hereby waive any rights or requirements under any statutes, regulations, rules, ordinances, or other laws in any jurisdiction which require an original signature or delivery or retention of non-electronic records, or to payments or the granting of credits by any means other than electronic means.
+
+&nbsp;
+
+CALIFORNIA USERS AND RESIDENTS
+
+&nbsp;
+
+If any complaint with us is not satisfactorily resolved, you can contact the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs in writing at 1625 North Market Blvd., Suite N 112, Sacramento, California 95834 or by telephone at (800) 952-5210 or (916) 445-1254.
+
+&nbsp;
+
+MISCELLANEOUS
+
+&nbsp;
+
+These Terms of Use and any policies or operating rules posted by us on the Application or with respect to the Application constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Terms of Use shall not operate as a waiver of such right or provision. These Terms of Use operate to the fullest extent permissible by law. We may assign any or all of our rights and obligations to others at any time. We shall not be responsible or liable for any loss, damage, delay, or failure to act caused by any cause beyond our reasonable control. If any provision or part of a provision of these Terms of Use is determined to be unlawful, void, or unenforceable, that provision or part of the provision is deemed severable from these Terms of Use and does not affect the validity and enforceability of any remaining provisions. There is no joint venture, partnership, employment or agency relationship created between you and us as a result of these Terms of Use or use of the Application. You agree that these Terms of Use will not be construed against us by virtue of having drafted them. You hereby waive any and all defenses you may have based on the electronic form of these Terms of Use and the lack of signing by the parties hereto to execute these Terms of Use.
+
+&nbsp;
+
+CONTACT US
+
+&nbsp;
+
+In order to resolve a complaint regarding the Application or to receive further information regarding the use of the Application, please contact us at:
+
+support AT outlinkapp.freshdesk.com
+
+-----------------------------------
+
+Title: Disclaimers
+
+Outlink app is just a tool to help you set up external links on your Shopify website. You need to comply with terms of each of the Affiliate / Reseller Networks that you join.
+
+-----------------------------------
+

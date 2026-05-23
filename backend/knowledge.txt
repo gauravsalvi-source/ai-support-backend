@@ -1,0 +1,100 @@
+========================
+SPREADR
+========================
+
+TITLE:
+Spreadr App with Amazon Affiliate Program - How it works?
+
+TERMINOLOGY:
+spreadr
+amazon associates
+amazon affiliate program
+affiliate marketing
+amazon affiliate links
+amazon commission
+earn amazon commission
+how spreadr works
+amazon affiliate integration
+amazon affiliate products
+shopify amazon affiliate
+amazon associates commission
+affiliate earnings
+amazon referral commission
+
+REQUIRED RESPONSE:
+
+Spreadr is an affiliate marketing app that allows merchants to import Amazon products into Shopify and redirect customers to Amazon using affiliate links.
+
+Merchants can earn commission through the Amazon Associates Program when customers purchase products through their affiliate links.
+
+For detailed instructions, please refer to:
+https://spreadr.freshdesk.com/support/solutions/articles/6000162862-spreadr-app-with-amazon-affiliate-program-how-it-works-
+
+---
+
+TITLE:
+How can I get Amazon Affiliate ID?
+
+TERMINOLOGY:
+amazon affiliate id
+affiliate id
+amazon associates id
+tracking id
+affiliate tracking id
+amazon affiliate account
+amazon associates account
+how to get amazon affiliate id
+create amazon affiliate account
+amazon referral id
+amazon tracking id
+amazon associates program
+affiliate registration
+
+REQUIRED RESPONSE:
+
+You need an Amazon Affiliate ID to track sales and earn commission from Amazon purchases made through your affiliate links.
+
+To get an Amazon Affiliate ID, you need to join the Amazon Associates Program, which is free to sign up for.
+
+Documentation:
+https://spreadr.freshdesk.com/support/solutions/articles/6000155088-how-can-i-get-amazon-affiliate-id-
+
+
+
+
+========================
+Uninstall Steps
+========================
+
+
+How do I uninstall App?
+
+Go to your Shopify admin.
+Go to Apps. Click on the Apps and sales channel settings.
+A pop-up window will appear displaying a list of all installed apps—locate the app you want to remove, click the three dots (···) next to it, and select Uninstall from the dropdown menu.
+That's it! The app is now uninstalled. 
+
+For detailed instructions, please refer to the Shopify guide on uninstalling apps.
+
+https://help.shopify.com/en/manual/apps/uninstalling-apps#uninstall-app
+
+--------------------------------------------------
+
+Trigger Words:
+- terminate
+- cancel subscription
+- close account
+- delete app
+
+Required Response:
+
+We appreciate your business.
+
+To terminate your subscription, simply uninstall the app from your Shopify admin. For detailed instructions, please refer to the Shopify guide on uninstalling apps:
+
+https://help.shopify.com/en/manual/apps/uninstalling-apps#uninstall-app
+
+If you could take a moment to share the reasons for your decision to delete the app, it would greatly help us improve our service.
+
+Thank you, and have a wonderful day!
+
