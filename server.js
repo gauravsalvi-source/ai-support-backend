@@ -199,6 +199,26 @@ const kbPath = path.join(
   );
 }
 
+// Normalize KB content before sending to AI
+knowledge = knowledge
+
+  // Add newline before numbered items: 1. 2. 3.
+  .replace(/(\d+\.)/g, '\n$1')
+
+  // Add newline after section labels
+  .replace(
+    /(Steps:|Setting Parameters:|Go to:|Example:|Input:|Output:)/g,
+    '$1\n'
+  )
+
+  // Split merged words only when lowercase joins uppercase
+  .replace(/([a-z])([A-Z])/g, '$1\n$2')
+
+  // Remove excessive line breaks
+  .replace(/\n{2,}/g, '\n\n')
+
+  .trim();
+  
  const prompt = useKnowledge
 ? `
 
