@@ -123,72 +123,81 @@ const kbPath = path.join(
 
     let useKnowledge = false;
 
-    if (mode === "kb") {
-      useKnowledge = true;
-      const cacheKey = lowerText.trim();
-      
-      // Check cache for this exact query
-      if (querySessionCache.has(cacheKey)) {
-        const session = querySessionCache.get(cacheKey);
-        
-        session.index = (session.index + 1) % session.matches.length;
-        console.log(`[DEBUG] Cache Hit! Showing match ${session.index + 1} of ${session.matches.length}`);
-        
-        return res.json({ reply: session.matches[session.index].response });
+ if (mode === "kb") {
+  useKnowledge = true;
+  const cacheKey = lowerText.trim();
+
+  if (querySessionCache.has(cacheKey)) {
+    const session = querySessionCache.get(cacheKey);
+
+    session.index = (session.index + 1) % session.matches.length;
+
+    return res.json({
+      reply: session.matches[session.index].response
+    });
+  }
+
+  const matches = [];
+  const seenResponses = new Set();
+
+  for (const entry of kbEntries) {
+    let matchScore = 0;
+
+    for (const keyword of entry.keywords) {
+      if (!keyword) continue;
+
+      if (lowerText === keyword) {
+        matchScore += 100 + keyword.length;
+      } else if (lowerText.includes(keyword)) {
+        matchScore += keyword.length;
+      } else if (
+        lowerText.length > 3 &&
+        keyword.includes(lowerText)
+      ) {
+        matchScore += lowerText.length;
       }
+    }
 
-      // Compute matches if not cached
-      const matches = [];
-      const seenResponses = new Set();
+    if (
+      matchScore > 0 &&
+      !seenResponses.has(entry.response)
+    ) {
+      matches.push({
+        ...entry,
+        score: matchScore
+      });
 
-      for (const entry of kbEntries) {
-        let matchScore = 0;
-        
-        for (const keyword of entry.keywords) {
-          if (!keyword) continue;
-          
-          if (lowerText === keyword) {
-            matchScore += 100 + keyword.length;
-          } else if (lowerText.includes(keyword)) {
-            matchScore += keyword.length;
-          } else if (lowerText.length > 3 && keyword.includes(lowerText)) {
-            matchScore += lowerText.length;
-          }
-        }
+      seenResponses.add(entry.response);
+    }
+  }
 
-        if (matchScore > 0 && !seenResponses.has(entry.response)) {
-          matches.push({ ...entry, score: matchScore });
-          seenResponses.add(entry.response);
-        }
-      }
+  if (matches.length > 0) {
 
-     if (matches.length > 0) {
+    matches.sort((a, b) => b.score - a.score);
 
-  matches.sort((a, b) => b.score - a.score);
-
-  querySessionCache.set(cacheKey, {
+    querySessionCache.set(cacheKey, {
       matches,
       index: 0,
       timestamp: Date.now()
-  });
+    });
 
-  console.log(`[DEBUG] New Query! Found ${matches.length} distinct KB matches.`);
-  console.log(`[DEBUG] Showing top ranked match (Score: ${matches[0].score}).`);
+    knowledge = matches[0].response;
 
-  // Send matched KB content to AI
-  knowledge = matches[0].response;
+    console.log("[DEBUG] KB match found, sending to AI");
 
+  } else {
+
+    return res.json({
+      reply: "No relevant info found in the Knowledge Base for this query."
+    });
+  }
+
+} else {
+
+  console.log(
+    `[DEBUG] AI mode selected. Proceeding to normal rewrite without KB.`
+  );
 }
-console.log("[DEBUG] KB match found, sending to AI");
-
-}
-
-      // Zero matches
-      console.log(`[DEBUG] No exact KB match found. Returning "No relevant info" to user.`);
-      return res.json({ reply: "No relevant info found in the Knowledge Base for this query." });
-    } else {
-      console.log(`[DEBUG] AI mode selected. Proceeding to normal rewrite without KB.`);
-    }
 
    const prompt = useKnowledge
 ? `
