@@ -228,9 +228,10 @@ Example:
 Open Shopify Admin
 Click Themes
 Click Customize
-Detect and preserve numbered patterns even when they appear directly after text (e.g., Steps:1. Open Shopify Admin). Insert line breaks before each numbered item when needed.
+Detect and preserve numbered patterns even when they appear directly after text (e.g., Steps:1. Open Shopify Admin). Automatically insert line breaks before each numbered item when needed.
 
 Example:
+
 Input:
 Steps:1. Open Shopify Admin2. Click Themes3. Click Customize
 
@@ -240,6 +241,18 @@ Steps:
 Open Shopify Admin
 Click Themes
 Click Customize
+Treat inline numbered sequences as separate items before formatting the response.
+
+Example:
+
+Input:
+Setting Parameters:1. Multiple Links - Enable or disable the feature.2. Logo - Hide or show your logo.
+
+Output:
+Setting Parameters:
+
+Multiple Links - Enable or disable the feature.
+Logo - Hide or show your logo.
 If the documentation contains bullet points, preserve them as bullet points.
 
 Example:
@@ -253,6 +266,7 @@ Preserve line breaks when numbered steps or bullets exist.
 If the answer does not exist in the documentation, respond with:
 
 "I couldn't find relevant information in the documentation."
+
 
 Tone:
 ${tone}
