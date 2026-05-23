@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "AI Support Assistant",
+  "version": "1.0",
+  "description": "AI assistant for Tawk.to replies",
+  "permissions": ["activeTab"],
+  "host_permissions": [
+    "http://localhost:3000/*",
+    "https://dashboard.tawk.to/*"
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://dashboard.tawk.to/*"],
+      "js": ["content.js"],
+      "css": ["sidebar.css"]
+    }
+  ]
+}

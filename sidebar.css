@@ -1,0 +1,298 @@
+:root {
+  --bg-sidebar: rgba(255, 255, 255, 0.95);
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --bg-input: #f9fafb;
+  --border-input: #e5e7eb;
+  --btn-bg: #f3f4f6;
+  --btn-border: #d1d5db;
+  --btn-text: #4b5563;
+  --btn-hover-bg: #e5e7eb;
+  --btn-hover-text: #111827;
+  --accent-color: #03a84e;
+  --shadow-color: rgba(0,0,0,0.1);
+  --focus-border: #10b981;
+
+  --toggle-bg: rgba(243, 244, 246, 0.8);
+  --toggle-border: rgba(0, 0, 0, 0.1);
+  --toggle-btn-bg: rgba(0, 0, 0, 0.05);
+  --toggle-btn-border: rgba(0, 0, 0, 0.05);
+  --toggle-btn-text: #6b7280;
+  --toggle-btn-hover-text: #111827;
+  --toggle-btn-hover-bg: rgba(0, 0, 0, 0.08);
+  --toggle-btn-hover-border: rgba(0, 0, 0, 0.1);
+  --toggle-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --toggle-btn-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --toggle-active-shadow: 0 0 15px rgba(3, 168, 78, 0.4), 0 4px 10px rgba(3, 168, 78, 0.2);
+}
+
+[data-theme="dark"] {
+  --bg-sidebar: #111827;
+  --text-primary: white;
+  --text-secondary: #d1d5db;
+  --bg-input: #1f2937;
+  --border-input: #374151;
+  --btn-bg: #1f2937;
+  --btn-border: #374151;
+  --btn-text: #d1d5db;
+  --btn-hover-bg: #374151;
+  --btn-hover-text: white;
+  --accent-color: #03a84e;
+  --shadow-color: rgba(0,0,0,0.3);
+  --focus-border: #10b981;
+
+  --toggle-bg: rgba(15, 23, 42, 0.6);
+  --toggle-border: rgba(255, 255, 255, 0.12);
+  --toggle-btn-bg: rgba(0, 0, 0, 0.15);
+  --toggle-btn-border: rgba(255, 255, 255, 0.06);
+  --toggle-btn-text: #9ca3af;
+  --toggle-btn-hover-text: #f3f4f6;
+  --toggle-btn-hover-bg: rgba(255, 255, 255, 0.08);
+  --toggle-btn-hover-border: rgba(255, 255, 255, 0.15);
+  --toggle-shadow: 0 8px 16px rgba(0, 0, 0, 0.25), inset 0 1px 2px rgba(255, 255, 255, 0.08);
+  --toggle-btn-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --toggle-active-shadow: 0 0 15px rgba(3, 168, 78, 0.8), 0 0 30px rgba(3, 168, 78, 0.4), 0 4px 15px rgba(3, 168, 78, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+#ai-sidebar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 360px;
+  height: 600px;
+  background: var(--bg-sidebar);
+  color: var(--text-primary);
+  border-radius: 16px;
+  padding: 16px;
+  z-index: 999999;
+  box-shadow: 0 10px 30px var(--shadow-color);
+  font-family: Inter, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  resize: both;
+  overflow: auto;
+  min-width: 320px;
+  min-height: 450px;
+  max-width: 900px;
+  max-height: 90vh;
+}
+
+#ai-header {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mode-toggle {
+  display: flex;
+  background: var(--toggle-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 20px;
+  padding: 3px;
+  border: 1px solid var(--toggle-border);
+  box-shadow: var(--toggle-shadow);
+  gap: 2px;
+}
+
+.mode-toggle button {
+  position: relative;
+  background: var(--toggle-btn-bg);
+  border: 1px solid var(--toggle-btn-border);
+  color: var(--toggle-btn-text);
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--toggle-btn-shadow);
+  margin: 0;
+  z-index: 1;
+}
+
+.mode-toggle button:hover:not(.active) {
+  color: var(--toggle-btn-hover-text);
+  background: var(--toggle-btn-hover-bg);
+  border-color: var(--toggle-btn-hover-border);
+}
+
+.mode-toggle button.active {
+  background: linear-gradient(135deg, var(--accent-color) 0%, rgba(3, 168, 78, 0.85) 100%);
+  color: #ffffff;
+  font-weight: 600;
+  border: 1px solid var(--accent-color);
+  box-shadow: var(--toggle-active-shadow);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+#ai-sidebar textarea {
+  width: 100%;
+  background: var(--bg-input);
+  border: 1px solid var(--border-input);
+  color: var(--text-primary);
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 14px;
+  resize: vertical;
+  flex: 1;
+  min-height: 120px;
+}
+
+#ai-sidebar textarea:focus {
+  outline: none;
+  border-color: var(--focus-border);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.buttons button,
+#copyBtn,
+#insertBtn,
+#resetBtn {
+  background: var(--accent-color);
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.buttons button:hover,
+#copyBtn:hover,
+#insertBtn:hover {
+  background: var(--accent-color);
+  opacity: 0.9;
+}
+
+#outputText {
+  min-height: 120px;
+}
+
+#minimizeBtn, #themeToggleBtn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--btn-bg);
+  border: 1px solid var(--btn-border);
+  color: var(--btn-text);
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 0;
+}
+
+#minimizeBtn:hover, #themeToggleBtn:hover {
+  background: var(--btn-hover-bg);
+  color: var(--btn-hover-text);
+}
+
+#themeToggleBtn svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.resize-handle {
+  position: absolute;
+  z-index: 999999;
+}
+
+.resize-right {
+  top: 0; right: 0;
+  width: 5px; height: 100%;
+  cursor: ew-resize;
+}
+
+.resize-left {
+  top: 0; left: 0;
+  width: 5px; height: 100%;
+  cursor: ew-resize;
+}
+
+.resize-top {
+  top: 0; left: 0;
+  width: 100%; height: 5px;
+  cursor: ns-resize;
+}
+
+.resize-bottom {
+  bottom: 0; left: 0;
+  width: 100%; height: 5px;
+  cursor: ns-resize;
+}
+
+.resize-top-left {
+  top: 0; left: 0;
+  width: 12px; height: 12px;
+  cursor: nwse-resize;
+  z-index: 1000000;
+}
+
+.resize-top-right {
+  top: 0; right: 0;
+  width: 12px; height: 12px;
+  cursor: nesw-resize;
+  z-index: 1000000;
+}
+
+.resize-bottom-left {
+  bottom: 0; left: 0;
+  width: 12px; height: 12px;
+  cursor: nesw-resize;
+  z-index: 1000000;
+}
+
+.resize-bottom-right {
+  bottom: 0; right: 0;
+  width: 12px; height: 12px;
+  cursor: nwse-resize;
+  z-index: 1000000;
+}
+
+.footer-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+#ai-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 12px;
+}
+
+#ai-footer {
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+  padding: 10px 10px 0 10px;
+  border-top: 1px solid #eee;
+}
+
+[data-theme="dark"] #ai-footer {
+  color: #9ca3af;
+  border-top-color: #374151;
+}
