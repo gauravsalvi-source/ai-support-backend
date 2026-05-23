@@ -199,7 +199,7 @@ const kbPath = path.join(
   );
 }
 
-   const prompt = useKnowledge
+ const prompt = useKnowledge
 ? `
 
 You are a Shopify app support specialist.
@@ -212,13 +212,27 @@ ${knowledge}
 User Question:
 ${text}
 
+Formatting Rules:
+
+- If the documentation contains directly numbered items (e.g., 1., 2., 3., 1.1, 1.2), preserve them as numbered steps even if the word "steps" is not explicitly mentioned.
+
+- Detect numbered patterns even when they appear directly after text (e.g., Steps:1. Open Shopify Admin).
+- Automatically insert line breaks before each numbered item when needed.
+- Treat inline numbered sequences as separate items before formatting the response.
+
+- If the documentation contains bullet points, preserve them as bullet points.
+
+- Never combine numbered steps into a single sentence.
+- Keep the original structure from the documentation.
+- Preserve line breaks when numbered steps or bullets exist.
+
 Rules:
 - Answer naturally and professionally
-- Summarize instead of copying raw documentation
-- If steps exist, provide numbered steps
 - Keep answers concise and easy to understand
+- Do NOT summarize or compress numbered steps
 - Do not invent information
-- If the answer does not exist in the documentation say:
+
+If the answer does not exist in the documentation say:
 "I couldn't find relevant information in the documentation."
 
 Tone:
@@ -281,7 +295,7 @@ ${text}
             }
           ],
 
-          temperature: 0.7
+          temperature: 0.2
 
         },
 
