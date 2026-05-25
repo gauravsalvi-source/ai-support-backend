@@ -113,8 +113,56 @@ function readKnowledge(sources) {
     .join("\n\n-----------------------------------\n\n");
 }
 
+function getKnowledgeIndex() {
+  const entries = [];
+  const knowledgeFiles = getKnowledgeFiles();
+
+  for (const [appName, filePath] of knowledgeFiles.entries()) {
+    const knowledge = fs.readFileSync(filePath, "utf8");
+    const blocks = knowledge
+      .split(/(?:={3,}|-{3,})/g)
+      .map(block => block.trim())
+      .filter(block => block.length > 0);
+
+    for (const block of blocks) {
+      const titleLine = block
+        .split("\n")
+        .map(line => line.trim())
+        .find(line => line.startsWith("Title:"));
+
+      if (!titleLine) continue;
+
+      const title = titleLine.replace("Title:", "").trim();
+      if (!title) continue;
+
+      entries.push({
+        app: appName,
+        title,
+        command: `${appName} - ${title}`
+      });
+    }
+  }
+
+  return entries.sort((a, b) => {
+    const appCompare = a.app.localeCompare(b.app);
+    return appCompare || a.title.localeCompare(b.title);
+  });
+}
+
 app.get("/", (req, res) => {
   res.send("AI Support Backend Running");
+});
+
+app.get("/kb-index", (req, res) => {
+  try {
+    res.json({
+      entries: getKnowledgeIndex()
+    });
+  } catch (err) {
+    res.status(500).json({
+      error: err.message || "Unable to load knowledge index"
+    });
+  }
 });
 
 

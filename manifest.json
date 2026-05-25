@@ -6,6 +6,7 @@
   "permissions": ["activeTab"],
   "host_permissions": [
     "http://localhost:3000/*",
+    "https://ai-support-backend-83ds.onrender.com/*",
     "https://dashboard.tawk.to/*"
   ],
   "icons": {

@@ -1,3 +1,4 @@
+const API_BASE = "https://ai-support-backend-83ds.onrender.com";
 const sidebar = document.createElement("div");
 
 sidebar.innerHTML = `
@@ -32,6 +33,10 @@ sidebar.innerHTML = `
 
     <textarea id="inputText"
       placeholder="Type rough reply..."></textarea>
+
+    <div id="kbCommandPalette" hidden>
+      <div id="kbCommandList"></div>
+    </div>
 
     <div class="buttons" id="ai-buttons">
 
@@ -107,7 +112,7 @@ async function rewriteReply(tone) {
     document.getElementById("inputText").value;
 
   const response = await fetch(
-    "https://ai-support-backend-83ds.onrender.com/rewrite",
+    `${API_BASE}/rewrite`,
     {
       method: "POST",
 
@@ -144,6 +149,152 @@ document.querySelectorAll(".buttons button")
 });
 
 let currentMode = "ai";
+let kbIndex = [];
+let filteredKbCommands = [];
+let selectedKbCommandIndex = 0;
+let kbIndexPromise = null;
+
+const inputText = document.getElementById("inputText");
+const kbCommandPalette = document.getElementById("kbCommandPalette");
+const kbCommandList = document.getElementById("kbCommandList");
+
+async function loadKbIndex() {
+  if (kbIndex.length > 0) return kbIndex;
+
+  if (!kbIndexPromise) {
+    kbIndexPromise = fetch(`${API_BASE}/kb-index`)
+      .then(response => response.json())
+      .then(data => {
+        kbIndex = Array.isArray(data.entries) ? data.entries : [];
+        return kbIndex;
+      })
+      .catch(error => {
+        console.error("Unable to load KB index", error);
+        kbIndexPromise = null;
+        return [];
+      });
+  }
+
+  return kbIndexPromise;
+}
+
+function closeKbCommandPalette() {
+  kbCommandPalette.hidden = true;
+  kbCommandList.innerHTML = "";
+  filteredKbCommands = [];
+  selectedKbCommandIndex = 0;
+}
+
+function getSlashQuery() {
+  const value = inputText.value.trim();
+  return value.startsWith("/") ? value.slice(1).trim().toLowerCase() : null;
+}
+
+function scoreKbCommand(entry, query) {
+  if (!query) return 1;
+
+  const haystack = `${entry.app} ${entry.title}`.toLowerCase();
+  const words = query.split(/\s+/).filter(Boolean);
+
+  if (words.every(word => haystack.includes(word))) {
+    return words.reduce((score, word) => score + word.length, 0);
+  }
+
+  return 0;
+}
+
+function renderKbCommandPalette() {
+  kbCommandList.innerHTML = "";
+
+  if (filteredKbCommands.length === 0) {
+    closeKbCommandPalette();
+    return;
+  }
+
+  filteredKbCommands.slice(0, 8).forEach((entry, index) => {
+    const item = document.createElement("button");
+    item.type = "button";
+    item.className = index === selectedKbCommandIndex ? "active" : "";
+
+    const appLabel = document.createElement("span");
+    appLabel.className = "kb-command-app";
+    appLabel.textContent = entry.app;
+
+    const titleLabel = document.createElement("span");
+    titleLabel.className = "kb-command-title";
+    titleLabel.textContent = entry.title;
+
+    item.append(appLabel, titleLabel);
+
+    item.addEventListener("mousedown", event => {
+      event.preventDefault();
+      selectKbCommand(index);
+    });
+
+    kbCommandList.appendChild(item);
+  });
+
+  kbCommandPalette.hidden = false;
+}
+
+async function updateKbCommandPalette() {
+  if (currentMode !== "kb") {
+    closeKbCommandPalette();
+    return;
+  }
+
+  const query = getSlashQuery();
+  if (query === null) {
+    closeKbCommandPalette();
+    return;
+  }
+
+  const entries = await loadKbIndex();
+  filteredKbCommands = entries
+    .map(entry => ({
+      ...entry,
+      score: scoreKbCommand(entry, query)
+    }))
+    .filter(entry => entry.score > 0)
+    .sort((a, b) => b.score - a.score || a.app.localeCompare(b.app) || a.title.localeCompare(b.title));
+
+  selectedKbCommandIndex = 0;
+  renderKbCommandPalette();
+}
+
+function selectKbCommand(index) {
+  const entry = filteredKbCommands[index];
+  if (!entry) return;
+
+  inputText.value = entry.command;
+  closeKbCommandPalette();
+  rewriteReply("fetch");
+}
+
+inputText.addEventListener("input", updateKbCommandPalette);
+
+inputText.addEventListener("keydown", event => {
+  if (kbCommandPalette.hidden) return;
+
+  if (event.key === "ArrowDown") {
+    event.preventDefault();
+    selectedKbCommandIndex = Math.min(
+      selectedKbCommandIndex + 1,
+      Math.min(filteredKbCommands.length, 8) - 1
+    );
+    renderKbCommandPalette();
+  } else if (event.key === "ArrowUp") {
+    event.preventDefault();
+    selectedKbCommandIndex = Math.max(selectedKbCommandIndex - 1, 0);
+    renderKbCommandPalette();
+  } else if (event.key === "Enter") {
+    event.preventDefault();
+    selectKbCommand(selectedKbCommandIndex);
+  } else if (event.key === "Escape") {
+    event.preventDefault();
+    closeKbCommandPalette();
+  }
+});
 
 document.getElementById("mode-ai").addEventListener("click", () => {
   currentMode = "ai";
@@ -151,6 +302,8 @@ document.getElementById("mode-ai").addEventListener("click", () => {
   document.getElementById("mode-kb").classList.remove("active");
   document.getElementById("ai-buttons").style.display = "grid";
   document.getElementById("kb-buttons").style.display = "none";
+  inputText.placeholder = "Type rough reply...";
+  closeKbCommandPalette();
 });
 
 document.getElementById("mode-kb").addEventListener("click", () => {
@@ -159,6 +312,10 @@ document.getElementById("mode-kb").addEventListener("click", () => {
   document.getElementById("mode-ai").classList.remove("active");
   document.getElementById("ai-buttons").style.display = "none";
   document.getElementById("kb-buttons").style.display = "grid";
+  inputText.placeholder = "/search KB or app - title";
+  inputText.focus();
+  loadKbIndex();
+  updateKbCommandPalette();
 });
 
 document.getElementById("copyBtn")
@@ -224,6 +381,8 @@ document.getElementById("resetBtn")
   document.getElementById("inputText").value = "";
 
   document.getElementById("outputText").value = "";
+
+  closeKbCommandPalette();
 
 });
 
