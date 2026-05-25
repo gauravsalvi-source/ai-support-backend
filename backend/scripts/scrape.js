@@ -4,8 +4,8 @@ const fs = require("fs");
 const path = require("path");
 
 // Change only these for each app
-const appName = "outlink";
-const baseUrl = "https://outlinkapp.freshdesk.com";
+const appName = "supr";
+const baseUrl = "https://getsupr.freshdesk.com";
 
 const docsUrl = `${baseUrl}/support/solutions`;
 
