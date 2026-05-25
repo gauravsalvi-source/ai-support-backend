@@ -12,6 +12,106 @@ app.use(cors());
 app.use(express.json());
 
 const querySessionCache = new Map();
+const KNOWLEDGE_DIR = path.join(__dirname, "knowledge");
+const KNOWLEDGE_DIRS = [
+  KNOWLEDGE_DIR,
+  path.join(__dirname, "backend", "knowledge")
+];
+
+function getKnowledgeFiles() {
+  const filesByApp = new Map();
+
+  for (const dir of KNOWLEDGE_DIRS) {
+    if (!fs.existsSync(dir)) continue;
+
+    for (const file of fs.readdirSync(dir)) {
+      if (!file.endsWith(".txt")) continue;
+
+      const appName = path.basename(file, ".txt");
+      if (!filesByApp.has(appName)) {
+        filesByApp.set(appName, path.join(dir, file));
+      }
+    }
+  }
+
+  return filesByApp;
+}
+
+function getKnowledgeAppNames() {
+  const fallbackApps = [
+    "spreadr-bigcommerce",
+    "spreadr-woocommerce",
+    "spreadr-wix",
+    "spreadr",
+    "outlink",
+    "connectr",
+    "exporter",
+    "clever",
+    "prime",
+    "shipr",
+    "smart",
+    "sleek",
+    "robo",
+    "bolt",
+    "pro"
+  ];
+
+  const fileApps = [...getKnowledgeFiles().keys()];
+
+  return [...new Set([...fileApps, ...fallbackApps])]
+    .sort((a, b) => b.length - a.length);
+}
+
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function parseKnowledgeQuery(text, apps) {
+  const query = text.trim();
+
+  for (const app of apps) {
+    const prefixPattern = new RegExp(
+      `^${escapeRegExp(app)}\\s*(?:-|:)\\s*(.+)$`,
+      "i"
+    );
+    const match = query.match(prefixPattern);
+
+    if (match) {
+      return {
+        detectedApp: app,
+        searchText: match[1].trim()
+      };
+    }
+  }
+
+  return {
+    detectedApp: null,
+    searchText: query
+  };
+}
+
+function getKnowledgeSources(detectedApp, mode) {
+  const knowledgeFiles = getKnowledgeFiles();
+
+  if (detectedApp) {
+    const kbPath = knowledgeFiles.get(detectedApp);
+    return kbPath ? [kbPath] : [];
+  }
+
+  return [];
+}
+
+function getKnowledgeSignature(sources) {
+  return sources
+    .map(source => `${source}:${fs.statSync(source).mtimeMs}`)
+    .join("|");
+}
+
+function readKnowledge(sources) {
+  return sources
+    .map(source => fs.readFileSync(source, "utf8"))
+    .join("\n\n-----------------------------------\n\n");
+}
 
 app.get("/", (req, res) => {
   res.send("AI Support Backend Running");
@@ -34,28 +134,25 @@ app.post("/rewrite", async (req, res) => {
 
     const lowerText = text.trim().toLowerCase();
 
-    const apps = ['spreadr', 'outlink', 'pro', 'connectr', 'shipr', 'prime', 'smart', 'clever', 'robo', 'sleek', 'bolt', 'exporter'];
-    let detectedApp = null;
-    for (const app of apps) {
-      if (lowerText.includes(app)) {
-        detectedApp = app;
-        break;
-      }
-    }
+    const apps = getKnowledgeAppNames();
+    const knowledgeQuery = parseKnowledgeQuery(text, apps);
+    const detectedApp = mode === "kb" ? knowledgeQuery.detectedApp : null;
+    const lookupText = mode === "kb"
+      ? knowledgeQuery.searchText.toLowerCase()
+      : lowerText;
 
     let knowledge = "";
-    if (detectedApp) {
-const kbPath = path.join(
-  __dirname,
-  "knowledge",
-  `${detectedApp}.txt`
-);
-      if (fs.existsSync(kbPath)) {
-        knowledge = fs.readFileSync(kbPath, 'utf8');
-        console.log(`[DEBUG] Detected app: ${detectedApp}, loaded knowledge base.`);
-      } else {
-        console.log(`[DEBUG] Detected app: ${detectedApp}, but ${kbPath} does not exist.`);
-      }
+    const knowledgeSources = getKnowledgeSources(detectedApp, mode);
+    const knowledgeSignature = getKnowledgeSignature(knowledgeSources);
+
+    if (knowledgeSources.length > 0) {
+      knowledge = readKnowledge(knowledgeSources);
+      console.log(
+        `[DEBUG] Loaded ${knowledgeSources.length} knowledge file(s)` +
+        (detectedApp ? ` for ${detectedApp}.` : ".")
+      );
+    } else if (detectedApp) {
+      console.log(`[DEBUG] Detected app: ${detectedApp}, but no knowledge file exists.`);
     } else {
       console.log(`[DEBUG] No specific app detected in query.`);
     }
@@ -125,7 +222,14 @@ const kbPath = path.join(
 
  if (mode === "kb") {
   useKnowledge = true;
-  const cacheKey = lowerText.trim();
+
+  if (!detectedApp) {
+    return res.json({
+      reply: "Please enter your KB query in this format: app name - title. Example: shipr - How it works"
+    });
+  }
+
+  const cacheKey = `${detectedApp}:${knowledgeSignature}:${lookupText.trim()}`;
 
   if (querySessionCache.has(cacheKey)) {
     const session = querySessionCache.get(cacheKey);
@@ -146,15 +250,15 @@ const kbPath = path.join(
     for (const keyword of entry.keywords) {
       if (!keyword) continue;
 
-      if (lowerText === keyword) {
+      if (lookupText === keyword) {
         matchScore += 100 + keyword.length;
-      } else if (lowerText.includes(keyword)) {
+      } else if (lookupText.includes(keyword)) {
         matchScore += keyword.length;
       } else if (
-        lowerText.length > 3 &&
-        keyword.includes(lowerText)
+        lookupText.length > 3 &&
+        keyword.includes(lookupText)
       ) {
-        matchScore += lowerText.length;
+        matchScore += lookupText.length;
       }
     }
 
