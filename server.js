@@ -155,6 +155,12 @@ app.get("/", (req, res) => {
 
 app.get("/kb-index", (req, res) => {
   try {
+    res.set({
+      "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",
+      "Pragma": "no-cache",
+      "Expires": "0"
+    });
+
     res.json({
       entries: getKnowledgeIndex()
     });

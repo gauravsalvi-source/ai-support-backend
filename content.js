@@ -153,19 +153,28 @@ let kbIndex = [];
 let filteredKbCommands = [];
 let selectedKbCommandIndex = 0;
 let kbIndexPromise = null;
+let kbIndexLoadedAt = 0;
 
 const inputText = document.getElementById("inputText");
 const kbCommandPalette = document.getElementById("kbCommandPalette");
 const kbCommandList = document.getElementById("kbCommandList");
 
-async function loadKbIndex() {
-  if (kbIndex.length > 0) return kbIndex;
+async function loadKbIndex(forceRefresh = false) {
+  const isFresh = Date.now() - kbIndexLoadedAt < 300000;
+  if (!forceRefresh && kbIndex.length > 0 && isFresh) return kbIndex;
+
+  if (forceRefresh) {
+    kbIndexPromise = null;
+  }
 
   if (!kbIndexPromise) {
-    kbIndexPromise = fetch(`${API_BASE}/kb-index`)
+    kbIndexPromise = fetch(`${API_BASE}/kb-index?t=${Date.now()}`, {
+      cache: "no-store"
+    })
       .then(response => response.json())
       .then(data => {
         kbIndex = Array.isArray(data.entries) ? data.entries : [];
+        kbIndexLoadedAt = Date.now();
         return kbIndex;
       })
       .catch(error => {
@@ -314,7 +323,7 @@ document.getElementById("mode-kb").addEventListener("click", () => {
   document.getElementById("kb-buttons").style.display = "grid";
   inputText.placeholder = "/search KB or app - title";
   inputText.focus();
-  loadKbIndex();
+  loadKbIndex(true);
   updateKbCommandPalette();
 });
 
