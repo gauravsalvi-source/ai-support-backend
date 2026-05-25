@@ -14,8 +14,8 @@ app.use(express.json());
 const querySessionCache = new Map();
 const KNOWLEDGE_DIR = path.join(__dirname, "knowledge");
 const KNOWLEDGE_DIRS = [
-  KNOWLEDGE_DIR,
-  path.join(__dirname, "backend", "knowledge")
+  path.join(__dirname, "backend", "knowledge"),
+  KNOWLEDGE_DIR
 ];
 
 function getKnowledgeFiles() {
