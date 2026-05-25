@@ -1,84 +1,295 @@
-Title: Clever App
+Title: How Clever App Works
 
-The Clever Variant app is designed to be user-friendly and easy to set up. Here's how you can add it to your Shopify store:1. Head to the Shopify app store and add the Clever Variant app. 2. Click the 'Customize' button for the published theme, navigate to the App embeds page, and turn on 'Clever App Embed'. Save your changes.3. Log in to the app, choose your theme, and press the Install code button. There's no coding required!4. Use the app editor to arrange product images based on variant options. You can find more information on this here.By following these steps, your product pages will display images variant-wise, giving your customers a better shopping experience.
+The Clever Variant app is designed to be user-friendly and easy to set up. Here's how you can add it to your Shopify store:
+1. Head to the Shopify app store and add the Clever Variant app.&nbsp;
+2. Click the 'Customize' button for the published theme, navigate to the App embeds page, and turn on 'Clever App Embed'. Save your changes.
+3. Log in to the app, choose your theme, and press the Install code button. There's no coding required!
+4. Use the app editor to arrange product images based on variant options. You can find more information on this here.
+By following these steps, your product pages will display images variant-wise, giving your customers a better shopping experience.
 
------------------------------------
-
-Title: Clever App
-
-1. Go to App embeds page on the Shopify store and turn on 'Clever Code' and save the changes.2. Select your store's theme and hit "Install Code"In the dropdown, you will see all the theme names available in your store. Select the currently published theme and click on "Install Code" to proceed.In the second dropdown, you will be able to see the list of themes supported by Clever.
-
------------------------------------
-
-Title: Clever App
-
-Before getting started, make sure to add all the variant images to the product itself via Shopify admin product detai. Follow the steps below to arrange variant images: 1. Go to product details page on Shopify admin and click 'Clever Product Variants' under 'More actions':You will be redirected to the Clever app Image Arrange page.2. Select the option which should be used for image selection.3. Assign images to variants as per your preferences.4. Switch 'ON' the variant selector for this product and hit "SAVE"5. After 3-4 seconds check the product page on Shopify. The images should be displayed based on the selected variant.Note:Variant images will be displayed in the order they are setup in your Shopify product details page. Changing the order of images in Shopify admin will automatically sort the variant images on the storefront.
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48410953165/original/d5_yuiFmbOlhtnbgDdZBiktxxPyiANls4Q.png?1776060095
 
 -----------------------------------
 
-Title: Clever App
+Title: Install Code Guide
 
-We’re excited to share an important update that will improve performance, security, and reliability for all merchants using our app. Our Clever app will be migrating to Shopify’s Built-for-Shopify (BFS) architecture.This upgrade brings us in line with Shopify’s newest app performance standards and ensures long-term compatibility with the platform.What Is BFS?BFS (Built for Shopify) is Shopify’s highest standard for app quality. Apps that meet this standard must follow strict guidelines for:Speed & performanceSecurity & data protectionUser experienceSeamless integration with Shopify AdminBy migrating to BFS, our app will run more natively inside Shopify—providing a smoother, more stable experience.Is Any Action Required from You?For most merchants: No action is required. Your app will automatically migrate to the updated BFS version.Will This Cause Any Downtime?No. The migration has been carefully planned to avoid any disruption to your existing workflows. All tasks, sync operations, and automations will continue functioning normally.Why We’re Making This ChangeShopify is transitioning apps toward BFS to ensure merchants get:The fastest and most stable apps possibleA consistent experience across the AdminBetter support for high-volume stores and large catalogsOur app is evolving to match these expectations.
+1. Go to App embeds page on the Shopify store and turn on 'Clever Code' and save the changes.
+2. Select your store's theme and hit "Install Code"
 
------------------------------------
+In the dropdown, you will see all the theme names available in your store. Select the currently published theme and click on "Install Code" to proceed.
+In the second dropdown, you will be able to see the list of themes supported by Clever.
 
-Title: Clever App
-
-The Clever Variant Image app enhances your Shopify store by optimizing how variant images are displayed, improving speed, usability, and overall shopping experience.1. Faster Load TimesLoads only the images for the selected variant, reducing page load time and improving performance.2. Cleaner & More Organized Product PagesDisplays only relevant images for each variant, keeping product pages neat and easy to navigate.3. Simple & Easy to UseNo coding required – set it up in just a few clicks.4. Supports VideosEnhance product pages by displaying videos alongside images for each variant.5. Better Shopping ExperienceCreates a smooth and seamless browsing experience, helping customers find what they need faster.6. No Image LimitationsUpload and display unlimited variant images without restrictions.7. Works with Most Shopify ThemesFully compatible with most Shopify themes, with custom support available if needed.Why Choose Clever?With its fast performance, simple setup, and enhanced user experience, the Clever app helps boost conversions by making product pages more intuitive and visually appealing.Need help? Our support team is always available via live chat or email.
-
------------------------------------
-
-Title: Clever App
-
-It's $10 per month, with a 7 day free trial. There is no limit on the number of products.Note:The app charges you via Shopify billing API meaning that charges appear directly on your Shopify invoice.There are no setup fees.Terminate the subscription anytime by simply uninstalling the app.To keep it fair and transparent we do not offer discounts to anyone.
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48410953225/original/94DOf0nZDgJTbsNm-3A46zpn-KbNTYo2sQ.png?1776060137
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48410953415/original/AtU2GBahUb2peAHjNZ16ePLIKVzSSY2IEw.png?1776060254
 
 -----------------------------------
 
-Title: Clever App
+Title: Setting Up Images Variant Wise
 
-Before uninstalling the app, you can turn off variant switcher showing in your store by simply deactivating them from the app dashboard. You can then uninstall the Clever app through your Shopify store admin.Go to your Shopify admin.Go to 'Apps'. When the page loads click on delete next to clever product variants That's it! The app is now uninstalled.For detailed instructions check out the Shopify guide to uninstall the app.Note:Once the app is uninstalled, the app subscription terminates automatically.The products imported via Clever app will remain unaltered on Shopify store.
+Before getting started, make sure to add all the variant images to the product itself via Shopify admin product detai.&nbsp;
+Follow the steps below to arrange variant images:&nbsp;
+1. Go to product details page on Shopify admin and click 'Clever Product Variants' under 'More actions':
+You will be redirected to the Clever app Image Arrange page.
+2. Select the option which should be used for image selection.
+3. Assign images to variants as per your preferences.
+4. Switch 'ON' the variant selector for this product and hit "SAVE"
+5. After 3-4 seconds check the product page on Shopify. The images should be displayed based on the selected variant.
+Note:
+
+Variant images will be displayed in the order they are setup in your Shopify product details page. Changing the order of images in Shopify admin will automatically sort the variant images on the storefront.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48410954042/original/bBFpWvcGur_-CvtPl1tZ3ZAZL6fBlmmd9Q.png?1776060839
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48410955610/original/6etkfwewQL8-K1GuOVlxGMlXb8-stD5lhw.png?1776061936
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48410956124/original/zx6x-qzCDsfItuMoY7cqw1XrmquR1aT65w.png?1776062313
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48410956252/original/22r7bqra-NzWreYapU0DiDTuaOL1tgXLKA.png?1776062406
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48410956911/original/AAUqcoEOoM_zm9YFtMOMWXlDE36nM_dd7g.png?1776062852
 
 -----------------------------------
 
-Title: Clever App
+Title: Important Update Our App Is Migrating To Shopify S Built For Shopify Bfs Standard
+
+We’re excited to share an important update that will improve performance, security, and reliability for all merchants using our app. Our Clever app will be migrating to Shopify’s Built-for-Shopify (BFS) architecture.
+This upgrade brings us in line with Shopify’s newest app performance standards and ensures long-term compatibility with the platform.
+What Is BFS?
+BFS (Built for Shopify) is Shopify’s highest standard for app quality. Apps that meet this standard must follow strict guidelines for:
+
+Speed &amp; performance
+Security &amp; data protection
+User experience
+Seamless integration with Shopify Admin
+
+By migrating to BFS, our app will run more natively inside Shopify—providing a smoother, more stable experience.
+Is Any Action Required from You?
+For most merchants: No action is required. Your app will automatically migrate to the updated BFS version.
+Will This Cause Any Downtime?
+No. The migration has been carefully planned to avoid any disruption to your existing workflows. All tasks, sync operations, and automations will continue functioning normally.
+Why We’re Making This Change
+Shopify is transitioning apps toward BFS to ensure merchants get:
+
+The fastest and most stable apps possible
+A consistent experience across the Admin
+Better support for high-volume stores and large catalogs
+Our app is evolving to match these expectations.
+
+-----------------------------------
+
+Title: Benefits Of Clever App
+
+The Clever Variant Image app enhances your Shopify store by optimizing how variant images are displayed, improving speed, usability, and overall shopping experience.
+1. Faster Load TimesLoads only the images for the selected variant, reducing page load time and improving performance.
+
+2. Cleaner &amp; More Organized Product PagesDisplays only relevant images for each variant, keeping product pages neat and easy to navigate.
+
+3. Simple &amp; Easy to UseNo coding required – set it up in just a few clicks.
+
+4. Supports VideosEnhance product pages by displaying videos alongside images for each variant.
+
+5. Better Shopping ExperienceCreates a smooth and seamless browsing experience, helping customers find what they need faster.
+
+6. No Image LimitationsUpload and display unlimited variant images without restrictions.
+
+7. Works with Most Shopify ThemesFully compatible with most Shopify themes, with custom support available if needed.
+Why Choose Clever?With its fast performance, simple setup, and enhanced user experience, the Clever app helps boost conversions by making product pages more intuitive and visually appealing.
+Need help? Our support team is always available via live chat or email.
+
+-----------------------------------
+
+Title: Pricing
+
+It's $10 per month, with a 7 day free trial.&nbsp;
+There is no limit on the number of products.
+Note:
+
+• The app charges you via Shopify billing API meaning that charges appear directly on your Shopify invoice.
+• There are no setup fees.
+• Terminate the subscription anytime by simply uninstalling the app.
+• To keep it fair and transparent we do not offer discounts to anyone.
+
+&nbsp;
+
+-----------------------------------
+
+Title: Removing Clever App
+
+Before uninstalling the app, you can turn off variant switcher showing in your store by simply deactivating them from the app dashboard.&nbsp;
+You can then uninstall the Clever app through your Shopify store admin.
+
+Go to your Shopify admin.
+Go to 'Apps'. When the page loads click on delete next to clever product variants&nbsp;That's it! The app is now uninstalled.
+For detailed instructions check out the Shopify guide to uninstall the app.
+Note:
+
+• Once the app is uninstalled, the app subscription terminates automatically.
+• The products imported via Clever app will remain unaltered on Shopify store.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48041313266/original/gl2z2yTkkfoCtYqhgYiHVE_e7FPV94LTAQ.png?1590394052
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48041316319/original/R292jNqjv9hRBRL5nEdQq_0HWXZGJ5tBqw.png?1590395658
+
+-----------------------------------
+
+Title: What Is The Clever Product Variants App 
 
 The Clever Product Variants app helps optimize product pages by displaying only the images of the selected variant, instead of loading all the variant images at once. This significantly reduces page load time, improves user experience, and makes product pages look clean and professional.
 
 -----------------------------------
 
-Title: Clever App
+Title: Does The App Support Custom Themes 
 
-Yes! The Clever Product Variants app is designed to work seamlessly with all Shopify themes, including custom ones.If the app doesn’t work as expected on your store, simply provide us with your theme name, and our team will ensure compatibility within two working days.
-
------------------------------------
-
-Title: Clever App
-
-No, the Clever Product Variants app is fully optimized to ensure it does not impact your page load speed. It efficiently loads only the necessary images, ensuring fast and seamless performance for your store.Your customers will experience blazing-fast image loading without any delays.
+Yes! The Clever Product Variants app is designed to work seamlessly with all Shopify themes, including custom ones.
+If the app doesn’t work as expected on your store, simply provide us with your theme name, and our team will ensure compatibility within two working days.
 
 -----------------------------------
 
-Title: Clever App
+Title: Will The App Slow Down My Product Page 
 
-The Clever Product Variants app is designed to be fully compatible with other Shopify apps. It operates independently and does not interfere with your existing apps or store functionality.If you experience any issues, our support team is always available to assist you. Simply reach out, and we’ll be happy to help!
+No, the Clever Product Variants app is fully optimized to ensure it does not impact your page load speed. It efficiently loads only the necessary images, ensuring fast and seamless performance for your store.
+Your customers will experience blazing-fast image loading without any delays.
 
 -----------------------------------
 
-Title: Clever App
+Title: Will The Clever App Conflict With Other Apps 
+
+The Clever Product Variants app is designed to be fully compatible with other Shopify apps. It operates independently and does not interfere with your existing apps or store functionality.
+If you experience any issues, our support team is always available to assist you. Simply reach out, and we’ll be happy to help!
+
+-----------------------------------
+
+Title: How Many Variant Images Can I Use 
 
 There are no limits! You can add as many variant images as you need, and each variant can have a different number of images based on your preferences.
 
 -----------------------------------
 
-Title: Clever App
+Title: Privacy Policy
 
-Last Updated August 12, 2019 Thalia Technologies Pvt Ltd (“we” or “us” or “our”) respects the privacy of our users (“user” or “you”). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Shopify app or Chrome extension (collective, “Application”). Please read this Privacy Policy carefully. IF YOU DO NOT AGREE WITH THE TERMS OF THIS PRIVACY POLICY, PLEASE DO NOT ACCESS THE APPLICATION.We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the “Last updated” date of this Privacy Policy. You are encouraged to periodically review this Privacy Policy to stay informed of updates. You will be deemed to have been made aware of, will be subject to, and will be deemed to have accepted the changes in any revised Privacy Policy by your continued use of the Application after the date such revised Privacy Policy is posted.  This Privacy Policy does not apply to the third-party online stores from which you install the Application or make payments, including any in-game virtual items, which may also collect and use data about you.  We are not responsible for any of the data collected by any such third party. COLLECTION OF YOUR INFORMATIONWhen you use our Application, our servers will automatically record information that your device or browser sends or transmits, including, but not limited to, user settings, location, and information about your use of the Application. We only store, track and monitor general usage and not information specific to any user. We use this information to improve the Services, develop new products and offer products and services that may be of interest to you. We may collect information about you in a variety of ways.  The information we may collect via the Application depends on the content and materials you use and includes:   Personal DataDemographic and other personally identifiable information (such as name and email address) that you voluntarily give to us when choosing to participate in various activities related to the Application.  Derivative DataThe information our servers automatically collect when you access the Application, such as your native actions that are integral to the Application, including importing products, attaching external links, as well as other interactions with the Application and other users via server log files. USE OF YOUR INFORMATIONHaving accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the Application to:  Compile anonymous statistical data and analysis for use internally or with third parties.   Create and manage your account.   Deliver targeted advertising, coupons, newsletters, and promotions, and other information regarding the Application to you.   Email you regarding your account or order.   Fulfill and manage purchases, orders, payments, and other transactions related to the Application.   Generate a personal profile about you to make future visits to the Application more personalized.   Increase the efficiency and operation of the Application.   Monitor and analyze usage and trends to improve your experience with the Application.   Notify you of updates to the Application.   Offer new products, services, applications, and/or recommendations to you.   Perform other business activities as needed.   Request feedback and contact you about your use of the Application.   Resolve disputes and troubleshoot problems.   Respond to product and customer service requests.   Send you a newsletter.  DISCLOSURE OF YOUR INFORMATIONWe may share information we have collected about you in certain situations. Your information may be disclosed as follows:By Law or to Protect RightsIf we believe the release of information about you is necessary to respond to legal process, to investigate or remedy potential violations of our policies, or to protect the rights, property, and safety of others, we may share your information as permitted or required by any applicable law, rule, or regulation. This includes exchanging information with other entities for fraud protection and credit risk reduction.  Third-Party Service ProvidersWe may share your information with third parties that perform services for us or on our behalf, including payment processing, data analysis, email delivery, hosting services, customer service, and marketing assistance.  Marketing CommunicationsWith your consent, or with an opportunity for you to withdraw consent, we may share your information with third parties for marketing purposes, as permitted by law.  Third-Party AdvertisersWe may use third-party advertising companies to serve ads when you visit the Application. These companies may use information about your visits to the Application and other websites that are contained in web cookies in order to provide advertisements about goods and services of interest to you.Business PartnersWe may share your information with our business partners to offer you certain products, services or promotions.Offer WallThe Application may display a third-party hosted “offer wall.” Such an offer wall allows third-party advertisers to offer virtual currency, gifts, or other items to users in return for acceptance and completion of an advertisement offer. Such an offer wall may appear in the Application and be displayed to you based on certain data, such as your geographic area or demographic information. When you click on an offer wall, you will leave the Application. A unique identifier, such as your user ID, will be shared with the offer wall provider in order to prevent fraud and properly credit your account. Other Third PartiesWe may share your information with advertisers and investors for the purpose of conducting the general business analysis. We may also share your information with such third parties for marketing purposes, as permitted by law.Sale or BankruptcyIf we reorganize or sell all or a portion of our assets, undergo a merger, or are acquired by another entity, we may transfer your information to the successor entity.  If we go out of business or enter bankruptcy, your information would be an asset transferred or acquired by a third party. You acknowledge that such transfers may occur and that the transferee may decline honor commitments we made in this Privacy Policy. We are not responsible for the actions of third parties with whom you share personal or sensitive data, and we have no authority to manage or control third-party solicitations. If you no longer wish to receive correspondence, emails or other communications from third parties, you are responsible for contacting the third party directly. TRACKING TECHNOLOGIES   Cookies and Web Beacons   We may use cookies, web beacons, tracking pixels, and other tracking technologies on the Application to help customize the Application and improve your experience. When you access the Application, your personal information is not collected through the use of tracking technology. Most browsers are set to accept cookies by default. You can remove or reject cookies, but be aware that such action could affect the availability and functionality of the Application. You may not decline web beacons. However, they can be rendered ineffective by declining all cookies or by modifying your web browser’s settings to notify you each time a cookie is tendered, permitting you to accept or decline cookies on an individual basis.   Internet-Based AdvertisingAdditionally, we may use third-party software to serve ads on the Application, implement email marketing campaigns, and manage other interactive marketing initiatives. This third-party software may use cookies or similar tracking technology to help manage and optimize your online experience with us. For more information about opting-out of interest-based ads, visit the Network Advertising Initiative Opt-Out Tool or Digital Advertising Alliance Opt-Out Tool.  Website AnalyticsWe may also partner with selected third-party vendors, such as Google Analytics, to allow tracking technologies and remarketing services on the Application through the use of first-party cookies and third-party cookies, to, among other things, analyze and track users’ use of the Application, determine the popularity of certain content, and better understand online activity. By accessing the Application, you consent to the collection and use of your information by these third-party vendors. You are encouraged to review their privacy policy and contact them directly for responses to your questions. We do not transfer personal information to these third-party vendors. However, if you do not want any information to be collected and used by tracking technologies, you can visit the third-party vendor or Network Advertising Initiative Opt-Out Tool or Digital Advertising Alliance Opt-Out Tool.You should be aware that getting a new computer, installing a new browser, upgrading an existing browser, or erasing or otherwise altering your browser’s cookies files may also clear certain opt-out cookies, plug-ins, or settings. THIRD-PARTY WEBSITESThe Application may contain links to third-party websites and applications of interest, including advertisements and external services, that are not affiliated with us. Once you have used these links to leave the Application, any information you provide to these third parties is not covered by this Privacy Policy, and we cannot guarantee the safety and privacy of your information. Before visiting and providing any information to any third-party websites, you should inform yourself of the privacy policies and practices (if any) of the third party responsible for that website, and should take those steps necessary to, in your discretion, protect the privacy of your information. We are not responsible for the content or privacy and security practices and policies of any third parties, including other sites, services or applications that may be linked to or from the Application. SECURITY OF YOUR INFORMATIONWe use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other types of misuse. Any information disclosed online is vulnerable to interception and misuse by unauthorized parties. Therefore, we cannot guarantee complete security if you provide personal information. POLICY FOR CHILDRENWe do not knowingly solicit information from or market to children under the age of 13. If you become aware of any data we have collected from children under age 13, please contact us using the contact information provided below. CONTROLS FOR DO-NOT-TRACK FEATURESMost web browsers and some mobile operating systems include a Do-Not-Track (“DNT”) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected.  No uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this Privacy Policy.  OPTIONS REGARDING YOUR INFORMATIONAccount InformationYou may at any time review or change the information in your account or terminate your account by:  Contacting us using the contact information provided.   Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, some information may be retained in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our Terms of Use and/or comply with legal requirements.Emails and CommunicationsIf you no longer wish to receive correspondence, emails, or other communications from us, you may opt-out by: If you no longer wish to receive correspondence, emails, or other communications from third parties, you are responsible for contacting the third party directly.CONTACT USIf you have questions about this Privacy Policy and for any requests for data access, portability or erasure please contact us at:support AT cleverapp.freshdesk.com.
+Last Updated August 12, 2019&nbsp;
+Thalia Technologies Pvt Ltd (“we” or “us” or “our”) respects the privacy of our users (“user” or “you”). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Shopify app or Chrome extension (collective, “Application”). Please read this Privacy Policy carefully. IF YOU DO NOT AGREE WITH THE TERMS OF THIS PRIVACY POLICY, PLEASE DO NOT ACCESS THE APPLICATION.
+We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the “Last updated” date of this Privacy Policy. You are encouraged to periodically review this Privacy Policy to stay informed of updates. You will be deemed to have been made aware of, will be subject to, and will be deemed to have accepted the changes in any revised Privacy Policy by your continued use of the Application after the date such revised Privacy Policy is posted. &nbsp;
+This Privacy Policy does not apply to the third-party online stores from which you install the Application or make payments, including any in-game virtual items, which may also collect and use data about you. &nbsp;We are not responsible for any of the data collected by any such third party.&nbsp;
+COLLECTION OF YOUR INFORMATION
+When you use our Application, our servers will automatically record information that your device or browser sends or transmits, including, but not limited to, user settings, location, and information about your use of the Application. We only store, track and monitor general usage and not information specific to any user. We use this information to improve the Services, develop new products and offer products and services that may be of interest to you. We may collect information about you in a variety of ways. &nbsp;The information we may collect via the Application depends on the content and materials you use and includes: &nbsp;&nbsp;
+Personal Data
+
+Demographic and other personally identifiable information (such as name and email address) that you voluntarily give to us when choosing to participate in various activities related to the Application. &nbsp;
+Derivative Data
+
+The information our servers automatically collect when you access the Application, such as your native actions that are integral to the Application, including importing products, attaching external links, as well as other interactions with the Application and other users via server log files.&nbsp;
+USE OF YOUR INFORMATION
+Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the Application to:&nbsp;
+
+• &nbsp;Compile anonymous statistical data and analysis for use internally or with third parties. &nbsp;
+• &nbsp;Create and manage your account. &nbsp;
+• &nbsp;Deliver targeted advertising, coupons, newsletters, and promotions, and other information regarding the Application to you. &nbsp;
+• &nbsp;Email you regarding your account or order. &nbsp;
+• &nbsp;Fulfill and manage purchases, orders, payments, and other transactions related to the Application. &nbsp;
+• &nbsp;Generate a personal profile about you to make future visits to the Application more personalized. &nbsp;
+• &nbsp;Increase the efficiency and operation of the Application. &nbsp;
+• &nbsp;Monitor and analyze usage and trends to improve your experience with the Application. &nbsp;
+• &nbsp;Notify you of updates to the Application. &nbsp;
+• &nbsp;Offer new products, services, applications, and/or recommendations to you. &nbsp;
+• &nbsp;Perform other business activities as needed. &nbsp;
+• &nbsp;Request feedback and contact you about your use of the Application. &nbsp;
+• &nbsp;Resolve disputes and troubleshoot problems. &nbsp;
+• &nbsp;Respond to product and customer service requests. &nbsp;
+• &nbsp;Send you a newsletter. &nbsp;
+DISCLOSURE OF YOUR INFORMATION
+We may share information we have collected about you in certain situations. Your information may be disclosed as follows:
+By Law or to Protect Rights
+
+If we believe the release of information about you is necessary to respond to legal process, to investigate or remedy potential violations of our policies, or to protect the rights, property, and safety of others, we may share your information as permitted or required by any applicable law, rule, or regulation. This includes exchanging information with other entities for fraud protection and credit risk reduction. &nbsp;
+Third-Party Service Providers
+
+We may share your information with third parties that perform services for us or on our behalf, including payment processing, data analysis, email delivery, hosting services, customer service, and marketing assistance. &nbsp;
+Marketing Communications
+
+With your consent, or with an opportunity for you to withdraw consent, we may share your information with third parties for marketing purposes, as permitted by law. &nbsp;
+Third-Party Advertisers
+
+We may use third-party advertising companies to serve ads when you visit the Application. These companies may use information about your visits to the Application and other websites that are contained in web cookies in order to provide advertisements about goods and services of interest to you.
+Business Partners
+
+We may share your information with our business partners to offer you certain products, services or promotions.
+Offer Wall
+
+The Application may display a third-party hosted “offer wall.” Such an offer wall allows third-party advertisers to offer virtual currency, gifts, or other items to users in return for acceptance and completion of an advertisement offer. Such an offer wall may appear in the Application and be displayed to you based on certain data, such as your geographic area or demographic information. When you click on an offer wall, you will leave the Application. A unique identifier, such as your user ID, will be shared with the offer wall provider in order to prevent fraud and properly credit your account.&nbsp;
+Other Third Parties
+
+We may share your information with advertisers and investors for the purpose of conducting the general business analysis. We may also share your information with such third parties for marketing purposes, as permitted by law.
+Sale or Bankruptcy
+
+If we reorganize or sell all or a portion of our assets, undergo a merger, or are acquired by another entity, we may transfer your information to the successor entity. &nbsp;If we go out of business or enter bankruptcy, your information would be an asset transferred or acquired by a third party. You acknowledge that such transfers may occur and that the transferee may decline honor commitments we made in this Privacy Policy. We are not responsible for the actions of third parties with whom you share personal or sensitive data, and we have no authority to manage or control third-party solicitations. If you no longer wish to receive correspondence, emails or other communications from third parties, you are responsible for contacting the third party directly.&nbsp;
+TRACKING TECHNOLOGIES&nbsp; &nbsp;
+Cookies and Web Beacons&nbsp; &nbsp;
+
+We may use cookies, web beacons, tracking pixels, and other tracking technologies on the Application to help customize the Application and improve your experience. When you access the Application, your personal information is not collected through the use of tracking technology. Most browsers are set to accept cookies by default. You can remove or reject cookies, but be aware that such action could affect the availability and functionality of the Application. You may not decline web beacons. However, they can be rendered ineffective by declining all cookies or by modifying your web browser’s settings to notify you each time a cookie is tendered, permitting you to accept or decline cookies on an individual basis. &nbsp;&nbsp;
+Internet-Based Advertising
+
+Additionally, we may use third-party software to serve ads on the Application, implement email marketing campaigns, and manage other interactive marketing initiatives. This third-party software may use cookies or similar tracking technology to help manage and optimize your online experience with us. For more information about opting-out of interest-based ads, visit the Network Advertising Initiative Opt-Out Tool or Digital Advertising Alliance Opt-Out Tool. &nbsp;
+Website Analytics
+
+We may also partner with selected third-party vendors, such as Google Analytics, to allow tracking technologies and remarketing services on the Application through the use of first-party cookies and third-party cookies, to, among other things, analyze and track users’ use of the Application, determine the popularity of certain content, and better understand online activity. By accessing the Application, you consent to the collection and use of your information by these third-party vendors. You are encouraged to review their privacy policy and contact them directly for responses to your questions. We do not transfer personal information to these third-party vendors. However, if you do not want any information to be collected and used by tracking technologies, you can visit the third-party vendor or Network Advertising Initiative Opt-Out Tool or Digital Advertising Alliance Opt-Out Tool.
+
+You should be aware that getting a new computer, installing a new browser, upgrading an existing browser, or erasing or otherwise altering your browser’s cookies files may also clear certain opt-out cookies, plug-ins, or settings.&nbsp;
+THIRD-PARTY WEBSITES
+The Application may contain links to third-party websites and applications of interest, including advertisements and external services, that are not affiliated with us. Once you have used these links to leave the Application, any information you provide to these third parties is not covered by this Privacy Policy, and we cannot guarantee the safety and privacy of your information. Before visiting and providing any information to any third-party websites, you should inform yourself of the privacy policies and practices (if any) of the third party responsible for that website, and should take those steps necessary to, in your discretion, protect the privacy of your information. We are not responsible for the content or privacy and security practices and policies of any third parties, including other sites, services or applications that may be linked to or from the Application.&nbsp;
+SECURITY OF YOUR INFORMATION
+We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other types of misuse. Any information disclosed online is vulnerable to interception and misuse by unauthorized parties. Therefore, we cannot guarantee complete security if you provide personal information.&nbsp;
+POLICY FOR CHILDREN
+We do not knowingly solicit information from or market to children under the age of 13. If you become aware of any data we have collected from children under age 13, please contact us using the contact information provided below.&nbsp;
+CONTROLS FOR DO-NOT-TRACK FEATURES
+Most web browsers and some mobile operating systems include a Do-Not-Track (“DNT”) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. &nbsp;No uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this Privacy Policy. &nbsp;
+OPTIONS REGARDING YOUR INFORMATION
+Account Information
+
+You may at any time review or change the information in your account or terminate your account by:&nbsp;
+
+• &nbsp;Contacting us using the contact information provided. &nbsp;&nbsp;
+Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, some information may be retained in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our Terms of Use and/or comply with legal requirements.
+Emails and Communications
+
+If you no longer wish to receive correspondence, emails, or other communications from us, you may opt-out by:&nbsp;
+
+If you no longer wish to receive correspondence, emails, or other communications from third parties, you are responsible for contacting the third party directly.
+CONTACT US
+If you have questions about this Privacy Policy and for any requests for data access, portability or erasure please contact us at:
+
+support AT cleverapp.freshdesk.com.
+
+&nbsp;
 
 -----------------------------------
 
-Title: Clever App
+Title: Terms Of Use
 
-1. Acceptance of TermsBy using the Clever app ("App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the App.2. Use of the AppThe App is to help merchant arrange product images based on variant options on their Shopify stores. You agree to use the App in compliance with all applicable laws and regulations.3. User ResponsibilitiesYou are responsible for maintaining the security of your Shopify store and the credentials used to access the App. You are also responsible for all activities that occur under your store's account.4. LicenseSubject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to use the App.5. Fees and PaymentsUse of the App may be subject to fees. All payments must be made in accordance with the pricing and payment terms provided at the time of purchase. All purchases are non-refundable. You can cancel your subscription at any time by logging into your account. 6. Data and PrivacyWe are committed to protecting your privacy. Our data collection and use practices are outlined in our Privacy Policy.7. Disclaimer of WarrantiesThe App is provided "as is" and "as available" without warranties of any kind, either express or implied.8. Limitation of LiabilityIn no event shall we be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the App.9. TerminationWe reserve the right to terminate or suspend your access to the App at any time, with or without notice, for any reason, including if you breach these Terms.10. Governing Law and ArbitrationThese Terms shall be governed by and construed in accordance with the laws of India. In the event of any dispute, claim, or controversy arising out of or relating to these Terms or the App, the parties shall submit to the exclusive jurisdiction of the courts of Mumbai, India.11. Changes to TermsWe reserve the right to modify these Terms at any time. Your continued use of the App after any such changes constitutes your acceptance of the new Terms.12. Contact InformationFor any questions or concerns regarding these Terms, please contact us at support@cleverapp.freshdesk.com.By using the Clever App, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use.
+1. Acceptance of TermsBy using the Clever app ("App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the App.
+
+2. Use of the AppThe App is to help merchant arrange product images based on variant options on their Shopify stores. You agree to use the App in compliance with all applicable laws and regulations.
+
+3. User ResponsibilitiesYou are responsible for maintaining the security of your Shopify store and the credentials used to access the App. You are also responsible for all activities that occur under your store's account.
+
+4. LicenseSubject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to use the App.
+
+5. Fees and PaymentsUse of the App may be subject to fees. All payments must be made in accordance with the pricing and payment terms provided at the time of purchase. All purchases are non-refundable. You can cancel your subscription at any time by logging into your account.&nbsp;
+
+6. Data and PrivacyWe are committed to protecting your privacy. Our data collection and use practices are outlined in our Privacy Policy.
+
+7. Disclaimer of WarrantiesThe App is provided "as is" and "as available" without warranties of any kind, either express or implied.
+
+8. Limitation of LiabilityIn no event shall we be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the App.
+
+9. TerminationWe reserve the right to terminate or suspend your access to the App at any time, with or without notice, for any reason, including if you breach these Terms.
+
+10. Governing Law and ArbitrationThese Terms shall be governed by and construed in accordance with the laws of India. In the event of any dispute, claim, or controversy arising out of or relating to these Terms or the App, the parties shall submit to the exclusive jurisdiction of the courts of Mumbai, India.
+
+11. Changes to TermsWe reserve the right to modify these Terms at any time. Your continued use of the App after any such changes constitutes your acceptance of the new Terms.
+
+12. Contact InformationFor any questions or concerns regarding these Terms, please contact us at support@cleverapp.freshdesk.com.
+
+By using the Clever App, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use.
 
 -----------------------------------
 
