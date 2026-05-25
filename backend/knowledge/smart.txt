@@ -1,0 +1,1164 @@
+Title: Overview What Are Highlights 
+
+Sometimes, the product descriptions are way too long for the customer to read and find difficulty to select for the perfect product and information that they are looking for.&nbsp;With the help of the smart app helps Shopify store owners to display the spotlight on the "selling points" and "key features" of your product and helps make a buyer make a decision faster.&nbsp;This also brings the ability to display graphical feature highlights on your Shopify store that helps the buyer to get the exact feature they are looking for. All the major e-commerce sites including Amazon, Etsy, Aliexpress use the icon-text combination to enhance their product pages by showing key features like Free delivery, handmade material, warranty information that highlights the product.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81014224493/original/28MEL0emdlcAnXfR9GWKzXdrJ-KUH4TK3w.png?1606118902
+
+-----------------------------------
+
+Title: How To Create Highlights
+
+The Smart Product description icon app helps you to display the spotlight on the "selling points" and "key features" of your product and helps make a buyer make a decision faster.&nbsp;&nbsp;
+Steps to create a highlight:
+1. Go to the dashboard and hit the Add highlight button.
+2. On the 'Create highlight page, the first step is to add the content that you want to display. You can add options like icons, text, and links. You can also use Dynamic data fields to select predefined to display product data as part of the highlighted title.
+3. The next step is to select the product rules on which you want to apply and display highlights. You can select more than one condition by clicking add rule.
+4. &nbsp;Finally, configure the highlight to display immediately to schedule it for a future date. Click 'Save'.&nbsp;&nbsp;
+Please check this video guide for the step-by-step process:
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81112924747/original/7o1uImbBQ7aBOlin_f8IGV3W2om6O78LBg.png?1687850560
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81112925377/original/3COqreDhxCM73n6Cp4Z4ZFBht0_eDD7iYw.png?1687850758
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81112926239/original/8Suahht3huY_fYjir-99zmIyLWfyTjgnkg.png?1687851014
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81112926151/original/eNWpX_4tYxR1vX-Bkvm6OYbDBFXz8wYf5A.png?1687850977
+
+-----------------------------------
+
+Title: Description Of Settings
+
+Highlight design settings:
+SettingDescriptionStyle &gt; One ColumnThe highlights will be displayed in a single column.Style &gt; Two Columns
+The highlights will be displayed in a two-column format.
+Style &gt; Three Columns
+The highlights will be displayed in a three-column format.
+Style &gt; Text Right of Icon
+The highlight icon will be placed on the left. While the text will be placed on its right.Style &gt; Text Below Icon
+The highlight text will be placed exactly below the icon with both center aligned.&nbsp;Body &gt; RectangleThe highlight box will be rectangular in shape with sharp edges.Body &gt; Curved Rectangle
+The highlight box will be rectangular in shape with curved edges.
+Body &gt; Spacing
+Spacing defines the padding between elements of the highlight box.Body &gt; Shadow
+Apply shadow effect to the highlight box.
+Border &gt; Width
+Specifies the thickness of the highlight box border in pixels.Border &gt; Color
+Specifies the color of the highlight box border.Border &gt; Style
+Specify the border style with options solid, dotted, and dashed.Text &gt; SizeSpecify the font size of the highlight text in pixels.Text &gt; Color
+Specific the color of the highlight text.Text &gt; Formatting 
+Apply Bold, Italics, and Underline formatting to the highlight text.Image &gt; HeightSpecifies the icon highlight icon height.​
+
+-----------------------------------
+
+Title: Placement Of Highlight Box
+
+Note: This is for advanced users who can work with Shopify liquid code and CSS styling language.
+The Highlight Box can be placed at virtually any location on the product page. Its position can be manipulated by:
+1. Changing the integration code location
+
+2. Passing appropriate parameters in the integration code &nbsp; &nbsp;
+There are two helpful integration parameters to manage the badge placement:
+1. smarthOuterClass: CSS classes passed using this parameter will be applied to the DIV containing the Highlightbox.&nbsp;
+We have the following in-built classes that can be used to manage the badge placement:
+Class NameResultant CSSsmart-m-0
+margin:0rem;smart-mr-0margin-right: 0rem;smart-ml-0margin-left: 0rem;smart-mt-0margin-top: 0rem;smart-mb-0margin-bottom: 0rem;smart-m-1
+margin: .25rem;
+smart-mr-1
+margin-right: .25rem;
+smart-ml-1
+margin-left: .25rem;
+smart-mt-1
+margin-top: .25rem;
+smart-mb-1
+margin-bottom: .25rem;
+Similarly, we can add classes with 2, 3, 4, and 5 suffixes to add margins of .5rem, 1rem, 1.5rem and 3rem respectively. &nbsp;
+Example integration code:
+
+{% render 'smarth', product: product, smarthOuterClass: 'smart-mt-4 smart-mb-2' %}This will apply a top margin of 1.5rem and bottom margin of .5rem Highlight Box container.
+2.&nbsp;smarthOuterStyle: Pass any custom CSS elements using this parameter and they will be applied to the Highlight Box container.
+Example integration code:
+
+{% render 'smarth', product: product, smarthOuterStyle: 'border: 1px solid black' %}This code can be used to add a black border on the Highlight Box.
+
+-----------------------------------
+
+Title: Integration Guide
+
+Adding Smart Product Description Icons highlight code into your theme is a one-time activity that once done you do not have to worry about later. If you are not comfortable adding the code simply raise a support ticket here&nbsp;or email us at support@smartappassist.freshdesk.com&nbsp;and we will take care of it.&nbsp;
+Note:
+
+If you are using the&nbsp;Online Store 2.0 themes (like Dawn Theme) then you have 2 options for getting the highlight box displayed on product pages:
+
+• via app blocks. Installation guide available&nbsp;here. &nbsp;OR
+by adding integration code to the theme. Guide available here.
+For older vintage themes continue with the instructions below.
+Steps:1. &nbsp;Go to your Shopify admin.
+
+2. Click Online Store&nbsp;&gt; Themes&nbsp;&gt; Actions
+3. Click Edit code&nbsp;
+4. Click the file product-template.liquid which appears under Sections.
+5. The product-template.liquid file will open in the online code editor. Add the following code where you'd like the highlights to show on your product detail pages:&nbsp;&nbsp;
+
+&nbsp;{% render 'smarth', product: product, smarthOuterClass: 'smart-mt-4 smart-mb-4' %}&nbsp;
+
+In most cases, locate the lines {% capture "form_classes" -%} OR&nbsp;{% form 'product', and place the code in a line above.
+This will display the highlights below the product title and pricing. You can place the installation code anywhere else depending on your requirements.
+Note: The actual file and the line where you insert the code will differ as per the installed theme.
+If you have problems with the installation or want to change the location of the highlight box, please raise a support ticket here&nbsp;or email us at support@smartappassist.freshdesk.com and we will take care of it.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81007085788/original/Pev4lbD_XIiAXPMY09XCWAlwkwPDcP3HRQ.png?1596967262
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81007085807/original/-c2xfM0powrgDTSOFrKQKqTt8dr1NQnIxQ.png?1596967295
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81007085975/original/mrQByE4EmrFUOYJ1fHL2idS_dZmcKqc8pg.png?1596967754
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81007086189/original/4ZKqenT8MWGeHJQM2aBIlRLXgdWDQ4KDRQ.png?1596968457
+
+-----------------------------------
+
+Title: Installing Highlight Box On Online Store 2 0 Themes Via Integration Code 
+
+The Smart Product Description Icons app can easily be integrated with the themes compatible with Online Store 2.0. This guide will walk you through the process of how to add the Highlight Box integration code to the Dawn Theme.
+For integrating older themes refer to the integration guide here.
+
+Steps:
+1. &nbsp;Go to your Shopify admin.
+
+2. Click Online Store &gt; Themes &gt; Actions.
+3. Click Edit code.
+4. Click the file main-product.liquid which appears under Sections.
+
+&nbsp;
+5. Add the following code where you'd like the Highlight box to show:&nbsp;
+&nbsp;{% render 'smarth', &nbsp;hideAssets:'0', product: product, smarthGroup: '1', smarthOuterClass: 'smart-mt-4 smart-mb-4' %}&nbsp;
+
+For showing the highlight box on the product pages place the code in the sections/main-product.liquid file. Search for {%- when 'price' -%} or {% render 'price' and place the above-mentioned code in the next line. This will display the box below the product price.
+If you have problems with the installation or want to change the location of the highlight box, please raise a support ticket&nbsp;here&nbsp;or email us at&nbsp;support@smartappassist.freshdesk.com&nbsp;and we will take care of it.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81040262782/original/QR6tLtIVwyM7-lkQ-k_uflECK8YIOLCUZQ.png?1630404480
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81040263434/original/X1XCewiNrpypl4GtQoQhCKagCfWq57uFuQ.png?1630404739
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81040263682/original/-n1arHXdgPVvgK95lq-eSHdiIPPP5ZSVkA.png?1630404795
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81061631242/original/t0557Y9NLgGORiq0nPzBYSEU-gawxCxAsQ.png?1646128732
+
+-----------------------------------
+
+Title: Installing Highlight Box On Online Store 2 0 Themes Using App Blocks 
+
+Shopify has announced one of its biggest updates: &nbsp;Online Store 2.0. With Online Store 2.0 themes, you can easily place the Highlight box on your product pages using app blocks.&nbsp;
+In this article, we'll walk you through the steps to integrate the Smart highlight into your 2.0 store.
+Note:&nbsp;If you have problems with adding the highlight or want to change the way the highlight icons looks or for any other request please raise a support ticket here. We will take care of it.
+Steps
+1. Open your Shopify admin.&nbsp;
+2. Go to Online Store &gt;Themes&nbsp;&gt; click Customize.
+3. Select a product template.&nbsp;
+4. Next, click&nbsp;Add Block&nbsp;from the left sidebar and select&nbsp;Smart App&nbsp;block under Apps.
+5. Drag and drop the block to the location you want to display the highlight box. We recommend placing it below the product price.
+6.&nbsp;The box can be stylized via app block options (optional):
+
+Group: Select the highlight group that you want to dispay
+OuterClass: CSS classes passed using this parameter will be applied to the DIV containing the badges.&nbsp;
+OuterStyle: Pass any custom CSS elements using this parameter and they will be applied to the badge container.
+Similarly for the Innerclass, Innerstyle, etc. We have the following in-built classes that can be used to manage the badge placement, which you can find here.
+7. Hit the save&nbsp;button.
+8. The Highlight box will be visible on the product pages.
+If you have problems with adding the button or want to change the way the button looks or for any other request please raise a support ticket here. We will take care of it.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81104554825/original/J_CdFgbnIQ2M8jkeXraErQNaaIH5RUp6Tg.png?1679995483
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81104558061/original/8l3NHjedZEqatIf4H0D_9ttPSwgNDn_iQg.png?1679996637
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81104558464/original/VqmWUxKAQV7sj7lkZN9m4KQGUrhmcxl4Uw.png?1679996795
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81104558801/original/J8qrQTMRZC6yvrb21sSMBzSq8VRx7EFdVw.png?1679996907
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81104561832/original/iOPPf8p2fqfePIUL4s6GZ2xYvzc25kFv_Q.png?1679998089
+
+-----------------------------------
+
+Title: Integration Guide Store 2 0 
+
+(Optional Step)
+Before you get started we recommend you make a backup copy of your theme.
+To create a backup Visit Shopify Admin &gt; Themes&nbsp;and click Actions&nbsp;&gt; Duplicate.
+Step 1 - Activate Smart App
+Login to the Smart app
+Turn Master Switch ON
+Ensure you have at least 1 Highlight created so that it can be tested.
+Note:
+
+The steps below are for Online Store 2.0 themes. If your theme is not compatible with Online Store&nbsp;
+
+2.0 then follow the guide here.&nbsp;
+Step 2 - Install Smart App Highlight Block
+Visit the Shopify Admin &gt; Themes, and then click Customize for the theme you are working on.
+Go to any product template
+Click Theme settings (in the bottom left), and then click App embeds.
+Locate the app called Smart product description icons, and then click the button to enable it.
+Choose to Add block and select the Highlight block and move it where you’d like it to show.
+Click Save to apply your changes.
+If you have problems with the installation or want to change the location of the highlight box, please raise a support ticket&nbsp;here&nbsp;or email us at&nbsp;support@smartappassist.freshdesk.com&nbsp;and we will take care of it.
+
+-----------------------------------
+
+Title: Highlight Groups
+
+Highlights can be assigned to different groups and each group can be placed at a different location on the product page. Instead of displaying all the Highlights together in one cluster, Highlight Groups gives you the flexibility to display them at different locations.
+As an example, you can show a group of Highlights below the product title and a group of different highlights above the product description.
+For each Highlight group, you will have to add a 1-line integration code at the location where the badge group needs to be displayed. In the integration code, add the 'smarthGroup' parameter to specify the Highlight group number.
+Example integration code for highlight group 2:&nbsp;
+{% render 'smarth', product: product, smarthGroup: '2', smarthOuterClass: 'smart-mt-4 smart-mb-4' %}The above code will add highlight group 2 on the above product description.&nbsp;
+Similarly, you can add the integration code for highlight group 1 and group 3. If you are not comfortable adding the code simply raise a support ticket here or email us at support@smartappassist.freshdesk.com and we will take care of it.
+If the 'smarthGroup' parameter is not added to the integration code, then the highlight of group 1 will be displayed by default.
+You can assign a group while adding or updating highlights.
+Currently, a maximum of 3 groups can be displayed per page. &nbsp;
+Highlight groups are available for Pro plan users only.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81016969836/original/L7n1L6SzvCVfZ0KR0H0X7nRGiaxbcjKAcQ.png?1609413329
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81016967096/original/j08zNSu9toABnnmDVoWNYgjVq7LY2-_VLQ.png?1609411692
+
+-----------------------------------
+
+Title: Highlights Visitor Counter
+
+Smart app allows creating Highlights that display the total visitor count, for any product, in a given timeframe. It can be used to create urgency as it shows the interest level in the product. Example:
+&nbsp;56 visitors in the last hour&nbsp;&nbsp;OR &nbsp;&nbsp;7 people current viewing&nbsp;
+The order counter can be displayed by adding the {{VisitorCounter}} dynamic data field in the Highlight text.
+You can specify the timeframe to consider for calculating the total visitors by configuring it on the Visitor Count Settings page.
+You can also add a highlight display condition based on the visitor count number.
+Note:
+
+{{VisitorCount}} dynamic data field is available for Gold Plan users only.
+If the account is downgraded after adding highlights having Visitor Count, then those highlights will stop being displayed.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81033342328/original/b0lZZOnC6R-uXviBvZ7RZyGOoqIXHOtVqA.png?1624267461
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81033329559/original/V4s-O_3NTdqzVN6rUe9WvW4F7uzXfVg2uw.png?1624262753
+
+-----------------------------------
+
+Title: How Do Highlights Improve The Shopping Experience 
+
+Highlights improve the shopping experience by simplifying information for customers. Since research shows that 55% of readers spend only 15 seconds or less on a webpage, it's essential to capture their attention quickly. Using highlight boxes with icons and short, compelling text helps present key product features, making it easier for shoppers to understand the benefits without reading lengthy descriptions. This leads to more effective communication and higher conversions.
+
+-----------------------------------
+
+Title: What Types Of Information Can I Display In Highlight Boxes 
+
+You can display various types of information in Highlight Boxes, such as:
+
+Key product features
+Special offers or discounts
+Product availability (e.g., in stock, limited stock)
+Shipping and delivery options
+Important product details (e.g., eco-friendly, handmade)
+
+-----------------------------------
+
+Title: Can I Use Emojis And Dynamic Data In Highlight Boxes 
+
+Yes, you can insert emojis and dynamic data in the highlight text. This allows you to make the highlights more engaging and personalized. For example, you can use emojis to emphasize features or include dynamic data like prices, inventory numbers, or product names to create a more interactive and real-time shopping experience.
+
+-----------------------------------
+
+Title: How Do I Display Highlights Based On Specific Rules 
+
+You can set rules to display Highlight Boxes based on specific conditions. For instance, you can display certain highlights only if a product is in stock or on sale, or show specific information based on the product category. You can configure these rules in the app’s settings to ensure that the highlights appear at the right time and under the right conditions.
+
+-----------------------------------
+
+Title: Can I Customize The Design Of Highlight Boxes 
+
+Yes, the Prime App allows you to fully customize the design of your Highlight Boxes. You can adjust:
+
+Colors: Change the background and text colors to align with your branding.
+Sizes: Modify the size of the box to fit your page layout.
+Font styles: Customize fonts to match your store’s theme. This flexibility helps ensure the highlights complement the look and feel of your store.
+
+-----------------------------------
+
+Title: Overview What Are Product Badges 
+
+Product badges (stickers or labels) are added to online products to call attention to special information about a product.
+When used on e-commerce websites, product badging has been proved to increase&nbsp;conversion rates by 55%.
+Here are 3 main reasons to use product badges:
+
+• Make it easier for shoppers to find the products they are looking for.
+• Help shoppers make quicker purchasing decisions.
+• Efficiently and creatively educate your website visitors.
+ The visual nature of product badges helps customers find what they are looking for quickly by providing an extra piece of information before the shopper clicks through to a product. 
+
+When used on the collection page to proactively message shoppers about inventory availability and fulfillment options, before the shopper gets to the product details page, badges help build trust and transparent shopping experience at the top of the funnel. Badges that communicate limited availability also drive conversion by creating a sense of urgency and scarcity. 
+All well-known shopping portals including Amazon, Walmart, Etsy, Aliexpress, etc make extensive use of product badges.&nbsp;
+&nbsp;
+Badges along with the Highlight Box help declutter the product pages, while still effectively communicating the information necessary for a user to make an informed purchasing decision. &nbsp;
+Note: Badges are available only for Plus Plans and above.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81008507705/original/crhK04_oZm5Wix-7MvuMo-ndZ_QVYmF0gA.png?1598872303
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81008508685/original/yZE1gl66TmRtPLtg9bmAip3icp_FAPBSkg.png?1598873040
+
+-----------------------------------
+
+Title: Setting Up Your First Badge Or Sticker
+
+Follow these steps to create and configure your first badge or sticker in the T2 Product Description Icons&nbsp;app.
+Step 1: Choose and Customize Your BadgeOpen the&nbsp;T2&nbsp;Product Description Icons&nbsp;app in your Shopify admin.
+Select Text or Image as the badge type.
+Enter the Badge Text (e.g., "New Arrival" or "Limited Stock").
+(Optional) Add a Badge Link if you want it to be clickable.
+(Optional) Include a Tooltip to display extra information when hovered over.
+Step 2: Design Your BadgePick a Shape and Size for the badge.
+Set a Background Color and adjust Opacity.
+Customize the Text Size, Font, and Border Style.
+Modify display settings for Mobile &amp; Tablet if needed.
+Step 3: Set Display RulesApply the badge to All Products or set specific conditions. The app supports 15+ rules, You can use the rule with the combination or individually as per your requirement. For more details, please check the attached image.
+Step 4: Finalize and Save(Optional) Name your badge for easy identification.
+Choose whether the badge is Visible Immediately or schedule a start date.
+Assign the badge to a Group if needed.
+Click Save and check your product pages to see the badge in action.
+Need Help?If you experience any issues during setup, feel free to reach out to us via live chat or email at&nbsp;support@smartappassist.freshdesk.com
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81163518489/original/HJyXJT8oKJjM0sU2Do7azyrBvWRR96llFw.PNG?1742376714
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81163518596/original/z57SkyMx8IalzGuT76wAbFJ4g535wxFZmA.PNG?1742376764
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81163518861/original/-V4dGDz7zZo6-mAeQA7eSr4BF0HtDqXnAg.PNG?1742376887
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81163519125/original/pnACfBL3V8dtAv5kOWIrdRb9A0uxoH3dmg.PNG?1742377032
+
+-----------------------------------
+
+Title: Understanding The Dashboard Features
+
+The&nbsp;T2 Product Description Icons&nbsp;app provides an intuitive dashboard to help you create, manage, and customize badges for your Shopify store. Below is a step-by-step guide to understanding its key features.
+
+1. Select the Badge Type&nbsp;The app supports 2 types of badges:
+
+Text – Displays a text-based badge.
+Image – Upload a custom badge image.
+2. Customize Badge ContentBadge Text – Enter the text to be displayed on the badge.
+Badge Link (Optional)– Add a URL if you want the badge to be clickable.Example: http://yourstore.com/sale
+Check the box for Open in the same tab if needed.
+Tooltip (Optional, Max 100 Characters) – Add a short tooltip description that appears when customers hover over the badge.
+
+3. Design Your BadgeShape – Choose the badge shape that fits your store's design.
+Size – Select the preferred badge size (e.g., Medium).
+Background Color – Pick a background color for your badge.
+Opacity – Adjust the transparency level (Default: 1 for fully visible).
+Shadow – Choose whether to add a shadow effect (Default: No Shadow).
+Text CustomizationAdjust font size (Default: 14px).
+Choose a font family for the badge text.
+Border SettingsSelect No Border or enable a border with Solid styling.
+Text VariationsCustomize text size and styling for Mobile and Tablet devices (Default: No change).
+4. Set Display ConditionsChoose between&nbsp;All Conditions or&nbsp;Any Condition for badge visibility.
+Select Product Scope:All Products – The badge will appear on all products (you can exclude specific ones).
+Pro Conditions – Advanced rules based on product attributes.
+Gold Conditions – Premium-level rules for badge display.
+Review the&nbsp;Excluded Products count to ensure the badge appears where needed.
+
+5. Set Badge VisibilityChoose Visible to display the badge immediately.
+Set Visibility Date (Optional) – Schedule the badge to be shown only for a specific period.
+
+6. Save and PreviewClick Save to apply your changes.
+Visit a product page to verify that the badge appears correctly.
+
+-----------------------------------
+
+Title: Badge Examples
+
+You can use the Prime app for almost any type of badges you can imagine. Here are a few ideas:&nbsp;
+
+Products on Sale&nbsp;Save $15&nbsp; &nbsp;30% Off&nbsp;
+
+Tip 1: Add the {{ SaleAmount }} or {{ SalePercent }} dynamic data fields in the badge text.Tip 2: Apply the 'Sale Price between 0% and 90%' rule.
+New Arrivals&nbsp;New&nbsp; &nbsp;Recently Updated&nbsp; &nbsp;Back in stock&nbsp;
+
+Tip 1: Apply the 'Product Create Date' (or 'Product Published Date') is within the past 15 days' rule.
+
+Seasonal&nbsp;Black Friday Deal&nbsp;&nbsp;&nbsp;Winter Special&nbsp;&nbsp;&nbsp;Halloween Exclusive&nbsp;&nbsp;
+
+Tip 1: Apply the 'Select Products' or 'Collections' rule.
+
+Bestselling
+
+Limited edition / Exclusive / Members only
+
+Editors choice / Hard to find / Staff picks
+
+Deal of the day / Limited time offers / Clearance
+
+Almost gone / Only X left
+
+Out of stock / Pre-order&nbsp;
+
+Free shipping
+
+Wholesale / Bulk discounts
+
+-----------------------------------
+
+Title: Badge Integration Guide
+
+Adding Smart App badge code into your theme is a one-time activity which once done you do not have to worry about later. If you are not comfortable adding the code simply raise a support ticket here&nbsp;or email us at support@smartappassist.freshdesk.com and we will take care of it.&nbsp;
+Steps:
+Go to your Shopify admin.
+Click&nbsp;Online Store &gt; Themes &gt; Actions.
+3. Click 'Edit Code'.
+4. Add the following code where you'd like the badges to show:&nbsp;
+
+&nbsp;
+
+{% render 'smartb', product: product, hideAssets:'1', smartbInnerClass: 'smart-d-inline-block smart-mr-1 smart-mb-1' %}
+
+Note: The actual place where you insert the code will differ as per the installed theme.
+
+For showing the badges on the product pages place the code in the sections/product-template.liquid file. Search for {{ product.title }}&nbsp;and place the above-mentioned code in the next line. This will display the badges below the product title.
+Similarly, the Smart app badge code can be placed on the collection page. Look for snippets/product-card-grid.liquid or snippets/product-grid-item.liquid file. And add the code below the product title or the place where you want to display the badges.
+If you have problems with the installation or want to change the badge location, please raise a support ticket&nbsp;here&nbsp;or email us at support@smartappassist.freshdesk.com&nbsp;and we will take care of it.
+...
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81008505593/original/UUyaV5gF6-kBIvfWfhPZGgjZLnsMDZaraQ.png?1598870908
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81008505594/original/UgX-xJkKFOhzxVAe7d7CMMHRVBsxS8CSUA.png?1598870908
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81008711632/original/oWk2xHJW5U5kg2B6J6cDmG9hFg0T4JZebw.png?1599128408
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81008711916/original/HowalJxjh0HV5Jm8tbtSSLBIPgHV9rICZQ.png?1599128616
+
+-----------------------------------
+
+Title: Badge Integration Guide With Online Store 2 0 Themes
+
+Adding Smart App badge code into your theme is a one-time activity which once done you do not have to worry about later. If you are not comfortable adding the code simply raise a support ticket here&nbsp;or email us at support@smartappassist.freshdesk.com and we will take care of it.&nbsp;
+Steps:
+1. Go to your Shopify admin.
+
+2. Click Online Store &gt; Themes &gt; Actions.
+3. Click Edit code.
+4. &nbsp;Add the following code where you'd like the badges to show:&nbsp;
+{% render 'smartb', product: product, hideAssets:'1', smartbGroup:'1', smartbInnerClass: 'smart-d-inline-block &nbsp;smart-mb-1' %}
+For showing the badges on the product pages place the code in the sections/main-product.liquid file. Search for {{ product.title }} and place the above-mentioned code in the next line. This will display the badges below the product title.
+Similarly, the Prime app badge code can be placed on the collection page. Look for snippets/product-card.liquid file. And add the code below the product title or the place where you want to display the badges.
+If you have problems with the installation or want to change the badge location, please raise a support ticket&nbsp;here&nbsp;or email us at&nbsp;support@smartappassist.freshdesk.com&nbsp;and we will take care of it.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81040268889/original/fZV3aAoxedR5MTwL4ZZxTlo_zbFTG0_b4A.png?1630406929
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81040268971/original/qlxP3Ehll5qcgSqHR0P-vsXTbqXD00CRMQ.png?1630406959
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81040269501/original/rioSVE-ADTSrPa-ymaCQvcr2RShmuO-F0w.png?1630407199
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81040270004/original/z_8y3QfkueD5AHQ3GKu8VkHcAOgympuJgA.png?1630407388
+
+-----------------------------------
+
+Title: Boost Sales With These Powerful Badge Features
+
+The&nbsp;Smart&nbsp;Product Description Icons&nbsp;app&nbsp;offers a variety of powerful features designed to enhance your product visibility, boost customer engagement, and drive sales. With customizable badge designs, dynamic data integration, and automated badge assignment, this app makes it easy to highlight important product attributes like sales, new arrivals, and discounts. It’s perfect for Shopify store owners who want to create a more visually appealing and personalized shopping experience.
+
+Key Features:Customizable Badges: Full control over badge design (color, size, text) to match your brand’s style.
+Dynamic Data: Automatically populate badges with product data such as price or discount percentage for a personalized touch.
+Display Rules: Set conditions for when badges appear, like on-sale items or new arrivals, to streamline badge management.
+Scheduling: Schedule badges to show up during specific timeframes, like limited-time promotions or seasonal offers.
+Urgency Features: Use countdown timers and order counters to create a sense of urgency, encouraging customers to act fast.
+Variant-Level Badges: Assign badges to specific product variants (e.g., size, color), making it easy to highlight individual options.
+Location-Based Display: Show badges to customers based on their region or country, tailoring promotions to different markets.
+Bulk Management: Apply badges in bulk to products or collections, saving time and effort, especially for larger catalogs.
+
+-----------------------------------
+
+Title: Badge Groups
+
+Badges can be assigned to different groups and each group can be placed at a different location on the product (or collection) page. Instead of displaying all the badges together in one cluster, Badge Groups gives you the flexibility to display badges at different locations for the same product.
+As an example, you can show a group of badges below the product title, and a group of different badges on the top left corner of the product image.
+For each badge group, you will have to add a 1-line integration code at the location where the badge group needs to be displayed. In the integration code, add the 'smarthGroup' parameter to specify the badge group number.
+Example integration code for badge group 2:
+
+{% render 'smartb', product: product, hideAssets:'1', smartbGroup: '2',&nbsp;smartbOuterClass:'smart-d-inline-block', smartbOuterStyle:'position:absolute; right:0px; top:0px; z-index:1;', smartbInnerStyle:'', smartbInnerClass: 'smart-d-block smart-mr-1 smart-mb-1' %}The above code will add the badge group 2 on the top right border of the product image.
+Similarly, you can add the integration code for badge group 1 and group 3. If you are not comfortable adding the code simply raise a support ticket here&nbsp;or email us at support@smartappassist.freshdesk.com and we will take care of it.&nbsp;
+If the 'smarthGroup' parameter is not added to the integration code, then the badges of group 1 will be displayed by default.
+Then simply assign a group while adding or updating badges.
+Currently, a maximum of 3 groups can be displayed per page. &nbsp;
+Product groups are available for Pro plan users only.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81011505797/original/Lzs1ABR7135ZLvCMQRXOxiizS_cEFaZMkg.png?1602743240
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81011506555/original/YVHFWs17lwWXIQX67TffTHWMF9LP2I20XQ.png?1602743655
+
+-----------------------------------
+
+Title: Badge Examples
+
+You can use the Prime app for almost any type of badges you can imagine. Here are a few ideas:&nbsp;
+
+Products on Sale&nbsp;Save $15&nbsp; &nbsp;30% Off&nbsp;
+
+Tip 1: Add the {{ SaleAmount }} or {{ SalePercent }} dynamic data fields in the badge text.Tip 2: Apply the 'Sale Price between 0% and 90%' rule.
+
+New Arrivals&nbsp;New&nbsp; &nbsp;Recently Updated&nbsp; &nbsp;Back in stock&nbsp;
+
+Tip 1: Apply the 'Product Create Date' (or 'Product Published Date') is within the past 15 days' rule.
+
+Seasonal&nbsp;Black Friday Deal&nbsp;&nbsp;&nbsp;Winter Special&nbsp;&nbsp;&nbsp;Halloween Exclusive&nbsp;&nbsp;
+
+Tip 1: Apply the 'Select Products' or 'Collections' rule.
+
+Bestselling
+
+Limited edition / Exclusive / Members only
+
+Editors choice / Hard to find / Staff picks
+
+Deal of the day / Limited time offers / Clearance
+
+Almost gone / Only X left
+
+Out of stock / Pre-order&nbsp;
+
+Free shipping
+
+Wholesale / Bulk discounts
+
+-----------------------------------
+
+Title: Badge Placement
+
+Note: This is for advanced users who can work with Shopify liquid code and CSS styling language.
+Badges can be placed at virtually any location on pages having products, including product details page, collection page, search page, etc. The badge position can be manipulated by:
+1. Changing the integration code location
+
+2. Passing appropriate parameters in the integration code &nbsp; &nbsp;
+There are two helpful integration parameters to manage the badge placement:
+1. smartbOuterClass: CSS classes passed using this parameter will be applied to the DIV containing the badges.&nbsp;
+We have the following in-built classes that can be used to manage the badge placement:
+Class NameResultant CSSsmart-d-blockdisplay:block;smart-d-inline-blockdisplay:inline-block;smart-mr-1margin-right: .25rem;smart-ml-1margin-left: .25rem;smart-mt-1margin-top: .25rem;smart-mb-1margin-bottom: .25rem;
+Example integration code:
+{% render 'smartb', product: product, smartbOuterClass:'smart-mt-1 smart-mb-1', smartbInnerClass: 'smart-d-inline-block smart-mr-1 smart-mb-1' %}
+This will apply a margin of .25rem to the top and bottom of the badge container.
+2. smartbOuterStyle: Pass any custom CSS elements using this parameter and they will be applied to the badge container.
+Example integration code:
+{% render 'smartb', product: product, smartbOuterClass:'smart-d-inline-block', smartbOuterStyle:'position:absolute; right:0px; top:0px; z-index:1;', smartbInnerStyle:'', smartbInnerClass: 'smart-d-block smart-mr-1 smart-mb-1' %}This code can be used to place the badges on the top right corner of the product images on collection pages.
+
+-----------------------------------
+
+Title: Supported Third Party Apps
+
+The Smart Product Description Icons&nbsp;App is dedicated to enhancing user experience by offering integration with various third-party apps.
+Supported Third-Party Applications
+Smart Product Filter &amp; Search by Globo
+AI Search &amp; Product Filter by SoBooster
+Boost AI Search &amp; Filter &nbsp;by Boost Commerce
+Searchanise: Search &amp; Filter by Searchanise
+For prompt assistance, we encourage you to&nbsp;submit a ticket&nbsp;or engage with our dedicated support team via the live chat support.
+
+-----------------------------------
+
+Title: Can I Place Badges On Different Pages 
+
+Yes, the app allows you to place badges on different pages of your Shopify store, including:
+
+Product Pages
+Collection Pages
+Cart Page
+Homepage
+
+You can set custom display rules for each page to ensure the badges appear where they are most effective.
+
+-----------------------------------
+
+Title: Are Badges Mobile Friendly 
+
+Yes, the badges created with the Smart Description Icon App are fully responsive and optimized for mobile devices. They will automatically adjust to fit smaller screen sizes, ensuring that your badges are clearly visible on both desktop and mobile views.
+
+-----------------------------------
+
+Title: How Do Product Badges Increase Conversions 
+
+When used effectively, product badges can significantly boost conversion rates. The Product badges grab attention, create urgency, and highlight key product details, making shopping decisions easier. Studies have shown that product badging can increase conversions by up to 55%.
+You can do this by -&nbsp;
+
+Boost visibility – Highlight bestsellers, discounts, and new arrivals.
+Create urgency – Use countdowns and stock alerts to drive quick action.
+Enhance trust – Show ratings, top picks, and verified labels.
+Simplify decisions – Guide customers toward popular and relevant products.
+Optimize for mobile – Provide quick insights for faster purchases.
+By strategically displaying badges, you can increase engagement and drive more conversions.&nbsp;
+
+-----------------------------------
+
+Title: Can I Customize The Appearance Of My Badges 
+
+Yes, the app allows you to fully customize the appearance of your badges. You can change the color, shape, size, and text variations, border in the design section of the badge in the dashboard.&nbsp;
+Additionally, you can upload your badge images or choose from over 100,000+ built-in icons. Badge styles can be adjusted through the app’s settings to match your store’s branding.
+
+-----------------------------------
+
+Title: Can I Use Product Badges With The Highlight Box 
+
+Yes, you can use both badges and Highlight Boxes to provide key information cleanly and effectively. The Highlight Box helps declutter product pages while delivering essential product details to users, complementing the badges.&nbsp;
+
+-----------------------------------
+
+Title: What Are Notes 
+
+Notes are short textual feature highlights of the product. They are similar to the feature bullets on Amazon.
+If you’ve ever bought or sold on Amazon, there is no way you can miss them. They are on the page, often next to the product’s images. Each bullet point is separated by a symbol which makes it easier to highlight different benefits of the product. They greatly enhance readability and draw focus to the main advantages of the product. In short, it’s a seller’s sales pitch.&nbsp;
+Notes help you to create similar bullet points to highlight key features of the product. Apart from bullets, you can format the note text into short paragraphs with rich formatting. Notes are complementary to the main product description and can be placed anywhere on the product or collection pages.
+Each product can have only one Note box.
+Notes are available only for Pro Plans and above.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81019201825/original/RY-zZgxm_NO9O2uNRdB81c0P4lJbaHz4Cw.png?1611899617
+
+-----------------------------------
+
+Title: Notes Integration Guide
+
+Adding Notes integration code into your theme is a one-time activity which once done you do not have to worry about later. If you are not comfortable adding the code simply raise a support ticket here&nbsp;or email us at support@smartappassist.freshdesk.com&nbsp;and we will take care of it.&nbsp;&nbsp;
+Steps:1. &nbsp;Go to your Shopify admin.
+
+2. Click Online Store&nbsp;&gt; Themes&nbsp;&gt; Actions
+3. Click Edit code&nbsp;&nbsp;
+4. Click the file&nbsp;product-template.liquid&nbsp;which appears under&nbsp;Sections.
+5. The product-template.liquid file will open in the online code editor. Add the following code where you'd like the Notes to show on your product detail pages:&nbsp;
+
+  {% render 'smartn', product: product %}The above code is typically placed before the description element.
+
+&nbsp;
+This will display the Notes above the product description. You can place the installation code anywhere else depending on your requirements.
+Note:&nbsp;The actual file and the line where you insert the code will differ as per the installed theme.&nbsp;
+If you have problems with the installation or want to change the location of the Note box, please raise a support ticket&nbsp;here&nbsp;or email us at&nbsp;support@smartappassist.freshdesk.com&nbsp;and we will take care of it.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81019205677/original/Tv9FITwZ_QWJ0hMOZR6xpY7MTSXH0Fm9ew.png?1611901600
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81019206326/original/pyglJ1GzbTMbDs_tO3ryFpO72rwhAZeiTQ.png?1611901924
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81019208912/original/yI7vo8e6EZZFRzZGieYHgtvnZsnOkqs4HQ.png?1611903058
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81019210951/original/onZJX2ORBvPdnSnUKEDoapeB9yoXDyRHcg.png?1611904058
+
+-----------------------------------
+
+Title: Notes Integration Guide With Online Store 2 0 Themes
+
+Adding Notes integration code into your theme is a one-time activity which once done you do not have to worry about later. If you are not comfortable adding the code simply raise a support ticket here&nbsp;or email us at support@smartappassist.freshdesk.com&nbsp;and we will take care of it.
+Steps:
+
+1. &nbsp;Go to your Shopify admin.
+
+2. Click Online Store &gt; Themes &gt; Actions.
+3. Click Edit code.
+4. Click the file main-product.liquid which appears under Sections.
+5. The main-product.liquid file will open in the online code editor. Add the following code where you'd like the Notes to show on your product detail pages:&nbsp;
+{% render 'smartn', product: product, smartnGroup:'1', hideAssets:'0' %}
+The above code is typically placed before the description element.
+&nbsp;
+This will display the Notes above the product description. You can place the installation code anywhere else depending on your requirements.
+
+If you have problems with the installation or want to change the location of the Note box, please raise a support ticket&nbsp;here&nbsp;or email us at&nbsp;support@smartappassist.freshdesk.com&nbsp;and we will take care of it.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81040271719/original/2dGg4sJ918Y7Qy3hU7zGOjdCUkWR0oCxRw.png?1630407997
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81040271754/original/5xI2r1XL4eDxuFix4K0wMhcC_HOwVoxGCQ.png?1630408018
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81040273549/original/w2kxcyYj6yJ_imV3Q77l3UwjdanqZQ__9Q.png?1630408714
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81040274526/original/r6Zi0oxxrRAQy-neHuxAnTikBO2D5KzR1w.png?1630409074
+
+-----------------------------------
+
+Title: Description Of Settings
+
+Notes Design settings
+SettingDescriptionBody &gt; Rectangle
+The Note box will be rectangular in shape with sharp edges.
+Body &gt; Curved Rectangle
+The Note box will be rectangular in shape with curved edges.
+Body &gt; Spacing
+Spacing defines the padding between elements of the Note box.
+Body &gt; Shadow
+Apply shadow effect to the Note box.
+Border &gt; Width
+Specifies the thickness of the Note box border in pixels.
+Border &gt; Color
+Specifies the color of the Note box border.
+Border &gt; Style
+Specify the border style with options solid, dotted, and dashed.
+
+-----------------------------------
+
+Title: How Do Notes Improve The Shopping Experience 
+
+Notes help to improve readability and focus on key product features by breaking down information into short, easy-to-read bullet points. By presenting important benefits in this format, Notes make it easier for customers to quickly grasp the key selling points of a product, leading to better decision-making and potentially higher conversions.
+
+-----------------------------------
+
+Title: Where Can I Place Notes On My Product Page 
+
+Notes can be placed anywhere on the&nbsp;product page. They are typically placed near the product images to draw attention to the key benefits of the product. You can format the Notes as bullet points or short paragraphs with rich text formatting to match the look of your store.
+
+-----------------------------------
+
+Title: How Do Notes Differ From Highlight Boxes And Badges 
+
+Notes: Short, bullet-style text to highlight key product features. Typically placed near the product images to enhance readability.
+Highlight Boxes: Text-icon combinations used to promote important product details, often used for selling points or unique features of a product.
+Badges: Visual labels that draw attention to special statuses of a product, such as “Sale,” “Out of Stock,” or “Limited Edition.”
+You can use&nbsp;Notes,&nbsp;Highlight Boxes, and&nbsp;Badges together to provide a comprehensive and attractive display of important product information.
+
+-----------------------------------
+
+Title: Can I Format The Text In Notes 
+
+Yes, you can format the text in Notes to make it more engaging. In addition to bullet points, you can create short paragraphs with rich formatting, such as bold, italics, or lists. This allows you to highlight specific product features in a visually appealing and readable manner.
+
+-----------------------------------
+
+Title: What Are Banners 
+
+Improve conversion rates by displaying an eye-catching banner on product pages to highlight the #1 reason why customers should buy from you.
+&nbsp;
+
+Digital consumers have now become extremely impatient. People have an attention span of eight seconds, a decrease from 12 seconds back in 2000, according to a Microsoft study. And that human attention span decreases by 88% every year. These shortening attention spans make it very critical to quickly highlight the single most important selling point of our product/store. This can be done via catchy Banners placed near the Add to Cart button.
+Appeal to your users with your unique story, mission, best qualities, special sales, insights, shipping speed, competitive advantage, customer testimonials, etc. With the Smart Product Description Icons app, you can customize banners for different customers and products based on conditions.&nbsp;
+Banners are a sure-shot way to increase sales when you have less time to convert restless shoppers.
+Banners are available only for Pro Plans and above.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81023459958/original/Ud0ETwi4sWDg6LpZBQmcZt2ulg1k7OibZw.png?1615893055
+
+-----------------------------------
+
+Title: Banner Integration Guide
+
+Adding Banner integration code into your theme is a one-time activity which once done you do not have to worry about later. If you are not comfortable adding the code simply raise a support ticket here&nbsp;or email us at support@smartappassist.freshdesk.com&nbsp;and we will take care of it.&nbsp;&nbsp;
+
+&nbsp;
+
+Steps:1. &nbsp;Go to your Shopify admin.
+
+2. Click Online Store&nbsp;&gt; Themes&nbsp;&gt; Actions
+3. Click Edit code&nbsp;&nbsp;&nbsp;
+4. Click the file&nbsp;product-template.liquid&nbsp;which appears under&nbsp;Sections.
+
+&nbsp; &nbsp;&nbsp;
+
+5. The product-template.liquid file will open in the online code editor. Add the following code where you'd like the Banners to show on your product detail pages:&nbsp;&nbsp;
+
+{% render 'smartban', product: product, smartbanGroup:'1', smartbanOuterClass:'smart-mb-2 smart-mt-2 smart-text-left', smartbanOuterStyle:'', smartbanInnerStyle:'', smartbanInnerClass: 'smart-d-block smart-mb-1' %}The above code is typically placed before the form element (Before Add to Cart button).&nbsp;
+
+This will display the Banners above the add to cart button. You can place the installation code anywhere else depending on your requirements.
+Note:&nbsp;The actual file and the line where you insert the code will differ as per the installed theme.&nbsp;
+If you have problems with the installation or want to change the location of the Banner box, please raise a support ticket&nbsp;here&nbsp;or email us at&nbsp;support@smartappassist.freshdesk.com&nbsp;and we will take care of it.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81024084395/original/t0eJV9n6CmHMtsudYH7HIp-KvNGAq3QUCw.png?1616409237
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81024084991/original/flozdyotL1Ke6xmjD7gqxwseA9ska87KCA.png?1616409390
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81024085254/original/9vAN-1rCjd3SykpjRJnlfVqAdUBAVYkpBA.png?1616409465
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81024085978/original/dmYb3JxWg2N5eGDUp6AcRIeI2haProtflw.png?1616409692
+
+-----------------------------------
+
+Title: Banner Integration Guide With Online Store 2 0 Themes
+
+Adding Banner integration code into your online store 2.0 theme is a one-time activity which once done you do not have to worry about later. If you are not comfortable adding the code simply raise a support ticket here&nbsp;or email us at support@smartappassist.freshdesk.com&nbsp;and we will take care of it.&nbsp;&nbsp;
+
+&nbsp;
+
+Steps:1. &nbsp;Go to your Shopify admin.
+
+2. Click Online Store&nbsp;&gt; Themes&nbsp;&gt; Actions
+3. Click Edit code.
+4. &nbsp;Click the file main-product.liquid which appears under Sections.
+5. The main-product.liquid file will open in the online code editor. Add the following code where you'd like the banner to show on your product detail pages:
+{% render 'smartban', product: product, smartbanGroup:'1', smartbanOuterClass:'smart-mb-2 smart-mt-2 smart-text-left', smartbanOuterStyle:'', smartbanInnerStyle:'', smartbanInnerClass: 'smart-d-block smart-mb-1' %}
+The above code is typically placed before the form element (Before Add to Cart button).&nbsp;
+This will display the Banners above the add to cart button. You can place the installation code anywhere else depending on your requirements.
+If you have problems with the installation or want to change the location of the Banner box, please raise a support ticket&nbsp;here&nbsp;or email us at&nbsp;support@smartappassist.freshdesk.com&nbsp;and we will take care of it.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81040270226/original/PWGCDTc6_7UWo9YRySuC2Jp5jhL1RIH5qA.png?1630407488
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81040270286/original/BsbkBdG_6gBH9lATcNiQ8cE4iFaJE-kJQg.png?1630407514
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81040270711/original/N_g0x2pftjZKhuglchZZTlD-re9W87-07w.png?1630407668
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81040271422/original/RCXUT6oA3BfgImHwqFRZmNlC7fYY5rUpVg.png?1630407899
+
+-----------------------------------
+
+Title: Banner Groups
+
+Banners can be assigned to different groups and each group can be placed at a different location on the product page. Instead of displaying all the Banners together in one cluster, Banner Groups gives you the flexibility to display them at different locations.
+As an example, you can show a group of Banners below the product title and a group of different Banners above the product description. or below the product description&nbsp;
+For each Banner group, you will have to add a 1-line&nbsp;integration code at the location where the banner group needs to be displayed. In the integration code, add the 'smartbanGroup' parameter to specify the Banner group number.
+Example integration code for smartban group&nbsp;2:&nbsp;
+{% render 'smartban', product: product, smartbanGroup:'2', smartbanOuterClass:'smart-mb-2 smart-mt-2 smart-text-left', smartbanOuterStyle:'', smartbanInnerStyle:'', smartbanInnerClass: 'smart-d-block smart-mb-1' %}&nbsp;
+The above code will add Banner group 2 on the above product description.&nbsp;&nbsp;
+Similarly, you can add the integration code for banner group 1 and group 3. If you are not comfortable adding the code simply raise a support ticket here or email us at support@smartappassist.freshdesk.com&nbsp; and we will take care of it.
+Currently, a maximum of 3 groups can be displayed per page. &nbsp;
+Banner groups are available for Pro plan users only.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81163120133/original/uOouOEIxZBjvijHhRBxEHSIUBbPJUD3LPA.png?1741834929
+
+-----------------------------------
+
+Title: Banner Visitor Counter
+
+Smart app allows creating banners that display the total visitor count, for any product, in a given timeframe. It can be used to create urgency as it shows the interest level in the product. Example:
+&nbsp;56 visitors in the last hour&nbsp; OR &nbsp;&nbsp;7 people current viewing&nbsp;
+The order counter can be displayed by adding the {{VisitorCounter}} dynamic data field in the Banner text.
+You can specify the timeframe to consider for calculating the total visitors by configuring it on the Visitor Count Settings page.
+
+You can also add a banner display condition based on the visitor count number.
+Note:
+
+{{VisitorCount}} dynamic data field is available for Gold Plan users only.
+If the account is downgraded after adding a banner having Visitor Count, then that banner will stop being displayed.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81033335235/original/b7UTWHieAux-XmjmRfnjcMbGlIk0DShsSw.png?1624264703
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81033336393/original/EHnZD-1eaSo5yZLCb3vJlPfUV094nZVAxQ.png?1624265109
+
+-----------------------------------
+
+Title: How Banners Can Improve Sale Conversions 
+
+Banners are eye-catching visual elements placed on product pages to highlight the most important selling point of a product or store. They can be used to communicate key messages, such as special promotions, shipping speed, customer testimonials, or unique product features. Banners help grab the attention of impatient digital consumers by showcasing the #1 reason customers should buy from you, right when they are most likely to make a purchase decision. This can increase conversion rates by compelling customers to act quickly.
+
+-----------------------------------
+
+Title: Why Are Banners Important For Online Stores 
+
+As digital consumers' attention spans continue to decrease, it’s essential to quickly capture their attention. According to a Microsoft study, human attention spans have shrunk from 12 seconds in 2000 to just 8 seconds today. Banners help address this by immediately highlighting the key selling points of your product, whether it's a sale, unique feature, or customer testimonial. They provide a quick and impactful way to convey information before customers lose interest and navigate away from the page.
+
+-----------------------------------
+
+Title: Where Should I Place Banners On The Product Page 
+
+Banners should be placed strategically near the&nbsp;Add to Cart button or in other high-visibility areas of the product page. This placement ensures that shoppers see the banner while they are actively considering making a purchase, increasing the chances of conversion.
+
+-----------------------------------
+
+Title: Can I Customize The Content Of My Banners 
+
+Yes, you can fully customize your banners. You can use them to highlight your unique story, mission, competitive advantages, best product qualities, shipping speed, sales, or customer testimonials. Banners are designed to be versatile and can be tailored to fit different products or target different customer segments based on the conditions you set.
+
+-----------------------------------
+
+Title: How Can I Display Different Banners For Different Products Or Customers 
+
+The App allows you to set conditions for when specific banners appear. You can display unique banners for different products, and customer segments, or based on certain product conditions, such as sale status or stock levels. This helps ensure that the right message is shown to the right audience at the right time.
+
+-----------------------------------
+
+Title: Tables
+
+Tables (or charts) allow displaying product information in a row-column format. They&nbsp;are a great way to list out the detailed specifications of the product. This helps the shoppers to get answers to their questions. And they can make purchase decisions quicker.&nbsp;
+Furthermore, with all the information easily visible, you will have fewer support emails.
+This is how Amazon organizes product details in a table format:
+With the Smart App, you can create similar tables listing out product specifications.
+Features:
+
+Create upto 500 tables.&nbsp;
+Display tables based on configured rules. Example, a table across all t-shirts etc.
+Insert emojis and dynamic data in the table text.
+Stylize tables with custom colors, sizes, etc.
+Note: Tables are available only for Pro Plan and above.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81066844987/original/dnA-HEb67IIO2MVx3FdE5w5mQQRwcXjcAg.png?1649228516
+
+-----------------------------------
+
+Title: Table Integration Guide
+
+Adding Smart App Tables code into your theme is a one-time activity that once done you do not have to worry about later. If you are not comfortable adding the code simply raise a support ticket here&nbsp;or email us at support@smartappassist.freshdesk.com&nbsp;and we will take care of it.&nbsp;
+
+Steps:
+
+Go to your Shopify admin.
+Click Online Store &gt; Themes &gt; Actions
+3. Edit the code.
+&nbsp;4. Add the following code where you'd like the tables to show:
+
+&nbsp;{% render 'smartt', hideAssets:'0', product: product, smarttGroup: ‘1’ %}
+
+Note: The actual place where you insert the code will differ as per the installed theme.
+For showing the tables on the product pages place the code in the sections/product-template.liquid file. Search for {{product.description}} and place the above-mentioned code above the description line. This will display the tables above the description of the product. You can place the installation code anywhere else depending on your requirements.
+If you have problems with the installation or want to change the location of the table box, please raise a support ticket&nbsp;here&nbsp;or email us at&nbsp;support@smartappassist.freshdesk.com&nbsp;and we will take care of it.&nbsp;
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81066962004/original/GwFEk9Hy5M09xp2g6LJ-z2Qj_c-MEFiAOA.png?1649315614
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81066962248/original/Uyj5dS3kg27tCB3DOe6-BzrqUKNvmb-nTA.png?1649315700
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81066963416/original/5lEw3F2Q-3K5Bz0tdAv5ThgMzrHmYX3JCg.png?1649316141
+
+-----------------------------------
+
+Title: Table Integration Guide With Online Store 2 0 Themes
+
+coming soon
+Adding Smart App Tables code into your theme is a one-time activity that once done you do not have to worry about later. If you are not comfortable adding the code simply raise a support ticket here or email us at support@smartappassist.freshdesk.com&nbsp;and we will take care of it.&nbsp;
+Steps:
+
+1. Go to your Shopify admin.
+
+2. Click Online Store &gt; Themes &gt; Actions.
+3. Click&nbsp;Edit code.&nbsp;&nbsp;
+&nbsp;4. Add the following code where you'd like the tables to show:
+
+&nbsp;{% render 'smartt', hideAssets:'0', product: product, smarttGroup: ‘1’ %}For showing the table on the product pages place the code in the sections/main-product.liquid file. Search for {{product.description}} and place the above-mentioned code above description line.&nbsp;
+This will display the badge table above the description of the product. You can place the installation code anywhere else depending on your requirements.
+
+If you have problems with the installation or want to change the location of the table box, please raise a support ticket&nbsp;here&nbsp;or email us at&nbsp;support@smartappassist.freshdesk.com&nbsp;and we will take care of it.&nbsp;
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81066956753/original/tUupivoy0HeFaCIyGh_dFWeBf3F_KzBLxg.png?1649313773
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81066956884/original/q68Iz2htRouWmNaiI5xwivclLda2BJdbYA.png?1649313817
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81066958069/original/ieqJOHlSBZNPGxLS-2G8MtOrEo_5tBf1ng.png?1649314234
+
+-----------------------------------
+
+Title: Table Groups
+
+Tables can be assigned to different groups and each group can be placed at a different location on the product page. Instead of displaying all the Tables together in one cluster, Table Groups gives you the flexibility to display them at different locations.
+
+-----------------------------------
+
+Title: How Do Tables Help Improve The Shopping Experience 
+
+Tables allow you to display important product details, such as size specifications, features, materials, and other relevant data in a clear and concise format. This makes it easier for shoppers to compare and understand the product's specifications without having to search through long descriptions. This results in quicker decision-making and fewer support emails, as the information is readily available on the product page.
+
+-----------------------------------
+
+Title: How Can I Use Tables On My Product Pages 
+
+You can use Tables to list product specifications or any other information that would be helpful for shoppers to make an informed purchasing decision. For example, you could display details like size charts, materials, dimensions, or technical specifications in a well-organized table. This can be particularly useful for products with many technical details, such as electronics or apparel.
+
+-----------------------------------
+
+Title: Option Count
+
+Use the {{ OptionCount }} dynamic variable to display badges with the count of values for a specific product Option. Improve shopping experience by letting the customers know that there are more options available.
+Examples:
+5 sizes availableOR
+
+&nbsp;4 color options&nbsp;
+
+You need to provide the Option name ('Color', 'Size', 'Material' etc) for which the value count needs to be displayed inside the badges. This can be done by adding the Option name as shown below.&nbsp;
+For products that do not have the specified Option name, this badge will not be visible.&nbsp;
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81043367378/original/DLtlz106jRrEqKRkm6c2xOEVL0_zE4tnLQ.PNG?1633081490
+
+-----------------------------------
+
+Title: Customer Order Date
+
+Display the Customer Order Date right inside the badge. Improve the shopping experience by letting the customers know the last order date when they purchase this product.
+The Customer Order Date can be displayed by adding the 'CustomerOrderDate' dynamic data field in the badge text.&nbsp;
+Supported Date formats&nbsp;
+SymbolAbbreviation%YYear with century (e.g., 2023)%mMonth (01..12)%dDay of the month (01..31)%BThe full month name (e.g., January)%bThe abbreviated month name (e.g., Jan)%AThe full weekday name (e.g., Sunday)%aThe abbreviated weekday name (e.g., Sun)%Y-%m-%dYear-Month-Day (e.g., 2023-12-27)%Y/%m/%ddate with slashes (e.g., 2023/12/27)%B %d, %Ydate in the format Month Day, Year (e.g., December 27, 2023)
+Note:
+
+The customerOrderDate&nbsp;dynamic data field is available for Pro Plan users and above.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81130147166/original/VnChwYmFL5igfOqx3APvqFZwvkE5NZY6dQ.png?1704180768
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81130275771/original/Er78P5EWyHql3AWIQGTBy0xRuBE9OqkHBQ.png?1704275558
+
+-----------------------------------
+
+Title: Order Count
+
+The Smart app allows creating highlights that display the total sale count for each product. It can be combined with the inventory left data field to create powerful social proof. Example:
+&nbsp;93 sold | 7 left&nbsp;&nbsp;
+The order counter can be displayed by adding the {{OrderCount}} dynamic data field in the badge text.
+To allow the app to automatically calculate the order count for each product, click the 'Update Now' button.
+The app will count the orders for each product in the last 3 months and update the database. Alternatively, you can manually configure the order count for each product.
+The order count will then be incremented automatically every 24 hours to reflected the new orders.
+You can also add a badge display condition based on product order count.
+Note:
+
+{{OrderCount}} dynamic data field and the Order Count Display Condition are available for Pro Plan users only.
+If the account is downgraded after adding Highlights having Order Count, then those Highlights will stop being displayed.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81010595954/original/9-8pN6zu4r1vW14JTVPnW6xeoiLnR9oOgw.png?1601576519
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81010596010/original/SLo1XJr-frLiFIN2jzF0Hq7Xu2Gd0Haa3g.png?1601576602
+
+-----------------------------------
+
+Title: Dynamic Metafields
+
+The Smart app allows creating highlights (or badges) that display the value of any product metafield created by other apps.&nbsp;
+The product metafields can be displayed by adding the {{smarthm.namespace.key}} dynamic data field in the highlight text. Here namespace.key&nbsp;needs to be replaced with the actual metafield namespace and metafield key names.
+For example - If you have metafield with the namespace 'instructions' and key 'wash' then to display the value of this metafield, add text {{smarthm.instructions.wash}}. &nbsp;
+You can combine Product Metafield Display Conditions with Dynamic Metafields to create powerful rules that display metafield data based on your rules.
+Below are a few examples of product metafield representations that may be helpful.
+Metafield TypeProduct Metafield RepresentationProduct{{ smarthm.custom.product.value }}Collection&nbsp;{{ smarthm.custom.collection.value }}Money{{ smarthm.custom.price.value | money }}Single Line Text{{ smarthm.custom.stock.value }}Multi Line Text{{ smarthm.custom.specs.value | newline_to_br }}Rich Text{{ smarthm.custom.rich_text | metafield_tag }}Multi Line Text{{ smarthm.custom.alphanumeric.value }}Validations{{ smarthm.custom.validation.value }}Weight{{ smarthm.custom.product_weight.value }}Volume{{ smarthm.custom.volume.value }}Dimension{{ smarthm.custom.dimension.value }}Decimal{{ smarthm.custom.price_in_decimal.value }}Integer List{{ smarthm.custom.agelist.value | join:'&lt;br&gt;' }}&nbsp;Integer Single{{ smarthm.custom.age.value }}Single Line Text (list){{ smarthm.custom.specifications_of_product.value | join:'&lt;br&gt;' }}File&lt;a target='_blank' href='{{ smarthm.custom.file.value.url}}'&gt;{{ smarthm.custom.file.value.url | split: '/' | last | split:'?' | first }}&lt;/a&gt;Date and Time&nbsp;{{ smarthm.custom.datetimesingle.value | date: '%A, %B %d, %Y at %l:%M %p %Z' }}
+
+Note:
+
+Dynamic Metafields are available for Pro Plan users only.
+If the account is downgraded after adding Highlights having Dynamic Metafields, then those Highlights will stop being displayed.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81010797234/original/fk-MF7t0RMpvMbuDLMnn3CBeTS-y0yQaIw.png?1601899047
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81010796846/original/GxqvB5brJn0Po8_OhUrUC1v5kcIVDj07-w.png?1601898849
+
+-----------------------------------
+
+Title: Countdown Timer
+
+Add urgency to your promotions with a ticking countdown timer inside a highlight (or badge) to encourage customers to BUY NOW instead of later.
+To display a countdown timer inside the highlight or badge text simply add the 'CountdownTimer' dynamic data field and select a sale end date.
+Countdown timers are available only for Pro plan accounts.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81063650687/original/STvA17HKJ0KArg0CTxbE2L4_LQqOxmq9SQ.png?1647326702
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81063651161/original/T4rUvfq6QILRaSJ-wGbTJMeQdDS3p7-T-A.png?1647326800
+
+-----------------------------------
+
+Title: Pricing
+
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+
+You can try the Smart Product Descriptions App free for 7 days on any of the plans below:
+Free PlanBasic PlanPro PlanGold PlanPrice/Month$0$5$10$20Highlights✓
+✓
+✓✓
+BadgesXX✓✓
+Country RestrictionXX✓
+✓
+Advanced-Data FieldsX
+X
+✓
+✓
+Dynamic MetafieldsX
+X
+✓
+✓
+NotesX
+X
+✓
+
+✓BannersXX✓
+✓
+Live Visitors Counter
+
+X
+X
+X
+✓
+Variant Level Highlights
+X
+X
+X
+✓
+
+For Free Trial Shopify StoresFor Shopify Stores on Paid PlanFor Shopify Stores on Paid Plan
+For Shopify Stores on Paid Plan
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+
+Note:
+
+The app charges you via Shopify billing API meaning that charges appear directly on your Shopify invoice.
+There are no setup fees.
+Terminate the subscription anytime by simply uninstalling the app.
+To keep it fair and transparent we do not offer discounts to anyone.
+The free plan is only for stores under Shopify free trial.
+Max of 500 highlights, 100 badges and 50 banners can be created.
+
+&nbsp; &nbsp;&nbsp;
+
+-----------------------------------
+
+Title: App Removal Guide
+
+If you directly uninstall the app from the Shopify admin, then the badges &amp; highlights will continue to display on your store.
+
+To completely remove the badges &amp; highlights and delete the app code from your store,e follow the steps below before uninstalling the app:
+
+Steps:
+
+1. &nbsp;Click the switch OFF button on the badge's home page.
+Similarly, switch OFF on the Highlights page as well.&nbsp;
+2. (Optional) Remove the 1-line integration code from your theme, which you added while setting up the app. The integration guides for badges and highlights are available here and her,e respectively. Keeping the code will not have any negative impact on your store.&nbsp;&nbsp;&nbsp;
+3.&nbsp;(Optional) Delete the&nbsp;snippets/smartb.liquid&nbsp;file and snippets/smarth.liquid&nbsp;file from your Shopify Theme Editor. Do not delete these files if you have not removed the code mentioned in step 2.&nbsp;&nbsp;
+
+4.&nbsp;Uninstall the Smart Product Description Icon app through your Shopify store admin.
+
+Go to your Shopify admin.
+Go to Apps. Click on the Apps and sales channel settings.
+&nbsp;
+
+&nbsp; &nbsp; &nbsp; &nbsp; 3. A pop-up window will open, wherein you will find the list of all the apps. Click on the 'remove' button and then delete.&nbsp;
+That's it! The app is now uninstalled.&nbsp;
+For detailed instructions, check out the&nbsp;Shopify guide to uninstall the app.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81008721430/original/8lGVocEopSVdL507OkyREOTeUxA4DqIaZA.png?1599135384
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81078856961/original/aYmXFn7u2yKqWpT2H8VggAnGv8x1HDup6g.png?1659523612
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81078857336/original/EEf0AyZ8636RVYpdBHJpAGTv0FCD6hkwww.png?1659523713
+
+-----------------------------------
+
+Title: Privacy Policy
+
+This Privacy and Data Protection Agreement ("Agreement") sets out the terms and conditions under which our Shopify app collects, processes, and stores the personal data of our merchants ("You", "Your").
+
+1. Data Collection and Use
+
+Our app collects personal data from You in order to provide our services to You. This may include information such as Your name, email address, and store information.
+
+We use Your personal data to provide You with access to and use of our app, and to communicate with You about our services. We may also use Your personal data to improve and enhance our app and services.
+
+2. Data Storage and Security
+We store Your personal data securely in accordance with industry standards. We take appropriate technical and organizational measures to protect Your personal data against accidental or unlawful destruction, loss, alteration, unauthorized disclosure, or access.
+
+3. Data Sharing and Disclosure
+We do not share or disclose Your personal data to any third parties, except where required by law or as necessary to provide our services to You. We may also share Your personal data with our affiliates or service providers who assist us in providing our services to You, but only to the extent necessary to provide those services.
+
+4. Data Retention
+We will retain Your personal data for as long as necessary to provide our services to You, and for as long as required by law.
+
+5. Your Rights
+You have the right to access, correct, and delete Your personal data that we hold. You may also have the right to restrict or object to the processing of Your personal data, and to receive a copy of Your personal data in a structured, machine-readable format.
+
+6. Changes to this Agreement
+We may update this Agreement from time to time. Your continued use of our app after the effective date of any changes to this Agreement constitutes Your acceptance of those changes.
+
+7. Contact Us
+If You have any questions or concerns about this Agreement or our data processing practices, please contact us at support@smartappassist.freshdesk.com.
+
+By using our app, You acknowledge that You have read and understand this Agreement, and agree to be bound by its terms and conditions.
+
+-----------------------------------
+
+Title: Customer Data Policy
+
+We understand the importance of privacy and protecting customer data. This Policy outlines how we collect, use, and disclose customer data that we obtain through our Shopify app.
+
+Personal Information We CollectWe collect personal information that is necessary to provide our app services. This includes&nbsp;order-related data. We do not collect customer Name, Email, Phone or Address.
+How We Use Customer Personal DataWe use the customer order data we collect to provide our app services, updating order count, and recent order count of individual products. We may also use the information to comply with legal obligations.
+Sharing Customer DataWe do not share personal data with third parties except as necessary to provide our app services or comply with legal obligations.
+Data RetentionWe retain customer data for as long as necessary to provide our app services or as required by law.
+SecurityWe take reasonable measures to protect customer data from unauthorized access or disclosure. This includes encrypting data when stored and as it transits various networks.
+
+-----------------------------------
+
+Title: Terms Of Use
+
+1. Acceptance of TermsBy using the Smart Product Description Icons app ("App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the App.
+
+2. Use of the AppThe App is provided to assist merchants in displaying badges as a call attention to special information about a product on their Shopify stores. You agree to use the App in compliance with all applicable laws and regulations.
+
+3. User ResponsibilitiesYou are responsible for maintaining the security of your Shopify store and the credentials used to access the App. You are also responsible for all activities that occur under your store's account.
+
+4. LicenseSubject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to use the App.
+
+5. Fees and PaymentsUse of the App may be subject to fees. All payments must be made in accordance with the pricing and payment terms provided at the time of purchase. All purchases are non-refundable. You can cancel your subscription at any time by logging into your account.&nbsp;
+
+6. Data and PrivacyWe are committed to protecting your privacy. Our data collection and use practices are outlined in our Privacy Policy.
+
+7. Disclaimer of WarrantiesThe App is provided "as is" and "as available" without warranties of any kind, either express or implied.
+
+8. Limitation of LiabilityIn no event shall we be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the App.
+
+9. TerminationWe reserve the right to terminate or suspend your access to the App at any time, with or without notice, for any reason, including if you breach these Terms.
+
+10. Governing Law and ArbitrationThese Terms shall be governed by and construed in accordance with the laws of India. In the event of any dispute, claim, or controversy arising out of or relating to these Terms or the App, the parties shall submit to the exclusive jurisdiction of the courts of Mumbai, India.
+
+11. Changes to TermsWe reserve the right to modify these Terms at any time. Your continued use of the App after any such changes constitutes your acceptance of the new Terms.
+
+12. Contact InformationFor any questions or concerns regarding these Terms, please contact us at support@smartappassist.freshdesk.com.
+
+By using the Smart Product Description Icons app, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use.
+
+-----------------------------------
+

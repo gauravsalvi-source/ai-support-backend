@@ -1,0 +1,821 @@
+Title: Who Is This App For 
+
+Connectr app helps Amazon merchants to import their items from Amazon Seller Account to their Shopify store in 1-click.
+Complete product listing gets imported including title, description, images, inventory, price, variants, customer reviews, categories, etc. The app can then be used to maintain the Shopify store going forward. As the prices and inventory updated, Connectr can be configured to continue to keep everything perfectly in sync.
+
+-----------------------------------
+
+Title: Installing The Amazon Connectr Fba Sync
+
+Installing the Amazon Connectr &amp; FBA Sync is quick and straightforward. Follow these simple steps to get started:
+
+&nbsp;
+
+• Visit the Shopify App Store: Go to the Shopify App Store and search for&nbsp;‘Amazon Connectr &amp; FBA Sync’.
+&nbsp;
+• Click Install:&nbsp;Once you’ve found the app, click Install to begin the process.
+&nbsp;
+Log In and Approve:&nbsp;You’ll be prompted to log in to your Shopify store. After logging in, review the permissions and approve the installation, along with any associated charges.
+
+-----------------------------------
+
+Title: How Does It Work 
+
+1. Install the app and link your Amazon Seller account.
+
+Install the app from the Shopify App Store. &nbsp;Then connect the app to your Amazon Seller account - follow the easy steps provided in the app dashboard.
+2. Pull products from Amazon to Connectr
+
+Click the 'Pull All' button on the app dashboard. The app will read products from your Amazon Seller account, extract relevant information, augment it with external data and store it in the Connectr database. The entire process may take from a few minutes to a few hours depending on the number of products you have. You also have to option to pull specific items from your Amazon catalog.
+3. Push products from Connectr to Shopify
+
+Once the products are pulled from the Amazon Seller account they will be visible inside the Connectr dashboard. Later you can 'Push All' or push selective products to Shopify. Pushing products to Shopify will create new products in Shopify complete with title, description, images, prices, variations, etc.&nbsp;
+4. Sync products
+
+Once the products are pushed to Shopify, the Connectr app can be used to keep the product prices and inventory quantities in sync with Amazon. There are 3 ways to keep the products in sync - more info here.
+5. Fulfill Orders for Amazon products
+
+You can choose to ship the products manually or automate the process via FBA. More info here.
+
+-----------------------------------
+
+Title: New Api
+
+Connectr app works with official Amazon APIs to read and write data from the Amazon Seller account. Recently, Amazon has introduced a new set of APIs, called SP-API. The old APIs, called MWS APIs, has been discontinued.
+The Connectr Amazon app was built on top of the old MWS APIs. Now, we have migrated the app to the new SP-APIs. To ensure a seamless transition to the new APIs, you will need to authenticate your Amazon account by clicking the 'Connect Now' button and linking the Amazon account.&nbsp;
+If the new APIs are not linked by July 31, 2022, the app will not be able to connect to your Amazon Seller account and stop working.
+
+-----------------------------------
+
+Title: How To Link Existing Products To Amazon 
+
+Products already added to Shopify can be linked to the Amazon Seller account. Linking products to Amazon will not update product details such as title, description, images, product type, tags or URL. Linked products can later be&nbsp;synced to allow the Connectr app to update product prices and inventory.&nbsp;
+Steps to link existing products:
+
+1. Log in to your Shopify store, select the product you want to link to Amazon and go to the product details page where you can edit product details.
+
+2. Click the 'Connectr App' button found under 'More Actions...'.
+3. Product Linking screen is displayed in the Connectr dashboard. Provide the SKU.
+4. Hit 'Verify'.
+
+5. Once the SKU is verified, click the 'Link' button.
+Note:
+
+Once the product is linked it will be visible inside the app dashboard.
+Each product linked will consume one pull credit.
+Instead of linking products 1-by-1 you can bulk link the products all at once. More info here.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043023292755/original/0K7Ycb8g5mRjNIdll87AVdaB4WaDoNNfgA.png?1558433501
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043023289725/original/e2BtG7CmojDgzgEUBilmFG7Qc8UYF0JqDg.png?1558432882
+
+-----------------------------------
+
+Title: Pricing Plans
+
+1. One-Time SKU Pull Pricing:
+Connectr app follows a pre-paid system to pull products from Amazon. SKU pull credits need to be pre-purchased before pulling from Amazon. Pull credits are priced at the rate of &nbsp;$1 for 100 SKUs. The account is pre-loaded with 25 credits to allow you to test drive the app.
+2. Monthly Maintenance Plan:
+To sync the products and use other features of the app, a monthly subscription plan needs to be activated. The plan amount depends on the number of SKUs and the features required. The basic maintenance plan starts at&nbsp;$6 per month.
+Estimate the pricing for your account using our Pricing Calculator Tool.
+Note:
+
+• There are no setup fees on any of our plans.
+• Cancel the account anytime by simply uninstalling the app.
+• You can upgrade or downgrade your plan at any time.
+• To keep it fair and transparent for everyone we do not offer discounts on any of the plans to anyone.
+• The app charges appear directly on your Shopify invoice – you don't have to input your credit card information again to use our app.
+
+-----------------------------------
+
+Title: Pricing For Importing Customer Reviews
+
+Connectr app follows a pre-paid system to import customer reviews from Amazon. Credits need to be pre-purchased before importing reviews.&nbsp;
+Review credits are priced at the rate of $1 for 5 credits. With each credit, you can import customer reviews for one product. Thus, with 50 credits you can import reviews for 50 products.
+Note:
+
+The app imports a maximum of 500 latest customer reviews for each product.
+Importing activity for a product consumes a credit even if zero reviews were found on Amazon.
+Re-importing reviews for a product also consumes one credit.
+The account is pre-loaded with 10 credits to allow you to test the importing of reviews.
+If the app is uninstalled, the reviews will not be displayed.
+
+-----------------------------------
+
+Title: What Happens To My Products If I Cancel My Account 
+
+Nothing. Your product information is yours, we just move it around. Obviously, you won’t have access to Connectr anymore, but the products you pushed into your Shopify store will remain unchanged.
+
+-----------------------------------
+
+Title: Does Connectr Support Installation On More Than One Store 
+
+Connectr App is specific to a single store. If you have another store you'd like to use Connectr, just install the app again for each additional store.
+
+-----------------------------------
+
+Title: Connecting Amazon Seller Account
+
+Connecting Amazon Seller Account is a 2-step easy process.
+Step 1: Get your Seller ID (also called Merchant Token)
+Log in to your Amazon seller central account - https://sellercentral.amazon.com/
+Go to the Settings&nbsp;&gt; Account Info&nbsp;page.&nbsp;
+Click on the Merchant Token Link under Business Information box.
+Copy your Merchant Token
+Step 2 (Authorize the app)
+Go to the Amazon settings page&nbsp;in the Connectr app.
+Select your region
+Enter the Seller ID / Merchant Token you go in the step above
+Click Save and Connect
+Amazon authorization dialog box will open.
+Simply grant permissions and the account will be linked.
+Repeat this for all the Amazon regional accounts that you want to connect.
+
+Images:
+https://joelister.zendesk.com/hc/article_attachments/360020963633/amazon-login.png
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043363668285/original/y1f3sNlJtFcXi1SenZwx49fE4Ok3h_UkMQ.jpg?1658744270
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043363667016/original/2_0tcBDxXW3vVhyePUWjfezV_xuOGFhaDw.png?1658744084
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043363670042/original/55AoWupROb8XuIB8y8FtNvxGNII7s0_Llw.jpg?1658744521
+
+-----------------------------------
+
+Title: Product Listing
+
+Connectr will create beautiful product listings in Shopify automatically. When the products are pushed, Connectr will write the title and description, also include feature bullets, product details, and multiple images. The app also intelligently picks appropriate item details to be added as product tags in Shopify which can later be used to categorize products into collections.
+Furthermore, with auto-tagging and description control settings you can select the data which goes into the Shopify description and product tag fields.
+Once you push Amazon product to your Shopify store, it will be available in your dashboard and you can perform all the basic operations:
+
+modifying product title, description, images
+applying tags, collections or other meta-information
+hiding / unhiding from an online store
+
+-----------------------------------
+
+Title: Auto Tagging
+
+Auto-tagging allows users to automatically add Shopify product tags while pushing products. Tags are added based on the product information derived from Amazon.
+Users can select specific fields that need to be auto-added as product tags while pushing products.
+Example - if you select Brand&nbsp;and ProductGroup&nbsp;as auto-tags. A Nike Men's Tanjung Premium Shoe will be pushed to Shopify with product tags - 1. Nike and 2. Shoes.
+Note:
+
+Auto-tagging cannot be applied retrospectively to the products already pushed before.
+
+If the tag information derived from Amazon is empty then the tag will not be added.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043009504875/original/pn11FW9tTfqMXsBbk6d3cYcjqxvPw5hCWQ.png?1547635072
+
+-----------------------------------
+
+Title: Updating Inventory Quantity
+
+Connectr can be used to keep quantity in sync between Amazon and Shopify. Inventory can be updated with either of the 2 options:
+Option 1: As available on Amazon&nbsp;
+
+Connectr will update the inventory quantities as per values from Amazon.
+Option 2: Fixed count&nbsp;
+
+Connectr will set the inventory quantity on Shopify to 1, regardless of your quantity at Amazon. When you sell the product on Shopify, instead of delisting it, the quantity will set to 0 so that you don't lose your SEO on the listing. &nbsp;Later when you sync the products, the app will reset the quantity back to 1 only if that SKU is in stock on Amazon. &nbsp;This way, Connectr keeps your quantity in sync and ensures you never double-sell an item. Also, you can change the 'Fixed Count Quantity' field to set more than 1. This will update products with a quantity of this value. If you change this setting, all your existing products will be updated automatically when the app syncs.
+
+-----------------------------------
+
+Title: Duplicate Variants
+
+&nbsp;Shopify does not permit adding products having duplicate variants. For example, consider the following product having Variant 1 and Variant 3 as duplicates.
+Parent ProductFull sleeve t-shirt
+Variant 1Red, SmallVariant 2Red, MediumVariant 3
+Red, SmallVariant 4Red, Large
+Such products when pulled from Amazon seller account cannot be pushed to Shopify. Either Variant 1 or Variant 3 (from the example) can be pushed. The Duplicate Variant Preference settings (on the Push Settings page) can be used to guide the Connectr app in determining which of the two duplicate variants to push into Shopify.&nbsp;
+On selecting 'Merchant Fulfilled'&nbsp;the duplicate variant having fulfillment type as Merchant will be pushed to Shopify leaving out the other duplicate variant. Whereas selecting 'Amazon Fulfilled' gives the variant having fulfillment type as Amazon the preference.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043012454264/original/v5c-WTbMTMcBspCRW6ECaV_DYU0gl9NWWg.png?1551356135
+
+-----------------------------------
+
+Title: Which Marketplaces Does Connectr Support 
+
+We work in the following marketplaces:
+
+• America: US, Canada, Brazil, Mexico
+• Europe: UK, Germany, Spain, France, Italy, Netherlands&nbsp;
+• Asia: India, Japan, UAE, Singapore
+• Australia: Australia
+• Coming soon: Turkey
+
+-----------------------------------
+
+Title: Which Product Does Connectr Pull From Amazon 
+
+Connectr can pull all the products, including inactive products, from your Amazon Seller account. Nonetheless, you have the option to specify which type of items you want to pull.
+Go to Connectr app &gt; Settings&nbsp;&gt; Pull &gt; Select your preferences.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043012315713/original/IcVKNy_ehEMTN85mDMbbLBWtpwe6gVDRhQ.png?1551253460
+
+-----------------------------------
+
+Title: How Does Connectr Handle Product Images 
+
+We pull in the highest resolution images available for each product. Furthermore, we pull in the highest variation images available and push them all to your Shopify store.
+
+-----------------------------------
+
+Title: Does Connectr Import Product Variations 
+
+Yep, sure does! If on Amazon, your products are set up as variations then those same relationships will be carried over into Connectr and Shopify.
+
+-----------------------------------
+
+Title: Do I Need To Have A Fba Account With Amazon 
+
+FBA account is not needed - a Marketplace Amazon Seller account is all you need.
+
+-----------------------------------
+
+Title: Ship With Fba
+
+You can use the Connectr app to fulfill orders on Shopify using your Amazon FBA account. This&nbsp;is useful for the sake of&nbsp;inventory efficiency. You can leave your stock with Amazon, all in one place, and fulfill both Amazon and Shopify orders with one dashboard. Additionally, you can track both Amazon and Shopify orders in Seller Central, and your inventory will be neatly stored with one provider i.e. Amazon FBA.
+HOW IT WORKS
+1] Manual Mode
+
+Go to Connectr app &gt; FBA
+The FBA Orders page will list orders from Shopify.&nbsp;
+Select the items you want to ship via FBA and click on the 'Ship with FBA' button.
+The app will prepare an FBA shipment depending on your FBA settings in the Connectr app.
+Confirm the shipment by clicking 'Ship with FBA Now'.
+Your order will be sent to and fulfilled by Amazon FBA.&nbsp;
+The order status will be available on the app dashboard.
+Connectr app will update the Shopify order status along with the tracking information.
+2] Auto Mode
+
+Instead of manually confirming each FBA shipment you can configure the app to automatically ship with FBA for all eligible orders on Shopify.
+
+Go to Connectr app &gt; FBA &gt; Settings
+Select AUTO Mode and hit Save.
+Each new order on Shopify will then be attempted to be shipped via FBA.&nbsp;
+You will receive confirmation of success or failure via email.
+The order status will be available on the app dashboard.
+Connectr will update the Shopify order status along with the tracking information.
+Note:
+
+Ship with FBA is priced at $6/month.
+It is available in the following regions only: US, Canada, Mexico, UK, Germany, France, Italy, Spain, Australia. Other regions coming soon.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043107348747/original/TipiAsBH3r6TxNEyu6V64GAG-OrQ3Aa66A.png?1588592472
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043086706371/original/KNeKSd8MT7ks9XMPFAYn70tjC16pNutgUQ.png?1581496742
+
+-----------------------------------
+
+Title: Fba Modes
+
+Ship with Amazon can be configured to work in either of the two modes:
+1. Manual
+
+For each FBA eligible order on Shopify, you need to manually confirm FBA shipment by clicking the 'Ship with FBA' button. Only after the confirmation, your order will be sent to and fulfilled by Amazon FBA.
+We also have a shortcut button on the Orders page of the Shopify dashboard to manually ship any order via FBA. Check the image below:&nbsp;
+Clicking on this button will redirect you to the Connectr app Orders page where you can verify the FBA order details before shipping.
+2. Auto
+
+The orders on Shopify will automatically be sent to and fulfilled by Amazon FBA without manual confirmation. The shipping status will be available on the app dashboard. You can subscribe to email notifications for each FBA order.
+
+&nbsp;&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043086710890/original/8amQZ_sUvzqUhj3xvB6LcSzqxVxOSEve1g.png?1581497547
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043209604160/original/IT-aeIXBS_sI3rsw5ZEAXd6iU5VOK_MncQ.png?1617970697
+
+-----------------------------------
+
+Title: Default Shipping Speed
+
+Amazon Fulfillment offers three shipping speed tiers:
+
+• 3-5 business days (Standard)
+• 2-day (Expedited)
+• Next day (Priority)
+The app will create FBA shipments using your preferred shipping speed option.
+
+-----------------------------------
+
+Title: Shipping Multi Item Orders In Auto Mode
+
+Ship with FBA is designed to work with multi-item orders on Shopify. Each line item in the order is attempted to be fulfilled via FBA. In case one or more SKUs is not fulfillable (due invalid SKU, insufficient inventory, etc) then you can configure the app to either of the following options:
+1. Fulfill partial order
+
+If this option is selected, the app will partially fulfill the order by shipping the items having valid SKUs. Invalid SKUs will be skipped.
+2. Do not fulfill the order
+
+In this case, the order will not be shipped at all, if it contains one or more invalid items. Only if all the line item SKUs of the order are valid, then the order will be shipped via FBA.
+
+-----------------------------------
+
+Title: Ship With Fba Fulfilling Orders But Not Updating Shopify Troubleshooting 
+
+If Connectr app successfully ships via FBA but does not update the status of orders on Shopify or does not update the tracking information, then it could be due to the following reasons:
+1. Misconfigured Shopify Order Processing settings:
+Go to Shopify admin &gt; Settings &gt; General &gt; 'Order processing' section
+Set 'After an order has been paid' to 'Do not automatically fulfill any of the order's line items' option.
+If 'After an order has been paid' is set to 'Automatically fulfill the order‘s line items' then the Connectr app will not update Shopify order status.
+2.&nbsp;Shopify's built-in 'Fulfillment by Amazon' integration is active:
+If you use the Connectr app to ship products via FBA then you need to deactivate Shopify's built-in 'Fulfillment by Amazon' integration. This integration prevents the Connectr app to update the Shopify order status correctly. Secondly, keeping it activated might lead to multiple shippings for the same order.
+Steps to deactivate 'Fulfillment by Amazon' are provided here.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043131902593/original/25hv3XmLPyvZ1PtPA2cKykoZvd_d861COg.png?1595945677
+
+-----------------------------------
+
+Title: Amazon Affiliate Links
+
+The Amazon affiliate program, also called "Amazon Associates" can be an easy way to earn new income linking out to products on Amazon. Simply sign up, receive immediate approval, and place Amazon affiliate links on your site. When someone makes an Amazon purchase via one of your links, you get the commission -- it's that simple.&nbsp;
+How does it work for merchants using the Connectr app?
+1. Pull &amp; push products from Amazon to your Shopify store.
+
+2. Add a Button link to your Amazon listing using the Connectr app. More info here.
+
+3. Signup for Amazon Associate program and add your Tracking ID in the Connectr dashboard.
+
+4. If shoppers click on the button link on your Shopify store they will be redirected to your item on Amazon.
+
+5. If they complete the purchase you get an affiliate commission from Amazon.
+
+6. The commission you earn as an Amazon affiliate is in addition to the regular product income you get as Amazon seller for selling the same product.
+
+7. The order gets fulfilled with your existing Amazon FBA/seller setup.
+
+8. Not only that, you get commissions for every single item users to buy - not just the ones you promote and link out to. i.e you will make money every time someone clicks on one of your links and purchases anything from Amazon within 24 hours.
+Note:
+1. You get paid by Amazon Associate as per your settings in the account dashboard.
+2. You keep 100% of your commissions. Because Connectr does not act as a "go-between" between you and Amazon, you keep everything your refer!
+
+2. Amazon approval required - You must be approved by Amazon to be eligible for receiving payments.
+3.&nbsp;Connectr does not monitor your site - Connectr&nbsp;does not track your links nor do we act as a redirect between your site and Amazon. We do not perform analytics on your click-throughs, monitor your traffic or analyze your target market. You get all the stats in Amazon Affiliate Dashboard.
+Important&nbsp;- Read Disclaimers and other important guidelines&nbsp;here.
+
+-----------------------------------
+
+Title: How To Get Amazon Associate Tracking Id 
+
+You need Amazon Tracking ID (or 'Affiliate ID' or 'Associate ) to track and get a sales commission from Amazon. To get Amazon Affiliate ID you need to join the Amazon Affiliate Program - it's free.
+Here is the link to getting started - https://affiliate-program.amazon.com
+Select your country-specific Amazon Affiliate Program and signup. Once inside the dashboard, you will get your Affiliate ID.
+Lastly, save the Affiliate ID in the settings--&gt;Button section of Connectr dashboard.
+&nbsp;
+Thereafter, all the sales generated will be credited to you.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043035483241/original/zL-TMXZYYADW1QXuW4bXVvmkoHBW5Fyibw.png?1563881063
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043035712633/original/FNvtAuErRhkzAifpShVHLvqWwL6VwlpAJw.png?1563957288
+
+-----------------------------------
+
+Title: Amazon S Affiliate Disclosure Policy
+
+&nbsp; &nbsp;
+
+As Shopify store owners using&nbsp;Amazon Associates, you may be wondering&nbsp;if you need&nbsp;a disclaimer or a disclosure&nbsp;informing users about your use of Amazon Associates or if you need other legal agreements as well.
+First, Amazon does not require you to have a Privacy Policy. There is no mention of a Terms &amp; Conditions agreement requirement. What’s Amazon really looking for? Proper disclosure as outlined in&nbsp;Amazon’s affiliate disclosure policy.&nbsp;
+You must clearly state the following on your site:
+[Insert your name] is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to [insert the applicable site name (myshopify.com)].
+Our recommendation is to have the disclosure on every page. We like to be safe. You can easily do this by creating a new text widget in your sidebar or footer. Having said that, it may suffice to include the disclosure on a page located somewhere on your site - like the contact us page.
+
+-----------------------------------
+
+Title: Guide To Avoid Getting Your Amazon Associate Account Banned
+
+Amazon has ramped up its compliance game significantly in the last few months. Let us walk you through the top reasons we’ve seen and heard that gets Amazon affiliates in trouble and sometimes even removed from the program.&nbsp;
+Links In Email
+
+Amazon explicitly bans any use of affiliate links in “offline promotion or in any other offline manner,” and it can surprise some new users that that applies to email too. While there are a number of notable influencers that include Amazon links in their regular email newsletters this is forbidden in section four, title “Promotional Limitations” of the Policies page for Amazon’s Operating Agreement. Instead, you can promote links in the email that point to your Shopify store having Amazon affiliate products.
+Links In eBooks or PDF documents
+
+If someone just finished your book they probably enjoyed it and it’s probably a really good time to encourage them to buy another of your books, especially if it’s part of a series. Unfortunately, another great way to get kicked out of the Amazon Associates program is to include affiliate links in your book.
+Mentioning Prices (or availability)
+
+It seems natural to add the prices on the product pages of your site while you are promoting Amazon products. The bummer is that unless you are dynamically updating that price then you are in violation of the Operating Agreement. For good reason, Amazon doesn’t want you making inaccurate or out of date claims about their products. They require that information is never more than 24 hours old. Amazon mentions this in section two of the Policies page. There is a simple way to avoid this problem: Activate auto-sync&nbsp;to enable the Connectr app to update the prices and availability of all the Amazon products once every 24 hours.
+Not Including An Affiliate Disclaimer
+
+You may make the mental argument that an affiliate disclaimer might scare people away or make your site look cluttered but it’s against the law and Amazon’s Operating Agreement! Amazon is a big fan of transparency and it’s important that their affiliates are on the right side of the law!
+
+Your site needs to have a disclaimer explaining that you are an Affiliate, and will earn a small commission from sold products. More info here.
+Affiliate Link Shortening or Link Cloaking / Hiding
+
+Amazon is very concerned with affiliates misdirecting the audience, as the reputation of the Amazon depends on how affiliates are referring the site to visitors. The e-commerce giant wants users to know where they are being directed to. For this reason, Amazon bans link shortening that doesn’t make it obvious that you are sending users to Amazon. Connectr app does not shorten, cloak or hide affiliate links to ensure 100% compliance.
+Using Your Affiliate Link for Items You Purchase
+
+It’d be a pretty sweet deal if you could do all of your shopping online via Amazon using your affiliate link, and earn some Affiliates commission while you do. Unfortunately for thrifty shoppers, Amazon has expressly forbidden this practice. Rule #29 of the Participation Requirements states:
+
+You will not purchase any Product(s) through Special Links for use by you or for resale or commercial use of any kind.&nbsp;
+Link from Sexually Explicit and/or Violent Sites
+
+Amazon clearly forbids using affiliate links on site that contain or promote sexually explicit materials.
+Violate Amazon’s Trademark Policy
+
+Amazon can shut down things quickly if they believe you are in violation of their trademark rights. To clarify, Amazon owns a ton of trademarks, not all of which have anything to do with the phrase “Amazon.” Proprietary products like Kindle are trademarked too, and you can quickly violate these trademarks by including trademark information in your site’s Domain name. However, you can use a trademarked name in your product link, title or description.
+
+OK – Abc.com/amazon-kindle-ebook-reader-review
+
+Not OK – KindleReviews.com
+No Sales In 90 Days
+
+Once you sign up for the Amazon Affiliate program, you need to sell at least 1 product within 90 days, else you will no longer be an Amazon affiliate.
+
+However, the good news is, you can re-apply to become Amazon affiliate anytime later only on these circumstances.
+
+-----------------------------------
+
+Title: How Much Commission Will I Earn 
+
+The commissions you earn will vary depending on the country-specific Affiliate Program and the purchased product.
+
+Please refer&nbsp;Associates Program Advertising Fee Schedule&nbsp;for commission rates and rules applicable to you.
+
+-----------------------------------
+
+Title: Installing Amazon Button Shopify Vintage Themes 
+
+This guide will walk you through the simple process of integrating the Connectr button link into your Shopify site.
+Note: if you are using Shopify Store 2.0 theme then you need to follow the guide available here.
+On the product pages, you have 2 options:&nbsp;
+1. Replace the Add to Cart button with the Connectr button
+
+2. Add the Connectr button along with the existing Add to Cart button
+If you are unsure you may simply contact us at&nbsp;support@connectr.freshdesk.com. We will assist you in the integration.&nbsp;
+1.&nbsp;Replace the Add to Cart button with the Spreadr button&nbsp;
+Steps
+
+1. Open your Shopify admin.
+
+2. Click Online Store.
+
+3. Click Themes.
+
+4. Click Actions or 3-dots for your published theme.
+5. Click Edit code.
+6. Click the file product-template.liquid which appears under Sections.
+7. The product-template.liquid file will open in the online code editor. In the online code editor window, locate the HTML for your add-to-cart button&nbsp;(you can do this by searching with CTRL-f or COMMAND-f). The HTML for your add-to-cart button will look something like this:
+&lt;button type="submit" name="add"
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {% unless current_variant.available %} aria-disabled="true"{% endunless %}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; class="btn product-form__cart-submit{% if section.settings.enable_payment_button and product.selling_plan_groups == empty %} btn--secondary-accent{% endif %}"
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {% if settings.enable_ajax %}aria-haspopup="dialog"{% endif %}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; data-add-to-cart&gt;
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span data-add-to-cart-text&gt;
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {% unless current_variant.available %}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{ 'products.product.sold_out' | t }}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {% else %}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{ 'products.product.add_to_cart' | t }}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {% endunless %}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/span&gt;
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span class="hide" data-loader&gt;
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {% include 'icon-spinner' %}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/span&gt;
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/button&gt;
+The actual code may appear slightly different between themes. The trick is to find an &lt;input&gt; or &lt;button&gt; tag that includes something like 'Add to Cart', 'AddToCart', or 'add-to-cart' etc.
+NOTE: If the above code is not found in the product-template.liquid file, it could be found in any one of the following files (it is theme-dependent):
+Templates/product.liquid
+Snippets/product-form.liquid
+Sections/product.liquid
+Snippets/product-options.liquid
+(If you are having problems please contact support@connectr.freshdesk.com or raise a support ticket&nbsp;here&nbsp;and we will do the integration for you.)
+8. On the very next line, add the following code.
+&nbsp;&lt;!--Connectr file---&gt;
+
+&nbsp;{% include 'connectr' %}
+The code will look as -&nbsp;&nbsp;&nbsp;
+2. Add the Connectr button along with the existing Add to Cart button
+Go to&nbsp;sections/product-template.liquid&nbsp;file.
+Add the below code to display the Connectr button along with the existing add to Cart button for Connectr products.
+// &lt;button&gt; code
+
+&lt;button type="submit" name="add"
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {% unless current_variant.available %} aria-disabled="true"{% endunless %}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; class="btn product-form__cart-submit{% if section.settings.enable_payment_button and product.selling_plan_groups == empty %} btn--secondary-accent{% endif %}"
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {% if settings.enable_ajax %}aria-haspopup="dialog"{% endif %}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; data-add-to-cart&gt;
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span data-add-to-cart-text&gt;
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {% unless current_variant.available %}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{ 'products.product.sold_out' | t }}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {% else %}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{ 'products.product.add_to_cart' | t }}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {% endunless %}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/span&gt;
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span class="hide" data-loader&gt;
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {% include 'icon-spinner' %}
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/span&gt;
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/button&gt;
+{% include 'connectr-custom' %}
+
+{% if enable_connectr == true %}
+
+&nbsp; &nbsp; &lt;a id="{{ connectr_link_id }}" name="ConnectrLink" href="{{ connectr_redirect_url }}" target="_blank" class="btn product-form__cart-submit" rel="nofollow"&gt;{{ connectr_button_text }}&lt;/a&gt;
+
+{% endif %}
+The code will look as -&nbsp;&nbsp;&nbsp;
+This will add the Connectr button with the existing Add to Cart button.
+
+Note:&nbsp;The code may vary from theme to theme.
+
+Preview:
+Similarly, the Spreadr button code can be placed for the Featured Product Card on the Home page.
+If you have problems with the integration code or want to change the way the button looks, please raise a&nbsp;support ticket. We will take care of it.
+ &nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043014115442/original/r01JPGZx3XvU_pnpydoFKeAhLLGDQ2IMog.png?1552906644
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043014115436/original/CPByDpdy3tKQOFGxAcha-OLdPD-pIacJUg.png?1552906639
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043014115429/original/f7U4z7hzdHzWPMgmbcB-FWHu5H_pJHSaTQ.png?1552906639
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043014116787/original/USV8uk6JdSXlO8r7suzhTUNUN8EeVpum0A.png?1552907163
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043488123812/original/GAy_lgU_GSGnZeG0JHWKUmjTQEGkQS_AqQ.png?1699528718
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043488130431/original/bI0uQEAFlsvjzaYAHIjqcaxVreccQCebtQ.png?1699529937
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043488127179/original/AUofSiOagRmFEJ64lvVgtwqFawYKgm1zsw.png?1699529341
+
+-----------------------------------
+
+Title: Integrating Button Link With Online Store 2 0 Themes
+
+The Connectr app can easily be integrated with themes compatible with Online Store 2.0. This guide will walk you through the process of how to add the integration code to the Dawn Theme
+For integrating with older themes refer to the integration guide here.
+On the product pages, you have 2 options:
+1. Replace the Add to Cart button with the Connectr button
+2. Add the Connectr button to the existing Add to Cart button
+1.&nbsp;Replace the Add to Cart button with the Spreadr button
+
+&nbsp;
+
+Steps:
+1. Open your Shopify admin.
+
+2. Click Online Store &gt;&nbsp;Themes &gt; Actions or three dots&nbsp;for your published theme.
+
+3. Click&nbsp;Edit code.&nbsp;
+4. Click the file main-product.liquid which appears under Sections&nbsp;or buy-buttons.liquid under Snippets.
+7. The main-product.liquid or buy-buttons.liquid file will open in the online code editor. In the online code editor window, locate the HTML for your add-to-cart button (you can do this by searching with CTRL-f OR COMMAND-f). The HTML for your add-to-cart button will look something like this:
+&lt;button&nbsp;
+
+type="submit"&nbsp;
+
+name="add"&nbsp;
+
+class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+
+&gt;
+
+{%- if product.selected_or_first_available_variant.available -%}
+
+{{ 'products.product.add_to_cart' | t }}
+
+{%- else -%}
+
+{{ 'products.product.sold_out' | t }}
+
+{%- endif -%}
+
+&lt;/button&gt;
+The trick is to find a &lt;button&gt; tag that includes something like 'products.product.add_to_cart'.
+(If you are having problems please contact support@connectr.freshdesk.com or raise a support ticket here and we will do the integration for you.)
+8. Above the button code line, add the following code.
+{% render 'connectr-custom-render', product:product, c_showConnectr:1, c_hideCart:1 , c_classes: 'btn product-form__submit button button--full-width', c_imgbtn: 0, c_btn: connectr_btn, c_style: '' %}
+&lt;div class="c_original_{{ product.id }}"&gt;
+//&nbsp;&lt;button&gt; code
+&lt;/div&gt;
+It will look as shown in the image below. The boxes in blue represent the Connectr integration code. The box in red is the existing &lt;button&gt; code.
+The Add to Cart button on the product pages should now be replaced with the View on Amazon button for Connectr products.
+2. Add the Connectr button along with the existing Add to Cart button
+Go to&nbsp;sections/main-product.liquid&nbsp;or&nbsp;snippets/buy-buttons.liquid&nbsp;file.&nbsp;&nbsp;
+Add the code below to display the Connectr button and the existing add-to-cart button for Connectr products.&nbsp;
+//&lt;button&gt; code
+{% render 'connectr-custom-render', product:product, c_showConnectr:1,&nbsp;c_hideCart:0, c_classes: 'btn product-form__submit button button--full-width', c_imgbtn: 0, c_btn: connectr_btn, c_style: '' %}
+The code will look as -
+This will add a Connectr button along with the existing add tocart button on the Product page.
+Note:&nbsp;The code may vary from theme to theme.
+Preview:
+Similarly, the Connectr button code can be placed for the Featured Product Card on the Home page.&nbsp;
+&nbsp;(If you have problems with the integration code or want to change the way the button looks, please raise a support ticket. We will take care of it.)
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043253033028/original/YprWbpTVhgZKDrRDKLwSlvjqmU5b5tNqhg.png?1630391603
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043253033130/original/XG3QvL5Ko4iUO-9dcwVac5tUMpjm59NmxA.png?1630391622
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043253041303/original/Cc-OWBLJom7TUHgYOFGt9YzSr_6GoSqvSQ.png?1630393288
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043488140770/original/lO-faIf-ATK8dmE1_7dr6fLWtqrvpL8xaA.png?1699531737
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043488142382/original/lg0-H84RhQM9cfhykg_mUFFqQgAbfUj7Dg.png?1699532016
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043488141730/original/UVRRlNKaOSWeJswUoYrJrUnPWv9VI6lj5w.png?1699531890
+
+-----------------------------------
+
+Title: Installing Amazon Button Using App Block Shopify Online Store 2 0 Themes 
+
+Shopify has announced one of its biggest updates: Online Store 2.0. With Online Store 2.0 themes, you can easily place the Amazon Button on your product pages using app blocks.&nbsp;
+In this article, we'll walk you through the steps to integrate the Amazon Button into your 2.0 store.
+
+Note: If you have problems with adding the button or want to change the way the button looks or for any other request please raise a support ticket here. We will take care of it.
+Steps
+1. Open your Shopify admin.&nbsp;
+
+2. Go to Online Store &gt;Themes&nbsp;&gt; click Customize
+3. Select a product template.
+4. Next, click Add Block from the left sidebar and select Connectr App block under Apps.
+5. Drag and drop the block to the location you want to display the button. We recommend placing it between the Buy Buttons and Description.
+6. The button can be stylized via app block options:
+
+Class - Add any class names that you want to apply to the button. Example - product-form__submit button button--full-width&nbsp;
+Style - Add any style that you want to add to the button - Example - margin: 10px 0px;
+7. Hit the save&nbsp;button.
+8. The View on Amazon button will be visible on the product pages for Connectr products.
+If you have problems with adding the button or want to change the way the button looks or for any other request please raise a support ticket here. We will take care of it.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043367205332/original/niBpxpbmryPk9hPpc6Fk6xdVD6jOoVg5Aw.png?1659519929
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043367209226/original/A4X0UVR18kC5sNkASdGWRSaiS52hfJmvBg.png?1659520499
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043367210160/original/6zMHU0O-UPtwdUZJ0kFF_h5-OIzx8EgEqw.png?1659520632
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043367211310/original/hmhJWOerDEpVmj_3BB8tEmT6_dn6zQusZA.png?1659520811
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043367229812/original/yP3N2DMCaQlbCFxGsRXv89Px0uHtnGU_Xw.png?1659523512
+
+-----------------------------------
+
+Title: Integrating Connectr App On Collection Pages With Online Store 2 0 Themes
+
+This guide will walk you through the process of how to add the integration code to the Dawn Theme.&nbsp;
+On the Collection pages, you have 2 options:
+1. Add a new Connectr button
+
+2. Replace the Add to Cart button with the Connectr button
+If you are unsure you may simply contact us at&nbsp;support@connectr.freshdesk.com. We will assist you in the integration.&nbsp;
+1.&nbsp;Add a new Connectr button&nbsp;(if add to cart HTML code not supported)
+Let's say you want to add the Connectr button below the price on the product cards on the Collection page.
+Look for&nbsp;snippets/card-product.liquid&nbsp;file (or the file that holds the product card info).
+Add the code below the price information.
+{% render 'connectr-custom-render', product: card_product, c_showConnectr:1, c_hideCart:0 , c_classes: 'btn product-form__submit button button--full-width', c_imgbtn: 0, c_btn: connectr_btn, c_style: '' %}
+The code will look as -&nbsp;&nbsp;
+This will add a Connectr button below the price information on the Product Card.
+2. Replace the existing Add to Cart button with the Connectr button
+Go to&nbsp;snippets/card-product.liquid&nbsp;file.
+Add the below code to replace the add to cart button with a Connectr button for Connectr products.
+{% render 'connectr-custom-render', product:card_product, c_showConnectr:1, c_hideCart:1 , c_classes: 'btn product-form__submit button button--full-width', c_imgbtn: 0, c_btn: connectr_btn, c_style: '' %}
+&lt;div class="c_original_{{ card_product.id }}"&gt;
+//button code
+&lt;/div&gt;
+The code will look as -&nbsp;
+This will replace the existing Add to Cart button with the Connectr button.
+Note:&nbsp;The code may vary from theme to theme.&nbsp;
+Preview:
+Similarly, the Connectr button code can be placed for the Featured Product Card on the Home page, and also on the product grid on the Search page.
+&nbsp;(If you have problems with the integration code or want to change the way the button looks, please raise a support ticket. We will take care of it.)
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043488152115/original/cERuGXBZaLHcJ4DgLVuVGSPUCqbZZ64NXg.png?1699533783
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043488150379/original/4F3v0uEYdUvTm-IQYSKOu23Sq0lzw44ykA.png?1699533514
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043488152727/original/durceeqMfhPI-hwdTRlDJtBCNCkvdcIAew.png?1699533899
+
+-----------------------------------
+
+Title: Integrating Connectr App For Collection Pages Shopify Vintage Themes 
+
+On the Collection pages, you have 2 options:
+1. Add a new Connectr button
+
+2. Replace the Add to Cart button with the Connectr button
+If you are unsure you may simply contact us at&nbsp;support@connectr.freshdesk.com. We will assist you in the integration.&nbsp;&nbsp;
+
+1.&nbsp;Add a new Connectr button&nbsp;
+Let's say you want to add the Connectr button below the price on the product cards on the Collection page.
+Please be sure to look for&nbsp;snippets/card-product.liquid&nbsp;file (or the file that holds the product card info).
+Add the code below the price information.
+{% include 'connectr-custom' %}
+
+{% if enable_connectr == true %}
+
+&nbsp; &nbsp; &lt;a id="{{ connectr_link_id }}" name="ConnectrLink" href="{{ connectr_redirect_url }}" target="_blank" class="btn" rel="nofollow"&gt;{{ connectr_button_text }}&lt;/a&gt;
+
+{% endif %}
+The code will look as -&nbsp;&nbsp;&nbsp;
+This will add a Connectr button below the price information on the Product Card.
+2. Replace the existing Add to Cart button with the Connectr button
+Go to&nbsp;snippets/product-card-grid.liquid&nbsp;file.&nbsp;
+Add the below code to replace the add to cart button with a Connectr button for Connectr products.
+{% include 'connectr-custom' %}
+
+{% if enable_connectr == true %}
+
+&nbsp; &nbsp; &lt;a id="{{ connectr_link_id }}" name="ConnectrLink" href="{{ connectr_redirect_url }}" target="_blank" class="btn" rel="nofollow"&gt;{{ connectr_button_text }}&lt;/a&gt;
+
+{% else %}
+
+// &lt;button&gt; code
+
+&nbsp; &nbsp; &nbsp;&lt;button type="submit" name="add" id="AddToCart" class="btn"&gt;
+
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;span id="AddToCartText"&gt;{{ 'products.product.add_to_cart' | t }}&lt;/span&gt;
+
+&nbsp; &nbsp; &nbsp;&lt;/button&gt;
+
+{% endif %}
+The code will look as -&nbsp;&nbsp;
+This will replace the existing Add to Cart button with the Connectr button.
+
+Note:&nbsp;The code may vary from theme to theme.&nbsp;&nbsp;
+Similarly, the Connectr button code can be placed for the Featured Product Card on the Home page, and also on the product grid on the Search page.
+&nbsp;(If you have problems with the integration code or want to change the way the button looks, please raise a support ticket. We will take care of it.)
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043491671769/original/Sdqm_9nw-BNI3Eo8_C9rSCcffI1CwUO50g.png?1700741252
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/2043491672541/original/tXH0GZEdpYGC7FvNBQkh_zqP3BjSBGLQwg.png?1700741405
+
+-----------------------------------
+
+Title: Privacy And Data Protection Agreement
+
+This Privacy and Data Protection Agreement ("Agreement") sets out the terms and conditions under which our Shopify app collects, processes, and stores the personal data of our merchants ("You", "Your").
+
+1. Data Collection and Use
+
+Our app collects personal data from You in order to provide our services to You. This may include information such as Your name, email address, and store information.
+
+We use Your personal data to provide You with access to and use of our app, and to communicate with You about our services. We may also use Your personal data to improve and enhance our app and services.
+
+2. Data Storage and Security
+
+We store Your personal data securely in accordance with industry standards. We take appropriate technical and organizational measures to protect Your personal data against accidental or unlawful destruction, loss, alteration, unauthorized disclosure, or access.
+
+3. Data Sharing and Disclosure
+
+We do not share or disclose Your personal data to any third parties, except where required by law or as necessary to provide our services to You. We may also share Your personal data with our affiliates or service providers who assist us in providing our services to You, but only to the extent necessary to provide those services.
+
+4. Data Retention
+
+We will retain Your personal data for as long as necessary to provide our services to You, and for as long as required by law.
+
+5. Your Rights
+
+You have the right to access, correct, and delete Your personal data that we hold. You may also have the right to restrict or object to the processing of Your personal data, and to receive a copy of Your personal data in a structured, machine-readable format.
+
+6. Changes to this Agreement
+
+We may update this Agreement from time to time. Your continued use of our app after the effective date of any changes to this Agreement constitutes Your acceptance of those changes.
+
+7. Contact Us
+
+If You have any questions or concerns about this Agreement or our data processing practices, please contact us at support@connectr.freshdesk.com.
+
+By using our app, You acknowledge that You have read and understand this Agreement, and agree to be bound by its terms and conditions.
+
+&nbsp;
+
+-----------------------------------
+
+Title: Disclaimers
+
+• Our service is independent and is not affiliated with Amazon in any way, shape or form. Any impression you might have got otherwise is inaccurate.
+• It is your responsibility to ensure that you comply with Amazon Seller's T&amp;C. While we try our best to ensure the service complies with Amazon terms, you should do your independent validation and use the service only if you are satisfied.
+
+-----------------------------------
+
+Title: Customer Data Policy
+
+We understand the importance of privacy and protecting customer data. This Policy outlines how we collect, use, and disclose customer data that we obtain through our Shopify app.
+
+Personal Information We CollectWe collect personal information that is necessary to provide our app services. This includes:
+
+Customer name,&nbsp;address, phone, email, and order-related data.
+How We Use Customer Personal DataWe use the customer data we collect to provide our app services, including creating orders via Amazon MCF. We may also use the information to comply with legal obligations.
+Sharing Customer DataWe do not share personal data with third parties except as necessary to provide our app services or comply with legal obligations.
+Data RetentionWe retain customer data for as long as necessary to provide our app services or as required by law.
+SecurityWe take reasonable measures to protect customer data from unauthorized access or disclosure. This includes encrypting data when stored and as it transits various networks.
+
+-----------------------------------
+

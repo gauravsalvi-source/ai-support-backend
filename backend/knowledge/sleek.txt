@@ -1,0 +1,311 @@
+Title: Who Is This App For 
+
+The Sleek GST Invoices – India is for Indian Shopify merchants who need to create GST-compliant invoices. It automates the calculation of CGST, SGST, and IGST based on customer location, ensuring adherence to Indian tax regulations. It also provides/supports professional invoice templates with your logo.
+
+-----------------------------------
+
+Title: Installation Steps
+
+Installing the Sleek GST Invoices ‑ India app is quick and straightforward. Follow these simple steps to get started:
+Visit the Shopify App Store: Go to the Shopify App Store and search for ‘Sleek GST Invoices ‑ India’.
+Click Install: Once you’ve found the app, click Install to begin the process.
+Log In and Approve: You’ll be prompted to log in to your Shopify store. After logging in, review the permissions and approve the installation, along with any associated charges.
+Once installed, Setup assistance is available if needed.
+
+-----------------------------------
+
+Title: Important Update Our App Is Migrating To Shopify S Built For Shopify Bfs Standard
+
+We’re excited to share an important update that will improve performance, security, and reliability for all merchants using our app. Our Sleek app will be migrating to Shopify’s Built-for-Shopify (BFS) architecture.
+This upgrade brings us in line with Shopify’s newest app performance standards and ensures long-term compatibility with the platform.
+What Is BFS?
+BFS (Built for Shopify) is Shopify’s highest standard for app quality. Apps that meet this standard must follow strict guidelines for:
+Speed &amp; performance
+Security &amp; data protection
+User experience
+Seamless integration with Shopify Admin
+
+By migrating to BFS, our app will run more natively inside Shopify—providing a smoother, more stable experience.
+Is Any Action Required from You?
+For most merchants: No action is required. Your app will automatically migrate to the updated BFS version.
+Will This Cause Any Downtime?
+No. The migration has been carefully planned to avoid any disruption to your existing workflows. All tasks, sync operations, and automations will continue functioning normally.
+Why We’re Making This Change
+Shopify is transitioning apps toward BFS to ensure merchants get:
+
+The fastest and most stable apps possible
+A consistent experience across the Admin
+Better support for high-volume stores and large catalogs
+Our app is evolving to match these expectations.
+
+-----------------------------------
+
+Title: Pricing Plans
+
+It's has a 7-day free trial.
+BasicProPrice / month$5$12OrdersUnlimitedUnlimitedCustomizable Invoice
+✓
+✓
+Auto Emails
+✓
+✓
+Bulk Downloads
+✓
+✓
+Bulk Update HSN/GST Rates
+✓
+✓
+Credit Notes
+✓
+✓
+Reports
+✓
+✓
+Auto Order Status SyncX✓
+Auto Credit NoteX✓
+Auto Report UpdateX✓
+Auto Order Detail Sync on Changes
+X
+✓
+Note:
+
+The app charges you via Shopify billing API meaning that charges appear directly on your Shopify invoice.
+• There are no setup fees.
+• Terminate the subscription anytime by simply uninstalling the app.
+• To keep it fair and transparent we do not offer discounts to anyone.
+
+-----------------------------------
+
+Title: Uninstalling Sleek App
+
+You can uninstall the Sleek app through your Shopify store admin.
+
+• Go to your Shopify admin.
+Go to Apps'. Click on the Apps and sales channel settings.
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3. A pop-up window will open wherein you will find the list of all the apps. Click on the 'remove' button and then delete.
+That's it! The app is now uninstalled.&nbsp;
+For detailed instructions check out the Shopify guide to uninstall the app.
+Note: Once the app is uninstalled, the app subscription terminates automatically.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47160676513/original/UyzzgeCjnCiKKOdXF7llEP5hu54dj4BfVg.png?1659527674
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47160677027/original/t9c8-JWEMG2nbZUa4NN_oEWwUwYdYTIFpw.png?1659527811
+
+-----------------------------------
+
+Title: Blacklist Orders
+
+You can provide a list of order tags to be blacklisted. The App will not generate the GST-compliant invoices containing those tags and the same will not be visible in the report sections when viewing or downloading.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47368977034/original/T1GSD0-FtuvnIpXrIhgLyNo56Cf-bX5uqw.png?1751970968
+
+-----------------------------------
+
+Title: Email Verification
+
+To ensure that your invoice emails are delivered successfully and are not flagged as spam or spoofed, you need to verify your email address. Follow these steps to complete the verification:
+Go to your Sleek dashboard &gt; Navigate to Settings &gt; Email &gt;&nbsp;Enter your desired "From" email address in the input box &gt; Click Verify Email.
+An email (from no-reply-sleek@thaliatechnologies.com)&nbsp;will be sent to the address you provided. Open this email and click on the verification link. The email that you will receive will look like this:
+After clicking the link, you will be redirected back to your dashboard where you will see a "Verified" message.
+&nbsp;
+Note:
+
+If you don’t see the verification email in your inbox, check your spam or junk folder.
+To update your email address, follow the same steps with the new address.
+Verifying your email address will help ensure that invoice emails are delivered properly and avoid being marked as spam.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47392511115/original/tK2v858otLPY_6E9e35jJY7OQm30seVVFw.png?1763546221
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47302703620/original/InZ8Fe_BIe_Rdw5_4uVUtUTIwYOfZKUHHQ.png?1721647802
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47392512877/original/tsrX38qRClBdlRDFP34rDc19U4HXpra4aQ.png?1763546610
+
+-----------------------------------
+
+Title: Can The Customer Download The Gst Invoice From The Account Details Page Of The Store 
+
+With the Sleek GST Invoice App, your customers can now download the invoice anytime from the Account details page of your store once they log in. However, for this, you need to enable the Sleek App in the Embed section of the customize theme settings as shown in the screenshot below:
+Once done, the Download Invoice will be visible for each order on the accounts page as shown in the image below:
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47295772798/original/FrtxBtU-4sDvrpeDQRgn3oKP9KWmjnppYA.png?1718348280
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47368166073/original/EEvHnQgvmJIxAd4H0lzwt2AbtZ3ClXBhzQ.png?1751528461
+
+-----------------------------------
+
+Title: Bulk Actions
+
+Here is the list of actions that can be performed in bulk:
+1. Download Bulk Invoices - This will download the invoices in bulk based on the date range selected. Once the bulk invoice download is complete, you will receive a ZIP file link via email. If you don’t see it in your primary inbox, please make sure to check your spam or junk folder.
+For more information, refer to the image below.
+Note:
+
+Maximum 1 month invoices can be downloaded at a time.
+The canceled, refunded, and voided orders will not be downloaded.
+2. Bulk Sync orders:
+Sometimes, when you make changes to your invoices in the Shopify admin, those updates may not immediately reflect in the Sleek App dashboard. In such cases, you can use the Bulk Sync Order feature to sync the orders.
+Note: Max you can select one year of date at a time
+Additionally, you can sync individual orders manually from the Orders Tab under the Sync column.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47353894453/original/shfFxlYmgRymkv83kjrJreRbFiDvJRKQZA.png?1744873129
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47353894532/original/qWr7T5KyucxT5jz0e_Hr_ywYFaHUsonqgA.png?1744873152
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47353894612/original/IdAcSsXqGxEaSosMuN62o4JRTTrtmdexyw.png?1744873175
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47353894699/original/JdaPhDkh5rvLPGLekbHyQz8JS5i_94z2JA.png?1744873208
+
+-----------------------------------
+
+Title: Send Invoices Automatically Manually
+
+With the Sleek App dashboard, you can send invoices to the customer’s email address either automatically or manually. &nbsp;For this, you need to verify the "from" email address and configure the other details in the dashboard. Please find the guide link here&nbsp;on how you can verify email address and why is it needed.
+Once done, to send Invoices Automatically,&nbsp; you need to select as to when would you like to auto-send an email having the GST compliant invoice to the customer. &nbsp;The options are:
+
+When order is created
+When order is Paid
+When order is Fulfilled
+Additionally, if you have a internal team that you would like to notify as well along with the customer, you can send an email to them as well. You simply need to add them in the CC or BCC section and configure the Send email to "All".&nbsp;
+OR you can set to only 'CC' and 'BCC' to only send it to the internal team.
+2. To Send Invoices Manually -
+For each invoice, Under Action Column &gt; Click on Select &gt; From Dropdown &gt; choose Email Invoice Option &gt;A pop-up modal will open and check the details and click on send button.
+The email icon turns green when an invoice is successfully sent to the customer.
+&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47368213992/original/OQbDGa_cKXFmJ1kUrnZJ0hPtTOFAScdi5A.png?1751538556
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47353927645/original/bd97VYyK7xRx3qtFldDajdKH-C4q4uZoDw.png?1744880640
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47368216062/original/cESolDZJeshcvLAbLI_bY94d_VXn4i60kw.png?1751539061
+
+-----------------------------------
+
+Title: Can I Try The App Before Committing To A Paid Plan 
+
+Yes, each user is eligible for a 7-day free trial. After the trial period, the app offers a Basic Plan for $5/month, which includes unlimited orders, email automation, bulk downloads, credit notes, and more.
+
+-----------------------------------
+
+Title: Does Sleek Support Installation On More Than One Shopify Store 
+
+The Sleek App is specific to a single store. If you have another store you'd like to use Sleek , just install the app again for each additional store.
+
+-----------------------------------
+
+Title: How To Search And Filter Orders In Sleek 
+
+You can search and filter your orders for sending and printing invoices easily within Sleek.
+1. Accessing OrdersOpen Sleek from the Apps section of your Shopify store.
+By default, the orders from the last 3 days are displayed.
+Click the&nbsp;“Orders” from the top menu to view all orders.
+2. Search OrdersUse the “Search Orders” section to find specific orders.
+Enter an Order Number, Invoice Number, or Customer Name and click Search.
+Additionally, click “Filters” next to the Search button to refine your search further: Order Start and End Date,&nbsp;Fulfillment Status,&nbsp;Payment Status,&nbsp;Order Status
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47368973421/original/vjIocxroyxAo6tBEmkzCZoGoTfcOv8vEtA.png?1751969998
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47368973825/original/n9KD8-V3UP7Ez3oZvNs3V2horXoXPu-YKA.png?1751970117
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47368974927/original/V3KN1nFg7GEL2lvjawYmMbBudMMY5_E4kA.png?1751970390
+
+-----------------------------------
+
+Title: How Can I View Email Print And Download The Invoice 
+
+With the Sleek app, you can access the invoice for the particular order to view, email, print, and download in the dashboard itself.
+Simply go to Sleek dashboard--&gt;Orders--&gt;hover over the particular order&gt;Under Action column click on Select button.
+&nbsp; &nbsp; 2.Select the action you want to perform.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47392735623/original/iDuwaUpzjf01uEOXBImLLEIgAj6G-b0Qkg.png?1763629505
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47392735890/original/oHrcEmL9UA4HdGCoOHbHfBUmknheunZQxg.png?1763629548
+
+-----------------------------------
+
+Title: How Can I Customize The Invoice 
+
+With Sleek, you can send an invoice that truly reflects your brand. To customize your invoice, simply go to Sleek dashboard--&gt;Settings--&gt;Invoice.
+&nbsp;&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47009234722/original/LVxZpE5tQwmJ9cYKDhRt2mJbZKYBc-cECg.png?1579248601
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/47009235081/original/CuU_3jMcsV3G_rBCJjxkZMDc8ITo8NIiJw.png?1579248838
+
+-----------------------------------
+
+Title: Privacy Policy
+
+This Privacy and Data Protection Agreement ("Agreement") sets out the terms and conditions under which our Shopify app collects, processes, and stores the personal data of our merchants ("You", "Your").
+
+1. Data Collection and Use
+
+Our app collects personal data from You in order to provide our services to You. This may include information such as Your name, email address, and store information.
+
+We use Your personal data to provide You with access to and use of our app, and to communicate with You about our services. We may also use Your personal data to improve and enhance our app and services.
+
+2. Data Storage and Security
+
+We store Your personal data securely in accordance with industry standards. We take appropriate technical and organizational measures to protect Your personal data against accidental or unlawful destruction, loss, alteration, unauthorized disclosure, or access.
+
+3. Data Sharing and Disclosure
+
+We do not share or disclose Your personal data to any third parties, except where required by law or as necessary to provide our services to You. We may also share Your personal data with our affiliates or service providers who assist us in providing our services to You, but only to the extent necessary to provide those services.
+
+4. Data Retention
+
+We will retain Your personal data for as long as necessary to provide our services to You, and for as long as required by law.
+
+5. Your Rights
+
+You have the right to access, correct, and delete Your personal data that we hold. You may also have the right to restrict or object to the processing of Your personal data, and to receive a copy of Your personal data in a structured, machine-readable format.
+
+6. Changes to this Agreement
+
+We may update this Agreement from time to time. Your continued use of our app after the effective date of any changes to this Agreement constitutes Your acceptance of those changes.
+
+7. Contact Us
+
+If You have any questions or concerns about this Agreement or our data processing practices, please contact us at support@sleekapp.freshdesk.com.
+
+By using our app, You acknowledge that You have read and understand this Agreement, and agree to be bound by its terms and conditions.
+
+-----------------------------------
+
+Title: Customer Data Policy
+
+We understand the importance of privacy and protecting customer data. This Policy outlines how we collect, use, and disclose customer data that we obtain through our Shopify app.
+
+Personal Information We CollectWe collect personal information that is necessary to provide our app services. This includes Customer Name, Email, Phone Number, Address, and other Order-related data.
+How We Use Customer Personal DataWe use the customer order data we collect to provide our app services, including preparing and sending invoices. We may also use the information to comply with legal obligations.
+Sharing Customer DataWe do not share personal data with third parties except as necessary to provide our app services or comply with legal obligations.
+Data RetentionWe retain customer data for as long as necessary to provide our app services or as required by law.
+SecurityWe take reasonable measures to protect customer data from unauthorized access or disclosure. This includes encrypting data when stored and as it transits various networks.
+
+-----------------------------------
+
+Title: Terms Of Use
+
+1. Acceptance of TermsBy using the Sleek GST Invoice app ("App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the App.
+
+2. Use of the AppThe App is provided to assist merchants in generating a GST-compliant invoices for the orders received on their Shopify stores. You agree to use the App in compliance with all applicable laws and regulations.
+
+3. User ResponsibilitiesYou are responsible for maintaining the security of your Shopify store and the credentials used to access the App. You are also responsible for all activities that occur under your store's account.
+
+4. LicenseSubject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to use the App.
+
+5. Fees and PaymentsUse of the App may be subject to fees. All payments must be made in accordance with the pricing and payment terms provided at the time of purchase. All purchases are non-refundable. You can cancel your subscription at any time by logging into your account.&nbsp;
+
+6. Data and PrivacyWe are committed to protecting your privacy. Our data collection and use practices are outlined in our Privacy Policy.
+
+7. Disclaimer of WarrantiesThe App is provided "as is" and "as available" without warranties of any kind, either express or implied.
+
+8. Limitation of LiabilityIn no event shall we be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the App.
+
+9. TerminationWe reserve the right to terminate or suspend your access to the App at any time, with or without notice, for any reason, including if you breach these Terms.
+
+10. Governing Law and ArbitrationThese Terms shall be governed by and construed in accordance with the laws of India. In the event of any dispute, claim, or controversy arising out of or relating to these Terms or the App, the parties shall submit to the exclusive jurisdiction of the courts of Mumbai, India.
+
+11. Changes to TermsWe reserve the right to modify these Terms at any time. Your continued use of the App after any such changes constitutes your acceptance of the new Terms.
+
+12. Contact InformationFor any questions or concerns regarding these Terms, please contact us at support@sleekapp.freshdesk.com.
+
+By using the Sleek GST Invoice, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use.
+
+-----------------------------------
+

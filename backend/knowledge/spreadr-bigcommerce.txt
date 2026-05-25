@@ -1,0 +1,1241 @@
+Title: Who Is This App For 
+
+Spreadr app enables BigCommerce store owners to import Amazon products into their store.
+
+&nbsp;
+
+It helps BigCommerce store owners:
+
+&nbsp;
+
+1. to make extra money via Amazon Affiliate Program. Know more.
+
+2. that are using Amazon as their main drop-shipping source - to effortlessly import products into their BigCommerce store. Know more.
+
+-----------------------------------
+
+Title: Installation Steps
+
+Installing Spreadr Bigcommerce App is simple and takes only a few minutes.
+To install, visit the BigCommerce App store. On your left side panel, click on Apps.
+• Click on Marketplace.
+
+3. Search for ‘Spreadr’.
+4. Click Get App / Install. You will be prompted to log in to your BigCommerce store and then approve the installation.
+
+&nbsp;
+
+5. Once done, Under My Apps,&nbsp;you will see&nbsp;Spreadr App listed. Click to visit the Spreadr dashboard.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/42000779893/original/YNanHmF1pwwawDRxJ3lt8-X7g8bUMEX2kg?1524740721
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/42000780126/original/pi-XBaLzOcxkOp4BzGzRrFOV0N940H_7cQ?1524740968
+
+-----------------------------------
+
+Title: How To Import Amazon Products To My Bigcommerce Store 
+
+1. &nbsp;Browse Amazon for the product you want to import to BigCommerce.&nbsp;
+2. &nbsp;Copy original Amazon product page URL.
+
+3. &nbsp; Paste the product page URL in your Spreadr dashboard.
+4. &nbsp;Click 'Add product'
+Spreadr fetches product info using official Amazon APIs and adds the product to your BigCommerce store.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/42000780868/original/JqJZzOwx2rlKQ41lu3FrVWFCQC0iSyX0pA?1524742323
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/42000781077/original/dUxM3phDPFlJ-g1tplB57Ohhmwfr7ID1uA?1524743022
+
+-----------------------------------
+
+Title: Spreadr App With Amazon Affiliate Program How It Works 
+
+BigCommerce store owners can use Spreadr to make extra money via Amazon Affiliate Program.&nbsp;
+
+&nbsp;
+
+How it works:
+
+&nbsp;
+
+1.&nbsp;&nbsp;Install&nbsp;Spreadr App.
+
+2. Import complementary products from Amazon to your store via Spreadr App.
+
+3. Each imported product will have a View on Amazon button.&nbsp;
+
+4. Clicking View on Amazon button will redirect the users to Amazon where they buy the product. Amazon fulfills the order.
+
+5. You get paid commission for all the sales generated via your referred customer.&nbsp;
+
+6. Important - you need to sign up for Amazon Affiliate Program and save the Affiliate ID in the settings section of Spreadr dashboard.
+
+7. Amazon will transfer the payment to your account as per the settings in your Amazon Affiliate Program Account.
+&nbsp;
+
+Most of the Spreadr App users use this option to generate additional revenue to complement their existing source.
+
+&nbsp;
+
+* If a visitor to your site buys something from Amazon within 24 hours of clicking on your affiliate link, you will get a commission. You get commissions for every single item they buy - not just the ones you promote and link out to. i.e you will make money every time someone clicks on one of your links and purchases anything from Amazon.
+
+-----------------------------------
+
+Title: Spreadr App For Dropshipping How It Works 
+
+Sellers who use Amazon as their main dropshipping source can use Spreadr to effortlessly import products to their BigCommerce store.&nbsp;
+How it works?
+1. Install&nbsp;Spreadr App.
+
+2. Import products from Amazon to your store via Spreadr App.
+
+3. Markup the product price via BigCommerce admin.
+
+4. Here you do not linkout (redirect) your customers to Amazon.
+
+5. Customers place the order on your site and you have to fulfill it.
+
+6. It is like selling a regular product on your site - you receive the payment from your users.&nbsp;
+
+7. Amazon is not the drop-shipper. You are responsible for sourcing the products and delivering to your customers. You have to provide customer service.
+This option is best suited for people who sell products on Amazon to also have them on their BigCommerce website.&nbsp;
+We do not recommend drop-shipping for those who are looking to place manual order on Amazon in response to their customers placing an order on BigCommerce site. It leads to fulfillment, customer service and IP issues.
+
+-----------------------------------
+
+Title: How Will I Be Charged 
+
+Spreadr App &nbsp;is available via the BigCommerce app store.&nbsp;&nbsp;
+
+&nbsp;
+
+There is a free trial period for 7 days. After the trial period expires you can chose to subscribe to a monthly recurring paid plan. Transactions are processed by Paddle.
+To subscribe to a plan: Go to Spreadr dashboard &gt; Accounts &gt; Plans &gt; Select a plan and provide your payment information.
+Subscriptions renew automatically but can be cancelled at any time prior to renewal.
+
+-----------------------------------
+
+Title: What Are The Different Pricing Plans 
+
+You can try Spreadr App free for 7 days on any of the plans below.&nbsp;
+BasicPro
+Gold
+Super
+Jumbo
+Custom1
+Price / month
+$7
+$14
+$25
+$40
+$70
+$100+2
+Product import
+Unlimited
+Unlimited
+Unlimited
+Unlimited
+Unlimited
+Unlimited3
+Auto-sync
+x
+✓
+✓
+✓
+✓
+✓
+product limit without AWS API
+-
+100
+500
+2,000
+10,000
+Unlimitedproduct limit with AWS API
+-
+1,000
+3,000
+10,000
+50,000
+Unlimited4
+Geo-localize
+x
+✓
+✓
+✓
+✓
+✓
+5
+Analytics
+x
+✓
+✓
+✓
+✓
+✓
+6
+Customer reviews
+x
+✓
+✓
+✓
+✓
+✓
+7
+Manual sync
+x
+x
+✓
+✓
+✓
+✓
+8
+Bulk actions
+x
+x
+✓
+✓
+✓
+✓
+• There are no setup fees on any of our plans.
+• Cancel the plan anytime via the app dashboard to terminate the subscription.
+• You can upgrade or downgrade your plan at any time.
+• To keep it fair and transparent for everyone we do not offer discounts on any of the plans to anyone.
+Note&nbsp;- We also have a custom plan with the higher Auto-sync limit. More info here.
+
+-----------------------------------
+
+Title: Can I Cancel My Subscription Any Time 
+
+You can cancel your subscription at any time. Simply log in to the app dashboard and cancel the subscription.&nbsp;
+
+&nbsp;
+
+If you uninstall / remove Spreadr app the existing products imported via Spreadr continue to work normally. Products will continue to link out to Amazon and you will get Affiliate commissions for generated sales.
+
+&nbsp;
+
+Certain features such as Auto-sync, Customer Reviews will not work.
+
+-----------------------------------
+
+Title: Can I Get A Refund If I Don T Like The App 
+
+All Spreadr plans are available with a free 7 day trial. The trials ensure that customers can fully evaluate the products in their own time&nbsp;before&nbsp;committing to a purchase. After careful evaluation, customers can purchase a monthly plan in non refundable/exchangeable transaction.&nbsp;&nbsp;
+The subscription can be cancelled anytime.
+
+&nbsp;
+
+-----------------------------------
+
+Title: How To Update Billing Information 
+
+Spreadr Plans are auto-renewing prepaid subscriptions. If you wish to update the payment method or change the payment details, you will need to update prior to the renewal date in your account settings on your Spreadr dashboard.&nbsp;
+Go to Spreadr dashboard &gt; Account &gt; Plans &gt; Click on Update Payment and update the info.
+
+-----------------------------------
+
+Title: Who Pays Me Spreadr Or Amazon Affiliate Network 
+
+When a user clicks on your affiliate link and purchases an item on Amazon, you will receive a commission for your referral. Your commission will be paid by Amazon affiliate network.&nbsp;
+
+&nbsp;
+
+What does this mean for you?&nbsp;
+
+1. Keep 100% of your commissions. Because Spreadr does not act as a "go between" you and Amazon, Amazon pays directly to you for your referrals!
+
+&nbsp;
+
+2. Amazon approval required - You must be approved by Amazon to be eligible for receiving payments.
+
+&nbsp;
+
+3. Spreadr does not monitor your site - Spreadr does not track your links nor do we act as a redirect between your site and Amazon. We do not perform analytics on your click-through, monitor your traffic or analyze your target market. You can view all the stats in your Amazon Affiliate Dashboard.
+
+-----------------------------------
+
+Title: Is Amazon Affiliate Associate Id Required 
+
+Yes, Amazon Affiliate / Associate ID is required.&nbsp;
+
+&nbsp;
+
+When a user on your website clicks an Amazon link and purchases a product on Amazon website, you will receive a commission for your referral. Your commission will be paid by Amazon Affiliate Program.
+
+-----------------------------------
+
+Title: How Can I Get Amazon Affiliate Id 
+
+To get Amazon Affiliate ID you need to join Amazon Affiliate Program - its free.&nbsp;
+
+&nbsp;
+
+Here is the link to getting started - https://affiliate-program.amazon.com
+
+&nbsp;
+
+Select your country specific Amazon Affiliate Program and signup. Once inside the dashboard you will get your Affiliate ID.&nbsp;
+
+&nbsp;
+
+Save the Affiliate ID in the settings section of Spreadr dashboard.
+Thereafter, all the sales generated will be credited to your Affiliate ID.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/42000781910/original/wxY-Yve0c31AAeZ_bYnJvv-ewxjGKU5aog?1524745047
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/42001080456/original/5ABcubdQ85oBSRdxuIJ45Gu0ZyG_86LfXA.png?1525693137
+
+-----------------------------------
+
+Title: Which Country Specific Amazon Affiliate Programs Does Spreadr Support 
+
+Spreadr currently supports Amazon Affiliate Programs for the following countries:
+United States&nbsp;
+Canada
+United Kingdom
+Germany
+France
+India
+Spain
+Italy
+Mexico
+Japan
+Brazil
+Australia
+United Arab Emirates
+Singapore
+Netherlands
+Saudi Arabia
+Sweden
+Turkey
+Poland
+Egypt
+We are continuously working to expand support for more countries—stay tuned for updates!
+
+-----------------------------------
+
+Title: How Much Commission Will I Earn 
+
+The commissions you earn will vary depending on the country-specific Affiliate Program and the purchased product.
+
+&nbsp;
+
+Please refer Associates Program Advertising Fee Schedule for commission rates and rules applicable for you.
+
+-----------------------------------
+
+Title: Product Types
+
+Products imported via Spreadr app can be of three types:&nbsp;
+1. Affiliate Downloadable Products
+
+These products will have a 'View on Amazon' button. When users click this button they will be redirected to Amazon in a new browser tab. The benefit of adding affiliate products is that Amazon takes care of inventory, tax and shipping. You earn commissions on all the sales you refer to Amazon. These products will be added as 'Downloadable product' (not 'Physical product') in BigCommerce. This is to prevent these products from being published on Facebook and Instagram sales channels.
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+
+2. Drop-shipping Physical Products
+
+These are the regular 'Physical' products on BigCommerce with an 'Add to Cart' button.
+3. &nbsp;Affiliate Physical Products
+These products will have a 'View on Amazon' button. When users click this button they will be redirected to Amazon in a new browser tab. These products will be added as 'Physical' products in BigCommerce. They can published on Facebook and Instagram sales channels.
+Note:
+
+'Quick View' button will be hidden for affiliate products on category pages. The Quick View popup contains a dynamically generated 'Add to Cart' button which allows the product to be checked out on BigCommerce.
+
+-----------------------------------
+
+Title: Product Variants
+
+Spreadr app does not import product variants/options (sizes, colors etc).&nbsp;&nbsp;
+Most of the leading affiliate stores do not display variants. They only show primary product and leave the variants, shipping details etc to the destination site. Examples - canopy.com, thisiswhyimbroke.com, thegatdgetflow.com, lyst.com.&nbsp;
+This is done primarily to get the affiliate 'click' and redirect the user to the destination site. Once the visitor is on destination site (Amazon in our case) you get commissions for any variant they buy - not just the ones you promote and link out to. Not only that, you make money if users purchase anything else from Amazon.
+Moreover, importing variants significantly increases the time required to import products and introduces complexities in auto-syncing.
+
+-----------------------------------
+
+Title: Auto Tagging 
+
+Auto-tagging allows the stores to automatically add BigCommerce product tags while importing products from Amazon. Tags are added based on the product information derived from Amazon.&nbsp;
+
+&nbsp;
+
+Users can select specific tags which need to be auto-added while importing the products.
+
+&nbsp;
+
+Example - if the users select Brand and ProductGroup as auto-tags while importing a Nike Men's Tanjun Premium Shoe then two product tags - 1. Nike and 2. Shoes - will be auto added to the the product while importing it from Amazon to BigCommerce.
+
+&nbsp;
+
+Note:
+
+Auto-tagging cannot be applied retrospectively to the products already imported before.
+If the tag information derived from Amazon is empty then the tag will not be added.
+
+-----------------------------------
+
+Title: Description Data Fields
+
+You can customize the list of data fields the app pulls from Amazon to create product description in BigCommerce.&nbsp;
+While importing products, the app captures more than 35 data fields from Amazon such as Brand, Features, Product Dimensions etc. These data fields are added to the product description in BigCommerce.
+You can select / deselect the data fields you want to include in the product description while importing items from Amazon. Furthermore you can sort the data fields in the order you want them to be displayed in the description.
+To customize data fields go to Spreadr dashboard &gt;&nbsp;Settings&nbsp;&gt;&nbsp;Default Values&nbsp;&gt;&nbsp;Description&nbsp;&gt; Click&nbsp;Setup.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/42021361804/original/phfqaTvntZP8jb4Gnsll1LrvAhCIRvc-gA.png?1557922352
+
+-----------------------------------
+
+Title: What Is Auto Sync 
+
+The Auto-Sync feature ensures your BigCommerce store always reflects the latest Amazon product prices and availability, keeping your inventory up to date.
+
+Spreadr auto-syncs each product once every 24 hours.
+Available for Pro plan and above.
+Once activated, auto-sync applies to all products in the Spreadr dashboard.
+
+Auto-Sync Data OptionsSpreadr offers two auto-sync methods to update products:
+
+✅ Auto-Sync with AWS API (Recommended)Uses Amazon API for product updates.
+Requires Amazon Web Services (AWS) Access Credentials setup. [More info here.]
+Provides higher product limits and more reliable data.
+Fetches the Buy Box price of the product.
+
+✅ Auto-Sync without AWS APIUses alternative sources of Amazon data (no AWS credentials required).
+Supports lower product limits (see the plans page for details).
+Fetches the lowest offer price of the product.
+
+Important Notes:⚠️ Variants manually added after importing a product will be deleted during auto-sync.⚠️ Auto-sync with AWS API fetches the Buy Box price, while auto-sync without AWS API fetches the lowest offer price.
+
+-----------------------------------
+
+Title: How To Activate Auto Sync 
+
+1. Upgrade to Pro or Higher PlanNavigate to Dashboard &gt; Account &gt; Plans
+Select Pro Plan or the above
+
+2. Set Up AWS Credentials (Optional but Recommended)AWS setup is required for Auto-Sync with AWS API
+Click here for setup instructions
+
+3. Activate Auto-SyncGo to Dashboard &gt; Settings &gt; Auto-Sync
+In the top drop-down list, select "Activate"
+Click Save
+
+✅ Auto-Sync is now active! Your products will be updated automatically every 24 hours.
+
+-----------------------------------
+
+Title: How To Setup Aws Access Credentials 
+
+Amazon Web Services (AWS) Access Credentials are required to fetch product data from the official Amazon API.
+
+1. Navigate to AWS SetupGo to Dashboard &gt; Settings &gt; Auto-Sync
+Click "Setup AWS Credentials"
+Fill out the form and click "Verify &amp; Save"
+
+(Note: The AWS credentials form is also available in Dashboard &gt; Search page)
+2. Fill in the AWS Credentials FormCountry – Select your primary country (must match your Amazon Affiliate Account country).
+Amazon Affiliate ID – Enter your Amazon Affiliate ID (stored in Settings). If you don’t have one, join the Amazon Affiliate Program (it's free).
+Access Key ID &amp; Secret Access Key – Follow this guide to get these values.
+
+✅ Your AWS credentials are now set up! Auto-sync will use official Amazon API data.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/42000800002/original/KBld8stIMip3-HzsrP-66f1q308ctW4_Mg?1524808479
+
+-----------------------------------
+
+Title: How To Get Your Access Key Id Secret Access Key 
+
+Getting your Access Key ID and Secret Key pair is easy enough, but it involves a number of steps.&nbsp;
+Step 1
+Goto the Amazon Associates Program home page and login to your account. For the purposes of this tutorial we assume you are already an approved Amazon affiliate - https://affiliate-program.amazon.com
+Step 2
+Click on the 'Product Advertising API' link under the Tools menu.
+Step 3
+Click the 'Join' button.
+Important Update (05 April 2018): Due to change in Amazon Associate Product Advertising API policy, the 'Join' button will not be active for new users. Once your account gets reviewed and approved by Amazon only then you will have access to 'Join' button to can obtain API credentials. You will have to come back to this page and continue from this step after your account has been approved.
+Step 4
+Your Access Key and Secret Key will be displayed on screen. Copy these into the &nbsp;AWS Credentials form in the Spreadr app. We also recommend clicking the Download button and storing this in a secure location. You cannot retrieve the Secret Key from an existing Access Key after you move away from this page, so make sure you have it otherwise you will need to de-activate an old key and create another new one.
+
+.
+Your keys will look something like this:
+
+• Access key ID example: AKIAIOSFODNN7EXAMPLE
+• Secret access key example: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/24015476896/original/fhmBqp940Pv9VDYEmMQn3INBHRje7FADsg.png?1510570500
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/24015475943/original/iaELBs5-BhTNPaj-4AlCMVjvAMi8XbLNFw.png?1510569666
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/24015476003/original/pu1j0tJSeHVVj2eA-i6vyguTJRZVxToyRQ.png?1510569747
+
+-----------------------------------
+
+Title: What Are Auto Sync Rules 
+
+Auto-sync allows you to control how product updates from Amazon are applied to your&nbsp;BigCommerce store. You can set rules to manage&nbsp;price updates, stock status, and discontinued products.
+&nbsp;
+
+Rule Table&nbsp;
+
+&nbsp;
+
+If Condition
+
+Actions
+
+Product price changes (on Amazon)
+
+Take no action
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Do not update BigCommerce.
+
+Update price on BigCommerce as per Amazon
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This will update BigCommerce product prices to match Amazon product prices.
+
+Update price on BigCommerce as per Markup Pricing Rules
+
+Spreadr will multiply and/or add a fixed markup to the Amazon product price by the numbers you set in the Markup Settings page.
+
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+
+Product goes out of stock (on Amazon)
+
+Take no action
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Do not update BigCommerce.
+
+Mark it as OUT OF STOCK
+This option will set product quantity to 0 and allow the shop theme to handle the product page display.&nbsp;
+Hide product from BigCommerce
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Stop displaying the product to the users.
+Product is discontinued (on Amazon)
+
+Take no action
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Do not update BigCommerce.
+
+Remove product from BigCommerce
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Delete the product from BigCommerce store and Spreadr dashboard.
+
+Hide product from BigCommerce
+
+Stop displaying the product to the users. This will not delete the product from BigCommerce store.
+
+-----------------------------------
+
+Title: What Is Markup Pricing 
+
+Markup Pricing&nbsp;allows you to&nbsp;add a margin or markup&nbsp;to the products you import from Amazon. Spreadr will either&nbsp;multiply&nbsp;or&nbsp;add a fixed amount&nbsp;to the original Amazon price based on the rules you define in the&nbsp;Markup Settings&nbsp;page.&nbsp;&nbsp;
+
+How Markup Pricing WorksApplies to all new products imported via Spreadr.
+If Auto-Sync is enabled, the marked-up prices will be updated automatically based on your Markup Pricing rules.
+Existing products (imported before enabling Markup Pricing) will not be affected unless auto-sync updates them.
+
+⚠️ Important: Markup Pricing is only meant for dropshipping products. If your store is an Amazon Affiliate store only, you should not use this feature, as Amazon requires affiliate stores to display real-time prices.
+For BigCommerce&nbsp;Navigate to Dashboard &gt; Settings &gt; Markup Pricing
+Set your markup rules (percentage or fixed value)
+Click Save
+
+✅ Your pricing rules are now set, and products will be imported with the defined markup!
+
+-----------------------------------
+
+Title: How To Apply Markup Pricing To Existing Products 
+
+When&nbsp;Markup Pricing is activated, it applies only to new products imported via Spreadr. To apply markup to existing products, enable the "Update prices as per Markup Pricing Rules" option in Auto-Sync settings.
+
+Steps to Apply Markup Pricing to Existing Products✅&nbsp;Step 1: Activate Auto-Sync (skip if already activated).✅&nbsp;Step 2: Go to&nbsp;Spreadr Dashboard Homepage and&nbsp;search for the product you want to mark up.✅&nbsp;Step 3: Click on&nbsp;Settings (under the&nbsp;Actions column).✅&nbsp;Step 4: Select&nbsp;"Update prices as per Markup Pricing Rules" and click&nbsp;Save.✅&nbsp;Step 5: Repeat for all products you want to update with markup pricing.
+
+When Will the Markup Be Applied?Once enabled, the prices of these products will be updated automatically based on your Markup Pricing rules when Spreadr runs Auto-Sync every 24 hours.
+
+✅ Now, your existing products will follow the same markup rules as new imports!
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/42153796886/original/VLUIcJQweHUoTW3oS0NlRoBQsecPFfx90g.png?1742455049
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/42153796887/original/ojcHxBd03YPjU5M6fPADMBecQG-DGdWPOA.png?1742455049
+
+-----------------------------------
+
+Title: What Is Geo Localize 
+
+Amazon eCommerce is not a single globalized store, rather is a collection of country and region-specific storefronts. Each of those storefronts has its own separate affiliate programs as well. This means your Amazon.com associates ID is not earning you commissions&nbsp;in any country but the US.&nbsp;
+Spreadr solves this problem to an extent via the Geo-localize feature. It detects the location of your users and takes them to their country-specific Amazon storefronts (eg: a UK visitor to amazon.co.uk and a US visitor to amazon.com). It allows you to add every country's affiliate ID into the dashboard, then automatically appends the country/region-specific affiliate ID for each link before sending the user on to their local storefront.&nbsp;
+How it works?
+1️⃣ The first step we take is to detect the location (country) of the user.&nbsp;
+2️⃣ If the user is coming from the same country as your Amazon link, no localization is needed. The user is simply sent to the original link. For example, if the link was built using the US Amazon storefront, amazon.com, a user from the US would simply be directed to the original product listing in the Amazon US storefront.
+3️⃣ If the user is coming from another country, we check if the country has a native Amazon storefront:
+
+• If a native Amazon storefront is found, we do a generic search within the destination storefront using the product title and guide the user to the search result page with the affiliate ID embedded in it.
+• If a native Amazon storefront is not found, we send the user to the original product link. We will soon be introducing country grouping, wherein countries with no Amazon storefront will be redirected to the nearest / most relevant Amazon storefront. For example, a user from Austria will be redirected to Amazon Germany.
+This allows you not only to ensure a better user experience but also to receive all of your international affiliate commissions. &nbsp;
+Geo-localize is only available for pro plan&nbsp;account users and above.
+Note: This feature is provided on a best effort basis – while most of the time, this service should be able to detect the visitor country and redirect them to the right local store, it may not work all the time. We expect the accuracy to be more than 97%, but there is a small chance that the visitor redirect may not happen as expected.
+
+-----------------------------------
+
+Title: Which Countries Are Supported By Geo Localize 
+
+Amazon operates 20&nbsp;country-specific storefronts worldwide, but only some support affiliate programs.
+Affiliate-supported Amazon storefronts:United States&nbsp;
+Canada
+United Kingdom
+Germany
+France
+India
+Spain
+Italy
+Mexico
+Japan
+Brazil
+Australia
+United Arab Emirates
+Singapore
+Netherlands
+Saudi Arabia
+Sweden
+Turkey
+Poland
+Egypt
+You can add affiliate IDs for these countries to start earning international commissions. More countries will be supported soon!
+Note - for the Mexico and India Affiliates programs, you must have a bank account located within the country.
+
+&nbsp;
+
+-----------------------------------
+
+Title: Which Countries Are Supported By Geo Localize 
+
+Amazon operates 20&nbsp;country-specific storefronts worldwide, but only some support affiliate programs.
+Affiliate-supported Amazon storefronts:United States&nbsp;
+Canada
+United Kingdom
+Germany
+France
+India
+Spain
+Italy
+Mexico
+Japan
+Brazil
+Australia
+United Arab Emirates
+Singapore
+Netherlands
+Saudi Arabia
+Sweden
+Turkey
+Poland
+Egypt
+You can add affiliate IDs for these countries to start earning international commissions. More countries will be supported soon!
+
+-----------------------------------
+
+Title: What Is Click Tracking 
+
+Spreadr will help you track clicks on links / buttons on your website that take users to Amazon. Click tracking data will be available in your Google Analytics dashboard. &nbsp; &nbsp; &nbsp; &nbsp;
+
+&nbsp;
+
+Click Tracking requires Google Analytics to be enabled on the BigCommerce store.
+
+&nbsp;
+
+This feature is only available for Pro Plan account users and above. &nbsp; &nbsp; &nbsp; &nbsp;
+
+&nbsp;
+
+Note: At any stage we do not store click data. Click tracking will not work on browsers which disable JavaScript. There might be small discrepancies in click tracking data recorded in Google Analytics and Amazon Affiliate Dashboard because of the way clicks (events) are counted.
+
+-----------------------------------
+
+Title: How To See Click Tracking Data 
+
+Once Click Tracking is enabled, each click on an Amazon link is recorded as an event in Google Analytics with the following parameters:
+Event Parameters:
+
+eventCategory&nbsp;= 'Spreadr Link'
+eventAction&nbsp;= 'Click'
+eventLabel&nbsp;= URL of the Amazon product page
+
+Steps to View Click Tracking Reports✅ Step 1: Sign in to Google Analytics (or Facebook Pixel if integrated)✅ Step 2: Navigate to your Google Analytics view✅ Step 3: Open Reports✅ Step 4: Select Behavior &gt; Events✅ Step 5: Filter events by:
+
+Event Category = ‘Spreadr Link’
+Event Action = ‘Click’
+Real-Time Click Tracking:You can also see real-time click activity under Analytics &gt; Real-Time &gt; Events
+
+-----------------------------------
+
+Title: Can The Spreadr App Import Customer Reviews 
+
+Due to changes in Amazon API, Spreadr app will stop displaying customer reviews from 01 November 2019. More info&nbsp;here.&nbsp;Spreadr app can fetch and display customer reviews on BigCommerce product details page.&nbsp;&nbsp;
+
+&nbsp;
+
+However, as per Amazon policy:
+
+the reviews cannot be stored in any database
+the reviews have to be displayed in a format provided by Amazon
+&nbsp;
+
+The image below shows sample reviews provided by Amazon.
+Note:&nbsp;
+
+Reviews cannot be edited or formatted.
+Clicking on any links inside the review box will redirect the user to Amazon with your Affiliate ID. You will be eligible to view the reviews for all your referred sales.
+The redirect page will open in the current browser tab - it cannot be opened in a new tab.
+If the app is uninstalled, reviews will stop being displayed on the imported products.
+&nbsp;
+
+Customer Reviews feature is only available to users with Pro Plan and above.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/42000800284/original/9t0S6vMWs9pS-OnGRuIumZMYHY-tEBpWLw?1524809875
+
+-----------------------------------
+
+Title: How To Activate Customer Reviews 
+
+Due to changes in Amazon API, Spreadr app will stop displaying customer reviews from 01 November 2019. More info&nbsp;here.&nbsp;
+To activate customer reviews:
+
+Go to Spreadr dashboard &gt; Settings &gt; Reviews.
+Select 'Activate' for Product Reviews. Click 'Save'.
+Adjust the Review settings as per your requirements.
+Note:&nbsp;By default, the customer review will be added below the description.
+
+(If you want to place somewhere else, please contact&nbsp;support@spreadr-bigcommerce.freshdesk.com. We will do the integration for you.)
+
+-----------------------------------
+
+Title: How Does Bulk Import Work 
+
+Spreadr can be used to import products in bulk from Amazon to your BigCommerce store in just a few clicks. This will save you lots of time in manually adding products.
+
+&nbsp;
+
+Step 1: Navigate to Dashboard → Services → Bulk-ImportStep 2: Purchase Bulk-Import Credits
+
+Pricing:&nbsp;$1 for 50 product imports▶️&nbsp; Step 3: Provide your AWS credentials (if available)▶️&nbsp; Step 4: Upload a list of ASINs (Amazon product IDs)▶️ Step 5: Click Start Import▶️ Step 6: Once the import is complete, download the results (.CSV file)
+
+Important Notes:✅&nbsp;A maximum of 2,000 products can be imported in one batch✅ You are only charged for successful imports✅ Import time estimate: (Number of products × 10) seconds✅ To import products without AWS credentials, read the documentation [here]
+
+-----------------------------------
+
+Title: How Much Does Bulk Import Cost 
+
+We charge $1 per 50 products imported.&nbsp;&nbsp;
+
+&nbsp;
+
+It is prepaid system where you need to purchase product import credits before actually importing the products. Minimum purchase amount is $1 (50 product credits.)
+
+&nbsp;
+
+For each successful product import we deduct 1 product credit. If product is not imported due to any reason (invalid ASIN, Amazon / BigCommerce issue ...) product credits remain unaffected.&nbsp;
+
+&nbsp;
+
+Everyone gets 10 product credits to test the system.
+Note: bulk-importing products without providing the AWS API credentials will cost 1.2 credits per product import. More info&nbsp;here.
+
+-----------------------------------
+
+Title: Specifications For Uploading Asin List
+
+Spreadr will bulk import Amazon products to your BigCommerce site based on a list of ASINs (Amazon product IDs) you provide.
+• ASINs should be provided in an Excel spreadsheet.
+• Max file size = 200 KB.
+• Maximum 2000 ASINs should be listed in the spreadsheet. If this limit us exceeded, only top 2000 will be saved for import.
+• ASINs should be listed in the first column of the spreadsheet.
+• Spreadrsheet should have no headers.
+⚠️ Important: Ensure the file meets these specifications to avoid errors during import.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/24003241946/original/Ji78_1mMpp1EH1MweKlrK19LyCL5UmlVxQ.jpg?1489043095
+
+-----------------------------------
+
+Title: Bulk Import Without Amazon Web Services Aws Access Credentials
+
+If you do not have AWS access credentials, you can still bulk-import products using Spreadr app.&nbsp;
+Instead of 1 credit for 1 product import, it will cost 1.2 credits for each product imported. This is because the app has to purchase Amazon data from 3rd party vendors rather than fetch it via Amazon API.
+To bulk-import products without AWS credentials you simply have to turn ON the 'No AWS' switch before clicking 'Start Import' button.
+To bulk-import products using your AWS Access Credentials simply turn OFF the AWS switch.
+Note: bulk-importing products without Amazon API will take on average 12 seconds per product.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/24031082258/original/Un60sLigiL2AhpH8xKcIZtulzHRxy7yCYg.png?1535704720
+
+-----------------------------------
+
+Title: Exit Intent Popup
+
+When visitors attempt to leave your site, a popup banner showcasing an Amazon product can appear strategically, encouraging them to click your affiliate link.
+Why Use Exit Intent Popups?✅ Increase Affiliate Revenue: Initial testing shows up to a 10% boost in affiliate earnings.✅ Catch Attention: Show a highly relevant product before a visitor exits.✅ Seamless Integration: When clicked, users are redirected to Amazon with your affiliate link.
+How to Enable the Exit Intent Popup?1️⃣ Go to: Spreadr dashboard → Tools → Exit Popup2️⃣ Enter the Amazon product link to display3️⃣ Customize product title text to make it more engaging4️⃣ Modify popup colors &amp; display frequency5️⃣ Click ‘Preview’ to see how it looks6️⃣ Click ‘Activate’ to enable it
+
+Key Notes:One exit popup per store
+Maximum 5 products can be added (1 will be randomly displayed)
+Geo-localize feature applies to exit popup links
+Popup views &amp; clicks can be tracked in Google Analytics
+The popups stop displaying if the app is uninstalled
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/42152263198/original/ip5ixdZjnN09RZ19uherD7O-b2U2RqDJBg.png?1740292401
+
+-----------------------------------
+
+Title: Analytics For Exit Intent Popup
+
+Tracking Exit Intent Popup Performance in Google Analytics
+The Exit Intent Popup feature records views and clicks as custom events in Google Analytics. This allows you to monitor engagement and optimize your affiliate marketing strategy.
+Event Tracking Parameters:Event TypeEvent CategoryEvent ActionEvent LabelPopup ViewSpreadrExit Popup View-Popup ClickSpreadrExit Popup ClickAmazon product URLHow to View Click Tracking Reports in Google Analytics?
+1️⃣ Sign in to your Google Analytics account2️⃣ Navigate to your store’s view3️⃣ Open Reports4️⃣ Go to Behavior → Events5️⃣ Drill down into events where:
+
+Event Category = ‘Spreadr’
+Event Action = ‘Exit Popup View’ or ‘Exit Popup Click’
+Pro Tip: You can also check real-time clicks in Analytics Real-Time → Events.
+
+-----------------------------------
+
+Title: What Is Manual Sync 
+
+Manual Sync allows BigCommerce merchants to re-import product data from Amazon on demand. It overwrites the existing product on BigCommerce with the latest Amazon data, ensuring that product details remain accurate and up-to-date.
+
+What Gets Updated?
+All product attributes including Title, Description, Images, and Prices&nbsp;are overwritten.&nbsp;
+
+Who Can Use Manual Sync?
+Available on: Gold Plan &amp; above
+
+How to Use Manual Sync?1️⃣ Go to the Spreadr Dashboard2️⃣ Search for the product you want to sync3️⃣ Click ‘Sync’ to fetch the latest data from Amazon
+Tip: Manual Sync is useful when you want to refresh specific products immediately without waiting for Auto-Sync.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/42152263203/original/1d6VEsvt6PAVULTBPh1VMAyWnDXpMuwr1g.png?1740292648
+
+-----------------------------------
+
+Title: Bulk Actions
+
+The Bulk Actions feature allows BigCommerce merchants to manage products efficiently by performing actions on multiple products at once.
+Available Bulk Actions✅ Bulk Delete
+
+Permanently remove all selected products from BigCommerce and Spreadr accounts.
+⚠ Irreversible action – deleted products cannot be recovered.
+✅ Bulk Export
+
+Exports all products in the Spreadr account into a .CSV file.
+The exported file is available for download.
+
+Who Can Use Bulk Actions?Available on: Gold Plan &amp; above
+
+How to Perform Bulk Actions?1️⃣ Go to the Spreadr Homepage2️⃣ Click on the "Bulk Actions" button3️⃣ Select either Bulk Delete or Bulk Export4️⃣ Confirm your action and proceed
+Tip: Use Bulk Export before deleting products to save a backup of your product data.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/42152263212/original/Q_5nfa-FrP7cqpsZrHcXje8Rawy-eQ054g.png?1740292825
+
+-----------------------------------
+
+Title: Terms Of Use
+
+AGREEMENT TO TERMS
+
+&nbsp;
+
+These Terms of Use constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) and Thalia Technologies Pvt Ltd (“we,” “us” or “our”), concerning your access to and use of the https://www.bigcommerce.com/apps/spreadr application as well as any other website, widget, media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto (collectively, the “Application”). You agree that by accessing the Application, you have read, understood, and agree to be bound by all of these Terms of Use. IF YOU DO NOT AGREE WITH ALL OF THESE TERMS OF USE, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE APPLICATION AND YOU MUST DISCONTINUE USE IMMEDIATELY.
+
+&nbsp;
+
+Supplemental terms and conditions or documents that may be posted on the Application from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Terms of Use at any time and for any reason. We will alert you about any changes by updating the “Last updated” date of these Terms of Use, and you waive any right to receive specific notice of each such change. It is your responsibility to periodically review these Terms of Use to stay informed of updates. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Terms of Use by your continued use of the Application after the date such revised Terms of Use are posted. &nbsp;
+
+&nbsp;
+
+The information provided on the Application is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation or which would subject us to any registration requirement within such jurisdiction or country. Accordingly, those persons who choose to access the Application from other locations do so on their own initiative and are solely responsible for compliance with local laws, if and to the extent local laws are applicable.
+
+&nbsp;
+
+The Application is intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to use or register for the Application. &nbsp;&nbsp;
+
+&nbsp;
+
+INTELLECTUAL PROPERTY RIGHTS
+
+&nbsp;
+
+Unless otherwise indicated, the Application is our proprietary property and all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics on the Application (collectively, the “Content”) and the trademarks, service marks, and logos contained therein (the “Marks”) are owned or controlled by us or licensed to us, and are protected by copyright and trademark laws and various other intellectual property rights and unfair competition laws of the United States, foreign jurisdictions, and international conventions. The Content and the Marks are provided on the Application “AS IS” for your information and personal use only. Except as expressly provided in these Terms of Use, no part of the Application and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.
+
+&nbsp;
+
+Provided that you are eligible to use the Application, you are granted a limited license to access and use the Application and to download or print a copy of any portion of the Content to which you have properly gained access solely for your personal, non-commercial use. We reserve all rights not expressly granted to you in and to the Application, the Content, and the Marks.
+
+&nbsp;
+
+USER REPRESENTATIONS
+
+&nbsp;
+
+By using the Application, you represent and warrant that: &nbsp;(1) you have the legal capacity and you agree to comply with these Terms of Use; &nbsp;(2) you are not a minor in the jurisdiction in which you reside; (3) you will not access the Application through automated or non-human means, whether through a bot, script or otherwise; (4) you will not use the Application for any illegal or unauthorized purpose; and (5) your use of the Application will not violate any applicable law or regulation.
+
+&nbsp;
+
+If you provide any information that is untrue, inaccurate, not current, or incomplete, we have the right to suspend or terminate your account and refuse any and all current or future use of the Application (or any portion thereof).&nbsp;
+
+&nbsp; &nbsp; &nbsp;
+
+FEES AND PAYMENT
+
+&nbsp;
+
+You may be required to purchase or pay a fee to access some of our services. You agree to provide current, complete, and accurate purchase and account information for all purchases made via the Application. You further agree to promptly update account and payment information, including email address, payment method, and payment card expiration date, so that we can complete your transactions and contact you as needed. &nbsp;We bill you through an online billing account for purchases made via the Application. Sales tax will be added to the price of purchases as deemed required by us. We may change prices at any time. All payments shall be in U.S. dollars.
+
+&nbsp;
+
+You agree to pay all charges or fees at the prices then in effect for your purchases, and you authorize us to charge your chosen payment provider for any such amounts upon making your purchase. If your purchase is subject to recurring charges, then you consent to our charging your payment method on a recurring basis without requiring your prior approval for each recurring charge, until you notify us of your cancellation.&nbsp;
+
+We reserve the right to correct any errors or mistakes in pricing, even if we have already requested or received payment. We also reserve the right to refuse any order placed through the Application.
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+&nbsp; &nbsp; &nbsp; &nbsp;
+
+CANCELLATION
+
+&nbsp;
+
+All purchases are non-refundable. You can cancel your subscription at any time by logging into your account. Your cancellation will take effect at the end of the current paid term.
+
+&nbsp;
+
+If you are unsatisfied with our services, please email us at support AT spreadr-bigcommerce.freshdesk.com&nbsp;
+
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+
+SOFTWARE
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+
+We may include software for use in connection with our services. If such software is accompanied by an end user license agreement (“EULA”), the terms of the EULA will govern your use of the software. If such software is not accompanied by a EULA, then we grant to you a non-exclusive, revocable, personal, and non-transferable license to use such software solely in connection with our services and in accordance with these Terms of Use. Any Software and any related documentation is provided “as is” without warranty of any kind, either express or implied, including, without limitation, the implied warranties of merchantability, fitness for a particular purpose, or non-infringement. You accept any and all risk arising out of use or performance of any Software. You may not reproduce or redistribute any software except in accordance with the EULA or these Terms of Use.
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+PROHIBITED ACTIVITIES
+
+&nbsp;
+
+You may not access or use the Application for any purpose other than that for which we make the Application available. The Application may not be used in connection with any commercial endeavors except those that are specifically endorsed or approved by us. &nbsp;
+
+As a user of the Application, you agree not to:
+
+&nbsp;Systematically retrieve data or other content from the Application to create or compile, directly or indirectly, a collection, compilation, database, or directory without written permission from us.&nbsp;
+&nbsp;Make any unauthorized use of the Application, including collecting usernames and/or email addresses of users by electronic or other means for the purpose of sending unsolicited email, or creating user accounts by automated means or under false pretenses.&nbsp;
+&nbsp;Use a buying agent or purchasing agent to make purchases on the Application.&nbsp;
+&nbsp;Use the Application to advertise or offer to sell goods and services.&nbsp;
+&nbsp;Circumvent, disable, or otherwise interfere with security-related features of the Application, including features that prevent or restrict the use or copying of any Content or enforce limitations on the use of the Application and/or the Content contained therein.&nbsp;
+&nbsp;Engage in unauthorized framing of or linking to the Application.&nbsp;
+&nbsp;Trick, defraud, or mislead us and other users, especially in any attempt to learn sensitive account information such as user passwords.&nbsp;
+&nbsp;Make improper use of our support services or submit false reports of abuse or misconduct.&nbsp;
+&nbsp;Engage in any automated use of the system, such as using scripts to send comments or messages, or using any data mining, robots, or similar data gathering and extraction tools.&nbsp;
+&nbsp;Interfere with, disrupt, or create an undue burden on the Application or the networks or services connected to the Application.&nbsp;
+&nbsp;Attempt to impersonate another user or person or use the username of another user.&nbsp;
+&nbsp;Sell or otherwise transfer your profile.&nbsp;
+&nbsp;Use any information obtained from the Application in order to harass, abuse, or harm another person.&nbsp;
+&nbsp;Use the Application as part of any effort to compete with us or otherwise use the Application and/or the Content for any revenue-generating endeavor or commercial enterprise.&nbsp;
+&nbsp;Decipher, decompile, disassemble, or reverse engineer any of the software comprising or in any way making up a part of the Application.&nbsp;
+&nbsp;Attempt to bypass any measures of the Application designed to prevent or restrict access to the Application, or any portion of the Application.&nbsp;
+&nbsp;Harass, annoy, intimidate, or threaten any of our employees or agents engaged in providing any portion of the Application to you.&nbsp;
+&nbsp;Delete the copyright or other proprietary rights notice from any Content.&nbsp;
+&nbsp;Copy or adapt the Application’s software, including but not limited to Flash, PHP, HTML, JavaScript, or other code.&nbsp;
+&nbsp;Upload or transmit (or attempt to upload or to transmit) viruses, Trojan horses, or other material, including excessive use of capital letters and spamming (continuous posting of repetitive text), that interferes with any party’s uninterrupted use and enjoyment of the Application or modifies, impairs, disrupts, alters, or interferes with the use, features, functions, operation, or maintenance of the Application.&nbsp;
+&nbsp;Upload or transmit (or attempt to upload or to transmit) any material that acts as a passive or active information collection or transmission mechanism, including without limitation, clear graphics interchange formats (“gifs”), 1×1 pixels, web bugs, cookies, or other similar devices (sometimes referred to as “spyware” or “passive collection mechanisms” or “pcms”).&nbsp;
+&nbsp;Except as may be the result of standard search engine or Internet browser usage, use, launch, develop, or distribute any automated system, including without limitation, any spider, robot, cheat utility, scraper, or offline reader that accesses the Application, or using or launching any unauthorized script or other software.&nbsp;
+&nbsp;Disparage, tarnish, or otherwise harm, in our opinion, us and/or the Application.&nbsp;
+&nbsp;Use the Application in a manner inconsistent with any applicable laws or regulations.&nbsp;
+&nbsp; &nbsp;
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+SUBMISSIONS
+
+&nbsp;
+
+You acknowledge and agree that any questions, comments, suggestions, ideas, feedback, or other information regarding the Application ("Submissions") provided by you to us are non-confidential and shall become our sole property. We shall own exclusive rights, including all intellectual property rights, and shall be entitled to the unrestricted use and dissemination of these Submissions for any lawful purpose, commercial or otherwise, without acknowledgment or compensation to you. You hereby waive all moral rights to any such Submissions, and you hereby warrant that any such Submissions are original with you or that you have the right to submit such Submissions. You agree there shall be no recourse against us for any alleged or actual infringement or misappropriation of any proprietary right in your Submissions.
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+THIRD-PARTY WEBSITES AND CONTENT
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+
+The Application may contain (or you may be sent via the Application) links to other websites ("Third-Party Websites") as well as articles, photographs, text, graphics, pictures, designs, music, sound, video, information, applications, software, and other content or items belonging to or originating from third parties ("Third-Party Content"). Such Third-Party Websites and Third-Party Content are not investigated, monitored, or checked for accuracy, appropriateness, or completeness by us, and we are not responsible for any Third-Party Websites accessed through the Application or any Third-Party Content posted on, available through, or installed from the Application, including the content, accuracy, offensiveness, opinions, reliability, privacy practices, or other policies of or contained in the Third-Party Websites or the Third-Party Content. Inclusion of, linking to, or permitting the use or installation of any Third-Party Websites or any Third-Party Content does not imply approval or endorsement thereof by us. If you decide to leave the Application and access the Third-Party Websites or to use or install any Third-Party Content, you do so at your own risk, and you should be aware these Terms of Use no longer govern. You should review the applicable terms and policies, including privacy and data gathering practices, of any website to which you navigate from the Application or relating to any applications you use or install from the Application. Any purchases you make through Third-Party Websites will be through other websites and from other companies, and we take no responsibility whatsoever in relation to such purchases which are exclusively between you and the applicable third party. You agree and acknowledge that we do not endorse the products or services offered on Third-Party Websites and you shall hold us harmless from any harm caused by your purchase of such products or services. Additionally, you shall hold us harmless from any losses sustained by you or harm caused to you relating to or resulting in any way from any Third-Party Content or any contact with Third-Party Websites.&nbsp;
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+ADVERTISERS
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+
+We allow advertisers to display their advertisements and other information in certain areas of the Application, such as sidebar advertisements or banner advertisements. If you are an advertiser, you shall take full responsibility for any advertisements you place on the Application and any services provided on the Application or products sold through those advertisements. Further, as an advertiser, you warrant and represent that you possess all rights and authority to place advertisements on the Application, including, but not limited to, intellectual property rights, publicity rights, and contractual rights. We simply provide the space to place such advertisements, and we have no other relationship with advertisers.&nbsp;
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+U.S. GOVERNMENT RIGHTS
+
+&nbsp;
+
+Our services are “commercial items” as defined in Federal Acquisition Regulation (“FAR”) 2.101. If our services are acquired by or on behalf of any agency not within the Department of Defense (“DOD”), our services are subject to the terms of these Terms of Use in accordance with FAR 12.212 (for computer software) and FAR 12.211 (for technical data). If our services are acquired by or on behalf of any agency within the Department of Defense, our services are subject to the terms of these Terms of Use in accordance with Defense Federal Acquisition Regulation (“DFARS”) 227.7202‑3. In addition, DFARS 252.227‑7015 applies to technical data acquired by the DOD. This U.S. Government Rights clause is in lieu of, and supersedes, any other FAR, DFARS, or other clause or provision that addresses government rights in computer software or technical data under these Terms of Use.
+
+&nbsp;
+
+SITE MANAGEMENT
+
+&nbsp;
+
+We reserve the right, but not the obligation, to: (1) monitor the Application for violations of these Terms of Use; (2) take appropriate legal action against anyone who, in our sole discretion, violates the law or these Terms of Use, including without limitation, reporting such user to law enforcement authorities; (3) in our sole discretion and without limitation, refuse, restrict access to, limit the availability of, or disable (to the extent technologically feasible) any of your Contributions or any portion thereof; (4) in our sole discretion and without limitation, notice, or liability, to remove from the Application or otherwise disable all files and content that are excessive in size or are in any way burdensome to our systems; and (5) otherwise manage the Application in a manner designed to protect our rights and property and to facilitate the proper functioning of the Application.
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+PRIVACY POLICY
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+We care about data privacy and security. Please review our Privacy Policy:https://spreadr-bigcommerce.freshdesk.com/support/solutions/articles/42000108717-privacy-policy . By using the Application, you agree to be bound by our Privacy Policy, which is incorporated into these Terms of Use. Please be advised the Application is hosted in the United States. If you access the Application from the European Union, Asia, or any other region of the world with laws or other requirements governing personal data collection, use, or disclosure that differ from applicable laws in the United States, then through your continued use of the Application, you are transferring your data to the United States, and you expressly consent to have your data transferred to and processed in the United States. Further, we do not knowingly accept, request, or solicit information from children or knowingly market to children. Therefore, in accordance with the U.S. Children’s Online Privacy Protection Act, if we receive actual knowledge that anyone under the age of 13 has provided personal information to us without the requisite and verifiable parental consent, we will delete that information from the Application as quickly as is reasonably practical.
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+
+TERM AND TERMINATION
+
+&nbsp;
+
+These Terms of Use shall remain in full force and effect while you use the Application. WITHOUT LIMITING ANY OTHER PROVISION OF THESE TERMS OF USE, WE RESERVE THE RIGHT TO, IN OUR SOLE DISCRETION AND WITHOUT NOTICE OR LIABILITY, DENY ACCESS TO AND USE OF THE SITE (INCLUDING BLOCKING CERTAIN IP ADDRESSES), TO ANY PERSON FOR ANY REASON OR FOR NO REASON, INCLUDING WITHOUT LIMITATION FOR BREACH OF ANY REPRESENTATION, WARRANTY, OR COVENANT CONTAINED IN THESE TERMS OF USE OR OF ANY APPLICABLE LAW OR REGULATION. WE MAY TERMINATE YOUR USE OR PARTICIPATION IN THE SITE OR DELETE ANY CONTENT OR INFORMATION THAT YOU POSTED AT ANY TIME, WITHOUT WARNING, IN OUR SOLE DISCRETION.&nbsp;
+
+&nbsp;
+
+If we terminate or suspend your account for any reason, you are prohibited from registering and creating a new account under your name, a fake or borrowed name, or the name of any third party, even if you may be acting on behalf of the third party. In addition to terminating or suspending your account, we reserve the right to take appropriate legal action, including without limitation pursuing civil, criminal, and injunctive redress.
+
+&nbsp;
+
+MODIFICATIONS AND INTERRUPTIONS
+
+&nbsp;
+
+We reserve the right to change, modify, or remove the contents of the Application at any time or for any reason at our sole discretion without notice. However, we have no obligation to update any information on our Application. We also reserve the right to modify or discontinue all or part of the Application without notice at any time. We will not be liable to you or any third party for any modification, price change, suspension, or discontinuance of the Application. &nbsp;
+
+We cannot guarantee the Application will be available at all times. We may experience hardware, software, or other problems or need to perform maintenance related to the Application, resulting in interruptions, delays, or errors. We reserve the right to change, revise, update, suspend, discontinue, or otherwise modify the Application at any time or for any reason without notice to you. You agree that we have no liability whatsoever for any loss, damage, or inconvenience caused by your inability to access or use the Application during any downtime or discontinuance of the Application. Nothing in these Terms of Use will be construed to obligate us to maintain and support the Application or to supply any corrections, updates, or releases in connection therewith.
+
+&nbsp;
+
+GOVERNING LAW
+
+&nbsp;
+
+These Terms of Use and your use of the Application are governed by and construed in accordance with the laws of India to agreements made and to be entirely performed within India without regard to its conflict of law principles. &nbsp;
+
+&nbsp;
+
+DISPUTE RESOLUTION
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+Informal Negotiations &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+To expedite resolution and control the cost of any dispute, controversy, or claim related to these Terms of Use (each a "Dispute" and collectively, the “Disputes”) brought by either you or us (individually, a “Party” and collectively, the “Parties”), the Parties agree to first attempt to negotiate any Dispute (except those Disputes expressly provided below) informally for at least thirty (30) days before initiating arbitration. Such informal negotiations commence upon written notice from one Party to the other Party.
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+
+Binding Arbitration
+
+If the Parties are unable to resolve a Dispute through informal negotiations, the Dispute (except those Disputes expressly excluded below) will be finally and exclusively resolved by binding arbitration. YOU UNDERSTAND THAT WITHOUT THIS PROVISION, YOU WOULD HAVE THE RIGHT TO SUE IN COURT AND HAVE A JURY TRIAL. The arbitration shall be commenced and conducted under the Commercial Arbitration Rules of the American Arbitration Association ("AAA") and, where appropriate, the AAA’s Supplementary Procedures for Consumer Related Disputes ("AAA Consumer Rules"), both of which are available at the AAA website www.adr.org. Your arbitration fees and your share of arbitrator compensation shall be governed by the AAA Consumer Rules and, where appropriate, limited by the AAA Consumer Rules. The arbitration may be conducted in person, through the submission of documents, by phone, or online. The arbitrator will make a decision in writing, but need not provide a statement of reasons unless requested by either Party. The arbitrator must follow applicable law, and any award may be challenged if the arbitrator fails to do so. Except where otherwise required by the applicable AAA rules or applicable law, the arbitration will take place in India, Mumbai. Except as otherwise provided herein, the Parties may litigate in court to compel arbitration, stay proceedings pending arbitration, or to confirm, modify, vacate, or enter judgment on the award entered by the arbitrator.
+
+&nbsp;
+
+If for any reason, a Dispute proceeds in court rather than arbitration, the Dispute shall be commenced or prosecuted in the state and federal courts located in India, Mumbai and the Parties hereby consent to, and waive all defenses of lack of personal jurisdiction, and forum non conveniens with respect to venue and jurisdiction in such state and federal courts. Application of the United Nations Convention on Contracts for the International Sale of Goods and the the Uniform Computer Information Transaction Act (UCITA) are excluded from these Terms of Use. &nbsp; &nbsp;
+
+In no event shall any Dispute brought by either Party related in any way to the Application be commenced more than one (1) years after the cause of action arose. If this provision is found to be illegal or unenforceable, then neither Party will elect to arbitrate any Dispute falling within that portion of this provision found to be illegal or unenforceable and such Dispute shall be decided by a court of competent jurisdiction within the courts listed for jurisdiction above, and the Parties agree to submit to the personal jurisdiction of that court.
+
+&nbsp;
+
+Restrictions
+
+The Parties agree that any arbitration shall be limited to the Dispute between the Parties individually. To the full extent permitted by law, (a) no arbitration shall be joined with any other proceeding; (b) there is no right or authority for any Dispute to be arbitrated on a class-action basis or to utilize class action procedures; and (c) there is no right or authority for any Dispute to be brought in a purported representative capacity on behalf of the general public or any other persons.
+
+&nbsp;
+
+Exceptions to Informal Negotiations and Arbitration
+
+The Parties agree that the following Disputes are not subject to the above provisions concerning informal negotiations and binding arbitration: (a) any Disputes seeking to enforce or protect, or concerning the validity of, any of the intellectual property rights of a Party; (b) any Dispute related to, or arising from, allegations of theft, piracy, invasion of privacy, or unauthorized use; and (c) any claim for injunctive relief. If this provision is found to be illegal or unenforceable, then neither Party will elect to arbitrate any Dispute falling within that portion of this provision found to be illegal or unenforceable and such Dispute shall be decided by a court of competent jurisdiction within the courts listed for jurisdiction above, and the Parties agree to submit to the personal jurisdiction of that court.
+
+&nbsp;&nbsp;
+
+CORRECTIONS
+
+&nbsp;
+
+There may be information on the Application that contains typographical errors, inaccuracies, or omissions, including descriptions, pricing, availability, and various other information. We reserve the right to correct any errors, inaccuracies, or omissions and to change or update the information on the Application at any time, without prior notice.
+
+&nbsp;
+
+DISCLAIMER
+
+&nbsp;
+
+THE SITE IS PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT YOUR USE OF THE SITE AND OUR SERVICES WILL BE AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE SITE AND YOUR USE THEREOF, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE MAKE NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY OR COMPLETENESS OF THE SITE’S CONTENT OR THE CONTENT OF ANY WEBSITES LINKED TO THE SITE AND WE WILL ASSUME NO LIABILITY OR RESPONSIBILITY FOR ANY (1) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT AND MATERIALS, (2) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO AND USE OF THE SITE, (3) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SECURE SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION AND/OR FINANCIAL INFORMATION STORED THEREIN, (4) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM THE SITE, (5) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE WHICH MAY BE TRANSMITTED TO OR THROUGH THE SITE BY ANY THIRD PARTY, AND/OR (6) ANY ERRORS OR OMISSIONS IN ANY CONTENT AND MATERIALS OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE SITE. WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE SITE, ANY HYPERLINKED WEBSITE, OR ANY WEBSITE OR MOBILE APPLICATION FEATURED IN ANY BANNER OR OTHER ADVERTISING, AND WE WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND ANY THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES. AS WITH THE PURCHASE OF A PRODUCT OR SERVICE THROUGH ANY MEDIUM OR IN ANY ENVIRONMENT, YOU SHOULD USE YOUR BEST JUDGMENT AND EXERCISE CAUTION WHERE APPROPRIATE.
+
+&nbsp;
+
+LIMITATIONS OF LIABILITY
+
+&nbsp;
+
+IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST REVENUE, LOSS OF DATA, OR OTHER DAMAGES ARISING FROM YOUR USE OF THE SITE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, OUR LIABILITY TO YOU FOR ANY CAUSE WHATSOEVER AND REGARDLESS OF THE FORM OF THE ACTION, WILL AT ALL TIMES BE LIMITED TO THE AMOUNT PAID, IF ANY, BY YOU TO US DURING THE six (6) mONTH PERIOD PRIOR TO ANY CAUSE OF ACTION ARISING . CERTAIN STATE LAWS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE DISCLAIMERS OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS.
+
+&nbsp;&nbsp;
+
+INDEMNIFICATION
+
+&nbsp;
+
+You agree to defend, indemnify, and hold us harmless, including our subsidiaries, affiliates, and all of our respective officers, agents, partners, and employees, from and against any loss, damage, liability, claim, or demand, including reasonable attorneys’ fees and expenses, made by any third party due to or arising out of: (1) use of the Application; (2) breach of these Terms of Use; (3) any breach of your representations and warranties set forth in these Terms of Use; (4) your violation of the rights of a third party, including but not limited to intellectual property rights; or (5) any overt harmful act toward any other user of the Application with whom you connected via the Application. Notwithstanding the foregoing, we reserve the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify us, and you agree to cooperate, at your expense, with our defense of such claims. We will use reasonable efforts to notify you of any such claim, action, or proceeding which is subject to this indemnification upon becoming aware of it.
+
+&nbsp;&nbsp;
+
+USER DATA
+
+&nbsp;
+
+We will maintain certain data that you transmit to the Application for the purpose of managing the performance of the Application, as well as data relating to your use of the Application. Although we perform regular routine backups of data, you are solely responsible for all data that you transmit or that relates to any activity you have undertaken using the Application. You agree that we shall have no liability to you for any loss or corruption of any such data, and you hereby waive any right of action against us arising from any such loss or corruption of such data.
+
+&nbsp;&nbsp;
+
+ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES
+
+&nbsp;
+
+Visiting the Application, sending us emails, and completing online forms constitute electronic communications. You consent to receive electronic communications, and you agree that all agreements, notices, disclosures, and other communications we provide to you electronically, via email and on the Application, satisfy any legal requirement that such communication be in writing. YOU HEREBY AGREE TO THE USE OF ELECTRONIC SIGNATURES, CONTRACTS, ORDERS, AND OTHER RECORDS, AND TO ELECTRONIC DELIVERY OF NOTICES, POLICIES, AND RECORDS OF TRANSACTIONS INITIATED OR COMPLETED BY US OR VIA THE SITE. You hereby waive any rights or requirements under any statutes, regulations, rules, ordinances, or other laws in any jurisdiction which require an original signature or delivery or retention of non-electronic records, or to payments or the granting of credits by any means other than electronic means.
+
+&nbsp;
+
+CALIFORNIA USERS AND RESIDENTS
+
+&nbsp;
+
+If any complaint with us is not satisfactorily resolved, you can contact the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs in writing at 1625 North Market Blvd., Suite N 112, Sacramento, California 95834 or by telephone at (800) 952-5210 or (916) 445-1254.
+
+&nbsp;
+
+MISCELLANEOUS
+
+&nbsp;
+
+These Terms of Use and any policies or operating rules posted by us on the Application or in respect to the Application constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Terms of Use shall not operate as a waiver of such right or provision. These Terms of Use operate to the fullest extent permissible by law. We may assign any or all of our rights and obligations to others at any time. We shall not be responsible or liable for any loss, damage, delay, or failure to act caused by any cause beyond our reasonable control. If any provision or part of a provision of these Terms of Use is determined to be unlawful, void, or unenforceable, that provision or part of the provision is deemed severable from these Terms of Use and does not affect the validity and enforceability of any remaining provisions. There is no joint venture, partnership, employment or agency relationship created between you and us as a result of these Terms of Use or use of the Application. You agree that these Terms of Use will not be construed against us by virtue of having drafted them. You hereby waive any and all defenses you may have based on the electronic form of these Terms of Use and the lack of signing by the parties hereto to execute these Terms of Use.
+
+&nbsp;
+
+CONTACT US
+
+&nbsp;
+
+In order to resolve a complaint regarding the Application or to receive further information regarding use of the Application, please contact us at:
+
+support AT spreadr-bigcommerce.freshdesk.com.
+
+-----------------------------------
+
+Title: Privacy Policy
+
+Thalia Technologies Pvt Ltd (“we” or “us” or “our”) respects the privacy of our users (“user” or “you”). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our mobile application (the “Application”). Please read this Privacy Policy carefully. IF YOU DO NOT AGREE WITH THE TERMS OF THIS PRIVACY POLICY, PLEASE DO NOT ACCESS THE APPLICATION.
+We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the “Last updated” date of this Privacy Policy. You are encouraged to periodically review this Privacy Policy to stay informed of updates. You will be deemed to have been made aware of, will be subject to, and will be deemed to have accepted the changes in any revised Privacy Policy by your continued use of the Application after the date such revised Privacy Policy is posted. &nbsp;
+This Privacy Policy does not apply to the third-party online/mobile store from which you install the Application or make payments, including any in-game virtual items, which may also collect and use data about you. &nbsp;We are not responsible for any of the data collected by any such third party.&nbsp;
+COLLECTION OF YOUR INFORMATION
+When you use our Application, our servers will automatically record information that your and your user's mobile device or browser sends or transmits, including, but not limited to, user settings, location, and information about your use of the Application. We only store, track and monitor general usage and not information specific to any user. We use this information to improve the Services, develop new products and offer products and services that may be of interest to you. We may collect information about you in a variety of ways. &nbsp;The information we may collect via the Application depends on the content and materials you use and includes: &nbsp;&nbsp;
+Personal Data
+
+Demographic and other personally identifiable information (such as name and email address) that you voluntarily give to us when choosing to participate in various activities related to the Application, such as chat, posting messages in comment sections or in our forums, liking posts, sending feedback, and responding to surveys. If you choose to share data about yourself via your profile, online chat, or other interactive areas of the Application, please be advised that all data you disclose in these areas is public and your data will be accessible to anyone who accesses the Application. &nbsp;&nbsp;
+Derivative Data
+
+The information our servers automatically collect when you access the Application, such as your native actions that are integral to the Application, including liking, re-blogging, or replying to a post, as well as other interactions with the Application and other users via server log files.&nbsp;
+Financial Data
+
+Financial information, such as data related to your payment method (e.g. valid credit card number, card brand, expiration date) that we may collect when you purchase, order, return, exchange, or request information about our services from the Application. We store only very limited, if any, financial information that we collect. Otherwise, all financial information is stored by our payment processor, Paddle or similar service, and you are encouraged to review their privacy policy and contact them directly for responses to your questions. &nbsp;
+USE OF YOUR INFORMATION
+Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the Application to:&nbsp;
+
+&nbsp;Compile anonymous statistical data and analysis for use internally or with third parties. &nbsp;
+&nbsp;Create and manage your account. &nbsp;
+&nbsp;Deliver targeted advertising, coupons, newsletters, and promotions, and other information regarding the Application to you. &nbsp;
+&nbsp;Email you regarding your account or order. &nbsp;
+&nbsp;Fulfill and manage purchases, orders, payments, and other transactions related to the Application. &nbsp;
+&nbsp;Generate a personal profile about you to make future visits to the Application more personalized. &nbsp;
+&nbsp;Increase the efficiency and operation of the Application. &nbsp;
+&nbsp;Monitor and analyze usage and trends to improve your experience with the Application. &nbsp;
+&nbsp;Notify you of updates to the Application. &nbsp;
+&nbsp;Offer new products, services, mobile applications, and/or recommendations to you. &nbsp;
+&nbsp;Perform other business activities as needed. &nbsp;
+&nbsp;Request feedback and contact you about your use of the Application. &nbsp;
+&nbsp;Resolve disputes and troubleshoot problems. &nbsp;
+&nbsp;Respond to product and customer service requests. &nbsp;
+&nbsp;Send you a newsletter. &nbsp;
+DISCLOSURE OF YOUR INFORMATION
+We may share information we have collected about you in certain situations. Your information may be disclosed as follows:
+By Law or to Protect Rights
+
+If we believe the release of information about you is necessary to respond to legal process, to investigate or remedy potential violations of our policies, or to protect the rights, property, and safety of others, we may share your information as permitted or required by any applicable law, rule, or regulation. This includes exchanging information with other entities for fraud protection and credit risk reduction. &nbsp;
+Third-Party Service Providers
+
+We may share your information with third parties that perform services for us or on our behalf, including payment processing, data analysis, email delivery, hosting services, customer service, and marketing assistance. &nbsp;
+Marketing Communications
+
+With your consent, or with an opportunity for you to withdraw consent, we may share your information with third parties for marketing purposes, as permitted by law. &nbsp;
+Third-Party Advertisers
+
+We may use third-party advertising companies to serve ads when you visit the Application. These companies may use information about your visits to the Application and other websites that are contained in web cookies in order to provide advertisements about goods and services of interest to you.
+Business Partners
+
+We may share your information with our business partners to offer you certain products, services or promotions.
+Offer Wall
+
+The Application may display a third-party hosted “offer wall.” Such an offer wall allows third-party advertisers to offer virtual currency, gifts, or other items to users in return for acceptance and completion of an advertisement offer. Such an offer wall may appear in the Application and be displayed to you based on certain data, such as your geographic area or demographic information. When you click on an offer wall, you will leave the Application. A unique identifier, such as your user ID, will be shared with the offer wall provider in order to prevent fraud and properly credit your account.&nbsp;
+Other Third Parties
+
+We may share your information with advertisers and investors for the purpose of conducting the general business analysis. We may also share your information with such third parties for marketing purposes, as permitted by law.
+Sale or Bankruptcy
+
+If we reorganize or sell all or a portion of our assets, undergo a merger, or are acquired by another entity, we may transfer your information to the successor entity. &nbsp;If we go out of business or enter bankruptcy, your information would be an asset transferred or acquired by a third party. You acknowledge that such transfers may occur and that the transferee may decline honor commitments we made in this Privacy Policy. We are not responsible for the actions of third parties with whom you share personal or sensitive data, and we have no authority to manage or control third-party solicitations. If you no longer wish to receive correspondence, emails or other communications from third parties, you are responsible for contacting the third party directly.&nbsp;
+TRACKING TECHNOLOGIES&nbsp; &nbsp;
+Cookies and Web Beacons&nbsp; &nbsp;
+
+We may use cookies, web beacons, tracking pixels, and other tracking technologies on the Application to help customize the Application and improve your experience. When you access the Application, your personal information is not collected through the use of tracking technology. Most browsers are set to accept cookies by default. You can remove or reject cookies, but be aware that such action could affect the availability and functionality of the Application. You may not decline web beacons. However, they can be rendered ineffective by declining all cookies or by modifying your web browser’s settings to notify you each time a cookie is tendered, permitting you to accept or decline cookies on an individual basis. &nbsp;&nbsp;
+Internet-Based Advertising
+
+Additionally, we may use third-party software to serve ads on the Application, implement email marketing campaigns, and manage other interactive marketing initiatives. This third-party software may use cookies or similar tracking technology to help manage and optimize your online experience with us. For more information about opting-out of interest-based ads, visit the Network Advertising Initiative Opt-Out Tool or Digital Advertising Alliance Opt-Out Tool. &nbsp;
+Website Analytics
+
+We may also partner with selected third-party vendors, such as Google Analytics, to allow tracking technologies and remarketing services on the Application through the use of first-party cookies and third-party cookies, to, among other things, analyze and track users’ use of the Application, determine the popularity of certain content, and better understand online activity. By accessing the Application, you consent to the collection and use of your information by these third-party vendors. You are encouraged to review their privacy policy and contact them directly for responses to your questions. We do not transfer personal information to these third-party vendors. However, if you do not want any information to be collected and used by tracking technologies, you can visit the third-party vendor or Network Advertising Initiative Opt-Out Tool or Digital Advertising Alliance Opt-Out Tool.
+
+You should be aware that getting a new computer, installing a new browser, upgrading an existing browser, or erasing or otherwise altering your browser’s cookies files may also clear certain opt-out cookies, plug-ins, or settings.&nbsp;
+THIRD-PARTY WEBSITES
+The Application may contain links to third-party websites and applications of interest, including advertisements and external services, that are not affiliated with us. Once you have used these links to leave the Application, any information you provide to these third parties is not covered by this Privacy Policy, and we cannot guarantee the safety and privacy of your information. Before visiting and providing any information to any third-party websites, you should inform yourself of the privacy policies and practices (if any) of the third party responsible for that website, and should take those steps necessary to, in your discretion, protect the privacy of your information. We are not responsible for the content or privacy and security practices and policies of any third parties, including other sites, services or applications that may be linked to or from the Application.&nbsp;
+SECURITY OF YOUR INFORMATION
+We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other types of misuse. Any information disclosed online is vulnerable to interception and misuse by unauthorized parties. Therefore, we cannot guarantee complete security if you provide personal information.&nbsp;
+POLICY FOR CHILDREN
+We do not knowingly solicit information from or market to children under the age of 13. If you become aware of any data we have collected from children under age 13, please contact us using the contact information provided below.&nbsp;
+CONTROLS FOR DO-NOT-TRACK FEATURES
+Most web browsers and some mobile operating systems include a Do-Not-Track (“DNT”) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. &nbsp;No uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this Privacy Policy. &nbsp;
+OPTIONS REGARDING YOUR INFORMATION
+Account Information
+
+You may at any time review or change the information in your account or terminate your account by:&nbsp;
+
+&nbsp;Contacting us using the contact information provided. &nbsp;&nbsp;
+Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, some information may be retained in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our Terms of Use and/or comply with legal requirements.
+Emails and Communications
+
+If you no longer wish to receive correspondence, emails, or other communications from us, you may opt-out by:&nbsp;
+
+If you no longer wish to receive correspondence, emails, or other communications from third parties, you are responsible for contacting the third party directly.
+CONTACT US
+If you have questions about this Privacy Policy and for any requests for data access, portability or erasure please contact us at:
+
+support AT spreadr-bigcommerce.freshdesk.com.
+
+-----------------------------------
+

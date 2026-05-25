@@ -1,0 +1,415 @@
+Title: Who Is This App For 
+
+Shipr is designed for Shopify merchants who use Amazon FBA (Fulfillment by Amazon) to store and ship their inventory. This app helps automate order fulfillment by syncing Shopify orders with Amazon FBA, streamlining the shipping process.
+Key Benefits:• Automated Fulfillment: Orders placed on Shopify are sent to Amazon FBA for fulfillment.
+• Real-Time Sync: Keep inventory and tracking information up-to-date between platforms.
+• Time &amp; Cost Savings:&nbsp;Reduce manual work and streamline order processing.
+
+-----------------------------------
+
+Title: How It Works
+
+Here is a step by step guide to illustrate how the Shipr app works.
+Step 1 - Install Amazon FBA Shipr App. Connect your Amazon Seller account, configure your preferences, and activate 'Ship with FBA' via the app dashboard.
+Step 2 - A customer places an order on Shopify. Shipr app reads the order and it can be seen in the app dashboard.
+Step 3 - Based on the order data, the Shipr app initiates a fulfillment request on Amazon FBA. This step can be manual or automated based on your settings.
+Step 4 - As the shipment gets confirmed by Amazon FBA, the Shipr app updates the order status as 'Fulfilled' on Shopify. The customers receive a confirmation email.
+Step 5 - After a few hours, Amazon FBA makes the tracking information available. The Shipr app updates the Shopify order with the same tracking information. The customer receives a tracking notification as per the settings in Shopify.
+Step 6 - Changes in shipment status are visible in the app dashboard.
+Step 7 - Amazon delivers the package to the customer. Shipr app updates the Shopify order as 'Delivered' and the customer receives the notification.
+The image below shows the timeline of the order
+&nbsp;
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82205577085/original/e_10xg0zjcNfAiuE1j9gd6Wn1BJrdhYXrA.png?1776079657
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82205663813/original/rEsb9E_EZhYCh6OOwY7pKoBH49SBVJZKVw.png?1776161025
+
+-----------------------------------
+
+Title: Connecting Amazon Seller Account
+
+Connecting Amazon Seller Account is a 2-step easy process.&nbsp;
+Step 1: Get your Seller ID (also called Merchant Token)
+Log in to your Amazon seller central account - https://sellercentral.amazon.com/
+Go to the Settings&nbsp;&gt; Account Info&nbsp;page.&nbsp;
+Click on the Merchant Token Link under Business Information box.
+Copy your&nbsp;Merchant Token&nbsp;
+Step 2 (Authorize the app)
+Go to the Amazon settings page&nbsp;in the Shipr app.
+Select your region
+Enter the Seller ID / Merchant Token you go in the step above.
+Click Save and Connect
+Amazon authorization dialog box will open.
+Simply grant permissions and the account will be linked.
+Repeat this for all the Amazon regional accounts that you want to connect.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82042542321/original/mr4jJcUt_1eEnF_5IkDa1tmQ7--50viUtA.png?1658839145
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82042542355/original/2nAk1cVuYLOMLppHaGPw45JSBIx5UGw4XQ.png?1658839170
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82042542378/original/TnTvNf8er9S_Sq4k1YGwcUVOkVTqCNZ3fw.png?1658839184
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82205578125/original/SaHpoIuMgiCW3Bbrh1MCd1hMY27P3aQ02w.png?1776080036
+
+-----------------------------------
+
+Title: Fulfilling Shopify Orders
+
+This guide is for Shopify merchants also selling the same products on Amazon.
+Fulfilling Shopify orders for FBM products
+
+Fulfilled By Merchant, popularly known as FBM, is when sellers list their products on Amazon and choose to ship products to each buyer by themselves. In other words, sellers are responsible for fulfilling their orders and do not rely on Amazon for the same. If an order for FBM product is placed on your Shopify store, you are responsible for shipping it.&nbsp;
+Fulfilling Shopify orders for FBA products
+
+FBA means Fulfilled by Amazon. With it, sellers store their products at Amazon’s fulfillment centers, so that whenever customers place their orders, Amazon picks those products from the fulfillment centers and has them packed, shipped, and delivered at a faster pace. If an order for an FBA product is placed on your Shopify store then you have the following options to get it shipped:
+A. Ship it yourself
+
+You can arrange to ship products manually using your preferred shipping partner.
+B. Allow Amazon to ship it on your behalf
+
+Use your inventory on Amazon's fulfillment centers to ship it directly to your customers on Shopify. This can be done via the following 2 methods:
+1. Use Shopify's 'Fulfillment by Amazon' Service
+
+Shopify has built-in integration with FBA. Once activated, your orders on Shopify will be automatically fulfilled using your inventory on Amazon fulfillment centers. For more information and activating this method follow the instructions provided here.
+Note:
+
+This service is only available for Amazon sellers in the United States and Canada.
+You will have to configure the 'Inventory Location' in the Shipr dashboard to 'Amazon Marketplace Web'.
+The inventory for FBA products on Shopify will be managed by Amazon. There have been multiple cases where the inventory has not been updated correctly. Shopify provides minimal support for queries and troubleshooting inventory-related issues. Shipr app cannot update inventory for such products because it gets overwritten by the Amazon service. We do not recommend this method.
+2. Use the Amazon FBA Shipr app
+
+The Shipr app will monitor orders on Shopify and automatically ship them via FBA inventory for all eligible SKUs.
+
+-----------------------------------
+
+Title: Connecting Amazon Seller Account Old 
+
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+
+Connecting Amazon Seller Account is easy enough, but it involves a number of steps.
+
+• You need to find your Seller ID, MWS Access Token and save it Shipr dashboard
+Step 1
+Login to your Amazon seller central account - https://sellercentral.amazon.com/
+Step 2
+Go to the Settings&nbsp;&gt; User Permissions&nbsp;page.&nbsp;
+Step 3
+Under Third party developer and apps click on the Visit Manage Your Apps button.
+Step 4
+Click on the Authorize new developer button.
+&nbsp; &nbsp; &nbsp;&nbsp;
+Step 5
+• Enter "Shipr App" for Developer's Name
+• Enter the Developer ID. You will get the Developer ID from your Shipr dashboard &gt; Settings &gt; Amazon &gt; Select your region &gt; Copy Developer ID.
+• Click Next&nbsp; &nbsp; &nbsp;&nbsp;
+Step 6
+Accept the Amazon MWS License Agreement and click Next.
+Step 7
+You will get the Seller ID&nbsp;and MWS Auth Token. Save these in the Shipr dashboard &gt; Settings &gt; Amazon.&nbsp;
+8) Click Save and Connect. The app will verify the credentials and if everything is alright then you will see Connected sign.
+&nbsp; &nbsp;&nbsp;
+
+&nbsp;
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82000023172/original/lepVCLRKUfs9NUSRt1Kf_Kk_GTK4B-oYQw.png?1598429641
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82000023175/original/CL7wH911e23xK-r9Sf3m_Z4cR4MXth7KkA.png?1598429644
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82000023174/original/wkLhhjCxHSjoXZiT5___JqLbFqzPlWbjhw.png?1598429642
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82000023173/original/h_mUnnBI4pSc6mtBtRt_9GBtf4PQBSicrw.png?1598429641
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82000240198/original/AWmRAtPqMJBApbH8589xvsImFu8GN5VhDw.jpg?1600165640
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82000023176/original/8hArBr_4oxjYiGNFb-71GvRWXKRl84_Mpg.png?1598429644
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82000240550/original/L48Adafqn9tJw0fyFB1ijv8tjUUtVBHf8Q.jpg?1600166502
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82000240661/original/01pYHXA09VWJ8livSU9ZNF_T-zSwX8hFIg.png?1600166759
+
+-----------------------------------
+
+Title: Sku Mapping
+
+The app ships via FBA the Shopify SKUs that have a matching SKU on Amazon FBA. When the SKUs on Shopify and Amazon do not match the app does not ship via FBA automatically.&nbsp;
+If you have different SKUs on Shopify and Amazon then you can use the SKU mapping service to link the different SKUs so that the app can ship via FBA even if the SKUs don't match.
+Consider, you have an item with SKU B07N7MGX9T on Shopify. The same item has the SKU 2Y-QSSP-V4H0 on Amazon FBA US. To link the 2 SKUs go to Shipr dashboard &gt; Settings &gt; SKU Map page and save the 2 SKUs. Check the image below:
+When SKU B07N7MGX9T&nbsp; is ordered on Shopify, the app will attempt to ship 2Y-QSSP-V4H0&nbsp; via Amazon FBA.
+You can map different SKUs for each Amazon FBA region.&nbsp;
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82205579520/original/iRXXA2zrQrNc3CSX6Nq2Pb75ZDpycIv_aA.png?1776080601
+
+-----------------------------------
+
+Title: Auto Sync
+
+On activating auto-sync, the Shipr app continuously syncs the inventory of FBA products from Amazon to Shopify in a cyclic pattern.
+In each cycle, all the FBA SKUs will be synced once. The time required to complete a cycle depends on the number of products in the store. As soon as all the products are synced, the cycle is complete and a new cycle starts immediately.
+This cyclic syncing of products is executed continuously ensuring that the inventory level on Shopify remaining up-to-date with Amazon.
+To activate Auto -sync, go to&nbsp;Shipr dashboard&nbsp;&gt;&nbsp;Settings&nbsp;&gt;&nbsp;Sync&nbsp;&gt; Activate&nbsp;Auto -sync. 
+Auto-sync is only available on the Gold Plan ($50 per month).
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82205582844/original/I16Xlq4cyZ-IDL38athPOXUsMcZAoAp4Ow.png?1776082063
+
+-----------------------------------
+
+Title: Fast Sync
+
+Fast-sync helps to sync the inventory of FBA products from Amazon to Shopify.
+On activating fast-sync, Shipr will monitor new FBA orders on Amazon and update Shopify product inventory accordingly. The app will monitor Amazon FBA orders and update the Shopify inventory&nbsp;once every 15 minutes.
+Only the matching SKUs will be synced. This ensures that the stock levels on Amazon and Shopify are the same, and you don't have to manually update them each time there is an order placed on Amazon.
+To activate fast-sync, go to Shipr dashboard&nbsp;&gt; Settings&nbsp;&gt; Sync&nbsp;&gt; Activate Fast-sync.
+Fast-sync is available on Pro Plan ($20 per month) and above only.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82205582274/original/ZVqjJPPfFtelBUElEShAw7KozmOi6cWCZg.png?1776081812
+
+-----------------------------------
+
+Title: Multi Region Sync
+
+The Fast-sync&nbsp;option helps to sync the FBA inventories between Amazon and Shopify.
+Fast-sync will update the Amazon FBA inventory to Shopify based on the locations configured in the app. For each Amazon region, you need to specify the Shopify location that you want the stock level to match Amazon. As soon as an order is placed on Amazon FBA, the app will update Shopify location with the same stock level as on Amazon.&nbsp;
+Note: these locations should be created by you in the Shopify admin and not locations that are inventory apps, dropshipping apps (e.g. Oberlo), third-party logistics services, or custom fulfillment services (eBay fulfillment) etc&nbsp;&nbsp;
+
+-----------------------------------
+
+Title: Anytime Sync
+
+Shipr app provides the option to sync the inventory of all FBA products from Amazon to Shopify anytime you request.
+To sync the products go to Shipr dashboard&nbsp;&gt; Settings&nbsp;&gt; Sync&nbsp;&gt; Hit Sync-Now button.
+Only the matching SKUs will be synced. This ensures that the stock levels on Amazon and Shopify are the same and you don't have to manually update them each time when you restock on Amazon FBA.
+Any time sync is available for Pro plan and above&nbsp;
+To update the stock levels of ALL FBA products check&nbsp;Anytime-sync option.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82205585659/original/FJXJ-HfD_GipTe08rfZSJMcdSIq0rsmxTg.png?1776083171
+
+-----------------------------------
+
+Title: Ship With Fba
+
+You can use the Shipr app to fulfill orders on Shopify using your Amazon FBA account. This&nbsp;is useful for the sake of&nbsp;inventory efficiency. You can leave your stock with Amazon, all in one place, and fulfill both Amazon and Shopify orders with one dashboard. Additionally, you can track both Amazon and Shopify orders in Seller Central, and your inventory will be neatly stored with one provider i.e. Amazon FBA.&nbsp;
+HOW IT WORKS
+1] Manual Mode
+
+Go to Shipr app &gt; FBA
+The FBA Orders page will list orders from Shopify.&nbsp;
+Select the items you want to ship via FBA and click on the 'Ship with FBA' button.
+The app will prepare an FBA shipment depending on your FBA settings in the Shipr app.
+Confirm the shipment by clicking 'Ship with FBA Now'.
+Your order will be sent to and fulfilled by Amazon FBA.&nbsp;
+The order status will be available on the app dashboard.
+Shipr app will update the Shopify order status along with the tracking information.
+2] Auto Mode
+
+Instead of manually confirming each FBA shipment you can configure the app to automatically ship with FBA for all eligible orders on Shopify.
+
+Go to Shipr app &gt; FBA &gt; Settings
+Select AUTO Mode and hit Save.
+Each new order on Shopify will then be attempted to be shipped via FBA.&nbsp;
+You will receive confirmation of success or failure via email.
+The order status will be available on the app dashboard.
+Shipr will update the Shopify order status along with the tracking information.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82205670574/original/45kzUpe0R8qlqZlWprOiMmfbgV4EAKCRIw.png?1776163809
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82205670928/original/6zqHqJIEWxOUH6kfIprJEbah7BeP2R6KhQ.png?1776163963
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82205671162/original/l5tda0t-I120oQHXpvlDXfi1Oq2l9qgw7w.png?1776164048
+
+-----------------------------------
+
+Title: Fba Modes
+
+Shipr app can be configured to work in either of the two modes:
+1. Manual
+
+For each FBA eligible order on Shopify, you need to manually confirm FBA shipment by clicking the 'Ship with FBA' button. Only after the confirmation, your order will be sent to and fulfilled by Amazon FBA.
+We also have a shortcut button on the Orders page of the Shopify dashboard to manually ship any order via FBA. Check the image below:
+Clicking on this button will redirect you to the Shipr app Orders page where you can verify the FBA order details before shipping.
+2. Auto
+
+The orders on Shopify will automatically be sent to and fulfilled by Amazon FBA without manual confirmation. The shipping status will be available on the app dashboard. You can subscribe to email notifications for each FBA order.
+To know more about how Ship with FBA works check out the docs here.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82205671345/original/LN7wMWG-7FK0ffXKqS-RkkAvoeVvyGoFNA.png?1776164134
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82205671806/original/n_pdIYSz8BoLb9CviuGvoKwbWJevLznY8A.png?1776164312
+
+-----------------------------------
+
+Title: Default Shipping Speed
+
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Amazon Fulfillment offers three shipping speed tiers:
+
+• 3-5 business days (Standard)
+• 2-day (Expedited)
+• Next day (Priority)
+The app will create FBA shipments using your preferred shipping speed option.
+
+-----------------------------------
+
+Title: Shipping Multi Item Orders In Auto Mode
+
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+
+The Shipr app is designed to work with multi-item orders on Shopify. You can configure the app to either of the following options:&nbsp;
+1. Fulfill partial order when a few invalid SKUs detected
+
+Each line item in the order is attempted to be fulfilled via FBA. In case one or more SKUs are not fulfillable (due to invalid SKU, insufficient inventory, etc) and if this option is selected, then the app will partially fulfill the order by shipping the items having valid SKUs. Invalid SKUs will be skipped.
+2. Do not fulfill the order when invalid SKUs detected
+
+Each line item in the order is attempted to be fulfilled via FBA. In case one or more SKUs are not fulfillable (due to invalid SKU, insufficient inventory, etc) and&nbsp;if this option is selected, then the entire order will not be shipped at all. Only if all the line item SKUs of the order are valid, then the order will be shipped via FBA.
+3. Do not fulfill the order when multiple SKUs&nbsp;detected
+
+With this option, if an order contains more than one SKU then the entire order will not be shipped. Only if the order contains one unique SKU (irrespective of the quantity ordered) then the order will be attempted to be shipped.
+4. Do not fulfill the order when multiple items&nbsp;detected
+
+With this option, if an order contains more than one item then the entire order will not be shipped. If the order contains one unique SKU with more than 1 unit ordered, even then the order not be shipped. Only 1 SKU with 1 quantity ordered will be attempted to be shipped.
+&nbsp; &nbsp;&nbsp;
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82205672055/original/EebnlSaVWDEodh8wCvF4p5NmKzQtBbUTtw.png?1776164417
+
+-----------------------------------
+
+Title: Shipr App Fulfilling Orders But Not Updating Shopify Troubleshooting 
+
+If Shipr app successfully ships via FBA but does not update the status of orders on Shopify or does not update the tracking information, then it could be due to the following reasons:
+1. Misconfigured Shopify Order Processing settings:
+Go to Shopify admin &gt; Settings &gt; Checkout &gt; 'Order processing' section
+Set 'After an order has been paid' to 'Do not automatically fulfill any of the order's line items' option.
+If 'After an order has been paid' is set to 'Automatically fulfill the order‘s line items' then the Shipr app will not update Shopify order status along with tracking information.
+2.&nbsp;Shopify's built-in 'Fulfillment by Amazon' integration is active:
+If you use the Shipr app to ship products via FBA then you need to deactivate Shopify's built-in 'Fulfillment by Amazon' integration. This integration prevents the Shipr app to update the Shopify order status correctly. Secondly, keeping it activated might lead to multiple shippings for the same order.
+Steps to deactivate 'Fulfillment by Amazon' are provided here.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82000023014/original/_GI3Ih3dY_Q16DieADwcSkZLzNIDz3RHvA.png?1598425705
+
+-----------------------------------
+
+Title: Do I Need An Amazon Professional Seller Account 
+
+Yes, you generally need an Amazon Professional Seller Account to use FBA/MCF and integrate with apps like Shipr, as it relies on Amazon’s APIs (SP-API), which are accessible only with a Professional account.
+
+-----------------------------------
+
+Title: Can I Use Shipr For Multiple Shopify Stores 
+
+No. Shopify apps require separate installations per store, so you’d likely need to set up Shipr individually for each Shopify store.
+
+-----------------------------------
+
+Title: Can I Partially Fulfill Orders Using Shipr 
+
+Yes, with the Shipr app, you can partially fulfill items by simply selecting the items you want. However, the selection of items can be done in Manual mode.
+Nonetheless, Shipr also supports multi-item orders and delayed fulfillment, suggesting it can handle partial fulfillments automatically (e.g. when only some items are available in FBA). For more details, please check this document link - Shipping Multi-item Orders in Auto Mode
+
+-----------------------------------
+
+Title: Does Shipr Handle International Orders 
+
+The app does not perform any action on international orders. It just ignores it and will not attempt to fulfill it again. Amazon does not allow shipping FBA orders to other countries via API automatically.
+The Shipr app can auto-fulfill based on location. For example, Orders from the UK will be fulfilled via Amazon UK FBA while orders from Germany will be auto-fulfilled via Amazon DE.
+Only the following media products are eligible for international Multi-Channel Fulfillment: books, movies, videos, and DVDs (BMVD products). This restriction is enforced by Amazon and we cannot do anything about it.
+In such situations, you will have to manually create a fulfillment order via the Amazon dashboard. This restriction is enforced by Amazon and we cannot do anything about it.
+
+-----------------------------------
+
+Title: Can I Block Certain Orders From Being Fulfilled By Amazon 
+
+Yes, Shipr offers order blacklisting options, allowing you to exclude specific orders from Amazon fulfillment. This could be based on the Product tags and SKUs.
+
+-----------------------------------
+
+Title: Pricing
+
+You can try Amazon FBA Shipr App free for 7 days.
+Basic PlanPro PlanGold Plan
+Price/Month$10$20$50OrdersUnlimitedUnlimitedUnlimitedFast SyncNoYesYesAuto SyncNoNoYes&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+
+Note:
+
+The app charges you via Shopify billing API meaning that charges appear directly on your Shopify invoice.
+There are no setup fees.
+Terminate the subscription anytime by simply uninstalling the app.
+To keep it fair and transparent we do not offer discounts to anyone.
+The app charges are non-refundable. If the app is uninstalled before the 7-day trial ends, then you will not be charged at all.
+Disclaimer:
+
+Ordinarily, you will find one final charge for the Shipr app (or any other app using Shopify billing) on your next invoice after uninstall. This is because, while you get charged for your Shopify subscription and apps in one invoice, the billing cycles are almost always out of phase with one another. As a result, you pay for apps partly in advance and partly in arrears each month. You can find a more extensive explanation of this here.&nbsp;
+
+-----------------------------------
+
+Title: Uninstall
+
+To uninstall the app simply remove it from the Shopify dashboard. The app subscription will terminate automatically.
+
+Go to your Shopify admin.
+Go to Apps'. Click on the Apps and sales channel settings.
+&nbsp; &nbsp; &nbsp; &nbsp; 3.&nbsp;A pop-up window will open wherein you will find the list of all the apps. Click on the 'remove' button and then delete.
+That's it! The app is now uninstalled.&nbsp;
+For detailed instructions check out the Shopify guide to uninstall the app.
+The app does not install any files or code in your store. Hence, there is no further action required.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82043389280/original/3Fqk72PU3OnaRzP13Y1yWuw1OMR7lb5xsw.png?1659526846
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/82043389473/original/lsw1hcQ8Eyq5K1VGU1_AnPP-MQ1PIbrPbw.png?1659526926
+
+-----------------------------------
+
+Title: Privacy And Data Protection Agreement
+
+This Privacy and Data Protection Agreement ("Agreement") sets out the terms and conditions under which our Shopify app collects, processes, and stores the personal data of our merchants ("You", "Your").
+
+1. Data Collection and Use
+
+Our app collects personal data from You in order to provide our services to You. This may include information such as Your name, email address, and store information.
+
+We use Your personal data to provide You with access to and use of our app, and to communicate with You about our services. We may also use Your personal data to improve and enhance our app and services.
+
+2. Data Storage and Security
+
+We store Your personal data securely in accordance with industry standards. We take appropriate technical and organizational measures to protect Your personal data against accidental or unlawful destruction, loss, alteration, unauthorized disclosure, or access.
+
+3. Data Sharing and Disclosure
+
+We do not share or disclose Your personal data to any third parties, except where required by law or as necessary to provide our services to You. We may also share Your personal data with our affiliates or service providers who assist us in providing our services to You, but only to the extent necessary to provide those services.
+
+4. Data Retention
+
+We will retain Your personal data for as long as necessary to provide our services to You, and for as long as required by law.
+
+5. Your Rights
+
+You have the right to access, correct, and delete Your personal data that we hold. You may also have the right to restrict or object to the processing of Your personal data, and to receive a copy of Your personal data in a structured, machine-readable format.
+
+6. Changes to this Agreement
+
+We may update this Agreement from time to time. Your continued use of our app after the effective date of any changes to this Agreement constitutes Your acceptance of those changes.
+
+7. Contact Us
+
+If You have any questions or concerns about this Agreement or our data processing practices, please contact us at support@shipr.freshdesk.com.
+
+By using our app, You acknowledge that You have read and understand this Agreement, and agree to be bound by its terms and conditions.
+
+&nbsp;
+
+-----------------------------------
+
+Title: Disclaimers
+
+Our service is independent and is not affiliated with Amazon in any way, shape or form. Any impression you might have got otherwise is inaccurate.
+It is your responsibility to ensure that you comply with Amazon Seller's T&amp;C. While we try our best to ensure the service complies with Amazon terms, you should do your independent validation and use the service only if you are satisfied.
+
+-----------------------------------
+
+Title: Customer Data Policy
+
+We understand the importance of privacy and protecting customer data. This Policy outlines how we collect, use, and disclose customer data that we obtain through our Shopify app.
+
+Personal Information We CollectWe collect personal information that is necessary to provide our app services. This includes:
+Customer name,&nbsp;address, phone, email, and order-related data.
+How We Use Customer Personal DataWe use the customer data we collect to provide our app services, including creating orders via Amazon MCF. We may also use the information to comply with legal obligations.
+Sharing Customer DataWe do not share personal data with third parties except as necessary to provide our app services or comply with legal obligations.
+Data RetentionWe retain customer data for as long as necessary to provide our app services or as required by law.
+SecurityWe take reasonable measures to protect customer data from unauthorized access or disclosure. This includes encrypting data when stored and as it transits various networks.
+
+-----------------------------------
+

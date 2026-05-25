@@ -1,0 +1,454 @@
+Title: Who Is This App For 
+
+The Pro Bulk Price Editor is a user-friendly app built for Shopify store owners who need a quick and hassle-free way to update product prices in bulk. Whether you're running a sale, adjusting margins, or making seasonal pricing changes, this powerful tool lets you modify multiple prices at once—efficiently and with precision.&nbsp;
+No more tedious manual updates—just fast, accurate price adjustments in just a few clicks!
+
+-----------------------------------
+
+Title: Installation Steps
+
+Installing the Pro Price Bulk Editor is quick and straightforward. Follow these simple steps to get started:
+Visit the Shopify App Store: Go to the Shopify App Store and search for ‘Bulk Price Editor Pro’.
+Click Install: Once you’ve found the app, click Install to begin the process.
+Log In and Approve: You’ll be prompted to log in to your Shopify store. After logging in, review the permissions and approve the installation, along with any associated charges.
+Once installed, you're all set—there are no additional setup steps required. The app is ready to help you manage your pricing with ease!
+
+-----------------------------------
+
+Title: Dashboard Overview
+
+The Pro Price Bulk Editor is a powerful app designed to help Shopify merchants effortlessly manage and update product prices in bulk. Below is an overview of the app's interface and how it can help you save time and enhance your pricing efficiency.
+Dashboard:
+When you log in, you’ll be greeted with a clean, user-friendly dashboard. It’s designed to provide quick access to all the essential features, so you can stay on top of all your price updates with ease.
+Creating a Task:&nbsp;&nbsp;Creating a price update task is simple and straightforward. The app guides you through the process in a few easy steps:
+Product Selection: Choose the products you want to update by using filters such as collections, tags, and vendors, or even uploading a CSV file with specific product identifiers.
+Define Pricing Rules: Set the rules for your price adjustments. You can apply fixed amounts, and percentages, or even choose to round prices for consistency.
+Scheduling: Decide whether you want to apply the changes immediately or schedule them for a later date and time.
+Review and Confirm: Before finalizing, you’ll have the option to preview the changes, ensuring everything looks just right.
+Task Monitoring:
+
+Once your task is live, you can monitor its progress in real-time. You’ll be able to see how many products have been updated and easily spot any errors that may arise during the process.
+Rollback Functionality:
+Don’t worry if something goes wrong – the app keeps a complete history of all tasks. If you ever need to revert prices to a previous state, it’s quick and easy to roll back any changes.
+Support and Resources:
+
+If you need help along the way, the app provides direct access to a comprehensive support portal. You can reach out to our email: support@proapp.freshdesk.com or raise a ticket here. We are also available on the live chat option at the bottom right of the dashboard.
+
+-----------------------------------
+
+Title: How Does It Work 
+
+After installing the app, there are no other setup steps or settings to be configured. You simply need to create Tasks to edit prices in bulk.
+Steps to Edit Prices in Bulk
+1. Open the app dashboard and you have 2 options from where you can create a new task&nbsp;
+2. On the 'Create or Edit Task' page, the first step is to select the products that you want to edit. You can select more than one condition. Click ' Save &amp; Next'.
+3. The app will search for the products that match the conditions and provide the count. You can click on the product count to see the exact products that will be edited. Note: all the variants of the selected products will be updated.
+4. The next step is to configure the price rules. You can update the prices either by a fixed amount or provide a percentage markup or markdown. Optionally, you can set the rounding off digits for both 'Price' and 'Compare Price'.
+5. Verify your pricing rules by testing them in the Calculations box.
+6. Finally, configure the task to run immediately to schedule it for a future date. Optionally, schedule the rollback task to revert prices back to the original state. Click 'Save'.&nbsp;
+7. The app will execute the task as per the configuration. You can monitor the task activity in real-time and see the products that were edited with New and Old prices displayed together.
+You can also take a look at the video on how to create a task:
+Import Note:The app deletes the task logs after a period of 2 months.
+After 2 months, the tasks cannot be rolled back.
+Please run or schedule a task only one at a time. Running multiple tasks simultaneously might cause unintended product edits, especially if the products are common across tasks. Moreover, we will run the risk of a Shopify API limit outage.
+On average, the app updates 2 products per second (approx). The speed of the update depends on the Shopify API limit of your account. Moreover, we deploy a double-check mechanism to ensure the prices are updated perfectly 100% of the time. Due to this additional check, the speed is slightly slower.
+Do not use the app on multiple browser tabs simultaneously. This might cause issues with the accuracy of the product edits.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81184414440/original/FErWyXg8dKlgdT2TmkwYeBUZIuPVcdTGyw.png?1767853960
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81184414577/original/83dSbw93H96RXdXGftSdXGL9LYrmbspvdQ.png?1767854032
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81184414629/original/f0Xe0IF6BEqbO3HN9HjWxXC8Hg6Er7yUvQ.png?1767854063
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81184414831/original/pPQSStiRsNii62yGCeeHnxpMAoTmny7vRg.png?1767854140
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81184415004/original/3o5wUYlL4KBllBaatPD8b3NLHK78RwZKiw.png?1767854208
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81184415209/original/_SXlot_TIcIB6mjb3fcCPQozmNfnI_3Arg.png?1767854311
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81184415488/original/g9WoRa46J150ISkxpM2Owm5Q7iUH-i24Eg.png?1767854459
+
+-----------------------------------
+
+Title: Important Update Our App Is Migrating To Shopify S Built For Shopify Bfs Standard
+
+We’re excited to share an important update that will improve performance, security, and reliability for all merchants using our app. Our Pro app will be migrating to Shopify’s Built-for-Shopify (BFS) architecture.
+This upgrade brings us in line with Shopify’s newest app performance standards and ensures long-term compatibility with the platform.
+What Is BFS?
+BFS (Built for Shopify) is Shopify’s highest standard for app quality. Apps that meet this standard must follow strict guidelines for:
+
+Speed &amp; performance
+Security &amp; data protection
+User experience
+Seamless integration with Shopify Admin
+
+By migrating to BFS, our app will run more natively inside Shopify—providing a smoother, more stable experience.
+Is Any Action Required from You?
+For most merchants: No action is required. Your app will automatically migrate to the updated BFS version.
+Will This Cause Any Downtime?
+No. The migration has been carefully planned to avoid any disruption to your existing workflows. All tasks, sync operations, and automations will continue functioning normally.
+Why We’re Making This Change
+Shopify is transitioning apps toward BFS to ensure merchants get:
+
+The fastest and most stable apps possible
+A consistent experience across the Admin
+Better support for high-volume stores and large catalogs
+Our app is evolving to match these expectations.
+
+-----------------------------------
+
+Title: Formula Builder
+
+The app enables bulk price editing using a mathematical formula.&nbsp;Along with the regular mathematical operations, you can use variables and functions to build the formula.
+Example formula:
+Price = (item_weight * 1.2) &nbsp;+ (cost_per_item*1.8)
+The following variables are allowed:
+#Variable NameDescription1current_priceThe price of the item2current_compare_priceThe compare price of the item3cost_per_itemThe cost price of the item4item_weightWeight of the item5shop_metafields_namespace_keyAny shop level metafield.Example: shop_metafields_metalapp_goldpriceIn the example above, the metalapp is the namespace and goldprice is the key having a numeric value.
+
+The following functions are supported:
+#FunctionExamples1
+MOD(number, divisor)
+
+Returns the remainder after number is divided by divisor.MOD(3,2)
+Result: 1
+
+current_price + (9- (MOD(current_price, 10)))Pricing variables can be used to create custom logic2
+RANDOM(min, max)
+
+Returns a random integer between&nbsp;min&nbsp;and&nbsp;max
+RANDOM(5, 15)
+Result: 11 (or any number between 5 and 15 (inclusive))
+current_price + ( current_price * ( RANDOM(15,25)*0.01 ) )In the example above, each product's price will be adjusted randomly between 15% and 25%.
+Additional variables and functions can be added based on request.
+Watch the video for reference.
+
+-----------------------------------
+
+Title: Bulk Update Product Prices Using A Csv File
+
+With the Pro &nbsp;App, you can now perform bulk updates of prices using a CSV (Comma Separated Values) file. This process is useful when you have a list of products you want to update and can be done using either an SKU, or product handle, or variant ID.
+How does it work?
+1. &nbsp;Go to Pro Dashboard -&gt; Create a task -&gt; Select All Products in a CSV.
+2. &nbsp;Upload a CSV file with either of the below data. The first row of the CSV should have one of the following headers and it is mandatory:
+
+handle
+SKU
+variant ID
+
+3. Map the columns and verify and click "Submit". Refer to the images below
+4. Once done, click Save and Next. The app will read the products according to the CSV file and show the count. If a certain SKU, handle, or variant ID is not found in your store, it will show as failed.&nbsp;
+You can then review the failed list and correct it to match the same as you have on Shopify. Once done, you can re-upload it.
+5. Configure the pricing rule as per your requirement.
+Note :&nbsp;Click on "check" button in the Check example calculations&nbsp;section ( Mandatory)
+Note:&nbsp;
+
+1. Don't use special characters, symbols, or spaces, because these can cause problems when searching for products in Shopify by SKU and other computer programs, such as spreadsheet software. You can find the guidelines here.
+Here is a sample CSV:&nbsp;
+Watch the video below for reference.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81184415930/original/Kb4sh666SHs2iee1y4QSIwo5Vvs-Esykbg.png?1767854653
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81184416647/original/zkMHBU1cT3BFukHZSTQ3DmXiuTPORpQqdA.png?1767854992
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81184416693/original/aZxbFPXRrO1eGkiJqtSgtVXPqDS5FL1udA.png?1767855010
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81184416839/original/UarQ5m0uK5HFP5NKkP3YiWoOCQma6NG7dg.png?1767855086
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81184420209/original/thPs6TLOMKPWrbeTWdtVB8IDOZjkl60yUA.png?1767856692
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81128393296/original/DjbV7dODHBteyYn1KRdbCqXxkUKIlzJ2mA.png?1702367673
+
+-----------------------------------
+
+Title: Rounding Off To End Price In Certain Number
+
+Rounding off to a specific end price is a pricing strategy that helps to create more appealing prices for customers. It can make the prices look cleaner or more attractive. The Pro Bulk Price Editor app can be used to round off the prices for both, the decimal digits as well as the integral digits before the decimal point.
+Examples:
+Say the current price of a product is&nbsp;$45.67. Now, you want to increase the price by 5% and end the price with specific number.
+1. End with .00 cents
+The current price will increase by 5%, so $45.67 + 5% = $47.95
+Rounding off cents to .00 we have 2 options: $47.00 OR $48.00
+Since $48 is closer to $47.95, the app will update the price to $48.00
+Watch the video for reference.
+2. End with 0.00&nbsp;
+The current price will increase by 5%, so $45.67 + 5% = $47.95
+Rounding off cents to 0.00 we have 2 options: $40.00 OR $50.00
+Since $50 is closer to $47.95, the app will update the price to $50.00
+Watch the video for reference.&nbsp;
+3.&nbsp;End with 00.90
+Say the current price of a product is&nbsp;$5645.88. Now, you want to increase the price by 5% and end the price with a specific number.
+The current price will increase by 5%, so $5645.88 + 5% = $5928.17
+Rounding off cents to 00.90 we have 2 options: $5900.90 OR $6000.90
+Since $5900 is closer to $5928.17, the app will update the price to $5900.90
+Watch the video for reference.&nbsp;
+4. End with 00.00
+The current price will increase by 5%, so $5645.88 + 5% = $5928.17
+Rounding off cents to 00.00 we have 2 options: $5900 OR $6000
+Since $5900 is closer to $5928.17, the app will update the price to $5900.00
+Watch the video for reference.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81184418383/original/ss_S-Cx-0PoodXiI2q8TmA5ZlD6ev7vmWA.png?1767855810
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81184418445/original/pHevIu0e_qHFxC1-Wa0j3RNKzA0ies6UUw.png?1767855849
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81184418508/original/avCu6Bl_l5QxcJAzXfZbDDMhW_8rqR2WJw.png?1767855885
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81184418649/original/yUL80hlE7mWtY3JVzWmzb1A16a73Aiqjfg.png?1767855953
+
+-----------------------------------
+
+Title: How To Duplicate The Existing Sale Task 
+
+To create a sale duplicate, follow the steps mentioned below :&nbsp;
+1) Go to the "History" section in the app dashboard. Here you will find the list of the sale tasks and rollback tasks performed.&nbsp;
+2) Search for the task you wish to duplicate.&nbsp;
+3) Click on the "copy" button to duplicate the task.&nbsp;
+4) You will be able to modify sale parameters and create a duplicate.&nbsp;
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81184419602/original/Y34yTm-LFS_JSldo-KuS8pSL_d0jkLRrcw.png?1767856394
+
+-----------------------------------
+
+Title: Task Scheduling Feature
+
+Our Pro Price Bulk Editor app allows you to schedule price edits for a later time. This feature provides flexibility and automation for your pricing adjustments. You can set up scheduled tasks with the following options:
+Scheduling Options
+
+One-Time Schedule
+
+Execute the task at a specific date and time.
+Ideal for planned sales or seasonal pricing updates.
+Daily Schedule
+
+Run the task every day at the specified time.
+Useful for daily price adjustments or dynamic pricing strategies.
+Weekly Schedule
+
+Execute the task on a selected day of the week.
+Perfect for recurring weekly promotions or price updates.
+Monthly Schedule
+
+Run the task on a specific date each month.
+Great for monthly discounts, subscription pricing updates, or recurring promotions.
+Managing Scheduled Tasks
+
+View Scheduled Tasks: Navigate to the "Scheduled Tasks" tab to see upcoming tasks.
+Edit or Delete: Modify or delete any scheduled task before execution. The Related Rollback Tasks will also be deleted.
+You have limited control over editing date and time settings. To change them, please delete the existing tasks (both Primary and Rollback) and create a new task with your preferred date and time. Only scheduling rollback tasks allows direct editing of the date and time.
+Note:&nbsp;
+
+• For One-Time Schedule, you can schedule the task up to the period of 2 months.
+The Daily, weekly, and monthly scheduling tasks are available on the Pro plan.
+
+-----------------------------------
+
+Title: How To Create A Bulk Price Edit Task For Specific Markets
+
+This guide walks you through how to create a bulk price editing task for selected Shopify Markets.
+Step 1:&nbsp;Navigate to New TaskOpen the app dashboard.
+Click on New Task from the navigation menu.
+
+Step 2: Select Products to EditUnder “Select the products that you want to edit”, choose:
+
+Products based on market(s)
+
+Step 3:&nbsp;Select Market(s)In the Select market(s) section, choose one or more markets (e.g., UK).
+
+Step 4 (Optional): Fixed Market PricesEnable “Apply changes only to fixed prices” if you want to update only fixed prices for the selected markets.
+Leave unchecked if you want changes to apply more broadly.
+Step 5:&nbsp;Add Product ConditionsDefine which products should be included:
+
+Choose whether products must match:All conditions, or
+Any condition
+Add filters such as:Product Title
+Vendor
+Product Type
+You can click + Add another condition to refine your selection.
+
+Step 6:&nbsp;Search for ProductsClick Search For Products to preview and confirm the products that match your criteria.
+Step 7:&nbsp;Apply Price ChangesProceed with defining your pricing rules :&nbsp;You can update the prices either by a fixed amount or provide a percentage markup or markdown. Optionally, you can set the rounding off digits for both 'Price' and 'Compare Price'.&nbsp;
+Review the task :&nbsp;Verify your pricing rules by testing them in the Calculations box.
+&nbsp;
+Step 8 :&nbsp;&nbsp;Finally, configure the task to run immediately to schedule it for a future date. Optionally, schedule the rollback task to revert prices back to the original state. Click 'Run task'.&nbsp;
+The app will execute the task as per the configuration. You can monitor the task activity in real-time and see the products that were edited with New and Old prices displayed together.
+⚠️&nbsp;Important Notes
+
+Markets will only be displayed if a catalog is assigned to that market in Shopify.If you do not see a market listed, ensure that:The market is properly set up in Shopify Markets
+A catalog is assigned to that market
+This feature is available for the Super plan users only.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81190786930/original/PTQKTID-AtBxFSTj3YGuxkccgf77c9szLQ.png?1778572665
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81190787080/original/SpIiwBXUiol-5ery5ZsGBc5Tzr9l6E_qbw.png?1778572796
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81190787190/original/I9rHNqYZ-BrtKzxRnRyMES4RIJlGhC3v_A.png?1778572889
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81190787232/original/VPLC2FIKZ50Wm4ni4cVQrA3XwdZOL5yJKQ.png?1778572924
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81190787301/original/IBlnpA4gzjQdDGrWR-mgSvDgd7YMfVLiTg.png?1778572985
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81190787540/original/VQO7awGTn6gu25NvTT0IKKWEO3cUbAX3fA.png?1778573184
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81190787467/original/R6zC-dZtnJ7BgCx4pVCAq2axiio-n8TIgQ.png?1778573129
+
+-----------------------------------
+
+Title: Why Can T I See Any Markets In The List 
+
+Markets will only appear if:
+
+They are created in Shopify Markets
+A catalog is assigned to the market
+
+If no catalog is assigned, the market won’t be available for selection.
+
+-----------------------------------
+
+Title: Can I Apply Different Pricing For Different Markets 
+
+Yes. You can create separate tasks for each market and apply different pricing strategies (e.g., increase prices for UK, decrease for EU).
+
+-----------------------------------
+
+Title: Can I Combine Market Selection With Product Filters 
+
+Yes. You can use conditions like Product Title, Vendor, or Product Type along with market selection to narrow down exactly which products to edit.
+
+-----------------------------------
+
+Title: What Happens If A Product Is Not Available In The Selected Market 
+
+That product will be excluded from the task and will not be affected by any price changes. (&nbsp;need to confirm)
+
+-----------------------------------
+
+Title: Does The Pro App Bulk Edit Prices For Different Markets 
+
+Currently, the Pro app updates product prices only for the primary market set in your Shopify store. The app adjusts prices based on the pricing rules you've configured in the dashboard.
+Shopify automatically converts and displays prices for different regions based on your market settings. However, if you've manually set a fixed price for a specific region, our app will not override that price.
+&nbsp;
+
+-----------------------------------
+
+Title: How Do I Change Prices In Bulk 
+
+You can update prices in bulk by selecting specific products, collections, or all store items. Then, set the new price, apply a percentage or fixed amount increase/decrease, and confirm the update.
+We have 4 options based on which you can select the products for which you wish to bulk edit the price. Such as:&nbsp;
+
+All Products
+Based on Conditions &nbsp;
+Based on collections&nbsp;
+Products in a CSV file.&nbsp;
+
+With based on conditions option you can combine multiple rules and filter the products by using "all conditions" or "Any conditions".&nbsp;
+All conditions: The products must satisfy all the conditions.&nbsp;
+
+Any conditions:&nbsp;The products should satisfy atleast one condition.
+
+-----------------------------------
+
+Title: Can I Schedule Price Changes 
+
+Yes! Pro Bulk Price Editor allows you to schedule price updates for sales, promotions, or seasonal changes. You can also set an automatic rollback to revert to the original prices.
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81184421943/original/-vwjJMko8PyUIwS_wWhkDHyyiWBhJwMZMw.png?1767857609
+
+-----------------------------------
+
+Title: Is There An Undo Option For Price Changes 
+
+Yes, the app keeps a history of price changes, and you can easily roll back to previous prices with a single click.&nbsp;
+Note: The app deletes the task logs after 2 months.&nbsp;
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81184422155/original/NcedKq_Tjx1BRirwmlSCu2_HkgdulGgRCg.png?1767857701
+
+-----------------------------------
+
+Title: Will The App Affect My Store S Performance 
+
+No, Pro Bulk Price Editor runs in the background and does not slow down your store or interfere with other apps.
+
+-----------------------------------
+
+Title: Understanding Pricing Plans
+
+The Bulk Price Editor Pro&nbsp; app offers a 5-day free trial on any below plans:
+Basic PlanPro PlanSuper PlanPrice/Year20$ ($1.67/month)40$ ($3.33/month)60$ ($5/month)Product limitsUnlimited Unlimited UnlimitedProducts Edit'sUnlimitedUnlimitedUnlimitedRollback✓✓✓Schedule Price changes &amp; Rollback
+✓ ✓ ✓Recurring Task (Daily, Weekly, Monthly)
+X
+✓
+✓Shopify MarketsXX✓
+Note:
+
+The app charges you via Shopify billing API meaning that charges appear directly on your Shopify invoice.
+There are no setup fees.
+Currently, we support only 100 variants per product.
+Terminate the subscription anytime by simply uninstalling the app.
+To keep it fair and transparent we do not offer discounts to anyone.
+
+-----------------------------------
+
+Title: How To Cancel Your Plan
+
+You can uninstall the Pro app through your Shopify store admin.
+
+Go to your Shopify admin.
+Go to Apps. Click on the Apps and sales channel settings.
+A pop-up window will open wherein you will find the list of all the apps. Click on the “uninstall” button from the dropdown and uninstall the app.
+That's it! The app is now uninstalled. The system is free of residual code and unnecessary files requiring manual deletion.
+
+For detailed instructions check out the&nbsp;Shopify guide to uninstall the app.
+Note: Once the app is uninstalled, your subscription gets terminated automatically.&nbsp;
+
+Images:
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81161231087/original/l0CpIhaLPkYCWmV7QRVMEYscMZ1nUiwl6Q.png?1739445376
+https://s3-ap-south-1.amazonaws.com/ind-cdn.freshdesk.com/data/helpdesk/attachments/production/81161231089/original/Y25TE2KbCe-4MDEDbtpv0ta4nGMqmejzhg.png?1739445377
+
+-----------------------------------
+
+Title: Fair Usage Policy
+
+As part of our commitment to providing a high-quality, fast and reliable service, the Pro Bulk Editor app (referred to as "app") has a Fair Use Policy (also referred to as the FUP) for its Shopify app:
+
+Bulk Edit TasksThe FUP contains guidelines for customers’ use of the app to ensure that each customer has a consistently high-quality experience. The app takes measures to ensure usage is within reasonable parameters.
+
+Why do we have a Fair Usage Policy?The app offers a multi-tenant service. This means that our application is used concurrently by a number of subscribers. If a single customer places very high demands on the service then it is possible that this will affect the experience for other users.
+
+The vast majority of our customers use their service considerately and their usage levels during peak hours don’t disproportionately affect the shared network and service capacity. Even though only a very small number of our customers may use the service inappropriately, their activity has the potential to affect the service for others. Our Fair Use Policy manages inappropriate use and makes sure the service can be used fairly by everyone.
+
+The Fair Usage PolicyUsage of the app is monitored on a continuous basis. Only customers that consistently generate exceptionally high loads over a sustained period of time will be affected by the FUP. The following limits apply to customers for every monthly billing period,&nbsp;although the app reserves the right to amend these limits:
+
+Bulk Edit Tasks per Day: 24
+
+Concurrent Bulk Edit Tasks: 3
+
+Extenuating CircumstancesThe app understands that customers will occasionally have very high volumes of tasks outside of normal usage patterns. In those cases where this traffic can be predicted app requests to be informed with as much notice as possible to ensure that service delivery remains consistently high.
+
+Changes to the Fair Usage PolicyThis Fair Usage Policy may be updated from time to time, and the latest version of the document will be made available on this page.
+
+-----------------------------------
+
+Title: Privacy Policy
+
+Pro Bulk Product Editor Privacy PolicyUpdated date: 09 August 2020
+Pro Bulk Product Editor App "the App” provides the ability to update product prices in bulk "the Service" to merchants who use Shopify to power their stores. This Privacy Policy describes how personal information is collected, used, and shared when you install or use the App in connection with your Shopify-supported store.Personal Information the App CollectsWhen you install the App, we are automatically able to access certain types of information from your Shopify account: Products, Themes, Orders, and more.Additionally, we collect the following types of personal information from you and/or your customers once you have installed the App: Information about you and others who may access the App on behalf of your store, such as your name, address, email address, phone number, and billing information; Information about individuals who visit your stores, such as their IP address, web browser details, time zone, and information about the cookies installed on the particular device.We collect personal information directly from the relevant individual, through your Shopify account, or using the following technologies: “Cookies” are data files that are placed on your device or computer and often include an anonymous unique identifier. For more information about cookies, and how to disable cookies, visit http://www.allaboutcookies.org. “Log files” track actions occurring on the Site, and collect data including your IP address, browser type, Internet service provider, referring/exit pages, and date/time stamps. “Web beacons,” “tags,” and “pixels” are electronic files used to record information about how you browse the Site.How Do We Use Your Personal Information?We use the personal information we collect from you and your customers in order to provide the Service and to operate the App. Additionally, we use this personal information to: Communicate with you; Optimize or improve the App; and Provide you with information or advertising relating to our products or services.Sharing Your Personal InformationFinally, we may also share your Personal Information to comply with applicable laws and regulations, to respond to a subpoena, search warrant or other lawful requests for information we receive, or to otherwise protect our rights.Behavioural Advertising As described above, we use your Personal Information to provide you with targeted advertisements or marketing communications we believe may be of interest to you. For more information about how targeted advertising works, you can visit the Network Advertising Initiative’s (“NAI”) educational page at http://www.networkadvertising.org/understanding-online-advertising/how-does-it-work.Your Rights If you are a European resident, you have the right to access personal information we hold about you and to ask that your personal information be corrected, updated, or deleted. If you would like to exercise this right, please contact us through the contact information below.Additionally, if you are a European resident we note that we are processing your information in order to fulfill contracts we might have with you (for example if you make an order through the Site), or otherwise to pursue our legitimate business interests listed above. Additionally, please note that your information will be transferred outside of Europe, including Canada and the United States.Data Retention When you place an order through the Site, we will maintain your Order Information for our records unless and until you ask us to delete this information.Changes We may update this privacy policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal, or regulatory reasons.Contact Us For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at support@proapp.freshdesk.com
+
+-----------------------------------
+
+Title: Terms Of Use
+
+1. Acceptance of TermsBy using the Pro Bulk Price Editor app ("App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the App.
+
+2. Use of the AppThe App is provided to assist merchants in bulk editing product prices on their Shopify stores. You agree to use the App in compliance with all applicable laws and regulations.
+
+3. User ResponsibilitiesYou are responsible for maintaining the security of your Shopify store and the credentials used to access the App. You are also responsible for all activities that occur under your store's account.
+
+4. LicenseSubject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to use the App.
+
+5. Fees and PaymentsUse of the App may be subject to fees. All payments must be made in accordance with the pricing and payment terms provided at the time of purchase. All purchases are non-refundable. You can cancel your subscription at any time by logging into your account.&nbsp;
+
+6. Data and PrivacyWe are committed to protecting your privacy. Our data collection and use practices are outlined in our Privacy Policy.
+
+7. Disclaimer of WarrantiesThe App is provided "as is" and "as available" without warranties of any kind, either express or implied.
+
+8. Limitation of LiabilityIn no event shall we be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the App.
+
+9. TerminationWe reserve the right to terminate or suspend your access to the App at any time, with or without notice, for any reason, including if you breach these Terms.
+
+10. Governing Law and ArbitrationThese Terms shall be governed by and construed in accordance with the laws of India. In the event of any dispute, claim, or controversy arising out of or relating to these Terms or the App, the parties shall submit to the exclusive jurisdiction of the courts of Mumbai, India.
+
+11. Changes to TermsWe reserve the right to modify these Terms at any time. Your continued use of the App after any such changes constitutes your acceptance of the new Terms.
+
+12. Contact InformationFor any questions or concerns regarding these Terms, please contact us at support@proapp.freshdesk.com.
+
+By using the Pro Bulk Price Editor, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use.
+
+-----------------------------------
+
