@@ -220,7 +220,7 @@ function renderKbCommandPalette() {
     return;
   }
 
-  filteredKbCommands.slice(0, 8).forEach((entry, index) => {
+  filteredKbCommands.forEach((entry, index) => {
     const item = document.createElement("button");
     item.type = "button";
     item.className = index === selectedKbCommandIndex ? "active" : "";
@@ -244,6 +244,11 @@ function renderKbCommandPalette() {
   });
 
   kbCommandPalette.hidden = false;
+
+  const activeItem = kbCommandList.querySelector("button.active");
+  if (activeItem) {
+    activeItem.scrollIntoView({ block: "nearest" });
+  }
 }
 
 async function updateKbCommandPalette() {
@@ -289,7 +294,7 @@ inputText.addEventListener("keydown", event => {
     event.preventDefault();
     selectedKbCommandIndex = Math.min(
       selectedKbCommandIndex + 1,
-      Math.min(filteredKbCommands.length, 8) - 1
+      filteredKbCommands.length - 1
     );
     renderKbCommandPalette();
   } else if (event.key === "ArrowUp") {
