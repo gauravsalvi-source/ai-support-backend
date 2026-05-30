@@ -89,11 +89,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-height: 28px;
+  gap: 12px;
+}
+
+#ai-header > span {
+  align-items: center;
+  display: flex;
+  line-height: 28px;
+  min-height: 28px;
+  white-space: nowrap;
 }
 
 .header-actions {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
   gap: 8px;
 }
 
