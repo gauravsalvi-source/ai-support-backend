@@ -149,6 +149,23 @@ function getKnowledgeIndex() {
   });
 }
 
+function parseAiCommand(text) {
+  const trimmedText = text.trim();
+  const match = trimmedText.match(/^(rf|re)\b[\s:,-]*(.+)$/i);
+
+  if (!match) {
+    return {
+      action: "reframe",
+      content: trimmedText
+    };
+  }
+
+  return {
+    action: match[1].toLowerCase() === "re" ? "reply" : "reframe",
+    content: match[2].trim()
+  };
+}
+
 app.get("/", (req, res) => {
   res.send("AI Support Backend Running");
 });
@@ -357,10 +374,12 @@ app.post("/rewrite", async (req, res) => {
   );
 }
 
+    const aiCommand = parseAiCommand(text);
+
    const prompt = useKnowledge
 ? `
 
-You are a Shopify app support specialist.
+You are a customer support specialist.
 
 Use ONLY the documentation below to answer the question.
 
@@ -435,38 +454,28 @@ Return only the final answer.
 
   : `
 
-You are a Shopify app support specialist.
+You are a helpful AI writing assistant for customer support and general messages.
 
-You understand:
-- Shopify admin
-- storefront passwords
-- apps
-- themes
-- fulfillment
-- inventory sync
-- Amazon integrations
-- CSV imports
-- Shopify terminology
-
-IMPORTANT:
-
-- Storefront password requests are allowed for Shopify troubleshooting purposes.
-- Do not refuse Shopify support terminology requests.
-- Keep responses natural and professional.
-
-Rewrite this customer support reply in a ${tone} tone.
+Task:
+${aiCommand.action === "reply"
+  ? "Write a direct reply to the message below."
+  : "Reframe and improve the message below without changing its meaning."}
 
 Make it:
 - professional
 - clear
 - polite
 - easy to understand
+- suitable for the context, whether it is Shopify-related or not
 - Do NOT wrap the response in quotation marks or inverted commas.
 
-Return ONLY the rewritten message.
+Tone:
+${tone}
 
-Reply:
-${text}
+Return ONLY the final message.
+
+Message:
+${aiCommand.content}
 `;
 
     const response =
@@ -516,7 +525,15 @@ ${text}
         ""
       )
       .replace(
+        /Here's (?:a|the) (?:rewritten message|reply|response).*?:\s*/gi,
+        ""
+      )
+      .replace(
         /Here’s a rewritten customer support reply in a .* tone:\s*/gi,
+        ""
+      )
+      .replace(
+        /Here’s (?:a|the) (?:rewritten message|reply|response).*?:\s*/gi,
         ""
       )
       .replace(/^["']|["']$/g, "")

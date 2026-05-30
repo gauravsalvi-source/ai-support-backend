@@ -32,7 +32,7 @@ sidebar.innerHTML = `
   <div id="ai-content">
 
     <textarea id="inputText"
-      placeholder="Type rough reply..."></textarea>
+      placeholder="Use rf to reframe, re to reply..."></textarea>
 
     <div id="kbCommandPalette" hidden>
       <div id="kbCommandList"></div>
@@ -311,7 +311,7 @@ document.getElementById("mode-ai").addEventListener("click", () => {
   document.getElementById("mode-kb").classList.remove("active");
   document.getElementById("ai-buttons").style.display = "grid";
   document.getElementById("kb-buttons").style.display = "none";
-  inputText.placeholder = "Type rough reply...";
+  inputText.placeholder = "Use rf to reframe, re to reply...";
   closeKbCommandPalette();
 });
 
