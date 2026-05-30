@@ -25,6 +25,9 @@ sidebar.innerHTML = `
       <button id="minimizeBtn">
         —
       </button>
+      <button id="closeBtn" title="Close Assistant" aria-label="Close Assistant">
+        X
+      </button>
     </div>
 
   </div>
@@ -102,6 +105,10 @@ sidebar.innerHTML = `
   <div class="resize-handle resize-bottom-right"></div>
 
 </div>
+
+<button id="ai-launcher" type="button" title="Open AI Assistant" aria-label="Open AI Assistant" hidden>
+  AI
+</button>
 `;
 
 document.body.appendChild(sidebar);
@@ -403,6 +410,31 @@ document.getElementById("resetBtn")
 
 let minimized = false;
 
+const aiSidebar =
+  document.getElementById("ai-sidebar");
+
+const aiLauncher =
+  document.getElementById("ai-launcher");
+
+document.getElementById("closeBtn")
+.addEventListener("click", () => {
+
+  closeKbCommandPalette();
+
+  aiSidebar.hidden = true;
+
+  aiLauncher.hidden = false;
+
+});
+
+aiLauncher.addEventListener("click", () => {
+
+  aiSidebar.hidden = false;
+
+  aiLauncher.hidden = true;
+
+});
+
 document.getElementById("minimizeBtn")
 .addEventListener("click", () => {
 
@@ -443,9 +475,6 @@ document.getElementById("minimizeBtn")
   }
 
 });
-
-const aiSidebar =
-  document.getElementById("ai-sidebar");
 
 const aiHeader =
   document.getElementById("ai-header");
