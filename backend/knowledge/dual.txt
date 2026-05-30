@@ -1,0 +1,237 @@
+Title: How Does Dual Price App Work 
+
+Before getting started, configure the app by changing the currencies option on your store for HTML with currency and HTML without currency option in the Shopify settings as shown in the image below:
+The text to copy is available below:
+&lt;div class="dualprice"&gt;${{amount}}&lt;/div&gt;
+Steps to display both prices:
+1. Under the settings section, firstly you need to activate the Dual app embed from your Shopify admin customize theme settings.&nbsp;
+Refer to the image below to enable app embed via Shopify admin:
+2. Under the settings, you may then configure whether the product's Base price is inclusive of tax or exclusive, tax rate, and other options as per your requirement.
+3. Next, under the design section, input the text that you want to show adjacent to the price and set its color and font size to display the same on the product page, collection page, and home page as per your requirements.&nbsp;
+4. Finally, activate the switch to display both prices and hit the 'Save' button.&nbsp;
+Please check this video guide for the step-by-step process:
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29045364760/original/hZHtapB-pss-QBXqk3RxBFzariGVjOpAsQ.png?1676878031
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29045364741/original/ddM3GU3JHh0LnSnR_Q5n9XyH9qx72bieJA.png?1676877893
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29055817367/original/eAx6-rYtKsu6GQh8nkPFLO-zgvNmdlxpcQ.png?1717153690
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29055817207/original/wdFuGdxZceWqIg--yT7Po53qnI9SITkJkg.png?1717153247
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29044127553/original/v65o1ACK9PVoEFx8-WHImBhng02vvNDHHg.png?1671707328
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29055817265/original/5ML5ghI_uykgCYfIk31Ja2eGmcxzQNOPMg.png?1717153405
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29052110722/original/FfAuinqMrNasf9mg4kT8ZyhUI_5Azbp2Ug.png?1701860416
+
+-----------------------------------
+
+Title: Key Benefits Of Using The App For Vat Gst Price Display
+
+Flexible Price Display: Easily calculate and display both tax-inclusive and tax-exclusive prices based on your selected tax rate.
+Customizable Price Options: Choose to display only tax-inclusive prices, only tax-exclusive prices, or both, depending on your business needs.
+Blacklist Selectors: Prevent the dual price display from appearing in specific sections of your store by blacklisting selectors based on your storefront theme.
+Full Customization: Tailor the look of your prices by adjusting color, size, and text to match your store’s branding and design.
+Seamless Compatibility: Works with all Shopify themes without affecting your store's page speed or performance.
+
+-----------------------------------
+
+Title: Blacklist Selectors
+
+The&nbsp;Blacklist Selector&nbsp;feature allows you to exclude specific elements from displaying dual prices on your storefront. You can provide a list of&nbsp;CSS classes&nbsp;or&nbsp;ID selectors&nbsp;based on your theme, and the app will skip these elements, ensuring they retain the original theme’s pricing display.&nbsp;
+For example,&nbsp;
+If you have problems with the installation or finding difficulty, please raise a support ticket&nbsp;here&nbsp;or email us at&nbsp;support@thaliaapps.freshdesk.com&nbsp;and we will take care of it.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29044180403/original/GJNgPcEoCzJ0gsN80Kjj4sPCmTB18UNnMg.png?1672140665
+
+-----------------------------------
+
+Title: Setting Up Tax Display For Different Regions
+
+The Market Tax Display feature in the Dual Price App allows you to configure a common tax rate for specific regions (markets). This ensures that product prices can be displayed both inclusive and exclusive of tax for selected countries, improving pricing transparency for your customers.
+
+&nbsp;
+
+Key Benefits
+
+Display tax-inclusive and tax-exclusive prices for specific markets.
+Maintain accurate, region-specific pricing without manual updates.
+Provide clear tax breakdowns to customers, enhancing trust and clarity.
+
+&nbsp;
+
+How It Works ?
+&nbsp;
+
+Step 1: Enable the Dual Price App Embed
+&nbsp;
+
+From your Shopify admin, open the Customize Theme settings and enable the Dual Price App embed.
+Step 2: Configure Markets
+&nbsp;
+
+Go to the Dual Price App Dashboard → Market section.
+Step 3: Set Tax Rate &amp; Countries
+
+Enter the tax rate you wish to apply.
+Select the countries/markets where you want the dual price to be displayed from the dropdown list.
+&nbsp;
+
+Note: The primary market of your store is automatically excluded from the country selection list. For this market, the Dual Price App’s default settings will be applied.
+
+&nbsp;
+
+Step 4: Add Custom Price Class
+&nbsp;
+
+Add the Custom Class for the product price element based on your currently published theme.
+
+Example: .price
+Step 5: Save
+
+&nbsp;
+
+Click Save to apply your settings. The dual price display will now appear for the selected countries.
+Note: Dual app market feature is available on Basic plan.
+&nbsp;
+
+If you have problems with the installation or finding difficulty, please raise a support ticket here&nbsp;or email us at support@thaliaapps.freshdesk.com and we will take care of it.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29066272281/original/3--uRo8ay-Oo-3OjirxgONpaFwlu3SB0wg.png?1758692667
+
+-----------------------------------
+
+Title: Toggle Switch Customer Price Preference
+
+This feature empowers your customers to choose how they want to view product prices—either Tax Inclusive or Tax Exclusive—directly from your store’s header section. By giving end users this control, you provide a more personalised and transparent shopping experience.
+
+Key Benefits
+
+Customer Choice – Let shoppers select between tax-inclusive or tax-exclusive prices.
+Transparency – Improve trust by showing exactly how taxes affect final prices.
+User-Friendly – The toggle switch is displayed prominently in the header for easy access.
+No Manual Effort – Once configured, the app automatically updates price display based on customer preference.
+How does it Works ?&nbsp;
+Step 1: Configure the Toggle Switch
+
+Navigate to the Dual Price App Dashboard → Option Settings.
+Select the “Customer Preference” option to enable the toggle switch.
+Step 2: Add Custom Class for Header Section
+Add the Custom Class of your header element based on the theme you have published in the following format:
+Syntax :&nbsp;.class-name &gt; *:first-child
+Example: .search-action &gt; *:first-child
+Step 3: Apply stylings (Optional)
+Simply go to the design section and you can change the color of text, background, etc. by adding custom CSS in the design section of the app dashboard.&nbsp;
+Step 4: Save
+Click Save to apply your settings.&nbsp;
+The Dual Toggle Switch will now appear in the header section of your store, allowing customers to switch between tax-inclusive and tax-exclusive views.
+If you have problems with the installation or finding difficulty, please raise a support ticket&nbsp;here or email us at support@thaliaapps.freshdesk.com and we will take care of it.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29066517102/original/BjCq6_ZE_8PY0WJT0Rg5APdq1DmJaUIpbw.png?1759812645
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29066493368/original/S1-e-80NV2QTWhbTBX_14YYrjAXXXEgZPQ.png?1759742361
+
+-----------------------------------
+
+Title: Pricing Plans
+
+The Dual Price Display app is available for $45 per year and includes a 7-day free trial, allowing you to explore all features before committing.
+In addition, we’re excited to introduce a Free Plan for the app! All existing users will be automatically placed on the Basic Plan with the option to downgrade to the Free Plan at any time.
+Free PlanBasic PlanDisplay Dual Prices (Tax Inclusive/Exclusive)✓✓Basic Tax Configuration✓✓Toggle Switch For Customers View
+
+✓✓Country Based Tax SettingsX✓&nbsp;
+Important Notes:Shopify Billing: Charges are processed via the Shopify Billing API, and the cost appears directly on your Shopify invoice.
+No Setup Fees: There are no additional charges for installation or setup.
+Cancel Anytime: You can terminate your subscription at any time by simply uninstalling the app—no hidden conditions.
+Transparent Pricing: To keep it fair for all users, we do not offer discounts to anyone.
+Try the app risk-free for 7 days and enhance your store’s pricing clarity effortlessly!
+
+-----------------------------------
+
+Title: Terms Of Use
+
+1. Acceptance of Terms&nbsp;By using the Dual Price Display app ("App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the App.
+
+2. Use of the AppThe App is provided to assist merchants in showing tax inclusive &amp; exclusive prices on their Shopify stores. You agree to use the App in compliance with all applicable laws and regulations.
+
+3. User ResponsibilitiesYou are responsible for maintaining the security of your Shopify store and the credentials used to access the App. You are also responsible for all activities that occur under your store's account.
+
+4. LicenseSubject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to use the App.
+
+5. Fees and PaymentsUse of the App may be subject to fees. All payments must be made in accordance with the pricing and payment terms provided at the time of purchase. All purchases are non-refundable. You can cancel your subscription at any time by logging into your account.&nbsp;
+
+6. Data and PrivacyWe are committed to protecting your privacy. Our data collection and use practices are outlined in our Privacy Policy.
+
+7. Disclaimer of WarrantiesThe App is provided "as is" and "as available" without warranties of any kind, either express or implied.
+
+8. Limitation of LiabilityIn no event shall we be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the App.
+
+9. TerminationWe reserve the right to terminate or suspend your access to the App at any time, with or without notice, for any reason, including if you breach these Terms.
+
+10. Governing Law and ArbitrationThese Terms shall be governed by and construed in accordance with the laws of India. In the event of any dispute, claim, or controversy arising out of or relating to these Terms or the App, the parties shall submit to the exclusive jurisdiction of the courts of Mumbai, India.
+
+11. Changes to TermsWe reserve the right to modify these Terms at any time. Your continued use of the App after any such changes constitutes your acceptance of the new Terms.
+
+12. Contact InformationFor any questions or concerns regarding these Terms, please contact us at support@thaliaapps.freshdesk.com.
+
+By using the Dual Price Display app, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use.
+
+-----------------------------------
+
+Title: Removing The App
+
+Before removing the app, revert the currencies option on your store for HTML with currency and HTML without currency option in the Shopify settings as shown in the image below:
+You can then uninstall the Dual Price app through your Shopify store admin.
+
+Go to your Shopify admin.
+Go to Apps'. Click on the Apps and sales channel settings.
+A pop-up window will open wherein you will find the list of all the apps. Click on the 'remove' button and then delete.
+That's it! The app is now uninstalled. There is no residual code or leftover files that need to be manually removed.
+For detailed instructions check out the Shopify guide to uninstall the app.
+Note: Once the app is uninstalled, the app subscription terminates automatically.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29044128104/original/kx69CaZfrtmK2HXOwgQ_uJwIcO_jKSfMvQ.png?1671708841
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29044127292/original/tIlpjyeM7qqezjED4EKtchoGt3CZQsmKmw.png?1671706492
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29044127179/original/HFPZOrcLzkdxPmetLvh6fGcaWZNoMKWrdw.png?1671706309
+
+-----------------------------------
+
+Title: Dual Price Not Shown For My Store 
+
+If Dual Price is not displaying on your site, you need to enable app embedding to get the dual prices displayed on the store. Check the currency formatting configuration steps mentioned in the guide&nbsp;here.&nbsp;&nbsp;If you are still facing the issue, let us know and we will have a look at it.
+
+-----------------------------------
+
+Title: Why Is My Primary Market Not Showing In The Country List 
+
+The primary market of your store is automatically excluded. For this market, the Dual Price App applies its default settings.
+
+-----------------------------------
+
+Title: What Happens If I Don T Add A Custom Price Class Under Market Feature Section 
+
+Without the custom price class, the dual pricing may not display correctly. Be sure to add the correct class from your theme.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29066494040/original/mPOmV-nW2N4Q9iHPCmOwJb6hFn7lWPe_wQ.png?1759743931
+
+-----------------------------------
+
+Title: Can I Hide Dual Pricing For Certain Products 
+
+Currently, the feature applies store-wide for the selected markets.
+
+-----------------------------------
+
+Title: Do I Need Coding Knowledge To Set Up The Dual Price App 
+
+No, the app is designed for easy setup. You just need to enable the app embed, configure your settings, and add the correct price class from your theme.
+
+-----------------------------------
+
+Title: Installation Steps
+
+Installing the Data Exporter app is quick and straightforward. Follow these simple steps to get started:
+Visit the Shopify App Store: Go to the Shopify App Store and search for ‘Product Data Exporter Pro’.
+Click Install: Once you’ve found the app, click Install to begin the process.
+Log In and Approve: You’ll be prompted to log in to your Shopify store. After logging in, review the permissions and approve the installation, along with any associated charges.
+Once installed, you're all set—there are no additional setup steps required.

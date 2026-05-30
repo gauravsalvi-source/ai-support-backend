@@ -1,0 +1,225 @@
+Title: Who Is This App For 
+
+The Flo SKU Sync app is designed for Shopify merchants who manage large product catalogs or work with multiple suppliers where SKUs are common.&nbsp;
+If your store has the same SKU assigned to multiple listings, this app ensures all products stay in sync, keeping your inventory accurate, organized, and up-to-date. It’s ideal for merchants looking to save time on manual updates and streamline inventory management.&nbsp;
+
+-----------------------------------
+
+Title: How Does The Flo Sku Sync Works 
+
+The Flo SKU Sync App is simple to use and designed to help you keep your inventory accurate, organized, and up-to-date across the same shared SKUs.
+After installing, the app will fetch all the products found in your store for the first time. This process might take from a few seconds to minutes, depending on the products you have in your store. Once all the products are fetched, you will see the Products Successfully Fetched message on the homepage of the dashboard.
+Once the fetch is completed, you can turn 'ON' the Duplicate SKU Sync option from the Home Page of the app dashboard.
+What Triggers a Sync?
+Once enabled, the Flo SKU Sync app will automatically sync stock levels of all duplicate SKUs under the following conditions:
+
+When an order is placed on Shopify
+When a refund is processed
+When the item is restocked via the app dashboard
+When the stock is updated from the Shopify admin or any other app.
+Notes:
+
+The app can sync duplicate SKUs across multiple Shopify locations.
+You can view and restock the inventory of all duplicate SKUs in just a few clicks using the "Quick view"&nbsp;and "Detail view"&nbsp;features.
+The app does not yet support the syncing of Inventory States&nbsp;(On Hand, Committed, etc.) It only supports syncing the 'Available' inventory state.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29066117462/original/lLzZFojBBONDPcO6B0izT6mWFLfEHITUIw.PNG?1758033213
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065974847/original/V_XJVas82Fpxi9Hw41DaMvWP8svOpa0DIA.PNG?1757426225
+
+-----------------------------------
+
+Title: Installation Steps
+
+Installing the Flo SKU Sync App is quick and straightforward. Follow these simple steps to get started:&nbsp;
+Visit the Shopify App Store: Go to the Shopify App Store and search for ‘Flo SKU Sync’.
+Click Install: Once you’ve found the app, click Install to begin the process.
+Log In and Approve: You’ll be prompted to log in to your Shopify store. After logging in, review the permissions and approve the installation, along with any associated charges.
+
+-----------------------------------
+
+Title: Restocking Inventory Quick View
+
+The app offers a quick and efficient way to restock inventory for duplicate SKUs. Instead of manually updating stock levels for each item in the Shopify admin, you can restock all duplicate SKUs at once, with just a single click.Steps:
+
+Go to the Inventory page of the Flo SKU Sync app.&nbsp;
+Click the "Quick view" option.
+Select the location where you want to update the stock levels.
+Search for the duplicate SKU that you wish to update. We have 3 options based on which you can search, i.e.a. SKU is equal tob.&nbsp;SKU contains andc. SKU starts with.
+
+Input the SKU and hit the Search button. A list of all products with duplicate SKUs will be visible.
+Enter the stock level quantity and hit the "Update Inventory" button.
+The stock level of all the items with duplicate SKUs will be updated simultaneously.
+&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065990842/original/Q2I6Ed-o7tk43emyIj7Cbhzk_Fn4Gm4v3g.png?1757485009
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29066124498/original/Wc0WXL4mSkWyMl2jZYp6enx3O61AvhaPdg.PNG?1758050169
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065990904/original/SkMaSBWu0JJoXUQiaaql_PBYlH7eWUXaGQ.png?1757485491
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065990896/original/zkaHK2ENm-w179gsw3TY_6pBD9XHktKKLA.png?1757485439
+
+-----------------------------------
+
+Title: Inventory Restock Detailed View
+
+The Inventory Restock Detailed View offers a powerful dashboard that displays all duplicate SKUs in your store, helps detect inventory mismatches, and allows you to restock inventory in just a few clicks.
+Steps:
+Go to the Inventory page of the Flo SKU Sync app.&nbsp;
+Select “Detail View.”&nbsp;
+In the detailed view, you will find the dropdown menu, choose one of the following options: a. Show All Duplicate SKUs – Displays all duplicate SKU products in the table, along with location-wise inventory levels for all duplicated variants. b. Show Duplicate SKUs with Mismatched Inventory – Filters the table to show only duplicate SKUs that have mismatched inventory levels across variants. c. Show All SKUs – Displays all SKUs. &nbsp;
+After selecting the desired option, review the table of SKUs.&nbsp;
+Click the dropdown arrow, then enter the stock level quantity for each location.
+Click the Save button.&nbsp;
+➡️ Inventory levels across all products with the same SKU will be updated simultaneously.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065977506/original/c0B0hbjfoP7QKsqQWWN2baUQXii5KtegLw.PNG?1757430875
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065977677/original/1VLwAggdfqhUOFe_1LRPvj3lxgWOJ3UDKQ.PNG?1757431192
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065978384/original/kjMtFXH1i96HD5mTQ6_VyaDYFug5aJrq1A.PNG?1757432368
+
+-----------------------------------
+
+Title: Location Blacklist
+
+Our app allows you to blacklist specific Shopify locations from inventory sync. This means any duplicate SKUs at those blacklisted locations will not be synced by the app.
+For example, if your store has three locations — A, B, and C — and you only want to sync duplicate SKUs for locations A and B, simply add location C to the blacklist. Once blacklisted, the app will exclude location C from all sync operations.&nbsp;
+You can directly blacklist locations from the App dashboard.
+⚠️ Note: When a location is blacklisted, the app will disable quantity updates for that location on both&nbsp;the&nbsp;Quick&nbsp;View&nbsp;and&nbsp;Detail&nbsp;View&nbsp;pages.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29066123921/original/7YAcziR25rtf0uCkdkLGvshseDN_Epf2Mg.PNG?1758048237
+
+-----------------------------------
+
+Title: Multi Location Sync
+
+The app syncs stock distributed across multiple locations.
+Consider a scenario where 3 products, ProductA, ProductB, and ProductC, share the same SKU (they are physically the same item). Following is the location-wise inventory distribution configured on Shopify:
+LocationALocationBLocationCTotalProductA1050060ProductB10104060ProductC3001040
+
+Let's say an order is placed for Product A for 20 units. Shopify will adjust the stock for product A as follows:
+LocationALocationBLocationCTotalProductA1030040
+
+The Flo SKU Sync app will then force update the quantities of Product B and Product C to match Product A for each location. The inventory distribution will look as below:
+LocationALocationBLocationCTotalProductB1030040ProductC1030040
+
+The app assumes that the physical items are the same, even if the product listings are duplicated. Hence, at all times, the stock levels should be the same across all locations.
+
+-----------------------------------
+
+Title: How To Export Inventory Levels In A Csv
+
+This feature allows you to export inventory level details for products with duplicate SKUs in a CSV file. It helps you review, analyze, and manage inventory across all duplicated products efficiently.&nbsp;
+Steps to Export Inventory Data&nbsp;
+1. Go to the Inventory page of the Flo SKU Sync app.
+
+2. Select “Detail View.”&nbsp;
+3.&nbsp;In the detailed view, you will find a dropdown menu with the following options:
+
+Show All Duplicate SKUs – Displays all duplicate SKU products along with location-wise inventory levels.
+Show Duplicate SKUs with Mismatched Inventory – Displays only duplicate SKUs that have mismatched inventory levels.
+Show All SKUs – Displays all SKUs, regardless of duplication.
+4. After selecting the desired option, review the table of SKUs.
+5. Click the Export button. A CSV file will be downloaded automatically, containing the inventory levels of the duplicate SKUs.&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065991119/original/TOhFlH_NWrL5bc74kL6PQ7Dqge2iVAYq7Q.PNG?1757486611
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065991427/original/FizT5h4UWuid04JnIurr2RieNTw6aMXQ9A.PNG?1757487763
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29066125135/original/E__Q9hWR8nFFlmPIKmwZRDSf0XqxJEARAA.PNG?1758052041
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065991567/original/xhkvVuO1n8Q1AE6hC144sejw8XNADFm4UA.PNG?1757488134
+
+-----------------------------------
+
+Title: Pricing
+
+The Flo SKU Sync app offers a 7-day free trial period. You will not be charged during the 7-day free trial period. The billing will start after a 7-day trial ends from the day you installed the app. 
+Plan Name
+FREEBASIC
+PRO
+Price/Month
+Free$24$40For Shopify Stores TypeShopify staff,Shopify partner,Shopify trial,Pause and BuildBasic Shopify,&nbsp;Shopify +Advanced Shopify
+
+Shopify PlusSKUsUnlimitedUnlimitedUnlimitedUpdatesUnlimitedUnlimitedUnlimitedSync History
+✓✓✓1-Click Restock
+✓✓✓Multi-location Support✓✓✓
+Note:
+
+The app charges you via Shopify billing API meaning that charges appear directly on your Shopify invoice.
+There are no setup fees.
+Terminate the subscription anytime by simply uninstalling the app.
+To keep it fair and transparent we do not offer discounts to anyone.
+The app charges are non-refundable. If the app is uninstalled before the 7-day trial ends, then you will not be charged at all.
+Disclaimer:
+
+Ordinarily, you will find one final charge for the Flo SKU Sync app (or any other app using Shopify billing) on your next invoice after uninstall. This is because, while you get charged for your Shopify subscription and apps in one invoice, the billing cycles are almost always out of phase with one another. As a result, you pay for apps partly in advance and partly in arrears each month. You can find a more extensive explanation of this&nbsp;here.
+
+-----------------------------------
+
+Title: Removing The App
+
+Before uninstalling the app, deactivate sync by disabling the master switch in the app dashboard.&nbsp;
+You can then uninstall the Flo SKU Sync app through your Shopify store admin.&nbsp;
+1. Go to your Shopify admin.
+
+2. Go to Apps. Click on the Apps and sales channel settings.
+3. A pop-up window will appear displaying the list of all installed apps. Click on the (⋯) icon next to the Flo SKU Sync app, and then click the Uninstall button.
+&nbsp; &nbsp; &nbsp;
+
+&nbsp;&nbsp;
+
+That's it! The app is now uninstalled. The system is free of residual code and unnecessary files requiring manual deletion.
+For detailed instructions, check out the&nbsp;Shopify guide to uninstall the app.
+Note: Once the app is uninstalled, your subscription gets terminated automatically.&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065647022/original/TPkQxnWCuc4A3sb9JCxBhvGofVFcN3b6oA.PNG?1755851596
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29066119357/original/w4NnHKrb6aPFcDBlvDjoOCrlepxgAMmqXA.PNG?1758036366
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29066119514/original/uAy60ePCcB8W848K6voYP7jPA0P0u-38Iw.PNG?1758036650
+
+-----------------------------------
+
+Title: Will The App Merge Duplicate Products Automatically 
+
+The app does not automatically merge duplicate products. Instead, it helps you identify duplicates, and you can manually choose how to manage and merge them from your Shopify admin. This ensures that you maintain full control over your product catalogue.
+
+-----------------------------------
+
+Title: Does The App Sync Only Stock Based On Skus Or Does It Also Sync Other Product Data 
+
+The app only syncs the&nbsp;quantity&nbsp;of products with duplicate SKUs. It does not sync or alter other product data attributes like titles, prices, or descriptions.
+
+-----------------------------------
+
+Title: Can I Undo A Sync If Something Goes Wrong
+
+No, the app does not offer an undo feature for syncing. If something goes wrong, you will need to manually adjust the quantity either within the app or directly from your Shopify store.
+
+-----------------------------------
+
+Title: Will This App Work If My Products Are Already Imported Into Shopify 
+
+Yes, the app will work with existing products in your Shopify store. It will scan your current product catalogue for duplicates and allow you to sync the quantities accordingly.
+
+-----------------------------------
+
+Title: Does The App Support Syncing Across Multiple Product Variants 
+
+Yes, the app can detect and synchronize the quantities for variants that share the same SKU. If you have multiple variants with the same SKU, the app will sync their quantities as needed.
+
+-----------------------------------
+
+Title: What Are Tables 
+
+Tables (or charts) allow displaying product information in a row-column format. They are a great way to list out the detailed specifications of the product. This helps the shoppers to get answers to their questions. And they can make purchase decisions quicker.&nbsp;
+Furthermore, with all the information easily visible, you will have fewer support emails.
+This is how Amazon organizes product details in a table format:
+With the Clear table App, you can create similar tables listing out product specifications. 
+Features:
+
+Create up to 500 tables.&nbsp;
+Display tables based on configured rules. Example, a table across all t-shirts etc.
+Insert emojis and dynamic data in the table text.
+Stylize tables with custom colors, sizes, etc.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29038589539/original/l33GtuSXRdLa5DhzSnsyTvd3TbTaENoeCg.png?1649675649

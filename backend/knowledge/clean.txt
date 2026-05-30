@@ -1,0 +1,524 @@
+Title: Integration Guide Store 2 0 
+
+(Optional Step)
+Before you get started we recommend you make a backup copy of your theme.
+To create a backup Visit Shopify Admin &gt; Themes&nbsp;and click Actions&nbsp;&gt; Duplicate.
+Step 1 - Activate Clean Tables
+Login to the Clean Tables app
+Turn Master Switch ON
+Ensure you have at least 1 table created so that it can be tested.
+Note:
+
+The steps below are for Online Store 2.0 themes. If your theme is not compatible with Online Store&nbsp;
+
+2.0 then follow the guide here.
+Step 2 - Install Clean Table Block
+Visit the Shopify Admin &gt; Themes, and then click Customize for the theme you are working on.
+Go to any product template
+Click Theme settings (in the bottom left), and then click App embeds.
+Locate the app called Clean Tables, and then click the button to enable it.
+Choose to Add block and select the Clean Tables block and move it where you’d like it to show.
+Click Save to apply your changes.
+If you are not comfortable adding the blocks simply raise a support ticket here&nbsp;or email us at support@thaliaapps.freshdesk.com and we will take care of it.&nbsp;
+
+-----------------------------------
+
+Title: Table Integration Guide
+
+Adding table integration code into your theme is a one-time activity that once done you do not have to worry about later. If you are not comfortable adding the code simply raise a support ticket here&nbsp;or email us at support@thaliaapps.freshdesk.com&nbsp;and we will take care of it.&nbsp;
+Steps:
+
+1. Go to your Shopify admin.
+
+2. Click Online Store &gt; Themes &gt; Actions.
+3. Click&nbsp;Edit code.&nbsp;&nbsp;
+&nbsp;4. Add the following code where you'd like the tables to show:
+&nbsp;{% render 'cleant', product: product, hideAssets: '0', cleantGroup: '1' %}
+For showing the table on the product pages place the code in the sections/main-product.liquid file. Search for {{product.description}} and place the above-mentioned code above description line.&nbsp;
+This will display the badge table above the description of the product. You can place the installation code anywhere else depending on your requirements.
+If you have problems with the installation or want to change the location of the table, please raise a support ticket&nbsp;here&nbsp;or email us at&nbsp;support@thaliaapps.freshdesk.com&nbsp;and we will take care of it.&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29038998890/original/KOogtsup6iYlqG8JYpM1oRgV3X_DIJk_sg.png?1651314264
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29038998889/original/oDrPZLaZ9BsFgACpXwiTc0smpPTEOkzu5A.png?1651314264
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040018098/original/kK6q4bIIhYHaf4Iw23cE3gjLcIi-a86tBg.png?1655293325
+
+-----------------------------------
+
+Title: Option Count
+
+Use the&nbsp;{{ OptionCount }}&nbsp;dynamic variable to display text with the count of values for a specific product Option.&nbsp;Improve shopping experience by letting the customers know that there are more options available.
+
+Examples:
+You need to provide the Option name ('Color', 'Size', 'Material' etc) for which the value count needs to be displayed inside the table. This can be done by adding the Option name as shown below.&nbsp;
+For products that do not have the specified Option name, this table will not be visible.&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29052652594/original/1C9mu73eyzOaCn_Uq0b2fNKXD5JQsT5xSg.png?1704454445
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29052652440/original/OVrUd-eQnpz13_4iG3sVIpOjVXncDIvMBg.png?1704454146
+
+-----------------------------------
+
+Title: Dynamic Product Metafields
+
+The Clean app allows creating tables that display the value of any product metafield created by other apps.&nbsp;
+A.&nbsp;The product metafields can be displayed by adding the {{ cleantm.namespace.key&nbsp;}} dynamic data field in the input text. Here namespace.key&nbsp;needs to be replaced with the actual meta field namespace and meta field key names.
+For example&nbsp;- If you have a metafield with the namespace 'instructions' and key 'wash' then to display the value of this metafield, add text {{ cleantm.instructions.wash&nbsp;}}. &nbsp;
+You can combine Product Metafield Display Conditions with Dynamic Metafields to create powerful rules that display metafield data based on your rules.
+Below are a few examples of product metafield representations that may be helpful.
+Metafield TypeProduct Metafield RepresentationProduct{{ cleantm.custom.product.value }}Collection&nbsp;{{ cleantm.custom.collection.value }}Money{{ cleantm.custom.price.value | money }}
+Single Line Text{{ cleantm.custom.stock.value }}Multi Line Text{{ cleantm.custom.specs.value | newline_to_br }}Rich Text{{ cleantm .custom.rich_text | metafield_tag }}Multi Line Text{{ cleantm.custom.alphanumeric.value }}Validations{{ cleantm.custom.validation.value }}Weight{{ cleantm.custom.product_weight.value }}Volume{{ cleantm.custom.volume.value }}Dimension{{ cleantm.custom.dimension.value }}Decimal{{ cleantm.custom.price_in_decimal.value }}Integer List{{ cleantm.custom.agelist.value | join:'&lt;br&gt;' }}&nbsp;Integer Single{{ cleantm.custom.age.value }}Single Line Text (list){{ cleantm.custom.specifications_of_product.value | join:'&lt;br&gt;' }}File&lt;a target='_blank' href='{{ cleantm.custom.file.value.url}}'&gt;{{ cleantm.custom.file.value.url | split: '/' | last | split:'?' | first }}&lt;/a&gt;Date and Time&nbsp;
+{{ cleantm.custom.datetimesingle.value | date: '%A, %B %d, %Y at %l:%M %p %Z' }}
+B. To reference the metafield directly (without dynamic data binding) :&nbsp;
+You can use the standard metafield format: &nbsp;{{ product.metafields.namespace.key.value }}.
+Example:&nbsp;If your metafield is in the custom namespace with key size, then use:&nbsp; {{product.metafields.custom.size.value }}This will directly render the metafield value for the current variant context.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29052653140/original/7eqSuwXF-o0jJfa4xeBKMRqW3F52yBnEFQ.png?1704455985
+
+-----------------------------------
+
+Title: Dynamic Variant Metafields
+
+The Clean Tables app supports displaying the value of any selected variant metafield, including those created by other apps.
+&nbsp;A. To display a variant metafield using a dynamic field:Identify the namespace and key of the metafield.
+Use the following format in your table content: {{cleantVariantm.namespace.key}}
+Example:&nbsp;If your metafield has:&nbsp;Namespace: instructions&nbsp; and Key: wash,&nbsp;then use:&nbsp;
+
+{{cleantVariantm.instructions.wash}}
+This will automatically show the metafield value of the selected variant in the table.
+B. To reference the metafield directly (without dynamic data field):&nbsp;You can use the standard metafield format: {{ variant.metafields.namespace.key.value }}
+
+Example:&nbsp;If your metafield is in the custom namespace with key size, then use:&nbsp;
+
+{{ variant.metafields.custom.size.value }}
+
+This will directly render the metafield value for the current variant context.
+
+-----------------------------------
+
+Title: Fonts
+
+Coming soon
+
+You can stylize the badge text with any of the fonts available in the Shopify Fonts library. Here&nbsp;is the list of all the available fonts.
+Simply select the font from the dropdown list and click save.
+Due to font licensing restrictions, the text preview with font changes cannot be displayed in the app dashboard
+
+-----------------------------------
+
+Title: Pricing Plans
+
+The App is Free.
+Note:
+
+A maximum of 500 tables can be created.
+Custom Styling
+Supports Dynamic Data Fields
+Supports 20+ Display Rules
+
+-----------------------------------
+
+Title: Removing The App
+
+Before uninstalling the app, make sure to follow these steps to remove all tables and app code from your store. If you uninstall it directly from Shopify, the tables may still be visible.
+
+Step-by-Step Guide:
+
+Go to the table home page and click the&nbsp;"Switch OFF"&nbsp;button.
+2. (Optional) Remove the Integration Code
+
+If you added a one-line integration code while setting up the app, you can remove it from your theme. Need help? Check out the integration guides&nbsp;here&nbsp;Note: Leaving the code in place won’t affect your store in any way
+3. (Optional) Delete the Snippets File
+
+If you removed the integration code in Step 2, you can also delete the&nbsp;snippets/cleant.liquid&nbsp;file from your Shopify Theme Editor.
+Important: Only delete this file if you’ve already removed the integration code from Step 2.
+4.&nbsp;Steps to uninstall the app:
+
+Go to your Shopify admin.&nbsp;
+Go to Apps'. Click on the Apps and sales channel settings.
+3. A pop-up window will open wherein you will find the list of all the apps. Click on the “uninstall” button from the dropdown and uninstall the app.
+That's it! The app is now uninstalled. For detailed instructions check out the&nbsp;Shopify guide to uninstall the app.
+Note: Once the app is uninstalled, your subscription gets terminated automatically.&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29061463334/original/Bkap7CwRaKtjofenR4jwxSnwi2BJtsMrpg.png?1739943806
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29061463335/original/qY3EfO5eOaB7r_MxAcPoAxBP7muHK923Iw.png?1739943807
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29061463336/original/ZnGqljFCUH9BNcw3QQYPic0IkHD6D_d7_A.png?1739943807
+
+-----------------------------------
+
+Title: Terms Of Use
+
+1. Acceptance of TermsBy using the Clean Info Tables &amp; Charts app ("App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the App.
+
+2. Use of the AppThe App is provided to assist merchants organize product descriptions &amp; look neat on their Shopify stores. You agree to use the App in compliance with all applicable laws and regulations.
+
+3. User ResponsibilitiesYou are responsible for maintaining the security of your Shopify store and the credentials used to access the App. You are also responsible for all activities that occur under your store's account.
+
+4. LicenseSubject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to use the App.
+
+5. Fees and PaymentsUse of the App may be subject to fees. All payments must be made in accordance with the pricing and payment terms provided at the time of purchase. All purchases are non-refundable. You can cancel your subscription at any time by logging into your account.&nbsp;
+
+6. Data and PrivacyWe are committed to protecting your privacy. Our data collection and use practices are outlined in our Privacy Policy.
+
+7. Disclaimer of WarrantiesThe App is provided "as is" and "as available" without warranties of any kind, either express or implied.
+
+8. Limitation of LiabilityIn no event shall we be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the App.
+
+9. TerminationWe reserve the right to terminate or suspend your access to the App at any time, with or without notice, for any reason, including if you breach these Terms.
+
+10. Governing Law and ArbitrationThese Terms shall be governed by and construed in accordance with the laws of India. In the event of any dispute, claim, or controversy arising out of or relating to these Terms or the App, the parties shall submit to the exclusive jurisdiction of the courts of Mumbai, India.
+
+11. Changes to TermsWe reserve the right to modify these Terms at any time. Your continued use of the App after any such changes constitutes your acceptance of the new Terms.
+
+12. Contact InformationFor any questions or concerns regarding these Terms, please contact us at support@thaliaapps.freshdesk.com.
+
+By using the Clean Info Tables &amp; Charts, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use.
+
+-----------------------------------
+
+Title: How To Avail The Free Offer
+
+If you are already an existing user and are on a $5 basic plan, in order to switch to the free plan, follow the steps below:
+
+Open the App Dashboard:&nbsp;From your Shopify admin, navigate to the app and access its dashboard.
+Go to the Plans Page:&nbsp;In the dashboard, locate the Account section and click on the Plans page.
+Activate the Free Plan:&nbsp;Click the Cancel button under "basic plan". This action will deactivate your paid plan and automatically switch your app to the free plan.
+Check the attached image for your reference:
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29064253884/original/W0Y11rVu8WB_gAqEDoz1ERPdbq6IqQ9bMQ.png?1750068312
+
+-----------------------------------
+
+Title: Countdown Timer Coming Soon 
+
+Add urgency to your promotions with a ticking countdown timer inside a table (or Highlight ) to encourage customers to BUY NOW instead of later.
+To display a countdown timer inside the table or highlight text simply add the 'CountdownTimer' dynamic data field and select a sale end date.
+Countdown timers are available only for Pro plan accounts.
+
+-----------------------------------
+
+Title: Estimated Delivery Dates Coming Soon 
+
+Display the expected delivery date right inside the table. Improve the shopping experience by letting the customers know when their orders will arrive.
+Expected delivery between 12 Jan and 14 Jan&nbsp; 2 Jan and 14 Jan&nbsp;
+
+OR&nbsp;
+Expected delivery before 14 Jan &nbsp; re 14 Jan &nbsp;
+The estimated delivery dates can be displayed by adding the 'ExpectedDeliveryDate' dynamic data field in the input text. The delivery dates are calculated in real-time by adding the offset 'from' and 'to' a number of days to the current date. The offset 'from' and 'to' a number of days can be specified in the data field as shown in the image below:&nbsp;
+1. You can specify the days of the week that need to be excluded while calculating the estimated delivery date.
+
+2. You can also configure the date format.
+Note:
+
+EstimateDeliveryDate dynamic data field is available for Pro Plan users and above.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040019420/original/5Cd2y4eaYDZLwB4xKXtAMDZMPH4TRlAoXA.png?1655295554
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040019423/original/zB8ZsXUiGuBTM17LDbvtjtr91uEJiRkv8w.png?1655295569
+
+-----------------------------------
+
+Title: Variant Level Inventory Coming Soon 
+
+The Clean app allows displaying inventory levels of individual variants. &nbsp;As the variant selection changes, the inventory levels in the highlight will be updated accordingly.
+The variant-level inventory can be displayed by adding the {{ CleantVariantInventory&nbsp;}} dynamic data field in the input text.
+Note:
+
+{{ CleantVariantInventory&nbsp; }} dynamic data field is available for Gold&nbsp;Plan users only.
+If the account is downgraded after adding a table having variant level inventory, then those highlights will stop showing inventory levels.
+
+-----------------------------------
+
+Title: Tables Visitor Counter Coming Soon 
+
+The Clean app allows the creation of Tables that display the total visitor count, for any product, in a given timeframe. It can be used to create urgency as it shows the interest level in the product. Example:
+&nbsp;56 visitors in the last hour&nbsp;&nbsp;OR &nbsp;&nbsp;7 people current viewing&nbsp;
+
+The order counter can be displayed by adding the {{ VisitorCounter }} dynamic data field in the input text.
+You can specify the timeframe to consider for calculating the total visitors by configuring it on the Visitor Count Settings page.
+You can also add a table display condition based on the visitor count number.
+Note:
+
+{{ VisitorCount }} dynamic data field is available for Gold Plan users only.
+If the account is downgraded after adding highlights having Visitor Count, then those highlights will stop being displayed.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040303719/original/zBHvPQyAfm-jORlDd6KgCRHLVZvLPDQjbw.png?1656415139
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040303725/original/C0fQE59NK0ibBEi-pWA4WmOyIM9Ij1JbKA.png?1656415165
+
+-----------------------------------
+
+Title: What Are Highlights 
+
+Coming Soon
+Sometimes, the product descriptions are way too long for the customer to read and find it difficult to select the perfect product and information that they are looking for.&nbsp;The help of the Clean app helps Shopify store owners to display the spotlight on the "selling points" and "key features" of your product and helps make a buyer make a decision faster.&nbsp;This also brings the ability to display graphical feature highlights on your Shopify store that helps the buyer to get the exact feature they are looking for. All the major e-commerce sites including Amazon, Etsy, and Aliexpress use the icon-text combination to enhance their product pages by showing key features like Free delivery, handmade material, and warranty information that highlights the product.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040019367/original/mVTh9ulDcRvImm09aRdxeKfZMS7ME1bzCw.png?1655295426
+
+-----------------------------------
+
+Title: Highlight Integration Guide
+
+Coming soon
+Adding Clean Description Icons highlight code into your theme is a one-time activity that once done you do not have to worry about later. If you are not comfortable adding the code simply raise a support ticket here or email us at support@thaliaapps.freshdesk.com and we will take care of it.&nbsp;
+Note:&nbsp;If you are using the Online Store 2.0 themes (like Dawn Theme) then refer to the integration guide here.
+Steps:1. &nbsp;Go to your Shopify admin.
+
+2. Click Online Store&nbsp;&gt; Themes&nbsp;&gt; Actions
+3. Click Edit code
+4. Click the file&nbsp;product-template.liquid&nbsp;which appears under&nbsp;Sections.&nbsp;
+5. The product-template.liquid file will open in the online code editor. Add the following code where you'd like the highlights to show on your product detail pages:&nbsp;
+
+{% render 'cleanh', product: product, hideAssets: '0', cleanhGroup: '1', cleanhOuterClass: 'clean-mt-4 clean-mb-4' %}
+In most cases, locate the lines&nbsp;{% capture "form_classes" -%}&nbsp;OR&nbsp;{% form 'product',&nbsp;and place the code in a line above.&nbsp;
+This will display the highlights below the product title and pricing. You can place the installation code anywhere else depending on your requirements.
+Note:&nbsp;The actual file and the line where you insert the code will differ as per the installed theme.
+If you have problems with the installation or want to change the location of the highlight box, please raise a support ticket&nbsp;here&nbsp;or email us at support@thaliaapps.freshdesk.com and we will take care of it.
+
+&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040016030/original/YskeKv9WhObKG2FB2JtmrBnCNlthQMrAZg.png?1655289675
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040016035/original/zqJBsO2Ipbjuv-2X5tQcPUPYRXLGIzYMkQ.png?1655289692
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040016038/original/EBXQB2gVxVP1sUKoHYjWTekQwRJ19R9KVA.png?1655289705
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040018284/original/rEIXi7sa8Wy-kl-5gHVj5mGKhAf7w-vp4w.png?1655293641
+
+-----------------------------------
+
+Title: Placement Of Highlight Box
+
+coming soon
+Note: This is for advanced users who can work with Shopify liquid code and CSS styling language.
+The Highlight Box can be placed at virtually any location on the product page. Its position can be manipulated by:
+1. Changing the integration code location
+
+2. Passing appropriate parameters in the integration code &nbsp; &nbsp;
+There are two helpful integration parameters to manage the badge placement:
+1. cleanhOuterClass: CSS classes passed using this parameter will be applied to the DIV containing the Highlight box.&nbsp;
+We have the following in-built classes that can be used to manage the badge placement:
+Class Name
+Resultant CSS
+clean-m-0margin:0rem;
+clean-mr-0margin-right: 0rem;
+clean-ml-0margin-left: 0rem;
+clean-mt-0
+margin-top: 0rem;clean-mb-0
+margin-bottom: 0rem;clean-m-1
+margin: .25rem;cleam-mr-1margin-right: .25rem;clean-ml-1
+margin-left: .25remclean-mt-1margin-top: .25rem;clean-mb-1margin-bottom: .25rem;
+Similarly, we can add classes with 2, 3, 4, and 5 suffixes to add margins of .5rem, 1rem, 1.5rem, and 3rem respectively. &nbsp;
+Example integration code:
+
+{% render 'cleanh', product: product, cleanhOuterClass: 'clean-mt-4 clean-mb-2' %}This will apply a top margin of 1.5rem and a bottom margin of .5rem Highlight Box container.
+2. cleanhOuterStyle: Pass any custom CSS elements using this parameter and they will be applied to the Highlight Box container.
+Example integration code:
+
+{% render 'cleanh', product: product, cleanhOuterStyle: 'border: 1px solid black' %}This code can be used to add a black border to the Highlight Box.
+
+-----------------------------------
+
+Title: Description Of Settings
+
+Coming soon
+Highlight design settings:
+SettingsDescriptionStyle &gt; One ColumnThe highlights will be displayed in a single column.Style &gt; Two ColumnsThe highlights will be displayed in a two-column format.Style &gt; Three ColumnsThe highlights will be displayed in a three-column format.Style &gt; Text Right of IconThe highlights icon will be placed on the left. While the text will be placed on its right.Style &gt; Text Below IconThe highlights text will be placed exactly below the icon with both centers aligned.&nbsp;Body &gt; RectangleThe highlight box will be rectangular in shape with sharp edges.Body &gt; Curved RectangleThe highlight box will be rectangular in shape with curved edges.Body &gt; SpacingSpacing defines the padding between elements of the highlight box.Body &gt; ShadowApply shadow effect to the highlight box.Border &gt; WidthSpecifies the thickness of the highlight box border in pixels.Border &gt; ColorSpecifies the color of the highlight box border.Border &gt; StyleSpecify the border style with options solid, dotted, and dashed.Text &gt; SizeSpecify the font size of the highlight text in pixels.Text &gt; ColorSpecific the color of the highlight text.Text &gt; FormattingApply Bold, Italics, and Underline formatting to the highlight text.Image &gt; HeightSpecifies the icon highlight icon height.
+
+-----------------------------------
+
+Title: What Are Badges Coming Soon 
+
+Product badges (stickers or labels) are added to online products to call attention to special information about a product.
+When used on e-commerce websites, product badging has been proved to increase&nbsp;conversion rates by 55%.
+Here are 3 main reasons to use product badges:
+
+Make it easier for shoppers to find the products they are looking for.
+Help shoppers make quicker purchasing decisions.
+Efficiently and creatively educate your website visitors.
+
+The visual nature of product badges helps customers find what they are looking for quickly by providing an extra piece of information before the shopper clicks through to a product.When used on the collection page to proactively message shoppers about inventory availability and fulfillment options, before the shopper gets to the product details page, badges help build trust and a transparent shopping experience at the top of the funnel. Badges that communicate limited availability also drive conversion by creating a sense of urgency and scarcity.
+
+All well-known shopping portals including Amazon, Walmart, Etsy, Aliexpress, etc make extensive use of product badges.
+Badges along with the Highlight Box help declutter the product pages, while still effectively communicating the information necessary for a user to make an informed purchasing decision. &nbsp;
+Note: Badges are available only for Plus Plans and above.
+
+&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040304035/original/ga__gGYfI0lVQ974a_L4i5pNPbc1R-XqHQ.png?1656415869
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040304036/original/w91nSRAYkuoJAPI44vpbkMywRfFFxG3uug.png?1656415874
+
+-----------------------------------
+
+Title: Badge Integration Guide
+
+(coming soon)
+Adding Clean App badge code into your theme is a one-time activity that once done you do not have to worry about later. If you are not comfortable adding the code simply raise a support ticket hereor email us at support@thaliaapps.freshdesk.com and we will take care of it.&nbsp;
+Steps:
+Go to your Shopify admin.
+Click&nbsp;Online Store &gt; Themes &gt; Actions.
+3. Click&nbsp;'Edit Code'.&nbsp;
+4. Click the file&nbsp;product-template.liquid&nbsp;which appears under&nbsp;Sections.&nbsp;&nbsp;
+5. The product-template.liquid file will open in the online code editor. Add the following code where you'd like the highlights to show on your product detail pages:&nbsp;&nbsp;
+{% render 'cleanb', product: product, hideAssets: '0', cleanbGroup: '1', cleanbOuterClass: '', cleanbInnerClass: 'clean-d-inline-block clean-mb-1' %}
+In most cases, locate the lines&nbsp;{% capture "form_classes" -%}&nbsp;OR&nbsp;{% form 'product',&nbsp;and place the code in a line above.&nbsp;
+This will display the badges below the product title and pricing. You can place the installation code anywhere else depending on your requirements.
+Note:&nbsp;The actual file and the line where you insert the code will differ as per the installed theme.
+If you have problems with the installation or want to change the location of the highlight box, please raise a support ticket&nbsp;here or email us at support@thaliaapps.freshdesk.com and we will take care of it.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040304322/original/2sgXB6S2eO0EMJPSKj0BgbR5-W1J1FJ9tg.png?1656416557
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040304324/original/z0QvArhWDqSJaMFQ0n24jOPueyLtzK_Hxg.png?1656416579
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040304326/original/4MCFgxM4X502ZnsOaJD6ErbaJGbcc0XR5g.png?1656416603
+
+-----------------------------------
+
+Title: Badge Integration Guide With Online Store 2 0 Themes
+
+(Coming soon)
+Adding Clean Badges code into your theme is a one-time activity that once done you do not have to worry about later. If you are not comfortable adding the code simply raise a support ticket here or email us at&nbsp;support@thaliaapps.freshdesk.com&nbsp;and we will take care of it.&nbsp;
+
+Steps:
+1. Go to your Shopify admin.
+
+2. Click Online Store &gt; Themes &gt; Actions.
+3. Click&nbsp;Edit code.&nbsp;
+4. &nbsp;Add the following code where you'd like the badges to show:&nbsp;
+{% render 'cleanb', product: product, hideAssets:'1', cleanbGroup:'1', cleanbInnerClass: 'clean-d-inline-block &nbsp;clean-mb-1' %}
+For showing the badges on the product pages place the code in the sections/main-product.liquid file. Search for {{ product.title }} and place the above-mentioned code in the next line. This will display the badges below the product title.&nbsp;
+Similarly, the Prime app badge code can be placed on the collection page. Look for&nbsp;snippets/product-card.liquid&nbsp;file. And add the code below the product title or the place where you want to display the badges.&nbsp;
+If you have problems with the installation or want to change the location of the highlight box, please raise a support ticket&nbsp;here&nbsp;or email us at&nbsp;support@thaliaapps.freshdesk.com&nbsp;and we will take care of it.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040304621/original/DaLbRar-iAXNL359z_IWc-zYN8atL4Zihw.png?1656417098
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040304623/original/LF7GCNjXYBKWFmh3KOo6Rf-CLaZ2TDoGyg.png?1656417109
+
+-----------------------------------
+
+Title: Banners
+
+(coming soon)
+Improve conversion rates by displaying an eye-catching banner on product pages to highlight the #1 reason why customers should buy from you.
+Digital consumers have now become extremely impatient. People have an attention span of eight seconds, a decrease from 12 seconds back in 2000, according to a Microsoft study. And that human attention span decreases by 88% every year. These shortening attention spans make it very critical to quickly highlight the single most important selling point of our product/store. This can be done via catchy Banners placed near the Add to Cart button.
+Appeal to your users with your unique story, mission, best qualities, special sales, insights, shipping speed, competitive advantage, customer testimonials, etc. With the Smart Product Description Icons app, you can customize banners for different customers and products based on conditions.&nbsp;
+Banners are a sure-shot way to increase sales when you have less time to convert restless shoppers.
+Banners are available only for Pro Plans and above.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040304791/original/Fd7no5DkMUoY7iWBMA2fhGWi1fgRmRtZSw.png?1656417483
+
+-----------------------------------
+
+Title: Banner Integration Guide
+
+(Coming soon)
+Adding Banner integration code into your theme is a one-time activity that once done you do not have to worry about later. If you are not comfortable adding the code simply raise a support ticket here or email us at support@thaliaapps.freshdesk.com&nbsp;and we will take care of it.
+Steps:1. &nbsp;Go to your Shopify admin.
+
+2. Click Online Store&nbsp;&gt; Themes&nbsp;&gt; Actions
+
+3. Click Edit code&nbsp;&nbsp;&nbsp;
+
+4. Click the file&nbsp;product-template.liquid&nbsp;which appears under&nbsp;Sections.
+
+&nbsp; &nbsp;&nbsp;
+5. The product-template.liquid file will open in the online code editor. Add the following code where you'd like the Banners to show on your product detail pages: &nbsp;
+{% render 'cleanban', product: product, cleanbanGroup:'1', cleanbanOuterClass:'clean-mb-2 clean-mt-2 clean-text-left', cleanbanOuterStyle:'', cleanbanInnerStyle:'', cleanbanInnerClass: 'clean-d-block clean-mb-1' %}
+The above code is typically placed before the form element (Before Add to Cart button).&nbsp;
+This will display the Banners above the add to cart button. You can place the installation code anywhere else depending on your requirements.
+Note:&nbsp;The actual file and the line where you insert the code will differ as per the installed theme.&nbsp;
+If you have problems with the installation or want to change the location of the Banner box, please raise a support ticket&nbsp;here&nbsp;or email us at&nbsp;support@thaliaapps.freshdesk.com and we will take care of it.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040304836/original/vyaGe7xQXOnUXK4KSJvoEcA2FFknX5LiUQ.png?1656417560
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040304837/original/01Qe1c4JwAEcw4QFUsn1mz3lIdIkJ8_FgA.png?1656417561
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040304856/original/w4pnDxDQiNOIQcxfPX_1E_vu5vBvP-brJg.png?1656417615
+
+-----------------------------------
+
+Title: Banner Integration Guide With Online Store 2 0 Themes
+
+(coming soon)
+Adding Banner integration code into your online store 2.0 theme is a one-time activity which once done you do not have to worry about later. If you are not comfortable adding the code simply raise a support ticket here&nbsp;or email us at support@thaliaapps.freshdesk.com&nbsp;and we will take care of it.&nbsp;&nbsp;
+
+&nbsp;
+
+Steps:1. &nbsp;Go to your Shopify admin.
+
+2. Click Online Store&nbsp;&gt; Themes&nbsp;&gt; Actions
+3. Click Edit code.
+4. &nbsp;Click the file main-product.liquid which appears under Sections.
+5. The main-product.liquid file will open in the online code editor. Add the following code where you'd like the banner to show on your product detail pages:
+{% render 'cleanban', product: product, cleanbanGroup:'1', cleanbanOuterClass:'clean-mb-2 clean-mt-2 clean-text-left', cleanbanOuterStyle:'', cleanbanInnerStyle:'', cleanbanInnerClass: 'clean-d-block clean-mb-1' %}
+The above code is typically placed before the form element (Before Add to Cart button).&nbsp;
+This will display the Banners above the add to cart button. You can place the installation code anywhere else depending on your requirements.
+If you have problems with the installation or want to change the location of the Banner box, please raise a support ticket here or email us at support@thaliaapps.freshdesk.com and we will take care of it.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040304949/original/MUlGXT3Ri9mta-wNraBkTuOULhOamwZo2Q.png?1656417799
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040304951/original/K-f6_tJ5N8zAR0f_JIlpXjEiB0KAs2C3Jw.png?1656417799
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040304950/original/zb873ZGRUOT-6mLG5NTmsRu2ZqK-F3pPBA.png?1656417799
+
+-----------------------------------
+
+Title: What Are Notes 
+
+(coming soon)
+Notes are short textual feature highlights of the product. They are similar to the feature bullets on Amazon.
+If you’ve ever bought or sold on Amazon, there is no way you can miss them. They are on the page, often next to the product’s images. Each bullet point is separated by a symbol which makes it easier to highlight the different benefits of the product. They greatly enhance readability and draw focus to the main advantages of the product. In short, it’s a seller’s sales pitch.&nbsp;
+Notes help you to create similar bullet points to highlight key features of the product. Apart from bullets, you can format the note text into short paragraphs with rich formatting. Notes are complementary to the main product description and can be placed anywhere on the product or collection pages.
+Each product can have only one Note box.
+Notes are available only for Pro Plans and above.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040305323/original/yTLgfVK2rOu_W0KxHxvIi3-tLYeUQ6Mxig.png?1656418475
+
+-----------------------------------
+
+Title: Notes Integration Guide
+
+(coming soon)
+Adding Notes integration code into your theme is a one-time activity that once done you do not have to worry about later. If you are not comfortable adding the code simply raise a support ticket here or email us at support@thaliaapps.freshdesk.com&nbsp;and we will take care of it.&nbsp;&nbsp;
+Steps:1. &nbsp;Go to your Shopify admin.
+
+2. Click Online Store&nbsp;&gt; Themes&nbsp;&gt; Actions
+3. Click Edit code.
+4. Click the file&nbsp;product-template.liquid&nbsp;which appears under&nbsp;Sections.
+5. The product-template.liquid file will open in the online code editor. Add the following code where you'd like the Notes to show on your product detail pages:&nbsp;
+&nbsp;{% render 'cleann', product: product %}
+The above code is typically placed before the description element.
+This will display the Notes above the product description. You can place the installation code anywhere else depending on your requirements.
+Note:&nbsp;The actual file and the line where you insert the code will differ as per the installed theme.&nbsp;
+If you have problems with the installation or want to change the location of the Note box, please raise a support ticket&nbsp;here or email us at&nbsp;support@thaliaapps.freshdesk.com&nbsp;and we will take care of it.
+&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040305388/original/xNiMBg2OoxI--nSCzzkoEirEz48zxqdpyA.png?1656418570
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040305389/original/l4uOo_twdBNs2QVl6Ps1KyZjc8f0xsWVGw.png?1656418572
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040305387/original/eBLCYfpp_0quMDGZ-3QpD2dP0e6wp6cIiw.png?1656418570
+
+-----------------------------------
+
+Title: Notes Integration Guide With Online Store 2 0 Themes
+
+(Coming soon)
+Adding Notes integration code into your theme is a one-time activity that once done you do not have to worry about later. If you are not comfortable adding the code simply raise a support ticket here or email us at support@thaliaapps.freshdesk.com&nbsp;and we will take care of it.
+Steps:
+
+1. &nbsp;Go to your Shopify admin.
+
+2. Click Online Store &gt; Themes &gt; Actions.
+3. Click Edit code.
+4. Click the file main-product.liquid which appears under Sections.
+5. The main-product.liquid file will open in the online code editor. Add the following code where you'd like the Notes to show on your product detail pages:&nbsp;
+{% render 'cleann', product: product, cleannGroup:'1', hideAssets:'0' %}
+This will display the Notes above the product description. You can place the installation code anywhere else depending on your requirements.
+If you have problems with the installation or want to change the location of the Note box, please raise a support ticket&nbsp;here&nbsp;or email us at&nbsp;support@thaliaapps.freshdesk.com&nbsp;and we will take care of it.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040305518/original/YsmDmfFxMUxkOSJOMC1r8U1_5kBHc0nqig.png?1656418805
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040305520/original/YZvP7ae35H5ccFPho_H3qVYq7B5eDSITPQ.png?1656418805
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29040305519/original/0C4SwHazJC5m06oz8FKHoLGrR02Csmoz8A.png?1656418805

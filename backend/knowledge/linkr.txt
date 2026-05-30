@@ -1,0 +1,335 @@
+Title: Who Is This App For 
+
+Linkr app is designed for Shopify merchants, Amazon sellers, and affiliate marketers who want to connect their Shopify products with Amazon listings to increase visibility, build trust, and boost sales across both platforms.
+Linkr&nbsp;helps boost your sales with the Amazon Buy Now button — a powerful feature designed to improve your Amazon organic rankings and drive more sales through both your Amazon listings and Shopify store.
+With Linkr, you can easily link your Shopify products to their corresponding Amazon listings using ASINs or custom Amazon links. This allows your customers to view genuine Amazon reviews and make confident purchasing decisions — enhancing credibility and improving conversions.
+Ideal for:
+
+• Shopify Merchants – Strengthen brand reputation and customer confidence by linking store products directly to verified Amazon listings.
+• Amazon Sellers – Drive external traffic from Shopify to Amazon, helping improve organic search rankings and sales performance.
+• Affiliate Marketers – Add affiliate links for multiple Amazon marketplaces to maximise revenue potential and commissions.
+By integrating Linkr, you can provide a seamless and trusted shopping experience that bridges your Shopify store with Amazon — helping you grow your brand presence, attract more buyers, and achieve higher conversion rates.
+
+-----------------------------------
+
+Title: Installation Steps
+
+Installing the Linkr&nbsp;App is quick and straightforward. Follow these simple steps to get started:&nbsp;
+• Visit the Shopify App Store: Go to the Shopify App Store and search for ‘Linkr’.
+
+• Click Install:&nbsp;Once you’ve found the app, click Install to begin the process.
+• Log In and Approve: You’ll be prompted to log in to your Shopify store. After logging in, review the permissions and approve the installation, along with any associated charges.
+Have questions or run into issues? Our dedicated support team is here to help you every step of the way. Please raise a support ticket&nbsp;here&nbsp;or email us at&nbsp;support@thaliaapps.freshdesk.com.&nbsp;
+
+-----------------------------------
+
+Title: How Does It Work 
+
+With the Linkr app, you can link your Shopify products or add custom links to different Amazon marketplaces such as Amazon US, UK, Canada, Germany, and more. This allows you to direct customers to the most relevant Amazon store based on their location or shopping preferences — helping you reach a wider audience and boost sales across multiple regions.
+Quick Steps: Add an Amazon Marketplace
+
+Open the Linkr Dashboard.
+Select the desired Amazon Marketplace from the list.
+Click Select Product — a list of your Shopify products will appear. Choose the product you want to link to that marketplace and click on Add.
+Click Edit&nbsp;to link the selected product using ASIN, Custom Links, or Keywords.
+Enter the ASIN&nbsp;or a custom Amazon link for the product.
+• If you add an ASIN, you can boost its Amazon search ranking by clicking Improve Search Ranking and adding relevant keywords. Then, click the Save button.
+Turn the Status toggle to Active to activate the product.
+That’s it! Your marketplace link is now active and ready to redirect customers to the appropriate Amazon marketplace site.&nbsp;
+
+Full guide:&nbsp;How to Enable the Linkr – Amazon Buy Button
+Have questions or run into issues? Our dedicated support team is here to help you every step of the way. Please raise a support ticket&nbsp;here&nbsp;or email us at&nbsp;support@thaliaapps.freshdesk.com.&nbsp;&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067109180/original/f6LOIgWWXgxymuwzOr4LajPszuCyFnoazw.PNG?1762324527
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067109212/original/ldtI9vsnDVbD3Lr8AeaRHw_zAtyzFzK3eA.PNG?1762324748
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067109247/original/0OO2QbclIyQ_yNhNLQXrUHvqBYCYvTzhbg.PNG?1762324996
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067109265/original/PolufNF4Ez9dpYsgdqkiENiHSOaafiKgpA.PNG?1762325215
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067222917/original/Pd1sgnOhSgE_F2GZtFscln9-L2tt-4M5sw.PNG?1762841702
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067222966/original/7hLfkVPoYoITOaWFh8aJMSrWVzBmhtNCqQ.PNG?1762842506
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067222964/original/OLAA0k9pqAZRzS9PonZdOfnYDgeu-Qz52A.PNG?1762842476
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067223062/original/CV8LzXnqo6bdlPVnEyq2JZ2RSeNRqzSFlw.PNG?1762843152
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067223108/original/gHBav3hTqTEOdVFvijLFYflcD5YVnq5FYQ.PNG?1762843604
+
+-----------------------------------
+
+Title: How To Enable The Linkr Amazon Buy Button
+
+Follow the steps below to add the Amazon Buy button to your product pages using the Linkr app:
+1. Go to Online Store → Themes → Customise.
+2. Open a Product page template.
+3. In the left sidebar, click the (+) Add block icon to add a block below the “Buy buttons” section.
+4. Select the Linkr app block from the list of available app blocks and save the changes.
+5. Click the Linkr App block you just added — a settings panel will appear on the left.
+6. From the Force Marketplace dropdown options, select “Default” and click the Save button. The “View on Amazon” button will instantly appear on the website.&nbsp;
+
+That’s it! Your “View on Amazon” button is now active and visible on your product pages — helping shoppers easily navigate to your Amazon listings and boosting conversions.
+Have questions or run into issues? Our dedicated support team is here to help you every step of the way. Please raise a support ticket&nbsp;here&nbsp;or email us at&nbsp;support@thaliaapps.freshdesk.com.&nbsp;&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067085478/original/0k9_-e__lIuMsxFMkn2YBfwk671Qct6CUg.PNG?1762248643
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067085568/original/yg5F881c0YKsn9bvC_LKV5z3mYek0rBPSg.PNG?1762248993
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067085618/original/mXMxzkzH6YpKDd5TS5VisawOARB08se26g.PNG?1762249223
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067302787/original/SpkTXw2YWThYojeISFXDKSX2Av_nmoQutw.PNG?1763102724
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067092962/original/3ct2lpu7hTpDZx9bvPmo0dr8egy97tX8iw.PNG?1762266807
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067305263/original/2W-bfNlAYdMOfokqO6c05I7iF5x8hAftrg.PNG?1763111654
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067274819/original/rggfUHexGIXq7uKB6V1jqFn5ax2Ugx10vw.PNG?1763017296
+
+-----------------------------------
+
+Title: Button Visibility How It Works
+
+This guide explains how the “View on Amazon” button appears to customers based on the region settings you configure in the Linkr app.
+1. Region-Based Button Display (Show View on Amazon Button based on Customer’s Region)When you activate a product for a specific Amazon region, the button will be shown only to customers visiting from that region.
+
+How to enable this:Activate the product for the desired Amazon region in the Linkr app.
+Add the Linkr app block to your theme.
+Under Force Marketplace, select Default&nbsp;and Click Save.
+With this setup, customers will see the “View on Amazon” button only if they are located in an activated region.
+
+Example:If you activate the product for Amazon US, visitors from the United States will see → View on Amazon (US)&nbsp;
+If you activate the same product for multiple regions (US, UK, CA, AU), the app will automatically display the correct button based on the customer’s IP location:
+
+Visitor from Canada → View on Amazon (CA)
+Visitor from United Kingdom → View on Amazon (UK)
+2. Show One Amazon Region’s Button in Additional CountriesYou can activate a product for one Amazon region and choose additional countries where you want the same button to appear.
+How to enable this:Activate the product for your desired Amazon region, then add the additional countries under “Show in Countries” for that region in the settings.
+
+ExampleIf you activate the product for the United States region but also want customers from Canada or Australia to see the same “View on Amazon (US)” button, you can add those countries in the settings.
+Visitors from the countries you select will also see the “View on Amazon (US)” button:
+
+Visitor from the US → View on Amazon (US)
+Visitor from Canada → View on Amazon (US)
+This feature is helpful when you want a single Amazon region to serve customers from multiple countries.
+3. Fixed Marketplace Button (Show the Same Button to All Visitors Worldwide)The Fixed Marketplace option allows you to display the same Amazon region button to every customer, regardless of their location. This is useful when you want all visitors to be redirected to a single Amazon marketplace.
+How to enable this:
+
+Activate the product for the desired Amazon region, then in the Linkr app block, select the appropriate marketplace under Force Marketplace and click Save.
+
+Once enabled, all visitors worldwide will see the same Amazon marketplace button on products activated with the Linkr app.
+
+ExampleIf you activate the product for the Canada region and select amazon.ca under Force Marketplace in the Linkr app block:
+
+Visitors from Canada, UK, US, Australia, India, or any other country will all see → View on Amazon (CA)
+This ensures all customers are redirected to the same Amazon marketplace. You can also add multiple Fixed Marketplace buttons if you want to display more than one marketplace option to all visitors.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067333051/original/T-Rv5RrfrvH1qtHFt5q57gHCj0WOL7G0SA.png?1763324212
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067333332/original/dAAeTDbnP_idFrgrVygL1px1QpMcvjO_cg.png?1763329185
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067333032/original/8YWB6NKKJjxmfU1mLfaJ1plj6b3MYLPgfA.png?1763323931
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067333075/original/4MIpJcVdnzVArcuoFQVHWVdkNbkr9j0umQ.PNG?1763324763
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067333135/original/5U9WBhI-ESzLmP-GBoNb_Cg6s3xhVGFZGw.PNG?1763326105
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067333326/original/VPceHVWtd8mM1OoA8Sbdd_CFBZ_peORulQ.PNG?1763329016
+
+-----------------------------------
+
+Title: How To Show Multiple Amazon Marketplace Buttons
+
+If you sell across multiple Amazon marketplaces,&nbsp;Linkr – Amazon Buy Now Button&nbsp;allows you to display more than one marketplace button on your product page.
+
+Steps to Add Multiple Buttons
+
+Go to your&nbsp;Shopify Admin → Online Store → Themes → Customise.
+Open your&nbsp;Product Page template.
+In the&nbsp;Theme Editor sidebar, click&nbsp;Add Block&nbsp;under the existing Linkr app block.
+Select the Linkr app block from the list of available app blocks and save the changes.
+Click the Linkr block you just added — a settings panel will appear on the left.
+• In each block’s settings, choose Force Marketplace and select the correct Amazon marketplace you want the button to redirect to (e.g., Amazon Canada).
+Click&nbsp;Save&nbsp;once you’ve added all required buttons.
+That’s it! Your “View on Amazon CA” button is now active along with the “View on Amazon US” button — both are visible on your product pages, helping shoppers quickly navigate to the correct Amazon listing and boosting conversions.
+Each block will display its own marketplace button, allowing customers to choose the most relevant Amazon store based on their region or shopping preference.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067109094/original/GImxE18aQEXqBJhyEUhaDsG-g14pD-tSLg.PNG?1762323462
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067109106/original/GkL-o-A_Y-uPWe1UZSovAkjJboioqnHJVg.PNG?1762323615
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067109109/original/zRnswoyC2_SlQVYbXOBSloc7QUJkME_IZQ.PNG?1762323789
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067109128/original/pAQhyAWmgkpUs-FUFUBUWCGuLH2Hlclo7A.PNG?1762324018
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067108820/original/RrS4x-Ad_2TdEMfslW3_dxmnQ-3FZ-_fOg.PNG?1762321537
+
+-----------------------------------
+
+Title: Button Settings Explained Linkr View On Amazon Button 
+
+This page explains each button setting available in the&nbsp;Linkr – Amazon Buy Now Button&nbsp;app — what they do, and how they apply to your connected Amazon marketplaces.
+
+Hide Other Buy Buttons (Applies to All Marketplaces)When enabled, this option hides Shopify’s default&nbsp;Add to Cart&nbsp;button and displays only the&nbsp;Amazon Buy Now&nbsp;button on your product page.
+
+Use this setting if you want customers to purchase exclusively through Amazon instead of checking out on Shopify.
+
+Best For:
+
+Stores operating as Amazon affiliates.
+Merchants who prefer redirecting traffic directly to Amazon listings.
+Steps to Enable “Hide Other Buy Buttons”
+1. Open the Linkr app dashboard.
+2. Select the product from the list of connected products and click Edit.
+3. In the pop-up, check the “Hide Other Buy Buttons” option.
+4. Click Save to apply the changes.
+Additional Option: Improve Search Ranking.&nbsp;
+In the same pop-up, you can enable Improve Search Ranking and enter&nbsp;relevant&nbsp;keywords&nbsp;to help increase Amazon organic search visibility.&nbsp;
+That’s it! The Shopify Add to Cart button will now be hidden, ensuring that only the Linkr Amazon Buy Now button is visible on the selected product.
+&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067083253/original/kj389YD0lHILTNuGsQts629-fEe18zBigw.PNG?1762241582
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067083502/original/GqBdh-AyrBxdFC86Cx1OpmL4KDb9tbeApQ.PNG?1762242733
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067083481/original/nfXbF71DOzep5olmNm9NnSKnb37ZG6oTCg.PNG?1762242714
+
+-----------------------------------
+
+Title: Understanding Asin Custom Link And Keyword Options
+
+Linkr&nbsp;allows you to connect your Shopify products to Amazon listings using either an ASIN or a Custom Amazon Link.
+1. ASINEnter the Amazon Standard Identification Number (ASIN), and Linkr will automatically generate the correct Amazon product link.
+Example:If your product’s ASIN is B00NOY3JKW, Linkr app will generate the following Amazon link:
+
+https://www.amazon.com/dp/B00NOY3JKW/s/?k=&amp;tag=&amp;th=1&amp;psc=1
+When shoppers click the View on Amazon button, they’ll be redirected to this link.
+2. Custom LinkAdd the custom Amazon product URL for maximum accuracy and control.
+https://www.amazon.com/gp/product/B00NOY3JKW/?tag=mystore-20&nbsp;
+This option is ideal if you’re using affiliate links or region-specific Amazon URLs.
+3.&nbsp;Keywords&nbsp;
+
+Add keywords to send customers to an Amazon search results page filtered by both the ASIN and the keywords.
+Example: Keyword: black&nbsp;&amp; ASIN:&nbsp;B00NOY3JKW &nbsp;
+
+https://www.amazon.com/s?k=black&amp;rh=p_78%3AB00NOY3JKW%2Cssx%3Arelevance
+This can help boost your product’s Amazon ranking if clicks come through a search result instead of a direct link.&nbsp;It will take customers to a results page that highlights your product within that search.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067094306/original/s__jhBWNNdmjvUOv9nt-9JPIfeVWK2Sj0w.PNG?1762269279
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067096572/original/CWGBh0eHb9CrQ0EL3iWcOoEsmcN8L7Jf7g.PNG?1762273514
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067112259/original/BIM4c4OgF3MtRNv-JJmM-mRQ4DN6BTeK8Q.PNG?1762335418
+
+-----------------------------------
+
+Title: Amazon Region Settings
+
+The Linkr app displays the View on Amazon button based on the marketplace selected in the dashboard.
+To ensure the button appears for customers in additional regions, you can add those regions in the Amazon Region Settings section.
+Steps to Configure Region Visibility
+Step 1: Open the Linkr app dashboard and click on Settings. The Amazon Region Settings page will open, displaying all supported Amazon regions.
+Step 2: Click on the Edit button for the region you want to update.
+Step 4: In the Edit Region screen, you will see options to:
+
+Select Button Color&nbsp;
+Add Affiliate Tag
+Configure Show in Countries
+Step 5: Add your affiliate tag (for example: store-20) and click Save.
+Step 6: Under the Show in Countries section, click the dropdown button.
+Step 7: You will see a list of regions. Select the regions where you want the View on Amazon button to be displayed.
+
+Example: select Canada, then click Save.
+Step 7: After saving, you will see the updated settings. For example, for the United States, the button will now be set to display in the US and Canada regions, along with the affiliate tag you added.&nbsp;
+Similarly, you can configure region visibility for any other regions where you want the View on Amazon button to be displayed.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067276571/original/TVAA5uy58AjSnMN9w0yy7K8403JUZmOWoA.PNG?1763022827
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067276619/original/6t9dt2oA_8W6hIdWdTjIYCHhvX1b_k-Ktg.PNG?1763022965
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067276660/original/0gAgs7sVQTXWHFWN92_MOBB7YOZNgcqLjA.PNG?1763023130
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067276662/original/b4kH9NTcODb0ukOjdypgX67g1GUyMngO9A.PNG?1763023144
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067276846/original/rbkfqx9kCKpPTryjIKZcrk9_5IsNcwOFNA.PNG?1763023617
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067276753/original/Of7JRU-2dHRB20b1oXW0BPe81nOQQzYtQQ.PNG?1763023387
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29067277041/original/doIwrhkn6qf1Y5-y4ha1XzOBypBLfAUvlA.png?1763024124
+
+-----------------------------------
+
+Title: Pricing
+
+The Linkr app includes a 7-day free trial for all Shopify users. You won’t be charged during this period, and billing will start only after the trial ends.
+The Free Plan is available exclusively for Shopify Development, Affiliate, and Staff Stores. For all other Shopify stores on a paid plan, the app will automatically move to the Basic Plan ($5 per month) once the 7-day trial concludes.
+Free PlanBasic Plan ($5/month)Unlimited Amazon Products✓
+✓&nbsp;Add Custom URL✓
+✓Add Affiliate Tag✓
+✓Country Targeting✓
+✓Amazon Organic Ranking Improvement✓
+✓Basic Analytics✓
+✓Multi-Button Layout✓
+✓Click TrackingX
+✓
+Note:
+
+The app charges you via the Shopify billing API, meaning that charges appear directly on your Shopify invoice.
+There are no setup fees.
+Terminate the subscription anytime by simply uninstalling the app.
+To keep it fair and transparent, we do not offer discounts to anyone.
+The app charges are non-refundable. If the app is uninstalled before the 7-day trial ends, then you will not be charged at all.
+Disclaimer:
+Ordinarily, you will find one final charge for the Linkr app (or any other app using Shopify billing) on your next invoice after uninstall. This is because, while you get charged for your Shopify subscription and apps in one invoice, the billing cycles are almost always out of phase with one another. As a result, you pay for apps partly in advance and partly in arrears each month. You can find a more extensive explanation of this here.
+
+-----------------------------------
+
+Title: How To Cancel Your App Subscription Plan 
+
+You can uninstall the Linkr app through your Shopify store admin.
+• Go to your&nbsp;Shopify admin &gt; Apps.
+• Click on the Apps and sales channel settings.
+• A pop-up window will open, displaying a list of all the apps. Go to the "Linkr" app and click on the “uninstall” or "remove" button.
+That's it! The app is now uninstalled. The system is free of residual code and unnecessary files requiring manual deletion.
+For detailed instructions, check out the Shopify guide to uninstall the app.&nbsp;
+
+Note: Once the app is uninstalled, your subscription gets terminated automatically.
+
+-----------------------------------
+
+Title: How Many Amazon Marketplaces Does The App Support For Linking Products 
+
+The app enables seamless product linking across multiple Amazon marketplaces worldwide, helping you manage listings and reach customers globally. Currently, it supports the following 19 Amazon marketplaces:
+North America
+
+United States
+Canada
+Mexico
+South America
+
+Brazil
+Europe
+
+United Kingdom
+Germany
+France
+Italy
+Spain
+Netherlands
+Poland
+Sweden
+Turkey
+Middle East
+
+United Arab Emirates
+Saudi Arabia
+Asia-Pacific
+
+India
+Japan
+Singapore
+Australia
+
+-----------------------------------
+
+Title: Does The App Support Showing Multiple Amazon Marketplace Buttons 
+
+Yes, the app supports displaying multiple Amazon marketplace buttons on product pages, enabling customers to select and buy from their preferred Amazon marketplace.
+
+-----------------------------------
+
+Title: What Do Keywords Do 
+
+Keywords let you send customers to an Amazon search results page filtered by both the ASIN and keywords.
+This can help boost your product’s Amazon ranking if clicks come through that search result instead of a direct link.
+
+Example: entering ASIN + keyword “wireless headphones” will take customers to a results page highlighting your product within that search.
+
+-----------------------------------
+
+Title: What Does Hide Other Buy Buttons Do 
+
+If enabled, this option hides Shopify’s default Add to Cart button and only shows the Amazon Buy Button.
+• This is useful if you want customers to purchase exclusively through Amazon.
+
+-----------------------------------
+
+Title: What S The Difference Between Asin And Custom Link 
+
+ASIN:&nbsp;If you enter an ASIN, the app automatically builds the Amazon link for that product.
+Custom Link:&nbsp;Paste the full Amazon URL directly. This gives you maximum accuracy and control.

@@ -1,0 +1,354 @@
+Title: Who Is This App For 
+
+When building an online store, one size never fits all. Every brand has its unique story, product range, and way of connecting with customers. That’s where Neo Blocks comes in.
+Neo Blocks is designed for merchants who want to go beyond the basics.
+If you are using Shopify’s default product pages, you might have felt restricted at some point. Perhaps you wanted to add a variant-specific description, showcase an image gallery for each variant, or create dynamic layouts that adapt to your products – but your theme didn’t allow it.
+Neo Blocks is built for:
+Merchants who want full control.
+
+You care about how each product is presented. You want to educate customers about each variant, show detailed images, and ensure they find the exact style, size, or model that fits their needs.
+Brands that value storytelling.
+
+Your product pages are not just for listing prices and specs. You want to tell a story, highlight features, explain differences between options, and create a rich experience that goes beyond ‘Add to Cart’.
+Businesses focused on conversion.
+
+A dynamic, detailed, and personalized product page helps customers make faster decisions. By integrating elements like variant descriptions and galleries, you reduce confusion and increase buyer confidence, leading to higher conversions.
+
+-----------------------------------
+
+Title: How It Works 
+
+1. InstallationStart by installing the&nbsp;Neo Product Blocks app from the Shopify App Store. The installation is quick and straightforward, with no manual theme edits needed.
+2. Add and Customize WidgetsOnce installed, you can choose from pre-built widgets:&nbsp;
+
+Variant Description&nbsp;
+Variant Galleries
+others coming soon
+3. Setting up Metafield:&nbsp;
+
+Click on "setup metafield"&nbsp;in the app dashboard for the block you wish to add.
+4. Click on "view/edit block" to style the block&nbsp;Easily adjust widget layout, color schemes, font styles, and spacing through the app’s intuitive design settings. This allows you to maintain brand consistency across your store without needing a developer.
+Have questions or run into issues? Our dedicated support team is here to help you every step of the way. Please raise a support ticket&nbsp;here&nbsp;or email us at&nbsp;support@thaliaapps.freshdesk.com.&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29064806214/original/EBSEVpURy5NtENh3dJxx3jEQTPCJp2GsRg.png?1752144365
+
+-----------------------------------
+
+Title: Variant Description Product Block
+
+The Variant Description Block empowers you to display short, variant-specific descriptions directly on your product pages. Whether it’s highlighting size details, color differences, material composition, short description, or special usage notes, this block ensures your shoppers have all the information they need to make confident purchasing decisions.
+By providing clear, targeted details for each variant, you:
+
+Enhance product transparency
+Reduce customer confusion
+Improve conversion rates and shopper trust
+
+&nbsp;
+How does it works ?
+Setting up Variant Descriptions is simple and seamless. Here’s how to get started:
+Step 1: Setup the metafield
+1. On your app dashboard homepage, locate the "Variant Description" block.
+2. Click on "Setup Metafield" to automatically create a variant-level metafield called neo.variant_description.
+Step 2: Add descriptions to each variant&nbsp;
+1. Go to your Shopify admin and navigate to the specific variant you wish to edit.
+
+2. Scroll down to Metafields and look for "Neo Variant Description".
+
+3. Enter the text you want displayed on your product page – for example, specific features, color notes, or sizing instructions.
+Step 3: Save your changes
+Click "Save" to ensure your variant descriptions are updated in Shopify.
+Step 4: Customize your product template.&nbsp;
+Go to "customize theme settings" &gt; Select the Product template &gt; Add and place the "Neo&nbsp;variant description block" as per your requirement.&nbsp;
+Step 5: Apply the styling to match your theme
+Within the block settings: Adjust font size, style, and color, custom CSS for advanced styling. Preview changes to ensure it blends seamlessly with your store design.
+Step 6: Publish it.
+
+Finally, hit “Save” to publish your updated product pages.
+Sample Block preview :&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29064806822/original/PARlnyn1TiOVKux5gHQ6dDlfTWDxVpThzg.png?1752145816
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065878189/original/IaAPL3LD1hY_bOINoWV3CU6Ru0Va6r52eA.png?1756977308
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065878141/original/pWvShL0Xy3-sxxthf371IsHoPLlyGNEncA.png?1756977071
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065878364/original/LhyhhOTKIcsoSCmzhutpwdRp1XcBVrPneQ.png?1756977674
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065878404/original/ukIvDXts3A4fVLdJ0iagbPyAKtHmk4YmSQ.png?1756977799
+
+-----------------------------------
+
+Title: Variant Galleries Product Block
+
+The Variant Gallery Block allows you to assign unique images or videos to each product variant on your store. Instead of generic media for all variants, shoppers see exactly what they are selecting, making their buying decisions easier and faster.
+Imagine your customer clicks on “Red” for a t-shirt variant, and they instantly see the red t-shirt images and a video showcasing its fit – that’s the level of clarity and professionalism this feature brings to your product pages.
+How does it work?
+Setting up Variant Galleries is simple and intuitive:
+Step 1: Setup the metafield
+1. On your app dashboard homepage, locate the "Variant Galleries" block.
+
+2. Click on "Setup Metafield" to automatically create a variant-level metafield called neo.variant_gallery.
+2. Assign medias to each variant
+1. Go to your Shopify admin and navigate to the specific variant you wish to edit.
+
+2. Scroll down to Metafields and look for "Neo Variant Galleries".
+
+3. Click “Select files” and upload your variant’s images and videos you want to display on your product page.
+Step 3: Save your changes
+Click "Save" to ensure your variant Galleries are updated in Shopify.
+Step 4: Customize your product template.&nbsp;
+Go to "Customize theme settings" &gt; Select the Product template &gt; Add and place the "Neo Variant Gallery block" as per your requirement.&nbsp;
+Step 5: Apply the styling to match your theme&nbsp;
+Within the block settings: adjust background color, border size, and gallery layout styling. Preview changes to ensure it blends seamlessly with your store design.
+Step 6: Publish it.
+Finally, hit “Save” to publish your updated product pages.
+&nbsp;Please Note:
+Supported media formats:
+
+For images: JPEG, PNG, WEBP, SVG, HEIC, and GIF. File size must be under 20 MB.
+• For videos:&nbsp;MOV and MP4. File size must be under 1 GB.&nbsp;
+Sample Preview Block:
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29064867694/original/Vt43WABSm2jUThXrDmV4mMWw7u0IvkBt1A.png?1752469463
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065827425/original/Dj5TPHSq2anBYmEQiP_snIscBCnx_T8QbQ.png?1756809900
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065878331/original/xPOWlZDs7sMGVaqJj_fTDzX3zJRZJW3JEg.png?1756977515
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065878672/original/OS3Iq3OfV6Qh5Gm7RIfhPe6T9XemrazcjQ.png?1756978427
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065827393/original/iCfMC8iqRoX2NsGB6TGxJALrwSJPup5ceA.png?1756809819
+
+-----------------------------------
+
+Title: Variant Star Rating Block
+
+The Variant Star Rating Block lets you showcase unique ratings for each individual product variant directly on your product page. Whether different variants (such as sizes, colors, or styles) have their own reviews or quality scores, this block allows you to display them separately instead of showing one common rating for the product.
+Use this block to:
+
+Highlight variant-specific ratings and feedback
+Improve transparency and trust for customers selecting between variants
+Help shoppers make more informed purchase decisions based on real experiences with the exact variant they are viewing
+How does it work?
+Setting up Variant Star rating is simple and intuitive:
+Step 1: Setup the metafield
+1. On your app dashboard homepage, locate the "Variant Star Rating" block.
+
+2. Click on "Setup Metafield" to automatically create a variant-level metafield called&nbsp;neo.variant_star_rating
+
+&nbsp;
+
+Step 2. Assign rating to each variant
+1.&nbsp;Go to your Shopify admin and navigate to the specific variant you wish to edit.
+
+2. Scroll down to Metafields and look for&nbsp;"Neo Variant Star Rating ".
+
+3. Add the rating you wish to display
+Note :&nbsp;
+
+Min value for rating : 1
+Max Value for rating : 5&nbsp;
+Upto one decimal value allowed&nbsp;
+Step 3: Save your changes
+Click "Save" to ensure your rating is updated in Shopify.
+Step 4: Customize your product template.&nbsp;
+Go to "Customize theme settings" &gt; Select the Product template &gt; Add and place the "Neo Variant Star Rating block" as per your requirement.&nbsp;
+Step 5: Apply the styling to match your theme&nbsp;
+Within the block settings: adjust the styling for stars and text shown for example , color,size etc. Preview changes to ensure it blends seamlessly with your store design.
+Step 6: Publish it.
+Finally, hit “Save” to publish your updated product pages.
+Sample Block Preview :&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065311461/original/QOet6zOFwZJILB-SGW22pQTBMrlLBNmQTA.png?1754377522
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065827459/original/hfkl9UlImxhlyc2x6q5bBDNygUyl1-Us5Q.png?1756809966
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065879412/original/HoJqWpAL49E2WbzQGOP9f9acD2Q0BX8c-Q.png?1756980289
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065879421/original/IXBciwZs_vUakaogxZwGN_EbG3Pt5wrxtg.png?1756980353
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065879423/original/4U8ycmoIHMtinUHR1AVH3SDptdZcdp7g7w.png?1756980406
+
+-----------------------------------
+
+Title: Product Star Rating Block
+
+The Product Star Rating Block displays the overall star rating for a product based on all of its reviews. This block is ideal when you want to show an aggregated rating instead of separate ratings for each variant.
+Use this block to:
+
+Showcase the average rating of the product at a glance
+Build customer trust and highlight positive feedback
+Encourage conversions by displaying social proof prominently on product pages
+How does it work?
+Setting up Product Star rating is simple and intuitive:
+Step 1: Setup the metafield
+1. On your app dashboard homepage, locate the "Product Star Rating" block.
+
+2. Click on "Setup Metafield" to automatically create a variant-level metafield called&nbsp;neo.product_star_rating
+
+&nbsp;
+
+Step 2. Assign rating to each variant
+1.&nbsp;Go to your Shopify admin and navigate to the specific variant you wish to edit.
+
+2. Scroll down to Metafields and look for&nbsp;"Neo Product Star Rating ".
+
+3. Add the rating you wish to display
+Note :&nbsp;
+
+Min value for rating : 1
+Max Value for rating : 5&nbsp;
+Upto one decimal value allowed&nbsp;
+Step 3: Save your changes
+Click "Save" to ensure your rating is updated in Shopify.
+
+Step 4: Customize your product template.&nbsp;
+Go to "Customize theme settings" &gt; Select the Product template &gt; Add and place the "Neo Product Star Rating block" as per your requirement.&nbsp;
+Step 5: Apply the styling to match your theme&nbsp;
+Within the block settings: adjust the styling for stars and text shown for example , color,size etc. Preview changes to ensure it blends seamlessly with your store design.
+Step 6: Publish it.
+Finally, hit “Save” to publish your updated product pages.
+Sample Block Preview :&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065312297/original/qJ23IEM5FbJfG8FvJbbrQ7p8qUt4qYGRCg.png?1754379759
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065827522/original/qsx6ev_UW7gqi4xsXRpsMWjRubciNEgARA.png?1756810095
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065879484/original/Oxq5dG0tApyMs2SAAMyY6Rk5G7SUEECp3A.png?1756980610
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065879502/original/oyaj7oyCwR8uH5Da2D8mzhP3XzgAte5gkA.png?1756980674
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065879508/original/amBmmvLozPX3ZOSWd7pRBJdSNQCA1qca_Q.png?1756980732
+
+-----------------------------------
+
+Title: Variant Inventory Status Block
+
+The Variant Inventory Status Block lets you display real-time stock status messages for each product variant based on predefined inventory thresholds. Instead of showing a generic message, you can automatically label variants as “Low Stock,” “Ready to Ship,” or “Out of Stock” depending on their available quantity.
+This helps create urgency, sets the right expectations for customers, and improves the overall shopping experience by showing accurate, variant-specific inventory updates.
+
+How does it work?&nbsp;
+Step 1: Add the block in your theme editorGo to Online Store → Customize
+Open your Product template
+Click “Add block” and select Neo – Variant Inventory Status
+Position the block wherever you’d like it to appear on the product page.
+Step 2: Configure the block settings
+
+Inside the block settings panel, you can:
+
+Set threshold values to determine when to show:
+
+Low Stock
+In Stock
+Out of Stock
+Customize messaging for each status (e.g., &nbsp;“Out of Stock — check back soon”)
+Style the block by adjusting:
+
+Text color, font size
+Alignment
+Animations or highlight effects
+Preview your changes live to ensure the look and position match your store’s design.&nbsp;
+Step 3: Save &amp; Publish
+
+Once everything looks good:
+
+Click Save in the theme editor
+Your updated product pages will now display variant-specific inventory status automatically based on your configured thresholds.
+Sample Block Preview:&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065879647/original/dwwrREkSBFsWD48AdYWSulRogWEk3SNIuA.png?1756981125
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065464386/original/EEk575Yaez7VDxQySl5ofXd0qFV4kJ_toQ.png?1755066079
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065879741/original/S4ji5PsOvz0Zi3sLc_1TfTH179czR3vgxQ.png?1756981375
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065879781/original/7n7iFJfu18eqW0nLiH6favOg9IfQdwFwmQ.png?1756981445
+
+-----------------------------------
+
+Title: Pricing Plans
+
+The App is available for free.
+
+-----------------------------------
+
+Title: How To Cancel Your Plan 
+
+You can uninstall the&nbsp;Neo Product Blocks app through your Shopify store admin.
+Go to your Shopify admin &gt; Apps.
+Click on the Apps and sales channel settings.
+A pop-up window will open, displaying a list of all the apps. Go to the "Neo product block" app and click on the “uninstall” or "remove" button.
+
+That's it! The app is now uninstalled. The system is free of residual code and unnecessary files requiring manual deletion.
+For detailed instructions, check out the Shopify guide to uninstall the app.&nbsp;
+
+Note: Once the app is uninstalled, your subscription gets terminated automatically.
+
+-----------------------------------
+
+Title: The Variant Description Block Still Appears Even After Deleting The Metafield What Should I Do 
+
+If the Variant Description block still appears after deleting the "neo.variant_description" metafield, it’s likely because the field’s saved values were not removed. You can fix this in either of the following ways:
+Option 1 – Remove the block from your theme
+
+In Shopify Admin, go to Online Store &gt; Themes &gt; Customize.
+Open the product page template where the Variant Description block is added.
+Locate the block, remove it, and click Save.
+Option 2 – Fully delete the metafield
+
+Recreate the Variant Description block in the app — this will restore the "neo.variant_description" metafield.
+Delete it again, making sure to choose "Delete field and its saved values" so it’s completely removed from your store.
+
+You may find more info on deleting metafield here.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065463999/original/-x-BuUVDDLiMMmuoelxUn4Hv2xjGJ_A0Mg.png?1755064417
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065463995/original/PWVsv41Gj69WV3yFK2UkHZnRtRZHc6GRHw.png?1755064392
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065463996/original/NPR8qjqkrMFz2wDaaLlsQEIQ5qtW8imejA.png?1755064402
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065464133/original/IUZgsa6dAo5quNMYjpBZpQr1-OrERJpSjA.png?1755065096
+
+-----------------------------------
+
+Title: How To Delete Metafields Created Using The Neo App Block 
+
+The steps to delete metafields created with Neo App blocks are the same for all.
+For example, you can follow the instructions provided for the variant description block. 
+
+When you set up the Variant Description Block in the app, a metafield "&nbsp;neo.variant_description " is automatically created at the variant level. If you ever wish to remove this metafield, you have two options depending on whether you want to keep or delete the existing content on your product pages.
+Follow the steps below to delete the metafield:
+Step 1: Access the Variant Metafields
+
+From your Shopify Admin, go to Settings&nbsp;
+Under Metafields and Metaobjects, select Variants.
+You’ll now see a list of metafields associated with your product variants.
+Step 2: Delete the Metafield&nbsp;
+
+Locate the Neo Variant Description metafield (usually named neo.variant_description).
+Click on the three dots (•••) next to the field and choose Delete definition.
+Shopify will show two delete options:
+
+Delete the field onlyThis removes the metafield definition, but keeps existing values. The block will still display on product pages if values were added.
+Delete the field and its saved valuesThis removes the metafield definition and all stored values. The block will no longer appear on product pages.
+Have questions or run into issues? Our dedicated support team is here to help you every step of the way. Please raise a support ticket&nbsp;here&nbsp;or email us at&nbsp;support@thaliaapps.freshdesk.com.&nbsp;
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29064928127/original/bwB_0w-3J5i0iPQMF0q1JGQz-3M4_jwGgg.png?1752645509
+
+-----------------------------------
+
+Title: Can I Use My Own Metafield To Show Content In The Variant Description Block 
+
+Yes, you can use your own existing metafield ( variant level ) &nbsp;with the Variant Description Block in the Neo app.
+To do this:
+
+Add the Variant Description Block to your product template via Online Store &gt; Customize in your Shopify admin.
+In the block settings, enter the Namespace and Key of your existing variant-level metafield.
+If the metafield exists for a variant, the block will automatically display the content
+Note: The block will only appear if the metafield is present and contains a value for the selected variant.
+
+This gives you full control to manage content using your existing metafields without needing to recreate them in the app.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065464265/original/riQyB4un97ltLLSr73S0g4ix8Qos1gqDaw.png?1755065436
+
+-----------------------------------
+
+Title: Can I Customize The Text For Each Status In The Variant Inventory Status Block 
+
+Absolutely! You can enter custom text for Low Stock, In Stock and Out of Stock in the block settings to match your store voice.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29065414636/original/Z4ynA81X3k12O5uVpP1FOyD7kSgz_aNkgQ.png?1754889459
+
+-----------------------------------
+
+Title: Do I Need To Create Metafields For Variant Inventory Status Block To Work 
+
+No, the block directly reads inventory data from Shopify. Just add the block and set your threshold values.

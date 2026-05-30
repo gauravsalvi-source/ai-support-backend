@@ -1,0 +1,254 @@
+Title: Product Export To Csv
+
+With the Data Exporter app, you can export all the product data into a CSV file by selecting the fields you want in just a few clicks. For this, you simply need to create the task.
+Steps to Export Data in Bulk
+1. Go to the App dashboard &gt; Click on the New Export sub menus.&nbsp;
+2. On the 'Create Task' page, the first step is to select the fields that you want to export. You can select more than one.
+3. Next step is to select the products that you want to edit. You can select more than one condition. Click 'Next'.&nbsp;&nbsp;
+4. The app will search for the items that match the conditions and provide the count.&nbsp;
+5. Finally, provide the export name and email and click the Export Now button. The app will then send you the CSV file to the email address you provided, wherein you can then download the file.&nbsp;
+Please check this video guide for the step-by-step process:
+Note:&nbsp;
+The exported CSV file link received via email or in the dashboard will expire in 24 hours.
+With the Exporter app, you will be able to export the product metafield data for the products in your current store, however, you will not be able to add them to the products while uploading the same file in your other store.&nbsp;Shopify does not allow or support the feature.&nbsp;
+Important Note:&nbsp;The app automatically deletes export product logs after 24 hours.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068597325/original/ruYpCUcFFv39fLlTIfxuFhu5-nLxNfjXkA.png?1769602828
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068597355/original/viNWSHy1Yt0G9SLFbvWev_1FWQ2ZuNNL_g.png?1769602908
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068616114/original/FLHdCkJ3QOkoR-z0d2yVSiq2Z5qc_oj1PQ.png?1769662339
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068616140/original/i8loOhcJPzS6vkRiyW7l3pJSgQ5MCIRk1A.png?1769662569
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068616489/original/iyXhZDGoDFYUb3PxAVQlRnDUHVLBN0zl_Q.png?1769665480
+
+-----------------------------------
+
+Title: Important Update Our App Is Migrating To Shopify S Built For Shopify Bfs Standard
+
+We’re excited to share an important update that will improve performance, security, and reliability for all merchants using our app. Our Product Data Exporter app will be migrating to Shopify’s Built-for-Shopify (BFS) architecture.
+This upgrade brings us in line with Shopify’s newest app performance standards and ensures long-term compatibility with the platform.
+What Is BFS?
+BFS (Built for Shopify) is Shopify’s highest standard for app quality. Apps that meet this standard must follow strict guidelines for:
+
+Speed &amp; performance
+Security &amp; data protection
+User experience
+Seamless integration with Shopify Admin
+
+By migrating to BFS, our app will run more natively inside Shopify—providing a smoother, more stable experience.
+Is Any Action Required from You?
+For most merchants: No action is required. Your app will automatically migrate to the updated BFS version.
+Will This Cause Any Downtime?
+No. The migration has been carefully planned to avoid any disruption to your existing workflows. All tasks, sync operations, and automations will continue functioning normally.
+Why We’re Making This Change
+Shopify is transitioning apps toward BFS to ensure merchants get:
+
+The fastest and most stable apps possible
+A consistent experience across the Admin
+Better support for high-volume stores and large catalogs
+Our app is evolving to match these expectations.
+
+-----------------------------------
+
+Title: Pricing Plans
+
+The Data Exporter Pro App supports a 5-day free trial. &nbsp;Also, the Free plan is available for Stores on Shopify Free Trial, development stores, and Shopify Staff Accounts.
+Basic PlanPro PlanPrice/Year$15$30Export products to CSVUnlimitedUnlimitedCustom Export Rules✓✓Secondary Email✓
+✓
+Recurring TaskX
+✓
+Note:
+
+The app charges you via Shopify billing API meaning that charges appear directly on your Shopify invoice.
+There are no setup fees.
+Terminate the subscription anytime by simply uninstalling the app.
+To keep it fair and transparent we do not offer discounts to anyone.
+Disclaimer:
+
+Ordinarily, you will find one final charge for the Product Data Exporter Pro app (or any other app using Shopify billing) on your next invoice after uninstall. This is because, while you get charged for your Shopify subscription and apps in one invoice, the billing cycles are almost always out of phase with one another. As a result, you pay for apps partly in advance and partly in arrears each month. You can find a more extensive explanation of this here.&nbsp;
+
+-----------------------------------
+
+Title: Removing The App
+
+If you no longer need an app, you can remove it from your Shopify store at any time by following these steps:
+Steps
+
+Log in to your Shopify admin.
+Go to Apps.
+Click on the app you want to remove.
+In the top-right corner, click Uninstall app.
+Confirm the action when prompted.
+That’s it — the app is now uninstalled from your store.
+For detailed instructions, check out Shopify's guide on uninstalling apps.
+Note: Once the app is uninstalled, the subscription is automatically terminated.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068616261/original/2Yn60ETIWptQym4eY4kVpDAPRCUvRLUAag.png?1769663687
+
+-----------------------------------
+
+Title: Terms Of Use
+
+1. Acceptance of Terms
+By using the Product Data Exporter Pro app ("App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the App.
+2. Use of the App
+The App is provided to assist merchants in exporting product IDs, variants, inventory, options, metafields, and 40+ attributes in CSV on their Shopify stores. You agree to use the App in compliance with all applicable laws and regulations.
+3. User Responsibilities
+
+You are responsible for maintaining the security of your Shopify store and the credentials used to access the App. You are also responsible for all activities that occur under your store's account.
+4. License
+
+Subject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to use the App.
+5. Fees and Payments
+
+Use of the App may be subject to fees. All payments must be made in accordance with the pricing and payment terms provided at the time of purchase. All purchases are non-refundable. You can cancel your subscription at any time by logging into your account.
+
+&nbsp;
+
+6. Data and Privacy
+
+We are committed to protecting your privacy. Our data collection and use practices are outlined in our Privacy Policy.
+7. Disclaimer of Warranties
+
+The App is provided "as is" and "as available" without warranties of any kind, either express or implied.
+8. Limitation of Liability
+
+In no event shall we be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the App.
+9. Termination
+
+We reserve the right to terminate or suspend your access to the App at any time, with or without notice, for any reason, including if you breach these Terms.
+10. Governing Law and Arbitration
+
+These Terms shall be governed by and construed in accordance with the laws of India. In the event of any dispute, claim, or controversy arising out of or relating to these Terms or the App, the parties shall submit to the exclusive jurisdiction of the courts of Mumbai, India.
+11. Changes to Terms
+
+We reserve the right to modify these Terms at any time. Your continued use of the App after any such changes constitutes your acceptance of the new Terms.
+12. Contact Information
+
+For any questions or concerns regarding these Terms, please contact us at support@thaliaapps.freshdesk.com.
+By using the Product Data Exporter Pro, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use.
+
+-----------------------------------
+
+Title: Can We Export Product Metafield Data From Our Current Store And Import It Into Another Store Using Th
+
+The Exporter app allows you to export product metafield data from your current store. However, it is not possible to import this data into another store by uploading the same file, as Shopify does not support this feature.
+
+-----------------------------------
+
+Title: Is There A Free Trial Available 
+
+Yes, we offer a 5-day free trial period to explore the app’s features before committing to a subscription.&nbsp;Also, the Free plan is available for Stores on Shopify Free Trial, development stores, and Shopify Staff Accounts&nbsp;
+
+-----------------------------------
+
+Title: What Happens If I Uninstall The App 
+
+If you uninstall the app, no further changes will be made to your store. Any edits already applied will remain unchanged unless manually reversed.
+
+-----------------------------------
+
+Title: Does The App Work With All Shopify Plans 
+
+Yes, Bolt Bulk Product Editor is compatible with all Shopify plans, including Basic, Shopify, Advanced, and Plus.
+
+-----------------------------------
+
+Title: Can I Save A Task For Future Use 
+
+Yes, it has a feature that allows you to save the task. Simply click on the star icon ⭐ next to the task in the Task History, and it will be saved in the Starred section of the dashboard. You can easily access your saved tasks from the Starred section and copy them to execute whenever needed.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29068616411/original/i8cuuGY-efSkA9rsND7Ut_RR3WyQMdXttg.png?1769664859
+
+-----------------------------------
+
+Title: Scheduling Exports
+
+The Product Data Exporter app now allows you to schedule exports for a later time, helping you automate product data exports without needing to run them manually each time.
+You can configure scheduled exports using the following options:
+Scheduling Options
+
+One-Time Schedule
+
+Run the export once at a specific date and time.&nbsp;
+Daily Schedule
+
+Automatically run the export every day at the selected time.&nbsp;
+Weekly Schedule
+
+Run the export on a selected day every week.&nbsp;Perfect for recurring weekly&nbsp;catalogue updates, scheduled reporting.
+Monthly Schedule
+
+Automatically run the export on a specific date each month.&nbsp;
+Managing Scheduled Tasks
+
+View Scheduled Tasks: Navigate to the "Scheduled Tasks" tab to see upcoming exports.
+Edit or Delete: You can modify or delete scheduled export tasks before they are executed.&nbsp;
+Note:&nbsp; 
+For One-Time Schedule, exports can be scheduled up to 2 months in advance.&nbsp;
+The Daily, weekly, and monthly scheduling tasks are available on the Pro plan.
+
+-----------------------------------
+
+Title: Send Export Files To Additional Recipients Using Cc
+
+The Product Data Exporter app now supports adding up to 2 email addresses in CC while scheduling or sending export files. This enhancement makes it easier to share exported product data with team members, clients, or other stakeholders automatically.
+
+How to Add CC Email Addresses?Navigate to the export configuration section.
+Enter the primary recipient email address in the Email field.
+In the CC&nbsp;field (Max 2 emails):Type the email address
+Press Enter to add it
+Repeat the same step to add a second CC email address.
+Benefits of Using CC EmailsThe CC feature is useful for:
+
+Sharing exports with multiple team members
+Sending reports to managers or clients automatically
+Keeping backup recipients informed
+Improving collaboration across departments
+
+Important NotesA maximum of 2 CC email addresses can be added per export task.
+All entered email addresses must be valid email formats.
+CC recipients will receive the same export file as the primary recipient.
+The CC feature is available for both basic and pro plan.
+
+Images:
+https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/29070496770/original/gRskY1qzov4m4LUm25RTBjPFiLovPOc96w.png?1778218976
+
+-----------------------------------
+
+Title: Privacy Policy
+
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Thalia Apps Privacy PolicyUpdated date: 14 July 2021
+Apps "Apps” or "App" developed by Thalia help merchants who use Shopify to power their stores. This Privacy Policy describes how personal information is collected, used, and shared when you install or use the Apps in connection with your Shopify-supported store.Personal Information the Apps CollectsWhen you install the Apps, we are automatically able to access certain types of information from your Shopify account: Products, Themes, Orders, and more.Additionally, we collect the following types of personal information from you and/or your customers once you have installed the Apps: Information about you and others who may access the Apps on behalf of your stores, such as your name, address, email address, phone number, and billing information; Information about individuals who visit your stores, such as their IP address, web browser details, time zone, and information about the cookies installed on the particular device.We collect personal information directly from the relevant individual, through your Shopify account, or using the following technologies: “Cookies” are data files that are placed on your device or computer and often include an anonymous unique identifier. For more information about cookies, and how to disable cookies, visit http://www.allaboutcookies.org. “Log files” track actions occurring on the Site, and collect data including your IP address, browser type, Internet service provider, referring/exit pages, and date/time stamps. “Web beacons,” “tags,” and “pixels” are electronic files used to record information about how you browse the Site.How Do We Use Your Personal Information?We use the personal information we collect from you and your customers in order to provide the Service and to operate the Apps. Additionally, we use this personal information to: Communicate with you; Optimize or improve the App; and Provide you with information or advertising relating to our products or services.Sharing Your Personal InformationFinally, we may also share your Personal Information to comply with applicable laws and regulations, to respond to a subpoena, search warrant or other lawful requests for information we receive, or to otherwise protect our rights.Behavioural Advertising As described above, we use your Personal Information to provide you with targeted advertisements or marketing communications we believe may be of interest to you. For more information about how targeted advertising works, you can visit the Network Advertising Initiative’s (“NAI”) educational page at http://www.networkadvertising.org/understanding-online-advertising/how-does-it-work.Your Rights If you are a European resident, you have the right to access the personal information we hold about you and to ask that your personal information be corrected, updated, or deleted. If you would like to exercise this right, please contact us through the contact information below.Additionally, if you are a European resident we note that we are processing your information in order to fulfill contracts we might have with you (for example if you make an order through the Site), or otherwise to pursue our legitimate business interests listed above. Additionally, please note that your information will be transferred outside of Europe, including Canada and the United States.Data Retention When you place an order through the Site, we will maintain your Order Information for our records unless and until you ask us to delete this information.Changes We may update this privacy policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal, or regulatory reasons.Contact Us For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at support@thaliaapps.freshdesk.com
+&nbsp; &nbsp;&nbsp;
+
+-----------------------------------
+
+Title: Terms Of Use
+
+1. Acceptance of TermsBy using the Apps "Apps” or "App" developed by Thalia, you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the App.
+
+2. Use of the AppThe App is provided to assist merchants in bulk editing product information on their Shopify stores. You agree to use the App in compliance with all applicable laws and regulations.
+
+3. User ResponsibilitiesYou are responsible for maintaining the security of your Shopify store and the credentials used to access the App. You are also responsible for all activities that occur under your store's account.
+
+4. LicenseSubject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to use the App.
+
+5. Fees and PaymentsUse of the App may be subject to fees. All payments must be made in accordance with the pricing and payment terms provided at the time of purchase. All purchases are non-refundable. You can cancel your subscription at any time by logging into your account.&nbsp;
+
+6. Data and PrivacyWe are committed to protecting your privacy. Our data collection and use practices are outlined in our Privacy Policy.
+
+7. Disclaimer of WarrantiesThe App is provided "as is" and "as available" without warranties of any kind, either express or implied.
+
+8. Limitation of LiabilityIn no event shall we be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the App.
+
+9. TerminationWe reserve the right to terminate or suspend your access to the App at any time, with or without notice, for any reason, including if you breach these Terms.
+
+10. Governing Law and ArbitrationThese Terms shall be governed by and construed in accordance with the laws of India. In the event of any dispute, claim, or controversy arising out of or relating to these Terms or the App, the parties shall submit to the exclusive jurisdiction of the courts of Mumbai, India.
+
+11. Changes to TermsWe reserve the right to modify these Terms at any time. Your continued use of the App after any such changes constitutes your acceptance of the new Terms.
+
+12. Contact InformationFor any questions or concerns regarding these Terms, please contact us at support@thaliaapps.freshdesk.com.
+
+By using the Apps "Apps” or "App" developed by Thalia , you acknowledge that you have read, understood, and agree to be bound by these Terms of Use.
